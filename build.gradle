@@ -1,0 +1,44 @@
+apply plugin: 'java-library'
+apply plugin: 'maven'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+group = 'org.gwtproject.widgets'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+        url 'https://repo.vertispan.com/gwt-snapshot'
+    }
+}
+
+dependencies {
+    api 'com.google.gwt:gwt-user:2.8.2'
+    testImplementation 'junit:junit:4.12'
+    testRuntimeOnly 'com.google.gwt:gwt-dev:2.8.2'
+}
+
+jar {
+    from sourceSets.main.allJava
+}
+
+tasks.withType(Test) {
+    enableAssertions = false
+}
+
+test {
+    classpath += sourceSets.main.allJava.sourceDirectories + sourceSets.test.allJava.sourceDirectories
+    systemProperty "gwt.args", "-draftCompile"
+    include '**/*Suite.class'
+    scanForTestClasses = false
+}
+
+
+
+
+
+
+
+
+
