@@ -20,3 +20,19 @@ Commits can be rewritten at any time.
   - `GestureEventSinkTest`
   - `MediaEventsSinkTest` (also not part of [gwt-media](https://github.com/vegegoku/gwt-media)
   - `TouchEventSinkTest`
+
+### Blockers - Cyclic dependencies
+
+- `ValuePicker` in `gwt-widgets` uses `CellList` in `gwt-cell-widgets` which in turn depends on `Composite` in 
+in `gwt-widgets`. 
+  - Solution: `ValuePicker` needs to go into `gwt-cell-widgets` as it is technically a cell widget.
+- `com.google.gwt.user.client.TakesValue` needs to exist somewhere.
+  - When included in `gwt-widgets` we end up with: `ValueBoxBase` in `gwt-widgets` depends on `ValueBoxEditor` 
+  in `gwt-editor` project which in turn depends on `TakesValue` in `gwt-widgets`.
+- `ScrollPanel` in `gwt-widgets` depends on `TouchScroller` in an imaginary `gwt-touch` project which in turn depends 
+on `HasScrolling` in `gwt-widgets`.
+- `Label` in `gwt-widgets` depends on `HasTextEditor` in `gwt-editor` project which in turn depends on `HasText` 
+in `gwt-widgets`.
+
+Probable solution for last three cyclic dependencies is to create `gwt-widgets-behaviors` which contains all 
+the `Has*` interfaces.
