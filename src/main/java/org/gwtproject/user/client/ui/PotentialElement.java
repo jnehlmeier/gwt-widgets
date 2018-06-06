@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.dom.builder.shared.HtmlBuilderFactory;
@@ -66,7 +66,7 @@ public class PotentialElement extends Element {
   public static native PotentialElement build(UIObject o, String tagName) /*-{
     var el = new $wnd.GwtPotentialElementShim();
     el.tagName = tagName;
-    el.__gwt_resolve = @com.google.gwt.user.client.ui.PotentialElement::buildResolveCallback(Lcom/google/gwt/user/client/ui/UIObject;)(o);
+    el.__gwt_resolve = @org.gwtproject.user.client.ui.PotentialElement::buildResolveCallback(Lcom/google/gwt/user/client/ui/UIObject;)(o);
     return @com.google.gwt.dom.client.Element::as(Lcom/google/gwt/core/client/JavaScriptObject;)(el);
   }-*/;
 
@@ -110,8 +110,8 @@ public class PotentialElement extends Element {
 
   private static native JavaScriptObject buildResolveCallback(UIObject resolver) /*-{
     return function() {
-        this.__gwt_resolve = @com.google.gwt.user.client.ui.PotentialElement::cannotResolveTwice();
-        return resolver.@com.google.gwt.user.client.ui.UIObject::resolvePotentialElement()();
+        this.__gwt_resolve = @org.gwtproject.user.client.ui.PotentialElement::cannotResolveTwice();
+        return resolver.@org.gwtproject.user.client.ui.UIObject::resolvePotentialElement()();
       };
   }-*/;
 
@@ -152,7 +152,7 @@ public class PotentialElement extends Element {
   }
 
   final native Element setResolver(UIObject resolver) /*-{
-    this.__gwt_resolve = @com.google.gwt.user.client.ui.PotentialElement::buildResolveCallback(Lcom/google/gwt/user/client/ui/UIObject;)(resolver);
+    this.__gwt_resolve = @org.gwtproject.user.client.ui.PotentialElement::buildResolveCallback(Lcom/google/gwt/user/client/ui/UIObject;)(resolver);
   }-*/;
 
   /**

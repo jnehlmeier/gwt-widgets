@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.NativeEvent;
@@ -21,10 +21,10 @@ import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.i18n.client.DateTimeFormat;
 import com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat;
-import com.google.gwt.user.datepicker.client.CalendarUtil;
-import com.google.gwt.user.datepicker.client.DateBox;
-import com.google.gwt.user.datepicker.client.DateBox.Format;
-import com.google.gwt.user.datepicker.client.DatePicker;
+import org.gwtproject.user.datepicker.client.CalendarUtil;
+import org.gwtproject.user.datepicker.client.DateBox;
+import org.gwtproject.user.datepicker.client.DateBox.Format;
+import org.gwtproject.user.datepicker.client.DatePicker;
 
 import java.util.Date;
 

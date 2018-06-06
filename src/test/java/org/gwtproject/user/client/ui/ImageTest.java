@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.DivElement;
@@ -153,8 +153,8 @@ public class ImageTest extends GWTTestCase {
    *         image is in the clipped state
    */
   public static native String getCurrentImageStateName(Image image) /*-{
-    var imgState = image.@com.google.gwt.user.client.ui.Image::state;
-    return imgState.@com.google.gwt.user.client.ui.Image.State::getStateName() ();
+    var imgState = image.@org.gwtproject.user.client.ui.Image::state;
+    return imgState.@org.gwtproject.user.client.ui.Image.State::getStateName() ();
   }-*/;
 
   private int firedError;

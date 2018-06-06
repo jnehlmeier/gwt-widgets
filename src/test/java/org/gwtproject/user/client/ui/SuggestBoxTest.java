@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.Element;
@@ -22,11 +22,11 @@ import com.google.gwt.event.dom.client.KeyDownEvent;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.dom.client.KeyUpEvent;
 import com.google.gwt.event.dom.client.KeyUpHandler;
-import com.google.gwt.user.client.ui.MultiWordSuggestOracle.MultiWordSuggestion;
-import com.google.gwt.user.client.ui.SuggestBox.DefaultSuggestionDisplay;
-import com.google.gwt.user.client.ui.SuggestBox.SuggestionCallback;
-import com.google.gwt.user.client.ui.SuggestOracle.Response;
-import com.google.gwt.user.client.ui.SuggestOracle.Suggestion;
+import org.gwtproject.user.client.ui.MultiWordSuggestOracle.MultiWordSuggestion;
+import org.gwtproject.user.client.ui.SuggestBox.DefaultSuggestionDisplay;
+import org.gwtproject.user.client.ui.SuggestBox.SuggestionCallback;
+import org.gwtproject.user.client.ui.SuggestOracle.Response;
+import org.gwtproject.user.client.ui.SuggestOracle.Suggestion;
 
 import java.util.ArrayList;
 import java.util.Arrays;

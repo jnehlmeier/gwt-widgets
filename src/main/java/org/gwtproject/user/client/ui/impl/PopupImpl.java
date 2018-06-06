@@ -13,13 +13,13 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui.impl;
+package org.gwtproject.user.client.ui.impl;
 
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.Element;
 
 /**
- * Implementation class used by {@link com.google.gwt.user.client.ui.PopupPanel}.
+ * Implementation class used by {@link org.gwtproject.user.client.ui.PopupPanel}.
  */
 public class PopupImpl {
 

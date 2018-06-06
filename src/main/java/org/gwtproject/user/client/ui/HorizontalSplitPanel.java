@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.Scheduler;
@@ -324,7 +324,7 @@ public final class HorizontalSplitPanel extends SplitPanel {
     private native void addResizeListener(Element container) /*-{
       var self = this;
       container.onresize = $entry(function() {
-        self.@com.google.gwt.user.client.ui.HorizontalSplitPanel$ImplIE8::onResize()();
+        self.@org.gwtproject.user.client.ui.HorizontalSplitPanel$ImplIE8::onResize()();
       });
     }-*/;
 

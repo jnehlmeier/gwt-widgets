@@ -13,12 +13,12 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui.impl;
+package org.gwtproject.user.client.ui.impl;
 
 import com.google.gwt.dom.client.Style.Display;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.user.client.ui.FocusPanel;
-import com.google.gwt.user.client.ui.RootPanel;
+import org.gwtproject.user.client.ui.FocusPanel;
+import org.gwtproject.user.client.ui.RootPanel;
 
 /**
  * Test FocusImpl.

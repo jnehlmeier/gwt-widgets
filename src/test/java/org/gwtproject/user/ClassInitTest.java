@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user;
+package org.gwtproject.user;
 
 import com.google.gwt.junit.GWTMockUtilities;
 
@@ -22,8 +22,8 @@ import junit.framework.TestCase;
 import java.io.File;
 
 /**
- * Tests that every class in com.google.gwt.user.client.ui and
- * com.google.gwt.user.datepicker.client can be init'd by the real Java
+ * Tests that every class in org.gwtproject.user.client.ui and
+ * org.gwtproject.user.datepicker.client can be init'd by the real Java
  * runtime. By ensuring this, we ensure that these classes all may be referenced
  * mocked out by pure Java unit tests, e.g. with EasyMock Class Extension
  */
@@ -42,11 +42,11 @@ public class ClassInitTest extends TestCase {
   }
 
   public void testUi() throws ClassNotFoundException {
-    doPackage("com.google.gwt.user.client.ui");
+    doPackage("org.gwtproject.user.client.ui");
   }
   
   public void testDatePicker() throws ClassNotFoundException {
-    doPackage("com.google.gwt.user.datepicker.client");
+    doPackage("org.gwtproject.user.datepicker.client");
   }
   
   private void doPackage(String packageName) throws ClassNotFoundException {

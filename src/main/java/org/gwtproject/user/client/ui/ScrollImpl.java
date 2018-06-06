@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -41,13 +41,13 @@ class ScrollImpl {
      */
     private static native void initStaticHandlers() /*-{
       // caches last scroll position
-      @com.google.gwt.user.client.ui.ScrollImpl.ScrollImplTrident::scrollHandler = function() {
+      @org.gwtproject.user.client.ui.ScrollImpl.ScrollImplTrident::scrollHandler = function() {
         var scrollableElem = $wnd.event.srcElement;
         scrollableElem.__lastScrollTop = scrollableElem.scrollTop;
         scrollableElem.__lastScrollLeft = scrollableElem.scrollLeft;
       };
       // watches for resizes that should fire a fake scroll event
-      @com.google.gwt.user.client.ui.ScrollImpl.ScrollImplTrident::resizeHandler = function() {
+      @org.gwtproject.user.client.ui.ScrollImpl.ScrollImplTrident::resizeHandler = function() {
         var scrollableElem = $wnd.event.srcElement;
         if (scrollableElem.__isScrollContainer) {
           scrollableElem = scrollableElem.parentNode;
@@ -60,7 +60,7 @@ class ScrollImpl {
             // Update scroll positions.
             scrollableElem.__lastScrollTop = scrollableElem.scrollTop;
             scrollableElem.__lastScrollLeft = scrollableElem.scrollLeft;
-            @com.google.gwt.user.client.ui.ScrollImpl.ScrollImplTrident::triggerScrollEvent(Lcom/google/gwt/dom/client/Element;)
+            @org.gwtproject.user.client.ui.ScrollImpl.ScrollImplTrident::triggerScrollEvent(Lcom/google/gwt/dom/client/Element;)
               (scrollableElem);
           }
         }), 1);
@@ -80,14 +80,14 @@ class ScrollImpl {
       // Remember the last scroll position.
       scrollable.__lastScrollTop = scrollable.__lastScrollLeft = 0;
       scrollable.attachEvent('onscroll',
-        @com.google.gwt.user.client.ui.ScrollImpl.ScrollImplTrident::scrollHandler);
+        @org.gwtproject.user.client.ui.ScrollImpl.ScrollImplTrident::scrollHandler);
 
       // Detect if the scrollable element or the container within it changes
       // size, either of which could affect the scroll position.
       scrollable.attachEvent('onresize',
-        @com.google.gwt.user.client.ui.ScrollImpl.ScrollImplTrident::resizeHandler);
+        @org.gwtproject.user.client.ui.ScrollImpl.ScrollImplTrident::resizeHandler);
       container.attachEvent('onresize',
-        @com.google.gwt.user.client.ui.ScrollImpl.ScrollImplTrident::resizeHandler);
+        @org.gwtproject.user.client.ui.ScrollImpl.ScrollImplTrident::resizeHandler);
       // use boolean (primitive, won't leak) hint to resizeHandler that its the container
       container.__isScrollContainer = true;
     }-*/;

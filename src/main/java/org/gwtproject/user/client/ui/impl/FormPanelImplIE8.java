@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui.impl;
+package org.gwtproject.user.client.ui.impl;
 
 import com.google.gwt.dom.client.Element;
 
@@ -34,7 +34,7 @@ public class FormPanelImplIE8 extends FormPanelImpl {
         if (iframe.readyState == 'complete') {
           // If the iframe's contentWindow has not navigated to the expected action
           // url, then it must be an error, so we ignore it.
-          listener.@com.google.gwt.user.client.ui.impl.FormPanelImplHost::onFrameLoad()();
+          listener.@org.gwtproject.user.client.ui.impl.FormPanelImplHost::onFrameLoad()();
         }
       });
     }
@@ -44,7 +44,7 @@ public class FormPanelImplIE8 extends FormPanelImpl {
       // onload/onreadystatechange handler.
       if (iframe)
         iframe.__formAction = form.action;
-      return listener.@com.google.gwt.user.client.ui.impl.FormPanelImplHost::onFormSubmit()();
+      return listener.@org.gwtproject.user.client.ui.impl.FormPanelImplHost::onFormSubmit()();
     });
   }-*/;
 

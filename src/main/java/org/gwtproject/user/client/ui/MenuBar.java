@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.aria.client.Id;
 import com.google.gwt.aria.client.Roles;
@@ -39,7 +39,7 @@ import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.Event;
 import com.google.gwt.user.client.Event.NativePreviewEvent;
 import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.ui.PopupPanel.PositionCallback;
+import org.gwtproject.user.client.ui.PopupPanel.PositionCallback;
 
 import java.util.ArrayList;
 import java.util.List;

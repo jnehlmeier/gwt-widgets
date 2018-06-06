@@ -18,4 +18,4 @@
 /**
  * Classes for HTML Canvas 2D support.
  */
-package com.google.gwt.canvas.client;
+package org.gwtproject.canvas.client;

@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.Scheduler;
@@ -29,8 +29,8 @@ import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.SafeUri;
 import com.google.gwt.safehtml.shared.annotations.IsSafeUri;
 import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.ui.impl.FormPanelImpl;
-import com.google.gwt.user.client.ui.impl.FormPanelImplHost;
+import org.gwtproject.user.client.ui.impl.FormPanelImpl;
+import org.gwtproject.user.client.ui.impl.FormPanelImplHost;
 
 /**
  * A panel that wraps its contents in an HTML &lt;FORM&gt; element.

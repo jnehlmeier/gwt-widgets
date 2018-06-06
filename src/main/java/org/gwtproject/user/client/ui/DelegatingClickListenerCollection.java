@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 /**
  * {@link ClickListenerCollection} used to correctly hook up listeners which

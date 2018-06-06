@@ -13,10 +13,10 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
-import com.google.gwt.user.client.ui.SuggestBox.DefaultSuggestionDisplay;
-import com.google.gwt.user.client.ui.SuggestOracle.Suggestion;
+import org.gwtproject.user.client.ui.SuggestBox.DefaultSuggestionDisplay;
+import org.gwtproject.user.client.ui.SuggestOracle.Suggestion;
 
 import java.util.List;
 

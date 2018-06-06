@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -76,7 +76,7 @@ public class NamedFrame extends Frame {
   }
 
   private static native void initStatics() /*-{
-    @com.google.gwt.user.client.ui.NamedFrame::PATTERN_NAME = /^[^<>&\'\"]+$/;
+    @org.gwtproject.user.client.ui.NamedFrame::PATTERN_NAME = /^[^<>&\'\"]+$/;
   }-*/;
 
   /**
@@ -85,7 +85,7 @@ public class NamedFrame extends Frame {
    *         not
    */
   private static native boolean isValidName(String name) /*-{
-    return @com.google.gwt.user.client.ui.NamedFrame::PATTERN_NAME.test(name);
+    return @org.gwtproject.user.client.ui.NamedFrame::PATTERN_NAME.test(name);
   }-*/;
 
   /**

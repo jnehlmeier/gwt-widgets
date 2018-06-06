@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.dom.client.Document;
@@ -35,11 +35,11 @@ import com.google.gwt.event.logical.shared.SelectionHandler;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
-import com.google.gwt.user.client.ui.PopupPanel.AnimationType;
-import com.google.gwt.user.client.ui.SuggestOracle.Callback;
-import com.google.gwt.user.client.ui.SuggestOracle.Request;
-import com.google.gwt.user.client.ui.SuggestOracle.Response;
-import com.google.gwt.user.client.ui.SuggestOracle.Suggestion;
+import org.gwtproject.user.client.ui.PopupPanel.AnimationType;
+import org.gwtproject.user.client.ui.SuggestOracle.Callback;
+import org.gwtproject.user.client.ui.SuggestOracle.Request;
+import org.gwtproject.user.client.ui.SuggestOracle.Response;
+import org.gwtproject.user.client.ui.SuggestOracle.Suggestion;
 
 import java.util.Collection;
 import java.util.List;

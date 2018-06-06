@@ -13,10 +13,10 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui.impl;
+package org.gwtproject.user.client.ui.impl;
 
 /**
- * Interface used by {@link com.google.gwt.user.client.ui.FormPanel} to host
+ * Interface used by {@link org.gwtproject.user.client.ui.FormPanel} to host
  * {@link FormPanelImpl}.
  */
 public interface FormPanelImplHost {

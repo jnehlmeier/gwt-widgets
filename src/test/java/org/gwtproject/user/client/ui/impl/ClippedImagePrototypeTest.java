@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui.impl;
+package org.gwtproject.user.client.ui.impl;
 
 import com.google.gwt.event.dom.client.ErrorEvent;
 import com.google.gwt.event.dom.client.ErrorHandler;
@@ -24,9 +24,9 @@ import com.google.gwt.junit.Platform;
 import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.safehtml.shared.UriUtils;
 import com.google.gwt.user.client.Timer;
-import com.google.gwt.user.client.ui.Image;
-import com.google.gwt.user.client.ui.ImageTest;
-import com.google.gwt.user.client.ui.RootPanel;
+import org.gwtproject.user.client.ui.Image;
+import org.gwtproject.user.client.ui.ImageTest;
+import org.gwtproject.user.client.ui.RootPanel;
 
 /**
  * Tests for the ClippedImagePrototype implementation. Tests are done to ensure

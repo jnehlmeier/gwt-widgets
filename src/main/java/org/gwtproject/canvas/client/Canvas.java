@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.canvas.client;
+package org.gwtproject.canvas.client;
 
 import com.google.gwt.canvas.dom.client.Context;
 import com.google.gwt.canvas.dom.client.Context2d;
@@ -21,8 +21,8 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.CanvasElement;
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.PartialSupport;
-import com.google.gwt.user.client.ui.FocusWidget;
-import com.google.gwt.user.client.ui.RootPanel;
+import org.gwtproject.user.client.ui.FocusWidget;
+import org.gwtproject.user.client.ui.RootPanel;
 
 /**
  * A widget representing a &lt;canvas&gt; element.

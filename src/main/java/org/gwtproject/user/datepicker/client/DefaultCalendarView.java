@@ -13,12 +13,12 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.datepicker.client;
+package org.gwtproject.user.datepicker.client;
 
 import com.google.gwt.aria.client.Roles;
 import com.google.gwt.aria.client.SelectedValue;
-import com.google.gwt.user.client.ui.HTMLTable.CellFormatter;
-import com.google.gwt.user.datepicker.client.DefaultCalendarView.CellGrid.DateCell;
+import org.gwtproject.user.client.ui.HTMLTable.CellFormatter;
+import org.gwtproject.user.datepicker.client.DefaultCalendarView.CellGrid.DateCell;
 
 import java.util.Date;
 

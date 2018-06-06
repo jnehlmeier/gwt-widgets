@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.google.gwt.user.datepicker.client;
+package org.gwtproject.user.datepicker.client;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.i18n.client.DateTimeFormatInfo;

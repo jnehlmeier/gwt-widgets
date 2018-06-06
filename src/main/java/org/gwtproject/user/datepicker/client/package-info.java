@@ -17,4 +17,4 @@
 /**
  * The date picker widget and associated types.
  */
-package com.google.gwt.user.datepicker.client;
+package org.gwtproject.user.datepicker.client;

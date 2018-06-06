@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui.impl;
+package org.gwtproject.user.client.ui.impl;
 
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.event.logical.shared.HasInitializeHandlers;
@@ -21,7 +21,7 @@ import com.google.gwt.event.logical.shared.InitializeEvent;
 import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
 import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.ui.RichTextArea;
+import org.gwtproject.user.client.ui.RichTextArea;
 
 /**
  * Base class for RichText platform implementations. The default version simply
@@ -66,9 +66,9 @@ public class RichTextAreaImpl {
 
   public native void setFocus(boolean focused) /*-{
     if (focused) {
-      this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem.focus();
+      this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem.focus();
     } else {
-      this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem.blur();
+      this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem.blur();
     }
   }-*/;
 

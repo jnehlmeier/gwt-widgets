@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Element;
@@ -31,7 +31,7 @@ import com.google.gwt.safehtml.shared.annotations.SuppressIsSafeUriCastCheck;
 import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.Event;
 import com.google.gwt.user.client.History;
-import com.google.gwt.user.client.ui.impl.HyperlinkImpl;
+import org.gwtproject.user.client.ui.impl.HyperlinkImpl;
 
 /**
  * A widget that serves as an "internal" hyperlink. That is, it is a link to

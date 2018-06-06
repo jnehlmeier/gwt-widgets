@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.logical.shared.HasInitializeHandlers;
@@ -23,7 +23,7 @@ import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.safehtml.client.HasSafeHtml;
 import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
-import com.google.gwt.user.client.ui.impl.RichTextAreaImpl;
+import org.gwtproject.user.client.ui.impl.RichTextAreaImpl;
 
 /**
  * A rich text editor that allows complex styling and formatting.

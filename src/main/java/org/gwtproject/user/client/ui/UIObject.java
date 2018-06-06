@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -953,9 +953,9 @@ public abstract class UIObject implements HasVisibility {
       // numberRegex is similar to java.lang.Number.floatRegex, but divides
       // the string into a leading numeric portion followed by an arbitrary
       // portion.
-      var numberRegex = @com.google.gwt.user.client.ui.UIObject::numberRegex;
+      var numberRegex = @org.gwtproject.user.client.ui.UIObject::numberRegex;
       if (!numberRegex) {
-        numberRegex = @com.google.gwt.user.client.ui.UIObject::numberRegex =
+        numberRegex = @org.gwtproject.user.client.ui.UIObject::numberRegex =
           /^(\s*[+-]?((\d+\.?\d*)|(\.\d+))([eE][+-]?\d+)?)(.*)$/;
       }
 

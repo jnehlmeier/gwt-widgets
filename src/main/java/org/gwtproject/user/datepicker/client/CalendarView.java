@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.google.gwt.user.datepicker.client;
+package org.gwtproject.user.datepicker.client;
 
 import java.util.Date;
 

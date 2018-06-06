@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.Scheduler;
@@ -34,7 +34,7 @@ import com.google.gwt.layout.client.Layout.Layer;
 import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.Event;
 import com.google.gwt.user.client.EventListener;
-import com.google.gwt.user.client.ui.ResizeLayoutPanel.Impl.Delegate;
+import org.gwtproject.user.client.ui.ResizeLayoutPanel.Impl.Delegate;
 
 /**
  * A simple panel that {@link ProvidesResize} to its one child, but does not
@@ -292,7 +292,7 @@ public class ResizeLayoutPanel extends SimplePanel implements ProvidesResize,
       var theElem = elem;
       var handleResize = $entry(function() {
         if (theElem.__resizeImpl) {
-          theElem.__resizeImpl.@com.google.gwt.user.client.ui.ResizeLayoutPanel.Impl::handleResize()();
+          theElem.__resizeImpl.@org.gwtproject.user.client.ui.ResizeLayoutPanel.Impl::handleResize()();
         }
       });
       elem.attachEvent('onresize', handleResize);

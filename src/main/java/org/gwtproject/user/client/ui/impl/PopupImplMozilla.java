@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui.impl;
+package org.gwtproject.user.client.ui.impl;
 
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
@@ -23,7 +23,7 @@ import com.google.gwt.dom.client.Style.Overflow;
 import com.google.gwt.user.client.DOM;
 
 /**
- * Implementation class used by {@link com.google.gwt.user.client.ui.PopupPanel}.
+ * Implementation class used by {@link org.gwtproject.user.client.ui.PopupPanel}.
  * This implementation is identical to the implementation provided by
  * {@link PopupImpl} in the case where
  * Mozilla is NOT running on the Mac.
@@ -32,7 +32,7 @@ import com.google.gwt.user.client.DOM;
  * scrollbars underneath the PopupPanel from being rendered on top of the
  * PopupPanel (issue #410). Unfortunately, the solution that fixes this problem
  * for the Mac causes a problem with dragging a
- * {@link com.google.gwt.user.client.ui.DialogBox} on Linux. While dragging the
+ * {@link org.gwtproject.user.client.ui.DialogBox} on Linux. While dragging the
  * DialogBox (especially diagonally), it jitters significantly.
  * </p>
  * <p>

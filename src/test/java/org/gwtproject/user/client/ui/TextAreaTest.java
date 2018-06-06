@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 /**
  * Tests a {@link TextArea}.

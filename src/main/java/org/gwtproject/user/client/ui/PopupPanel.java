@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.animation.client.Animation;
 import com.google.gwt.core.client.GWT;
@@ -42,7 +42,7 @@ import com.google.gwt.user.client.EventPreview;
 import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.ui.impl.PopupImpl;
+import org.gwtproject.user.client.ui.impl.PopupImpl;
 
 import java.util.ArrayList;
 import java.util.List;

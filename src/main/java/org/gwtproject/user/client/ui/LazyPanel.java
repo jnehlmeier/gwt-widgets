@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 /**
  * Convenience class to help lazy loading. The bulk of a LazyPanel is not

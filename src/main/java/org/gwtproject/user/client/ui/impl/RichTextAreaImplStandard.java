@@ -13,16 +13,16 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui.impl;
+package org.gwtproject.user.client.ui.impl;
 
 import com.google.gwt.core.client.JavaScriptException;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
 import com.google.gwt.safehtml.shared.annotations.SuppressIsSafeHtmlCastCheck;
 import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.ui.RichTextArea;
-import com.google.gwt.user.client.ui.RichTextArea.FontSize;
-import com.google.gwt.user.client.ui.RichTextArea.Justification;
+import org.gwtproject.user.client.ui.RichTextArea;
+import org.gwtproject.user.client.ui.RichTextArea.FontSize;
+import org.gwtproject.user.client.ui.RichTextArea.Justification;
 
 /**
  * Basic rich text platform implementation.
@@ -95,16 +95,16 @@ public abstract class RichTextAreaImplStandard extends RichTextAreaImpl implemen
     // the iframe becomes attached to the DOM. Any non-zero timeout will do
     // just fine.
     var _this = this;
-    _this.@com.google.gwt.user.client.ui.impl.RichTextAreaImplStandard::onElementInitializing()();
+    _this.@org.gwtproject.user.client.ui.impl.RichTextAreaImplStandard::onElementInitializing()();
     setTimeout($entry(function() {
       // We need to check to see if the content window still is there. It might not be if the RTA
       // first was attached to the DOM and then quickly was removed before the timeout fired.
-      if (_this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow != null) {
+      if (_this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow != null) {
         // Turn on design mode.
-        _this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.designMode = 'On';
+        _this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.designMode = 'On';
 
         // Send notification that the iframe has reached design mode.
-        _this.@com.google.gwt.user.client.ui.impl.RichTextAreaImplStandard::onElementInitialized()();
+        _this.@org.gwtproject.user.client.ui.impl.RichTextAreaImplStandard::onElementInitialized()();
       }
     }), 1);
   }-*/;
@@ -304,16 +304,16 @@ public abstract class RichTextAreaImplStandard extends RichTextAreaImpl implemen
   }
 
   protected native String getHTMLImpl() /*-{
-    return this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.body.innerHTML;
+    return this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.body.innerHTML;
   }-*/;
 
   protected native String getTextImpl() /*-{
-    return this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.body.textContent;
+    return this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.body.textContent;
   }-*/;
 
   @Override
   protected native void hookEvents() /*-{
-    var elem = this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem;
+    var elem = this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem;
     var wnd = elem.contentWindow;
 
     elem.__gwt_handler = $entry(function(evt) {
@@ -353,7 +353,7 @@ public abstract class RichTextAreaImplStandard extends RichTextAreaImpl implemen
   }-*/;
 
   protected native boolean isEnabledImpl() /*-{
-    var elem = this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem;
+    var elem = this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem;
     return elem.contentWindow.document.designMode.toUpperCase() == 'ON';
   }-*/;
 
@@ -389,28 +389,28 @@ public abstract class RichTextAreaImplStandard extends RichTextAreaImpl implemen
   }
 
   protected native void setEnabledImpl(boolean enabled) /*-{
-    var elem = this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem;
+    var elem = this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem;
     elem.contentWindow.document.designMode = enabled ? 'On' : 'Off';
   }-*/;
 
   protected native void setFocusImpl(boolean focused) /*-{
    if (focused) {
-      this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.focus();
+      this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.focus();
     } else {
-      this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.blur();
+      this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.blur();
     }
   }-*/;
 
   protected native void setHTMLImpl(@IsSafeHtml String html) /*-{
-    this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.body.innerHTML = html;
+    this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.body.innerHTML = html;
   }-*/;
 
   protected native void setTextImpl(String text) /*-{
-    this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.body.textContent = text;
+    this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.body.textContent = text;
   }-*/;
 
   protected native void unhookEvents() /*-{
-    var elem = this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem;
+    var elem = this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem;
     var wnd = elem.contentWindow;
 
     wnd.removeEventListener('keydown', elem.__gwt_handler, true);
@@ -447,7 +447,7 @@ public abstract class RichTextAreaImplStandard extends RichTextAreaImpl implemen
   }
 
   native void execCommandAssumingFocus(String cmd, String param) /*-{
-    this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.execCommand(cmd, false, param);
+    this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.execCommand(cmd, false, param);
   }-*/;
 
   boolean queryCommandState(String cmd) {
@@ -465,7 +465,7 @@ public abstract class RichTextAreaImplStandard extends RichTextAreaImpl implemen
   }
 
   native boolean queryCommandStateAssumingFocus(String cmd) /*-{
-    return !!this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.queryCommandState(cmd);
+    return !!this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.queryCommandState(cmd);
   }-*/;
 
   String queryCommandValue(String cmd) {
@@ -483,6 +483,6 @@ public abstract class RichTextAreaImplStandard extends RichTextAreaImpl implemen
   }
 
   native String queryCommandValueAssumingFocus(String cmd) /*-{
-    return this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.queryCommandValue(cmd);
+    return this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.queryCommandValue(cmd);
   }-*/;
 }

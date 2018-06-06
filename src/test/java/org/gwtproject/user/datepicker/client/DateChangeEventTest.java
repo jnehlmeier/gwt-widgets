@@ -14,15 +14,15 @@
  * the License.
  */
 
-package com.google.gwt.user.datepicker.client;
+package org.gwtproject.user.datepicker.client;
 
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.event.shared.GwtEvent;
 import com.google.gwt.event.shared.HandlerManager;
 import com.google.gwt.event.shared.HandlerRegistration;
-import com.google.gwt.user.client.ui.DateValueChangeTester;
-import com.google.gwt.user.client.ui.HasValue;
+import org.gwtproject.user.client.ui.DateValueChangeTester;
+import org.gwtproject.user.client.ui.HasValue;
 
 import junit.framework.TestCase;
 

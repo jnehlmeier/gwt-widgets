@@ -14,9 +14,9 @@
  * the License.
  */
 
-package com.google.gwt.user.datepicker.client;
+package org.gwtproject.user.datepicker.client;
 
-import com.google.gwt.user.client.ui.Composite;
+import org.gwtproject.user.client.ui.Composite;
 
 /**
  * Package protected class used to combine functionality for the

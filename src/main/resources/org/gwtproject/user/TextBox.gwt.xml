@@ -21,13 +21,13 @@
   <inherits name="com.google.gwt.user.UserAgent"/>
 
   <!-- Fall through to this rule is the browser isn't IE -->
-  <replace-with class="com.google.gwt.user.client.ui.impl.TextBoxImpl">
-    <when-type-is class="com.google.gwt.user.client.ui.impl.TextBoxImpl"/>
+  <replace-with class="org.gwtproject.user.client.ui.impl.TextBoxImpl">
+    <when-type-is class="org.gwtproject.user.client.ui.impl.TextBoxImpl"/>
   </replace-with>
 
   <!-- IE has a completely different TextBox implementation -->
-  <replace-with class="com.google.gwt.user.client.ui.impl.TextBoxImplIE8">
-    <when-type-is class="com.google.gwt.user.client.ui.impl.TextBoxImpl"/>
+  <replace-with class="org.gwtproject.user.client.ui.impl.TextBoxImplIE8">
+    <when-type-is class="org.gwtproject.user.client.ui.impl.TextBoxImpl"/>
     <when-property-is name="user.agent" value="ie8"/>
   </replace-with>
 </module>

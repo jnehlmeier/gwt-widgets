@@ -33,13 +33,13 @@
     </all>
   </set-property>
 
-  <replace-with class="com.google.gwt.canvas.client.Canvas.CanvasElementSupportDetectedMaybe">
-    <when-type-is class="com.google.gwt.canvas.client.Canvas.CanvasElementSupportDetector" />
+  <replace-with class="org.gwtproject.canvas.client.Canvas.CanvasElementSupportDetectedMaybe">
+    <when-type-is class="org.gwtproject.canvas.client.Canvas.CanvasElementSupportDetector" />
     <when-property-is name="canvasElementSupport" value="maybe" />
   </replace-with>
 
-  <replace-with class="com.google.gwt.canvas.client.Canvas.CanvasElementSupportDetectedNo">
-    <when-type-is class="com.google.gwt.canvas.client.Canvas.CanvasElementSupportDetector" />
+  <replace-with class="org.gwtproject.canvas.client.Canvas.CanvasElementSupportDetectedNo">
+    <when-type-is class="org.gwtproject.canvas.client.Canvas.CanvasElementSupportDetector" />
     <when-property-is name="canvasElementSupport" value="no" />
   </replace-with>
 

@@ -13,12 +13,12 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.resources.client.ImageResource;
 import com.google.gwt.safehtml.shared.SafeHtml;
-import com.google.gwt.user.client.ui.impl.ClippedImagePrototype;
+import org.gwtproject.user.client.ui.impl.ClippedImagePrototype;
 
 /**
  * An opaque representation of a particular image such that the image can be

@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.JsArray;
 import com.google.gwt.core.shared.GWT;
@@ -47,9 +47,9 @@ import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
 import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.impl.ElementMapperImpl;
-import com.google.gwt.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant;
-import com.google.gwt.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant;
+import org.gwtproject.user.client.impl.ElementMapperImpl;
+import org.gwtproject.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant;
+import org.gwtproject.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant;
 
 import java.util.ArrayList;
 import java.util.Iterator;

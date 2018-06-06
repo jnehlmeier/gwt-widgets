@@ -13,12 +13,12 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant;
-import com.google.gwt.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant;
+import org.gwtproject.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant;
+import org.gwtproject.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant;
 
 /**
  * A panel whose child widgets are contained within the cells of a table. Each

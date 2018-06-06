@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui.impl;
+package org.gwtproject.user.client.ui.impl;
 
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.Node;
@@ -42,10 +42,10 @@ public class RichTextAreaImplIE8toIE10 extends RichTextAreaImplStandard {
   @Override
   public native void initElement() /*-{
     var _this = this;
-    _this.@com.google.gwt.user.client.ui.impl.RichTextAreaImplStandard::onElementInitializing()();
+    _this.@org.gwtproject.user.client.ui.impl.RichTextAreaImplStandard::onElementInitializing()();
 
     setTimeout($entry(function() {
-      if (_this.@com.google.gwt.user.client.ui.impl.RichTextAreaImplStandard::initializing == false) {
+      if (_this.@org.gwtproject.user.client.ui.impl.RichTextAreaImplStandard::initializing == false) {
         return;
       }
 
@@ -54,7 +54,7 @@ public class RichTextAreaImplIE8toIE10 extends RichTextAreaImplStandard {
       // keep trying every so often until it is.
       // Note: The body seems to be missing only rarely, so please don't remove
       // this retry loop just because it's hard to reproduce.
-      var elem = _this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem;
+      var elem = _this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem;
       var doc = elem.contentWindow.document;
       if (!doc.body) {
         // Retry in 50 ms. Faster would run the risk of pegging the CPU. Slower
@@ -65,21 +65,21 @@ public class RichTextAreaImplIE8toIE10 extends RichTextAreaImplStandard {
       doc.body.contentEditable = true;
 
       // Send notification that the iframe has reached design mode.
-      _this.@com.google.gwt.user.client.ui.impl.RichTextAreaImplStandard::onElementInitialized()();
+      _this.@org.gwtproject.user.client.ui.impl.RichTextAreaImplStandard::onElementInitialized()();
     }, 1));
   }-*/;
 
   @Override
   public native void insertHTML(@IsSafeHtml String html) /*-{
     try {
-      var elem = this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem;
+      var elem = this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem;
       var doc = elem.contentWindow.document;
       doc.body.focus();
       var tr = doc.selection.createRange();
       if (tr == null) {
         return;
       }
-      if (!@com.google.gwt.user.client.ui.impl.RichTextAreaImplIE8toIE10::isOrHasChild(*)(doc.body, tr.parentElement())) {
+      if (!@org.gwtproject.user.client.ui.impl.RichTextAreaImplIE8toIE10::isOrHasChild(*)(doc.body, tr.parentElement())) {
         return;
       }
       tr.pasteHTML(html);
@@ -91,13 +91,13 @@ public class RichTextAreaImplIE8toIE10 extends RichTextAreaImplStandard {
 
   @Override
   protected native String getTextImpl() /*-{
-    var elem = this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem;
+    var elem = this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem;
     return elem.contentWindow.document.body.innerText;
   }-*/;
 
   @Override
   protected native void hookEvents() /*-{
-    var elem = this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem;
+    var elem = this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem;
     var body = elem.contentWindow.document.body;
 
     var handler = $entry(function(evt) {
@@ -125,25 +125,25 @@ public class RichTextAreaImplIE8toIE10 extends RichTextAreaImplStandard {
 
   @Override
   protected native boolean isEnabledImpl() /*-{
-    var elem = this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem;
+    var elem = this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem;
     return elem.contentWindow.document.body.contentEditable.toLowerCase() == 'true'; 
   }-*/;
 
   @Override
   protected native void setEnabledImpl(boolean enabled) /*-{
-    var elem = this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem;
+    var elem = this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem;
     elem.contentWindow.document.body.contentEditable = enabled;
   }-*/;
 
   @Override
   protected native void setTextImpl(String text) /*-{
-    var elem = this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem;
+    var elem = this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem;
     elem.contentWindow.document.body.innerText = text;
   }-*/;
 
   @Override
   protected native void unhookEvents() /*-{
-    var elem = this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem;
+    var elem = this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem;
     var body = elem.contentWindow.document.body;
 
     if (body) {

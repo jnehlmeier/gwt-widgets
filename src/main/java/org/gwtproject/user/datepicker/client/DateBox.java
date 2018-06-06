@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.google.gwt.user.datepicker.client;
+package org.gwtproject.user.datepicker.client;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.Scheduler;
@@ -38,11 +38,11 @@ import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.i18n.client.DateTimeFormat;
 import com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat;
-import com.google.gwt.user.client.ui.Composite;
-import com.google.gwt.user.client.ui.HasEnabled;
-import com.google.gwt.user.client.ui.HasValue;
-import com.google.gwt.user.client.ui.PopupPanel;
-import com.google.gwt.user.client.ui.TextBox;
+import org.gwtproject.user.client.ui.Composite;
+import org.gwtproject.user.client.ui.HasEnabled;
+import org.gwtproject.user.client.ui.HasValue;
+import org.gwtproject.user.client.ui.PopupPanel;
+import org.gwtproject.user.client.ui.TextBox;
 
 import java.util.Date;
 

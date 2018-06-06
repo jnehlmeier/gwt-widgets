@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.google.gwt.user.datepicker.client;
+package org.gwtproject.user.datepicker.client;
 
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.Element;
@@ -25,9 +25,9 @@ import com.google.gwt.event.dom.client.KeyDownEvent;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.impl.ElementMapperImpl;
-import com.google.gwt.user.client.ui.Grid;
-import com.google.gwt.user.client.ui.Widget;
+import org.gwtproject.user.client.impl.ElementMapperImpl;
+import org.gwtproject.user.client.ui.Grid;
+import org.gwtproject.user.client.ui.Widget;
 
 import java.util.ArrayList;
 import java.util.Iterator;

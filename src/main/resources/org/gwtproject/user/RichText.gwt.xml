@@ -20,9 +20,9 @@
 
   <!-- IE-specific implementation -->
   <replace-with
-    class="com.google.gwt.user.client.ui.impl.RichTextAreaImplIE8toIE10">
+    class="org.gwtproject.user.client.ui.impl.RichTextAreaImplIE8toIE10">
     <when-type-is
-      class="com.google.gwt.user.client.ui.impl.RichTextAreaImpl" />
+      class="org.gwtproject.user.client.ui.impl.RichTextAreaImpl" />
     <any>
       <when-property-is name="user.agent" value="ie8" />
       <when-property-is name="user.agent" value="ie9" />
@@ -32,17 +32,17 @@
 
   <!-- Mozilla-specific implementation -->
   <replace-with
-    class="com.google.gwt.user.client.ui.impl.RichTextAreaImplMozilla">
+    class="org.gwtproject.user.client.ui.impl.RichTextAreaImplMozilla">
     <when-type-is
-      class="com.google.gwt.user.client.ui.impl.RichTextAreaImpl" />
+      class="org.gwtproject.user.client.ui.impl.RichTextAreaImpl" />
     <when-property-is name="user.agent" value="gecko1_8" />
   </replace-with>
 
   <!-- Safari-specific implementation -->
   <replace-with
-    class="com.google.gwt.user.client.ui.impl.RichTextAreaImplSafari">
+    class="org.gwtproject.user.client.ui.impl.RichTextAreaImplSafari">
     <when-type-is
-      class="com.google.gwt.user.client.ui.impl.RichTextAreaImpl" />
+      class="org.gwtproject.user.client.ui.impl.RichTextAreaImpl" />
     <any>
       <when-property-is name="user.agent" value="safari" />
     </any>

@@ -13,10 +13,10 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.dom.client.Style.Unit;
-import com.google.gwt.user.client.ui.DockLayoutPanel.Direction;
+import org.gwtproject.user.client.ui.DockLayoutPanel.Direction;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 /**
  * {@link KeyboardListenerCollection} used to correctly hook up event listeners

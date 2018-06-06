@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.datepicker.client;
+package org.gwtproject.user.datepicker.client;
 
 /**
  * Abstract month selector widget.

@@ -21,4 +21,4 @@
  * panels and event interfaces. These classes form the bulk of the client-side
  * libraries used by GWT applications.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;

@@ -13,12 +13,12 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui.impl;
+package org.gwtproject.user.client.ui.impl;
 
 import com.google.gwt.dom.client.Element;
 
 /**
- * Implementation class used by {@link com.google.gwt.user.client.ui.FormPanel}.
+ * Implementation class used by {@link org.gwtproject.user.client.ui.FormPanel}.
  */
 public class FormPanelImpl {
 
@@ -69,7 +69,7 @@ public class FormPanelImpl {
         if (!iframe.__formAction)
           return;
 
-        listener.@com.google.gwt.user.client.ui.impl.FormPanelImplHost::onFrameLoad()();
+        listener.@org.gwtproject.user.client.ui.impl.FormPanelImplHost::onFrameLoad()();
       });
     }
 
@@ -78,7 +78,7 @@ public class FormPanelImpl {
       // onload/onreadystatechange handler.
       if (iframe)
         iframe.__formAction = form.action;
-      return listener.@com.google.gwt.user.client.ui.impl.FormPanelImplHost::onFormSubmit()();
+      return listener.@org.gwtproject.user.client.ui.impl.FormPanelImplHost::onFormSubmit()();
     });
   }-*/;
 

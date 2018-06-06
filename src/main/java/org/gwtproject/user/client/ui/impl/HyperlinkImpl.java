@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.google.gwt.user.client.ui.impl;
+package org.gwtproject.user.client.ui.impl;
 
 import com.google.gwt.user.client.Event;
 

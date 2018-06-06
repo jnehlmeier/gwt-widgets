@@ -13,16 +13,16 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.TableCellElement;
 import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.safehtml.shared.SafeHtmlUtils;
-import com.google.gwt.user.client.ui.HTMLTable.Cell;
-import com.google.gwt.user.client.ui.HTMLTable.CellFormatter;
-import com.google.gwt.user.client.ui.HTMLTable.ColumnFormatter;
-import com.google.gwt.user.client.ui.HTMLTable.RowFormatter;
+import org.gwtproject.user.client.ui.HTMLTable.Cell;
+import org.gwtproject.user.client.ui.HTMLTable.CellFormatter;
+import org.gwtproject.user.client.ui.HTMLTable.ColumnFormatter;
+import org.gwtproject.user.client.ui.HTMLTable.RowFormatter;
 
 import java.util.Arrays;
 import java.util.Iterator;

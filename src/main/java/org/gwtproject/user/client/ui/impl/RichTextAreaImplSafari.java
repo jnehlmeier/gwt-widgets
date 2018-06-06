@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui.impl;
+package org.gwtproject.user.client.ui.impl;
 
 /**
  * Safari rich text platform implementation.
@@ -29,12 +29,12 @@ public class RichTextAreaImplSafari extends RichTextAreaImplStandard {
 
   @Override
   protected native String getTextImpl() /*-{
-    return this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.body.innerText;
+    return this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.body.innerText;
   }-*/;
 
   @Override
   protected native void hookEvents() /*-{
-    var elem = this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem;
+    var elem = this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem;
     var wnd = elem.contentWindow;
 
     elem.__gwt_handler = function(evt) {
@@ -66,12 +66,12 @@ public class RichTextAreaImplSafari extends RichTextAreaImplStandard {
 
   @Override
   protected native void setTextImpl(String text) /*-{
-    this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.body.innerText = text;
+    this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem.contentWindow.document.body.innerText = text;
   }-*/;
 
   @Override
   protected native void unhookEvents() /*-{
-    var elem = this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem;
+    var elem = this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem;
     var wnd = elem.contentWindow;
 
     wnd.removeEventListener('keydown', elem.__gwt_handler, true);

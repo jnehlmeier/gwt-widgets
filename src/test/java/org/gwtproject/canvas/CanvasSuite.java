@@ -14,9 +14,9 @@
  * the License.
  */
 
-package com.google.gwt.canvas;
+package org.gwtproject.canvas;
 
-import com.google.gwt.canvas.client.CanvasTest;
+import org.gwtproject.canvas.client.CanvasTest;
 //import com.google.gwt.canvas.dom.client.Context2dTest;
 import com.google.gwt.junit.tools.GWTTestSuite;
 

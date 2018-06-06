@@ -13,17 +13,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.InputElement;
 import com.google.gwt.user.client.Timer;
-import com.google.gwt.user.client.ui.FormPanel.SubmitCompleteEvent;
-import com.google.gwt.user.client.ui.FormPanel.SubmitCompleteHandler;
-import com.google.gwt.user.client.ui.FormPanel.SubmitEvent;
-import com.google.gwt.user.client.ui.FormPanel.SubmitHandler;
+import org.gwtproject.user.client.ui.FormPanel.SubmitCompleteEvent;
+import org.gwtproject.user.client.ui.FormPanel.SubmitCompleteHandler;
+import org.gwtproject.user.client.ui.FormPanel.SubmitEvent;
+import org.gwtproject.user.client.ui.FormPanel.SubmitHandler;
 
 /**
  * Tests the FormPanel.

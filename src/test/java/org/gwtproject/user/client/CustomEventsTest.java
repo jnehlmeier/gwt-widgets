@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client;
+package org.gwtproject.user.client;
 
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.shared.GWT;
@@ -24,8 +24,8 @@ import com.google.gwt.event.shared.EventHandler;
 import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.user.client.impl.DOMImpl;
 import com.google.gwt.user.client.impl.DOMImplStandard;
-import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.user.client.ui.RootPanel;
+import org.gwtproject.user.client.ui.Button;
+import org.gwtproject.user.client.ui.RootPanel;
 
 /**
  * Tests standard DOM operations in the {@link DOM} class.

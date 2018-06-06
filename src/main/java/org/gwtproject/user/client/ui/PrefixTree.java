@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.JavaScriptObject;
 
@@ -100,7 +100,7 @@ class PrefixTree extends AbstractCollection<String> {
      */
     private native void addTree(PrefixTree tree, String prefix) /*-{
       var suffixes = [];
-      for (var suffix in tree.@com.google.gwt.user.client.ui.PrefixTree::suffixes) {
+      for (var suffix in tree.@org.gwtproject.user.client.ui.PrefixTree::suffixes) {
         // Ignore object properties that aren't colon-prepended keys
         if (suffix.indexOf(':') == 0) {
           suffixes.push(suffix);
@@ -109,12 +109,12 @@ class PrefixTree extends AbstractCollection<String> {
 
       var frame = {
         suffixNames: suffixes,
-        subtrees: tree.@com.google.gwt.user.client.ui.PrefixTree::subtrees,
+        subtrees: tree.@org.gwtproject.user.client.ui.PrefixTree::subtrees,
         prefix: prefix,
         index: 0
       };
 
-      var stack = this.@com.google.gwt.user.client.ui.PrefixTree$PrefixTreeIterator::stack;
+      var stack = this.@org.gwtproject.user.client.ui.PrefixTree$PrefixTreeIterator::stack;
       stack.push(frame);
     }-*/;
 
@@ -122,7 +122,7 @@ class PrefixTree extends AbstractCollection<String> {
      * Initialize JSNI objects.
      */
     private native void init() /*-{
-      this.@com.google.gwt.user.client.ui.PrefixTree$PrefixTreeIterator::stack = [];
+      this.@org.gwtproject.user.client.ui.PrefixTree$PrefixTreeIterator::stack = [];
     }-*/;
 
     /**
@@ -133,9 +133,9 @@ class PrefixTree extends AbstractCollection<String> {
      * @return The next object, or null if there is an error
      */
     private native String nextImpl(boolean peek) /*-{
-      var stack = this.@com.google.gwt.user.client.ui.PrefixTree$PrefixTreeIterator::stack;
-      var safe = @com.google.gwt.user.client.ui.PrefixTree::safe(Ljava/lang/String;)
-      var unsafe = @com.google.gwt.user.client.ui.PrefixTree::unsafe(Ljava/lang/String;)
+      var stack = this.@org.gwtproject.user.client.ui.PrefixTree$PrefixTreeIterator::stack;
+      var safe = @org.gwtproject.user.client.ui.PrefixTree::safe(Ljava/lang/String;)
+      var unsafe = @org.gwtproject.user.client.ui.PrefixTree::unsafe(Ljava/lang/String;)
 
       // Put this in a while loop to handle descent into subtrees without recursion.
       while (stack.length > 0) {
@@ -161,7 +161,7 @@ class PrefixTree extends AbstractCollection<String> {
               }
               var target = frame.prefix + unsafe(key);
               var subtree = frame.subtrees[key];
-              this.@com.google.gwt.user.client.ui.PrefixTree$PrefixTreeIterator::addTree(Lcom/google/gwt/user/client/ui/PrefixTree;Ljava/lang/String;)(subtree, target);
+              this.@org.gwtproject.user.client.ui.PrefixTree$PrefixTreeIterator::addTree(Lcom/google/gwt/user/client/ui/PrefixTree;Ljava/lang/String;)(subtree, target);
             }
           }
 
@@ -176,7 +176,7 @@ class PrefixTree extends AbstractCollection<String> {
            var target = frame.prefix + unsafe(key);
            var subtree = frame.subtrees[key];
 
-           this.@com.google.gwt.user.client.ui.PrefixTree$PrefixTreeIterator::addTree(Lcom/google/gwt/user/client/ui/PrefixTree;Ljava/lang/String;)(subtree, target);
+           this.@org.gwtproject.user.client.ui.PrefixTree$PrefixTreeIterator::addTree(Lcom/google/gwt/user/client/ui/PrefixTree;Ljava/lang/String;)(subtree, target);
          }
        }
      }
@@ -292,11 +292,11 @@ class PrefixTree extends AbstractCollection<String> {
   @Override
   public native boolean add(String s) /*-{
     var suffixes =
-        this.@com.google.gwt.user.client.ui.PrefixTree::suffixes;
+        this.@org.gwtproject.user.client.ui.PrefixTree::suffixes;
     var subtrees =
-        this.@com.google.gwt.user.client.ui.PrefixTree::subtrees;
+        this.@org.gwtproject.user.client.ui.PrefixTree::subtrees;
     var prefixLength =
-        this.@com.google.gwt.user.client.ui.PrefixTree::prefixLength;
+        this.@org.gwtproject.user.client.ui.PrefixTree::prefixLength;
 
     // This would indicate a mis-use of the code.
     if ((s == null) || (s.length == 0)) {
@@ -306,12 +306,12 @@ class PrefixTree extends AbstractCollection<String> {
     // Use <= so that strings that are exactly prefixLength long don't
     // require some kind of null token.
     if (s.length <= prefixLength) {
-      var safeKey = @com.google.gwt.user.client.ui.PrefixTree::safe(Ljava/lang/String;)(s);
+      var safeKey = @org.gwtproject.user.client.ui.PrefixTree::safe(Ljava/lang/String;)(s);
       if (suffixes.hasOwnProperty(safeKey)) {
         return false;
       } else {
         // Each tree keeps a count of how large it and its children are.
-        this.@com.google.gwt.user.client.ui.PrefixTree::size++;
+        this.@org.gwtproject.user.client.ui.PrefixTree::size++;
 
         suffixes[safeKey] = true;
         return true;
@@ -319,20 +319,20 @@ class PrefixTree extends AbstractCollection<String> {
 
     // Add the string to the appropriate PrefixTree.
     } else {
-      var prefix = @com.google.gwt.user.client.ui.PrefixTree::safe(Ljava/lang/String;)(s.slice(0, prefixLength));
+      var prefix = @org.gwtproject.user.client.ui.PrefixTree::safe(Ljava/lang/String;)(s.slice(0, prefixLength));
       var theTree;
 
       if (subtrees.hasOwnProperty(prefix)) {
         theTree = subtrees[prefix];
       } else {
-        theTree = @com.google.gwt.user.client.ui.PrefixTree::createPrefixTree(I)(prefixLength << 1);
+        theTree = @org.gwtproject.user.client.ui.PrefixTree::createPrefixTree(I)(prefixLength << 1);
         subtrees[prefix] = theTree;
       }
 
       var slice = s.slice(prefixLength);
-      if (theTree.@com.google.gwt.user.client.ui.PrefixTree::add(Ljava/lang/String;)(slice)) {
+      if (theTree.@org.gwtproject.user.client.ui.PrefixTree::add(Ljava/lang/String;)(slice)) {
         // The size of the subtree increased, so we need to update the local count.
-        this.@com.google.gwt.user.client.ui.PrefixTree::size++;
+        this.@org.gwtproject.user.client.ui.PrefixTree::size++;
         return true;
       } else {
         return false;
@@ -345,9 +345,9 @@ class PrefixTree extends AbstractCollection<String> {
    */
   @Override
   public native void clear() /*-{
-    this.@com.google.gwt.user.client.ui.PrefixTree::size = 0;
-    this.@com.google.gwt.user.client.ui.PrefixTree::subtrees = {};
-    this.@com.google.gwt.user.client.ui.PrefixTree::suffixes = {};
+    this.@org.gwtproject.user.client.ui.PrefixTree::size = 0;
+    this.@org.gwtproject.user.client.ui.PrefixTree::subtrees = {};
+    this.@org.gwtproject.user.client.ui.PrefixTree::suffixes = {};
   }-*/;
 
   @Override
@@ -401,21 +401,21 @@ class PrefixTree extends AbstractCollection<String> {
   protected native void suggestImpl(String search, String prefix,
       Collection<String> output, int limit) /*-{
     var suffixes =
-        this.@com.google.gwt.user.client.ui.PrefixTree::suffixes;
+        this.@org.gwtproject.user.client.ui.PrefixTree::suffixes;
     var subtrees =
-        this.@com.google.gwt.user.client.ui.PrefixTree::subtrees;
+        this.@org.gwtproject.user.client.ui.PrefixTree::subtrees;
     var prefixLength =
-        this.@com.google.gwt.user.client.ui.PrefixTree::prefixLength;
+        this.@org.gwtproject.user.client.ui.PrefixTree::prefixLength;
 
     // Search is too big to be found in current tree, just recurse.
     if (search.length > prefix.length + prefixLength) {
-      var key = @com.google.gwt.user.client.ui.PrefixTree::safe(Ljava/lang/String;)(search.slice(prefix.length, prefix.length + prefixLength));
+      var key = @org.gwtproject.user.client.ui.PrefixTree::safe(Ljava/lang/String;)(search.slice(prefix.length, prefix.length + prefixLength));
 
       // Just pick the correct subtree, if it exists, and call suggestImpl.
       if (subtrees.hasOwnProperty(key)) {
         var subtree = subtrees[key];
-        var target = prefix + @com.google.gwt.user.client.ui.PrefixTree::unsafe(Ljava/lang/String;)(key);
-        subtree.@com.google.gwt.user.client.ui.PrefixTree::suggestImpl(Ljava/lang/String;Ljava/lang/String;Ljava/util/Collection;I)(search, target, output, limit);
+        var target = prefix + @org.gwtproject.user.client.ui.PrefixTree::unsafe(Ljava/lang/String;)(key);
+        subtree.@org.gwtproject.user.client.ui.PrefixTree::suggestImpl(Ljava/lang/String;Ljava/lang/String;Ljava/util/Collection;I)(search, target, output, limit);
       }
 
     // The answer can only exist in this tree's suffixes or subtree keys.
@@ -425,7 +425,7 @@ class PrefixTree extends AbstractCollection<String> {
        if (suffix.indexOf(':') != 0) {
          continue;
        }
-       var target = prefix + @com.google.gwt.user.client.ui.PrefixTree::unsafe(Ljava/lang/String;)(suffix);
+       var target = prefix + @org.gwtproject.user.client.ui.PrefixTree::unsafe(Ljava/lang/String;)(suffix);
        if (target.indexOf(search) == 0) {
          output.@java.util.Collection::add(Ljava/lang/Object;)(target);
        }
@@ -441,7 +441,7 @@ class PrefixTree extends AbstractCollection<String> {
        if (key.indexOf(':') != 0) {
          continue;
        }
-       var target = prefix + @com.google.gwt.user.client.ui.PrefixTree::unsafe(Ljava/lang/String;)(key);
+       var target = prefix + @org.gwtproject.user.client.ui.PrefixTree::unsafe(Ljava/lang/String;)(key);
        var subtree = subtrees[key];
 
        // See if the prefix gives us a match.
@@ -449,24 +449,24 @@ class PrefixTree extends AbstractCollection<String> {
 
          // Provide as many suggestions as will fit into the remaining limit.
          // If there is only one suggestion, include it.
-         if ((subtree.@com.google.gwt.user.client.ui.PrefixTree::size <= limit - output.@java.util.Collection::size()()) ||
-             (subtree.@com.google.gwt.user.client.ui.PrefixTree::size == 1)) {
-           subtree.@com.google.gwt.user.client.ui.PrefixTree::dump(Ljava/util/Collection;Ljava/lang/String;)(output, target);
+         if ((subtree.@org.gwtproject.user.client.ui.PrefixTree::size <= limit - output.@java.util.Collection::size()()) ||
+             (subtree.@org.gwtproject.user.client.ui.PrefixTree::size == 1)) {
+           subtree.@org.gwtproject.user.client.ui.PrefixTree::dump(Ljava/util/Collection;Ljava/lang/String;)(output, target);
 
          // Otherwise, include as many answers as we can by truncating the suffix
          } else {
 
            // Always fully-specify suffixes.
-           for (var suffix in subtree.@com.google.gwt.user.client.ui.PrefixTree::suffixes) {
+           for (var suffix in subtree.@org.gwtproject.user.client.ui.PrefixTree::suffixes) {
              if (suffix.indexOf(':') == 0) {
-               output.@java.util.Collection::add(Ljava/lang/Object;)(target + @com.google.gwt.user.client.ui.PrefixTree::unsafe(Ljava/lang/String;)(suffix));
+               output.@java.util.Collection::add(Ljava/lang/Object;)(target + @org.gwtproject.user.client.ui.PrefixTree::unsafe(Ljava/lang/String;)(suffix));
              }
            }
 
            // Give the keys of the subtree.
-           for (var subkey in subtree.@com.google.gwt.user.client.ui.PrefixTree::subtrees) {
+           for (var subkey in subtree.@org.gwtproject.user.client.ui.PrefixTree::subtrees) {
              if (subkey.indexOf(':') == 0) {
-               output.@java.util.Collection::add(Ljava/lang/Object;)(target + @com.google.gwt.user.client.ui.PrefixTree::unsafe(Ljava/lang/String;)(subkey) + "...");
+               output.@java.util.Collection::add(Ljava/lang/Object;)(target + @org.gwtproject.user.client.ui.PrefixTree::unsafe(Ljava/lang/String;)(subkey) + "...");
              }
            }
          }

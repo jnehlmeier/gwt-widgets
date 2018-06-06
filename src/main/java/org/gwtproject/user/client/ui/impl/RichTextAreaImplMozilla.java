@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui.impl;
+package org.gwtproject.user.client.ui.impl;
 
 /**
  * Mozilla-specific implementation of rich-text editing.
@@ -36,9 +36,9 @@ public class RichTextAreaImplMozilla extends RichTextAreaImplStandard {
     // Mozilla doesn't allow designMode to be set reliably until the iframe is
     // fully loaded.
     var _this = this;
-    var iframe = _this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem;
-    _this.@com.google.gwt.user.client.ui.impl.RichTextAreaImplStandard::onElementInitializing()();
-    _this.@com.google.gwt.user.client.ui.impl.RichTextAreaImplMozilla::isFirstFocus = true;
+    var iframe = _this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem;
+    _this.@org.gwtproject.user.client.ui.impl.RichTextAreaImplStandard::onElementInitializing()();
+    _this.@org.gwtproject.user.client.ui.impl.RichTextAreaImplMozilla::isFirstFocus = true;
 
     iframe.onload = $entry(function() {
       // Some Mozillae have the nasty habit of calling onload again when you set
@@ -65,7 +65,7 @@ public class RichTextAreaImplMozilla extends RichTextAreaImplStandard {
       iframe.contentWindow.onmouseover = iframe.contentWindow.onfocus;
 
       // Send notification that the iframe has finished loading.
-      _this.@com.google.gwt.user.client.ui.impl.RichTextAreaImplStandard::onElementInitialized()();
+      _this.@org.gwtproject.user.client.ui.impl.RichTextAreaImplStandard::onElementInitialized()();
     });
   }-*/;
 
@@ -83,7 +83,7 @@ public class RichTextAreaImplMozilla extends RichTextAreaImplStandard {
    * RichTextArea is initialized. See issue 3503.
    */
   protected native void setFirstFocusImpl() /*-{
-    var elem = this.@com.google.gwt.user.client.ui.impl.RichTextAreaImpl::elem;
+    var elem = this.@org.gwtproject.user.client.ui.impl.RichTextAreaImpl::elem;
     var wnd = elem.contentWindow;
 
     // Remove event listeners so we don't generate extra focus and blur events.

@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.event.dom.client.BlurEvent;
@@ -87,7 +87,7 @@ import java.util.EventListener;
 
 /**
  * Legacy listener support hierarchy for
- * <code>com.google.gwt.user.client.ui</code>. Gathers the bulk of the legacy
+ * <code>org.gwtproject.user.client.ui</code>. Gathers the bulk of the legacy
  * glue code in one place, for easy deletion when Listener methods are deleted.
  *
  *
