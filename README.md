@@ -18,7 +18,7 @@ Commits can be rewritten at any time.
   - `DoubleClickEventSinkTest`
   - `DragAndDropEventsSinkTest`
   - `GestureEventSinkTest`
-  - `MediaEventsSinkTest` (also not part of [gwt-media](https://github.com/vegegoku/gwt-media)
+  - `MediaEventsSinkTest` (also not part of [gwt-media](https://github.com/vegegoku/gwt-media))
   - `TouchEventSinkTest`
 
 ### Blockers - Cyclic dependencies
@@ -26,6 +26,7 @@ Commits can be rewritten at any time.
 - `ValuePicker` in `gwt-widgets` uses `CellList` in `gwt-cell-widgets` which in turn depends on `Composite` in 
 in `gwt-widgets`. 
   - Solution: `ValuePicker` needs to go into `gwt-cell-widgets` as it is technically a cell widget.
+  - see https://github.com/jnehlmeier/gwt-widgets/commit/d184387
 - `com.google.gwt.user.client.TakesValue` needs to exist somewhere.
   - When included in `gwt-widgets` we end up with: `ValueBoxBase` in `gwt-widgets` depends on `ValueBoxEditor` 
   in `gwt-editor` project which in turn depends on `TakesValue` in `gwt-widgets`.
