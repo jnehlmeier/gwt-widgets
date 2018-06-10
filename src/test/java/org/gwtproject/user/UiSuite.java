@@ -101,7 +101,6 @@ import org.gwtproject.user.client.ui.TreeTest;
 import org.gwtproject.user.client.ui.UIObjectTest;
 import org.gwtproject.user.client.ui.ValueBoxBaseTest;
 import org.gwtproject.user.client.ui.ValueListBoxTest;
-import org.gwtproject.user.client.ui.ValuePickerTest;
 import org.gwtproject.user.client.ui.VerticalPanelTest;
 import org.gwtproject.user.client.ui.VerticalSplitPanelTest;
 import org.gwtproject.user.client.ui.WidgetCollectionTest;
@@ -213,7 +212,6 @@ public class UiSuite {
     suite.addTestSuite(UIObjectTest.class);
     suite.addTestSuite(ValueBoxBaseTest.class);
     suite.addTestSuite(ValueListBoxTest.class);
-    suite.addTestSuite(ValuePickerTest.class);
     suite.addTestSuite(VerticalPanelTest.class);
     suite.addTestSuite(VerticalSplitPanelTest.class);
     suite.addTestSuite(WidgetCollectionTest.class);
