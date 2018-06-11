@@ -32,6 +32,8 @@ in `gwt-widgets`.
   in `gwt-editor` project which in turn depends on `TakesValue` in `gwt-widgets`.
 - `ScrollPanel` in `gwt-widgets` depends on `TouchScroller` in an imaginary `gwt-touch` project which in turn depends 
 on `HasScrolling` in `gwt-widgets`.
+  - `com.google.gwt.touch.*` included in `gwt-widgets`. `HasScrolling` extends `IsWidget` which makes it tougher
+  to create a separate project `gwt-touch` without circular dependency to `gwt-widgets`.
 - `Label` in `gwt-widgets` depends on `HasTextEditor` in `gwt-editor` project which in turn depends on `HasText` 
 in `gwt-widgets`.
 
