@@ -18,7 +18,7 @@ package org.gwtproject.user.client.ui;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.editor.client.IsEditor;
-import com.google.gwt.editor.ui.client.adapters.ValueBoxEditor;
+import org.gwtproject.editor.ui.client.adapters.ValueBoxEditor;
 import com.google.gwt.event.dom.client.ChangeEvent;
 import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.HasChangeHandlers;

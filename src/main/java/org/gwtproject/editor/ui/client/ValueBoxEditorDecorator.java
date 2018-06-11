@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.editor.ui.client;
+package org.gwtproject.editor.ui.client;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.DivElement;
@@ -21,15 +21,15 @@ import com.google.gwt.dom.client.Style.Display;
 import com.google.gwt.editor.client.EditorError;
 import com.google.gwt.editor.client.HasEditorErrors;
 import com.google.gwt.editor.client.IsEditor;
-import com.google.gwt.editor.ui.client.adapters.ValueBoxEditor;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiChild;
 import com.google.gwt.uibinder.client.UiConstructor;
 import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.user.client.ui.Composite;
-import com.google.gwt.user.client.ui.SimplePanel;
-import com.google.gwt.user.client.ui.ValueBoxBase;
-import com.google.gwt.user.client.ui.Widget;
+import org.gwtproject.user.client.ui.Composite;
+import org.gwtproject.user.client.ui.SimplePanel;
+import org.gwtproject.user.client.ui.ValueBoxBase;
+import org.gwtproject.user.client.ui.Widget;
+import org.gwtproject.editor.ui.client.adapters.ValueBoxEditor;
 
 import java.util.List;
 

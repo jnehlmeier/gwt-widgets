@@ -19,4 +19,4 @@
  *
  * @since GWT 2.1
  */
-package com.google.gwt.editor.ui.client.adapters;
+package org.gwtproject.editor.ui.client.adapters;

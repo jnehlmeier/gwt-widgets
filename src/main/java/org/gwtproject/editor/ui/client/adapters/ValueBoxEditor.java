@@ -13,12 +13,12 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.editor.ui.client.adapters;
+package org.gwtproject.editor.ui.client.adapters;
 
 import com.google.gwt.editor.client.EditorDelegate;
 import com.google.gwt.editor.client.HasEditorDelegate;
 import com.google.gwt.editor.client.adapters.TakesValueEditor;
-import com.google.gwt.user.client.ui.ValueBoxBase;
+import org.gwtproject.user.client.ui.ValueBoxBase;
 
 import java.text.ParseException;
 
