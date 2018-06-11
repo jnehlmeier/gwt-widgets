@@ -13,9 +13,9 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.touch.client;
+package org.gwtproject.touch.client;
 
-import com.google.gwt.touch.client.Momentum.State;
+import org.gwtproject.touch.client.Momentum.State;
 
 import junit.framework.TestCase;
 

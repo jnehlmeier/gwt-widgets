@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.touch.client;
+package org.gwtproject.touch.client;
 
 import com.google.gwt.core.client.Duration;
 import com.google.gwt.core.client.JsArray;
@@ -34,12 +34,12 @@ import com.google.gwt.event.logical.shared.AttachEvent;
 import com.google.gwt.event.logical.shared.ResizeEvent;
 import com.google.gwt.event.logical.shared.ResizeHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
-import com.google.gwt.touch.client.Momentum.State;
+import org.gwtproject.touch.client.Momentum.State;
 import com.google.gwt.user.client.Event;
 import com.google.gwt.user.client.Event.NativePreviewEvent;
 import com.google.gwt.user.client.Event.NativePreviewHandler;
 import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.ui.HasScrolling;
+import org.gwtproject.user.client.ui.HasScrolling;
 
 import java.util.ArrayList;
 import java.util.Iterator;

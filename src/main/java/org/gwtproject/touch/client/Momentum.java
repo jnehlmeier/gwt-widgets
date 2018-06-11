@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.touch.client;
+package org.gwtproject.touch.client;
 
 /**
  * Describes the momentum of a gesture after the gesture has been completed. You

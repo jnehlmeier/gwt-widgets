@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.touch.client;
+package org.gwtproject.touch.client;
 
 /**
  * Default implementation of momentum.

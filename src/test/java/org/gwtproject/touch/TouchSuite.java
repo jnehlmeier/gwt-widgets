@@ -14,12 +14,12 @@
  * the License.
  */
 
-package com.google.gwt.touch;
+package org.gwtproject.touch;
 
 import com.google.gwt.junit.tools.GWTTestSuite;
-import com.google.gwt.touch.client.DefaultMomentumTest;
-import com.google.gwt.touch.client.PointTest;
-import com.google.gwt.touch.client.TouchScrollTest;
+import org.gwtproject.touch.client.DefaultMomentumTest;
+import org.gwtproject.touch.client.PointTest;
+import org.gwtproject.touch.client.TouchScrollTest;
 
 import junit.framework.Test;
 

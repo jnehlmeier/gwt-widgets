@@ -22,7 +22,7 @@ import com.google.gwt.dom.client.Style.Position;
 import com.google.gwt.event.dom.client.ScrollEvent;
 import com.google.gwt.event.dom.client.ScrollHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
-import com.google.gwt.touch.client.TouchScroller;
+import org.gwtproject.touch.client.TouchScroller;
 import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.Event;
 

@@ -1,0 +1,7 @@
+<module>
+
+    <inherits name="org.gwtproject.user.datepicker.DatePicker" />
+    <inherits name="org.gwtproject.canvas.Canvas" />
+
+    <source path="client" />
+</module>

@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.touch.client;
+package org.gwtproject.touch.client;
 
 import com.google.gwt.core.client.Duration;
 import com.google.gwt.core.client.Scheduler.RepeatingCommand;
@@ -22,11 +22,11 @@ import com.google.gwt.dom.client.Touch;
 import com.google.gwt.event.dom.client.TouchEvent;
 import com.google.gwt.event.dom.client.TouchStartEvent;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.touch.client.TouchScroller.TemporalPoint;
-import com.google.gwt.user.client.ui.HasScrolling;
-import com.google.gwt.user.client.ui.Label;
-import com.google.gwt.user.client.ui.RootPanel;
-import com.google.gwt.user.client.ui.ScrollPanel;
+import org.gwtproject.touch.client.TouchScroller.TemporalPoint;
+import org.gwtproject.user.client.ui.HasScrolling;
+import org.gwtproject.user.client.ui.Label;
+import org.gwtproject.user.client.ui.RootPanel;
+import org.gwtproject.user.client.ui.ScrollPanel;
 
 /**
  * Tests for {@link TouchScroller}.
@@ -277,7 +277,7 @@ public class TouchScrollTest extends GWTTestCase {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.touch.Touch";
+    return "org.gwtproject.touch.Touch";
   }
 
   public void testCalculateEndVlocity() {
