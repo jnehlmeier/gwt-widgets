@@ -16,6 +16,9 @@
 package org.gwtproject.user;
 
 import com.google.gwt.junit.tools.GWTTestSuite;
+import com.google.gwt.user.client.*;
+import com.google.gwt.user.client.ui.DOMRtlTest;
+import com.google.gwt.user.client.ui.DOMTest;
 import org.gwtproject.user.client.CustomEventsTest;
 import org.gwtproject.user.client.ui.AbsolutePanelTest;
 import org.gwtproject.user.client.ui.AnchorTest;
@@ -153,9 +156,12 @@ public class UiSuite {
     suite.addTestSuite(DockLayoutPanelRtlTest.class);
     suite.addTestSuite(DockLayoutPanelTest.class);
     suite.addTestSuite(DockPanelTest.class);
-    //suite.addTestSuite(DOMTest.class);
-    //suite.addTestSuite(DOMRtlTest.class);
+    suite.addTestSuite(DOMTest.class);
+    suite.addTestSuite(DOMRtlTest.class);
+    suite.addTestSuite(DoubleClickEventSinkTest.class);
+    suite.addTestSuite(DragAndDropEventsSinkTest.class);
     suite.addTestSuite(ElementWrappingTest.class);
+    suite.addTestSuite(EventTest.class);
     suite.addTestSuite(FileUploadTest.class);
     suite.addTestSuite(FiniteWidgetIteratorTest.class);
     suite.addTestSuite(FlexTableTest.class);
@@ -163,6 +169,7 @@ public class UiSuite {
     suite.addTestSuite(FocusImplTest.class);
     suite.addTestSuite(FocusPanelTest.class);
     suite.addTestSuite(FormPanelTest.class);
+    suite.addTestSuite(GestureEventSinkTest.class);
     suite.addTestSuite(GridTest.class);
     suite.addTestSuite(HeaderPanelTest.class);
     suite.addTestSuite(HiddenTest.class);
@@ -207,6 +214,7 @@ public class UiSuite {
     suite.addTestSuite(TabLayoutPanelTest.class);
     suite.addTestSuite(TabPanelTest.class);
     suite.addTestSuite(TextAreaTest.class);
+    suite.addTestSuite(TouchEventSinkTest.class);
     suite.addTestSuite(TreeTest.class);
     suite.addTestSuite(TreeItemTest.class);
     suite.addTestSuite(UIObjectTest.class);
