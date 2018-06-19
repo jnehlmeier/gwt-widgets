@@ -129,6 +129,7 @@ public class UiSuite {
     suite.addTestSuite(UIObjectTest.class);
     suite.addTestSuite(ValueBoxBaseTest.class);
     suite.addTestSuite(ValueListBoxTest.class);
+    suite.addTestSuite(ValuePickerTest.class);
     suite.addTestSuite(VerticalPanelTest.class);
     suite.addTestSuite(VerticalSplitPanelTest.class);
     suite.addTestSuite(WidgetCollectionTest.class);
