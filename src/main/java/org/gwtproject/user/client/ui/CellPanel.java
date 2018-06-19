@@ -16,6 +16,7 @@
 package org.gwtproject.user.client.ui;
 
 import com.google.gwt.dom.client.Element;
+import org.gwtproject.cell.client.Cell;
 import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant;
 import org.gwtproject.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant;
@@ -27,9 +28,9 @@ import org.gwtproject.user.client.ui.HasVerticalAlignment.VerticalAlignmentConst
  * 
  * <p>
  * Note: This class is not related to the
- * {@link com.google.gwt.cell.client.Cell} based data presentation widgets such
- * as {@link com.google.gwt.user.cellview.client.CellList} and
- * {@link com.google.gwt.user.cellview.client.CellTable}.
+ * {@link Cell} based data presentation widgets such
+ * as {@link org.gwtproject.user.cellview.client.CellList} and
+ * {@link org.gwtproject.user.cellview.client.CellTable}.
  * 
  * <h3>Use in UiBinder Templates</h3>
  * <P>

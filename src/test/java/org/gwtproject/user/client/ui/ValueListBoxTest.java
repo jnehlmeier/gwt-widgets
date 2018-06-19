@@ -18,8 +18,8 @@ package org.gwtproject.user.client.ui;
 import com.google.gwt.dom.client.SelectElement;
 import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.text.shared.AbstractRenderer;
-import com.google.gwt.view.client.ProvidesKey;
-import com.google.gwt.view.client.SimpleKeyProvider;
+import org.gwtproject.view.client.ProvidesKey;
+import org.gwtproject.view.client.SimpleKeyProvider;
 
 import java.util.Arrays;
 

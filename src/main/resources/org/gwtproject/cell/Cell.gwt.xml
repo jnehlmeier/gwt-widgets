@@ -14,11 +14,12 @@
   the License.
 -->
 <module>
-   <inherits name="org.gwtproject.cell.Cell"/>
-   <source path="client"/>
+  <inherits name="com.google.gwt.dom.DOM"/>
+  <inherits name="com.google.gwt.safehtml.SafeHtml"/>
+  <inherits name="com.google.gwt.text.Text"/>
 
-   <!-- force the tests to use en_US -->
-   <inherits name="com.google.gwt.i18n.I18N"/>
-   <extend-property name="locale" values="en_US"/>
-   <set-property name="locale" value="en_US"/>
+  <inherits name="org.gwtproject.cell.TextButtonCell"/>
+
+  <source path="client"/>
+  <public path="public" />
 </module>

@@ -1,5 +1,5 @@
 <!--
-  Copyright 2010 Google Inc.
+  Copyright 2011 Google Inc.
 
   Licensed under the Apache License, Version 2.0 (the "License"); you may not
   use this file except in compliance with the License. You may obtain a copy of
@@ -14,11 +14,13 @@
   the License.
 -->
 <module>
-   <inherits name="org.gwtproject.cell.Cell"/>
-   <source path="client"/>
+  <inherits name="com.google.gwt.dom.DOM"/>
+  <inherits name="com.google.gwt.safehtml.SafeHtml"/>
+  <inherits name="com.google.gwt.text.Text"/>
 
-   <!-- force the tests to use en_US -->
-   <inherits name="com.google.gwt.i18n.I18N"/>
-   <extend-property name="locale" values="en_US"/>
-   <set-property name="locale" value="en_US"/>
+  <replace-with class="org.gwtproject.cell.client.TextButtonCell.DefaultAppearance">
+    <when-type-is class="org.gwtproject.cell.client.TextButtonCell.Appearance" />
+  </replace-with>
+
+  <source path="client"/>
 </module>

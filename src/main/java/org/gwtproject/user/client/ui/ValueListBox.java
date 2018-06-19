@@ -24,8 +24,8 @@ import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.text.shared.Renderer;
 import com.google.gwt.text.shared.ToStringRenderer;
-import com.google.gwt.view.client.ProvidesKey;
-import com.google.gwt.view.client.SimpleKeyProvider;
+import org.gwtproject.view.client.ProvidesKey;
+import org.gwtproject.view.client.SimpleKeyProvider;
 
 import java.util.ArrayList;
 import java.util.Collection;
