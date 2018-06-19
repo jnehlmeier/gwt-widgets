@@ -18,7 +18,7 @@ package org.gwtproject.media.client;
 import com.google.gwt.dom.client.MediaElement;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
-import com.google.gwt.user.client.ui.RootPanel;
+import org.gwtproject.user.client.ui.RootPanel;
 
 /**
  * Tests {@link org.gwtproject.media.client.Audio}.

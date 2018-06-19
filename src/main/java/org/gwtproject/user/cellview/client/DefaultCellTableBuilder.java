@@ -20,8 +20,8 @@ import com.google.gwt.dom.builder.shared.DivBuilder;
 import com.google.gwt.dom.builder.shared.TableCellBuilder;
 import com.google.gwt.dom.builder.shared.TableRowBuilder;
 import com.google.gwt.dom.client.Style.OutlineStyle;
-import com.google.gwt.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant;
-import com.google.gwt.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant;
+import org.gwtproject.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant;
+import org.gwtproject.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant;
 import org.gwtproject.view.client.SelectionModel;
 
 /**

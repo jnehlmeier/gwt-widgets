@@ -20,8 +20,8 @@ import com.google.gwt.event.dom.client.*;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.media.client.Audio;
 import org.gwtproject.media.client.Video;
-import com.google.gwt.user.client.ui.RootPanel;
-import com.google.gwt.user.client.ui.Widget;
+import org.gwtproject.user.client.ui.RootPanel;
+import org.gwtproject.user.client.ui.Widget;
 
 /**
  * Test Case for sinking of media events.

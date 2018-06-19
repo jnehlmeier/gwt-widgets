@@ -20,9 +20,9 @@ import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.NativeEvent;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
-import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.EventListener;
+import org.gwtproject.user.client.DOM;
+import org.gwtproject.user.client.Event;
+import org.gwtproject.user.client.EventListener;
 
 /**
  * Base class for testing {@link org.gwtproject.cell.client.AbstractEditableCell}s that can be modified.

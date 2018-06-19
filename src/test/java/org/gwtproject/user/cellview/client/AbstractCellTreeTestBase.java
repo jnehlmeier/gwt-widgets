@@ -24,7 +24,7 @@ import com.google.gwt.event.logical.shared.OpenEvent;
 import com.google.gwt.event.logical.shared.OpenHandler;
 import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
-import com.google.gwt.user.client.ui.RootPanel;
+import org.gwtproject.user.client.ui.RootPanel;
 import org.gwtproject.view.client.ListDataProvider;
 import org.gwtproject.view.client.MultiSelectionModel;
 import org.gwtproject.view.client.ProvidesKey;

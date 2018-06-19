@@ -27,9 +27,9 @@ import com.google.gwt.resources.client.ImageResource;
 import org.gwtproject.user.cellview.client.AbstractHasData.RedrawEvent.Handler;
 import org.gwtproject.user.cellview.client.CellTable.Resources;
 import org.gwtproject.user.cellview.client.CellTable.Style;
-import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.ui.RootPanel;
-import com.google.gwt.user.client.ui.Widget;
+import org.gwtproject.user.client.DOM;
+import org.gwtproject.user.client.ui.RootPanel;
+import org.gwtproject.user.client.ui.Widget;
 
 import java.util.Locale;
 

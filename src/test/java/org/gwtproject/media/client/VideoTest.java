@@ -20,7 +20,7 @@ import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 import com.google.gwt.media.dom.client.MediaError;
 import com.google.gwt.user.client.Timer;
-import com.google.gwt.user.client.ui.RootPanel;
+import org.gwtproject.user.client.ui.RootPanel;
 
 /**
  * Tests {@link org.gwtproject.media.client.Video}.

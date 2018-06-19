@@ -29,9 +29,9 @@ import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.resources.client.CommonResources;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
-import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.ui.HasValue;
-import com.google.gwt.user.client.ui.Widget;
+import org.gwtproject.user.client.Event;
+import org.gwtproject.user.client.ui.HasValue;
+import org.gwtproject.user.client.ui.Widget;
 import org.gwtproject.view.client.HasKeyProvider;
 import org.gwtproject.view.client.ProvidesKey;
 

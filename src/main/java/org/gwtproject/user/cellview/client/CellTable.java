@@ -35,10 +35,10 @@ import com.google.gwt.resources.client.ImageResource.RepeatStyle;
 import org.gwtproject.user.cellview.client.CellBasedWidgetImpl;
 import org.gwtproject.user.cellview.client.Header;
 import org.gwtproject.user.cellview.client.LoadingStateChangeEvent.LoadingState;
-import com.google.gwt.user.client.ui.DeckPanel;
-import com.google.gwt.user.client.ui.Image;
-import com.google.gwt.user.client.ui.SimplePanel;
-import com.google.gwt.user.client.ui.Widget;
+import org.gwtproject.user.client.ui.DeckPanel;
+import org.gwtproject.user.client.ui.Image;
+import org.gwtproject.user.client.ui.SimplePanel;
+import org.gwtproject.user.client.ui.Widget;
 import org.gwtproject.view.client.ProvidesKey;
 import org.gwtproject.cell.client.Cell;
 

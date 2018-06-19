@@ -22,7 +22,7 @@ import com.google.gwt.event.dom.client.*;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.media.dom.client.MediaError;
 import com.google.gwt.media.dom.client.TimeRanges;
-import com.google.gwt.user.client.ui.FocusWidget;
+import org.gwtproject.user.client.ui.FocusWidget;
 
 /**
  * <p>

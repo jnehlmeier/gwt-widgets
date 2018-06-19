@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.cell.client.AbstractCell;
+import org.gwtproject.cell.client.AbstractCell;
 import com.google.gwt.editor.client.IsEditor;
 import com.google.gwt.editor.client.LeafValueEditor;
 import com.google.gwt.editor.client.adapters.TakesValueEditor;
@@ -25,9 +25,9 @@ import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
 import com.google.gwt.text.shared.Renderer;
 import com.google.gwt.text.shared.ToStringRenderer;
-import com.google.gwt.user.cellview.client.CellList;
-import com.google.gwt.view.client.SelectionChangeEvent;
-import com.google.gwt.view.client.SingleSelectionModel;
+import org.gwtproject.user.cellview.client.CellList;
+import org.gwtproject.view.client.SelectionChangeEvent;
+import org.gwtproject.view.client.SingleSelectionModel;
 
 import java.util.ArrayList;
 import java.util.Collection;

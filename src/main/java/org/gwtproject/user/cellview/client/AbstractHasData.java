@@ -33,12 +33,12 @@ import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.user.cellview.client.LoadingStateChangeEvent.LoadingState;
-import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.ui.Composite;
-import com.google.gwt.user.client.ui.Focusable;
-import com.google.gwt.user.client.ui.Widget;
-import com.google.gwt.user.client.ui.impl.FocusImpl;
+import org.gwtproject.user.client.DOM;
+import org.gwtproject.user.client.Event;
+import org.gwtproject.user.client.ui.Composite;
+import org.gwtproject.user.client.ui.Focusable;
+import org.gwtproject.user.client.ui.Widget;
+import org.gwtproject.user.client.ui.impl.FocusImpl;
 import org.gwtproject.view.client.CellPreviewEvent;
 import org.gwtproject.view.client.DefaultSelectionEventManager;
 import org.gwtproject.view.client.HasData;
@@ -1246,7 +1246,7 @@ public abstract class AbstractHasData<T> extends Composite implements HasData<T>
    * @param child the child to adopt
    */
   native void adopt(Widget child) /*-{
-    child.@com.google.gwt.user.client.ui.Widget::setParent(Lcom/google/gwt/user/client/ui/Widget;)(this);
+    child.@org.gwtproject.user.client.ui.Widget::setParent(Lcom/google/gwt/user/client/ui/Widget;)(this);
   }-*/;
 
   /**
@@ -1255,7 +1255,7 @@ public abstract class AbstractHasData<T> extends Composite implements HasData<T>
    * @param child the child to attach
    */
   native void doAttach(Widget child) /*-{
-    child.@com.google.gwt.user.client.ui.Widget::onAttach()();
+    child.@org.gwtproject.user.client.ui.Widget::onAttach()();
   }-*/;
 
   /**
@@ -1264,7 +1264,7 @@ public abstract class AbstractHasData<T> extends Composite implements HasData<T>
    * @param child the child to detach
    */
   native void doDetach(Widget child) /*-{
-    child.@com.google.gwt.user.client.ui.Widget::onDetach()();
+    child.@org.gwtproject.user.client.ui.Widget::onDetach()();
   }-*/;
 
   HasDataPresenter<T> getPresenter() {

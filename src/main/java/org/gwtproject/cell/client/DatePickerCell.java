@@ -26,11 +26,11 @@ import com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
 import com.google.gwt.text.shared.SafeHtmlRenderer;
 import com.google.gwt.text.shared.SimpleSafeHtmlRenderer;
-import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.Event.NativePreviewEvent;
-import com.google.gwt.user.client.ui.PopupPanel;
-import com.google.gwt.user.client.ui.PopupPanel.PositionCallback;
-import com.google.gwt.user.datepicker.client.DatePicker;
+import org.gwtproject.user.client.Event;
+import org.gwtproject.user.client.Event.NativePreviewEvent;
+import org.gwtproject.user.client.ui.PopupPanel;
+import org.gwtproject.user.client.ui.PopupPanel.PositionCallback;
+import org.gwtproject.user.datepicker.client.DatePicker;
 
 import java.util.Date;
 

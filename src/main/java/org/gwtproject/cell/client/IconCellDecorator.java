@@ -27,9 +27,9 @@ import com.google.gwt.safehtml.client.SafeHtmlTemplates;
 import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
 import com.google.gwt.safehtml.shared.SafeHtmlUtils;
-import com.google.gwt.user.client.ui.AbstractImagePrototype;
-import com.google.gwt.user.client.ui.HasVerticalAlignment;
-import com.google.gwt.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant;
+import org.gwtproject.user.client.ui.AbstractImagePrototype;
+import org.gwtproject.user.client.ui.HasVerticalAlignment;
+import org.gwtproject.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant;
 
 import java.util.Set;
 

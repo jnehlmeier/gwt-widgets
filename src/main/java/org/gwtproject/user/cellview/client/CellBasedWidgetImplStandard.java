@@ -19,10 +19,10 @@ import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.dom.client.BrowserEvents;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.EventTarget;
-import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.EventListener;
-import com.google.gwt.user.client.ui.Widget;
+import org.gwtproject.user.client.DOM;
+import org.gwtproject.user.client.Event;
+import org.gwtproject.user.client.EventListener;
+import org.gwtproject.user.client.ui.Widget;
 
 import java.util.HashSet;
 import java.util.Set;

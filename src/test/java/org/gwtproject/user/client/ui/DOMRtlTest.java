@@ -20,7 +20,7 @@ import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.user.client.ui.RootPanel;
+import org.gwtproject.user.client.ui.RootPanel;
 import org.gwtproject.user.client.DOM;
 
 /**
@@ -41,7 +41,7 @@ public class DOMRtlTest extends GWTTestCase {
   @DoNotRunWith({Platform.HtmlUnitBug})
   public void testGetAbsolutePositionWhenScrolled() {
     // Force the document body into RTL mode.
-    com.google.gwt.user.client.ui.RootPanel.get();
+    org.gwtproject.user.client.ui.RootPanel.get();
 
     assertTrue(LocaleInfo.getCurrentLocale().isRTL());
     final Element outer = DOM.createDiv();
@@ -54,7 +54,7 @@ public class DOMRtlTest extends GWTTestCase {
     outer.getStyle().setPropertyPx("left", 100);
     outer.getStyle().setPropertyPx("width", 200);
     outer.getStyle().setPropertyPx("height", 200);
-    com.google.gwt.user.client.ui.RootPanel.getBodyElement().appendChild(outer);
+    org.gwtproject.user.client.ui.RootPanel.getBodyElement().appendChild(outer);
 
     // Create a static positioned inner element
     inner.getStyle().setPropertyPx("width", 300);

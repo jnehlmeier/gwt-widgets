@@ -16,7 +16,7 @@
 package org.gwtproject.user.cellview.client;
 
 import com.google.gwt.event.shared.HandlerRegistration;
-import com.google.gwt.user.client.ui.Composite;
+import org.gwtproject.user.client.ui.Composite;
 import org.gwtproject.view.client.HasRows;
 import org.gwtproject.view.client.Range;
 import org.gwtproject.view.client.RangeChangeEvent;

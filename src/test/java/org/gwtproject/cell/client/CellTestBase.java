@@ -21,9 +21,9 @@ import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.NativeEvent;
 import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
-import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.EventListener;
+import org.gwtproject.user.client.DOM;
+import org.gwtproject.user.client.Event;
+import org.gwtproject.user.client.EventListener;
 
 import java.util.Set;
 

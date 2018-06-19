@@ -22,8 +22,8 @@ import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.user.client.Event.NativePreviewEvent;
 import org.gwtproject.user.client.Event.NativePreviewHandler;
-import com.google.gwt.user.client.ui.Label;
-import com.google.gwt.user.client.ui.RootPanel;
+import org.gwtproject.user.client.ui.Label;
+import org.gwtproject.user.client.ui.RootPanel;
 
 /**
  * Test Case for {@link org.gwtproject.user.client.Event}.

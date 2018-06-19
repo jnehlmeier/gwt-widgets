@@ -21,7 +21,7 @@ package org.gwtproject.user.client;
  * {@link DOM#setEventListener(Element, EventListener)}.
  * 
  * <p>
- * Only subclasses of {@link com.google.gwt.user.client.ui.Widget} should
+ * Only subclasses of {@link org.gwtproject.user.client.ui.Widget} should
  * attempt to listen to browser events.
  * </p>
  */

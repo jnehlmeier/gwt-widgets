@@ -19,8 +19,8 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.uibinder.client.UiConstructor;
 import org.gwtproject.user.cellview.client.AbstractPager;
-import com.google.gwt.user.client.ui.Anchor;
-import com.google.gwt.user.client.ui.FlexTable;
+import org.gwtproject.user.client.ui.Anchor;
+import org.gwtproject.user.client.ui.FlexTable;
 import org.gwtproject.view.client.HasRows;
 import org.gwtproject.view.client.Range;
 

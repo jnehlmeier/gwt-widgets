@@ -27,11 +27,11 @@ import com.google.gwt.resources.client.CssResource;
 import com.google.gwt.resources.client.ImageResource;
 import com.google.gwt.resources.client.ImageResource.ImageOptions;
 import com.google.gwt.uibinder.client.UiConstructor;
-import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.ui.HTML;
-import com.google.gwt.user.client.ui.HasVerticalAlignment;
-import com.google.gwt.user.client.ui.HorizontalPanel;
-import com.google.gwt.user.client.ui.Image;
+import org.gwtproject.user.client.Event;
+import org.gwtproject.user.client.ui.HTML;
+import org.gwtproject.user.client.ui.HasVerticalAlignment;
+import org.gwtproject.user.client.ui.HorizontalPanel;
+import org.gwtproject.user.client.ui.Image;
 import org.gwtproject.view.client.HasRows;
 import org.gwtproject.view.client.Range;
 

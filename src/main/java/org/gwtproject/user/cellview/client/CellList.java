@@ -38,12 +38,12 @@ import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
 import com.google.gwt.safehtml.shared.SafeHtmlUtils;
 import org.gwtproject.user.cellview.client.LoadingStateChangeEvent.LoadingState;
-import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.ui.AttachDetachException;
-import com.google.gwt.user.client.ui.DeckPanel;
-import com.google.gwt.user.client.ui.HTML;
-import com.google.gwt.user.client.ui.SimplePanel;
-import com.google.gwt.user.client.ui.Widget;
+import org.gwtproject.user.client.Event;
+import org.gwtproject.user.client.ui.AttachDetachException;
+import org.gwtproject.user.client.ui.DeckPanel;
+import org.gwtproject.user.client.ui.HTML;
+import org.gwtproject.user.client.ui.SimplePanel;
+import org.gwtproject.user.client.ui.Widget;
 import org.gwtproject.view.client.CellPreviewEvent;
 import org.gwtproject.view.client.ProvidesKey;
 import org.gwtproject.view.client.SelectionModel;
@@ -288,7 +288,7 @@ public class CellList<T> extends AbstractHasData<T> {
    * @param html the message to display when there are no results
    * @see #getEmptyListMessage()
    * @deprecated as of GWT 2.3, use
-   *             {@link #setEmptyListWidget(com.google.gwt.user.client.ui.Widget)}
+   *             {@link #setEmptyListWidget(org.gwtproject.user.client.ui.Widget)}
    *             instead
    */
   @Deprecated

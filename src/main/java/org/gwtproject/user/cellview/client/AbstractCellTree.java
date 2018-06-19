@@ -22,7 +22,7 @@ import com.google.gwt.event.logical.shared.HasOpenHandlers;
 import com.google.gwt.event.logical.shared.OpenEvent;
 import com.google.gwt.event.logical.shared.OpenHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
-import com.google.gwt.user.client.ui.Composite;
+import org.gwtproject.user.client.ui.Composite;
 import org.gwtproject.view.client.TreeViewModel;
 import org.gwtproject.view.client.TreeViewModel.NodeInfo;
 import org.gwtproject.cell.client.Cell;

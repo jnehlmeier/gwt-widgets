@@ -23,7 +23,7 @@ import org.gwtproject.cell.client.ValueUpdater;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.NativeEvent;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
-import com.google.gwt.user.client.ui.HasAlignment;
+import org.gwtproject.user.client.ui.HasAlignment;
 
 /**
  * A representation of a column in a table.

@@ -3,9 +3,9 @@ package org.gwtproject.user.client.ui;
 import com.google.gwt.event.dom.client.LoadEvent;
 import com.google.gwt.event.dom.client.LoadHandler;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.ui.Frame;
-import com.google.gwt.user.client.ui.RootPanel;
+import org.gwtproject.user.client.Event;
+import org.gwtproject.user.client.ui.Frame;
+import org.gwtproject.user.client.ui.RootPanel;
 
 public class FrameTest extends GWTTestCase {
 
@@ -19,7 +19,7 @@ public class FrameTest extends GWTTestCase {
   public void testOnLoadEventFiresWithBrowerEvent() {
     delayTestFinish(FRAME_LOAD_DELAY);
 
-    com.google.gwt.user.client.ui.Frame frame = new com.google.gwt.user.client.ui.Frame() {
+    org.gwtproject.user.client.ui.Frame frame = new org.gwtproject.user.client.ui.Frame() {
       @Override
       public void onBrowserEvent(Event event) {
         if (event.getTypeInt() == Event.ONLOAD) {
@@ -30,14 +30,14 @@ public class FrameTest extends GWTTestCase {
     };
 
     frame.sinkEvents(Event.ONLOAD);
-    com.google.gwt.user.client.ui.RootPanel.get().add(frame);
+    org.gwtproject.user.client.ui.RootPanel.get().add(frame);
     frame.setUrl("iframetest.html");
   }
 
   public void testOnLoadEventFiresWithLoadHandler() {
     delayTestFinish(FRAME_LOAD_DELAY);
 
-    com.google.gwt.user.client.ui.Frame frame = new com.google.gwt.user.client.ui.Frame();
+    org.gwtproject.user.client.ui.Frame frame = new org.gwtproject.user.client.ui.Frame();
     frame.addLoadHandler(new LoadHandler() {
       @Override
       public void onLoad(LoadEvent event) {
@@ -45,14 +45,14 @@ public class FrameTest extends GWTTestCase {
       }
     });
 
-    com.google.gwt.user.client.ui.RootPanel.get().add(frame);
+    org.gwtproject.user.client.ui.RootPanel.get().add(frame);
     frame.setUrl("iframetest.html");
   }
 
   public void testOnLoadEventFiresWithDomLoadHandler() {
     delayTestFinish(FRAME_LOAD_DELAY);
 
-    com.google.gwt.user.client.ui.Frame frame = new Frame() {
+    org.gwtproject.user.client.ui.Frame frame = new Frame() {
       {
         addDomHandler(new LoadHandler() {
           @Override

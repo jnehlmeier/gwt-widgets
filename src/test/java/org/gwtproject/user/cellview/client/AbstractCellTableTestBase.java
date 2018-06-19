@@ -32,10 +32,10 @@ import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.user.cellview.client.AbstractHasData.DefaultKeyboardSelectionHandler;
 import org.gwtproject.user.cellview.client.HasKeyboardPagingPolicy.KeyboardPagingPolicy;
 import org.gwtproject.user.cellview.client.LoadingStateChangeEvent.LoadingState;
-import com.google.gwt.user.client.ui.HasHorizontalAlignment;
-import com.google.gwt.user.client.ui.HasVerticalAlignment;
-import com.google.gwt.user.client.ui.Label;
-import com.google.gwt.user.client.ui.RootPanel;
+import org.gwtproject.user.client.ui.HasHorizontalAlignment;
+import org.gwtproject.user.client.ui.HasVerticalAlignment;
+import org.gwtproject.user.client.ui.Label;
+import org.gwtproject.user.client.ui.RootPanel;
 import org.gwtproject.view.client.Range;
 
 import java.util.ArrayList;

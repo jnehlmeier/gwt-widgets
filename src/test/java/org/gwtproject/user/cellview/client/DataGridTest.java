@@ -25,7 +25,7 @@ import org.gwtproject.user.cellview.client.DataGrid;
 import org.gwtproject.user.cellview.client.DataGrid.Resources;
 import org.gwtproject.user.cellview.client.FooterBuilder;
 import org.gwtproject.user.cellview.client.HeaderBuilder;
-import com.google.gwt.user.client.ui.RootPanel;
+import org.gwtproject.user.client.ui.RootPanel;
 
 /**
  * Tests for {@link DataGrid}.

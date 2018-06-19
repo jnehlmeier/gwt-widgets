@@ -36,11 +36,11 @@ import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
 import com.google.gwt.safehtml.shared.SafeHtmlUtils;
 import com.google.gwt.text.shared.SafeHtmlRenderer;
-import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.Event.NativePreviewEvent;
-import com.google.gwt.user.client.Event.NativePreviewHandler;
-import com.google.gwt.user.client.ui.AbstractImagePrototype;
-import com.google.gwt.user.client.ui.HasEnabled;
+import org.gwtproject.user.client.Event;
+import org.gwtproject.user.client.Event.NativePreviewEvent;
+import org.gwtproject.user.client.Event.NativePreviewHandler;
+import org.gwtproject.user.client.ui.AbstractImagePrototype;
+import org.gwtproject.user.client.ui.HasEnabled;
 
 import static com.google.gwt.dom.client.BrowserEvents.*;
 

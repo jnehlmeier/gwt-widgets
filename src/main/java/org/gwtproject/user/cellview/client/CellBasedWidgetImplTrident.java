@@ -27,10 +27,10 @@ import com.google.gwt.dom.client.InputElement;
 import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.SafeHtmlUtils;
 import org.gwtproject.user.cellview.client.CellBasedWidgetImpl;
-import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.EventListener;
-import com.google.gwt.user.client.ui.Widget;
+import org.gwtproject.user.client.DOM;
+import org.gwtproject.user.client.Event;
+import org.gwtproject.user.client.EventListener;
+import org.gwtproject.user.client.ui.Widget;
 
 import java.util.HashSet;
 import java.util.Locale;

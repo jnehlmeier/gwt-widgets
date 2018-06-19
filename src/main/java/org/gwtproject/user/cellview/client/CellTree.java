@@ -42,11 +42,11 @@ import com.google.gwt.safehtml.shared.SafeHtml;
 import org.gwtproject.user.cellview.client.AbstractCellTree;
 import org.gwtproject.user.cellview.client.CellBasedWidgetImpl;
 import org.gwtproject.user.cellview.client.CellTreeNodeView;
-import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.ui.AbstractImagePrototype;
-import com.google.gwt.user.client.ui.Focusable;
-import com.google.gwt.user.client.ui.HasAnimation;
-import com.google.gwt.user.client.ui.SimplePanel;
+import org.gwtproject.user.client.Event;
+import org.gwtproject.user.client.ui.AbstractImagePrototype;
+import org.gwtproject.user.client.ui.Focusable;
+import org.gwtproject.user.client.ui.HasAnimation;
+import org.gwtproject.user.client.ui.SimplePanel;
 import org.gwtproject.view.client.TreeViewModel;
 
 import java.util.ArrayList;

@@ -85,13 +85,13 @@ public class DOM {
   /**
    * Appends one element to another's list of children.
    * <p>
-   * If the child element is a {@link com.google.gwt.user.client.ui.PotentialElement}, it is first
+   * If the child element is a {@link org.gwtproject.user.client.ui.PotentialElement}, it is first
    * resolved.
    * </p>
    *
    * @param parent the parent element
    * @param child its new child
-   * @see com.google.gwt.user.client.ui.PotentialElement#resolve(Element)
+   * @see org.gwtproject.user.client.ui.PotentialElement#resolve(Element)
    */
   public static void appendChild(Element parent, Element child) {
     assert !isPotential(parent) : "Cannot append to a PotentialElement";
@@ -535,7 +535,7 @@ public class DOM {
    * 
    * @param evt the event to be tested
    * @return the Unicode character or key code.
-   * @see com.google.gwt.user.client.ui.KeyboardListener
+   * @see org.gwtproject.user.client.ui.KeyboardListener
    * @deprecated Use {@link Event#getKeyCode()} instead.
    */
   @Deprecated
@@ -996,7 +996,7 @@ public class DOM {
    * Inserts an element as a child of the given parent element, before another
    * child of that parent.
    * <p>
-   * If the child element is a {@link com.google.gwt.user.client.ui.PotentialElement}, it is first
+   * If the child element is a {@link org.gwtproject.user.client.ui.PotentialElement}, it is first
    * resolved.
    * </p>
    * 
@@ -1004,7 +1004,7 @@ public class DOM {
    * @param child the child element to add to <code>parent</code>
    * @param before an existing child element of <code>parent</code> before which
    *          <code>child</code> will be inserted
-   * @see com.google.gwt.user.client.ui.PotentialElement#resolve(Element)
+   * @see org.gwtproject.user.client.ui.PotentialElement#resolve(Element)
    */
   public static void insertBefore(Element parent, Element child, Element before) {
     assert !isPotential(parent) : "Cannot insert into a PotentialElement";
@@ -1017,7 +1017,7 @@ public class DOM {
   /**
    * Inserts an element as a child of the given parent element.
    * <p>
-   * If the child element is a {@link com.google.gwt.user.client.ui.PotentialElement}, it is first
+   * If the child element is a {@link org.gwtproject.user.client.ui.PotentialElement}, it is first
    * resolved.
    * </p>
    * 
@@ -1026,7 +1026,7 @@ public class DOM {
    * @param index the index before which the child will be inserted (any value
    *          greater than the number of existing children will cause the child
    *          to be appended)
-   * @see com.google.gwt.user.client.ui.PotentialElement#resolve(Element)
+   * @see org.gwtproject.user.client.ui.PotentialElement#resolve(Element)
    */
   public static void insertChild(Element parent, Element child, int index) {
     assert !isPotential(parent) : "Cannot insert into a PotentialElement";

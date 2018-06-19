@@ -23,8 +23,8 @@ import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
 import com.google.gwt.safehtml.shared.SafeHtmlUtils;
 import org.gwtproject.user.cellview.client.HasKeyboardSelectionPolicy.KeyboardSelectionPolicy;
-import com.google.gwt.user.client.ui.Label;
-import com.google.gwt.user.client.ui.RootPanel;
+import org.gwtproject.user.client.ui.Label;
+import org.gwtproject.user.client.ui.RootPanel;
 import org.gwtproject.view.client.ProvidesKey;
 import org.gwtproject.view.client.SingleSelectionModel;
 

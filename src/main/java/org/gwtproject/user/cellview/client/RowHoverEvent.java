@@ -19,7 +19,7 @@ import com.google.gwt.dom.client.TableRowElement;
 import com.google.gwt.event.shared.EventHandler;
 import com.google.gwt.event.shared.GwtEvent;
 import com.google.gwt.event.shared.HasHandlers;
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.Event;
 
 /**
  * Represents a row hover event. The event includes change in the hovering

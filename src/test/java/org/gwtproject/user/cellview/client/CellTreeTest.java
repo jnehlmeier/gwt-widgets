@@ -21,7 +21,7 @@ import org.gwtproject.cell.client.AbstractCell;
 import org.gwtproject.cell.client.TextCell;
 import com.google.gwt.event.dom.client.KeyCodes;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
-import com.google.gwt.user.client.ui.RootPanel;
+import org.gwtproject.user.client.ui.RootPanel;
 import org.gwtproject.view.client.ListDataProvider;
 import org.gwtproject.view.client.TreeViewModel;
 

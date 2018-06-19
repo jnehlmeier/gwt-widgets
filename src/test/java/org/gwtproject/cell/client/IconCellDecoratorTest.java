@@ -20,7 +20,7 @@ import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.NativeEvent;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
-import com.google.gwt.user.client.ui.HasVerticalAlignment;
+import org.gwtproject.user.client.ui.HasVerticalAlignment;
 
 /**
  * Tests for {@link org.gwtproject.cell.client.IconCellDecorator}.

@@ -28,7 +28,7 @@ import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
 import com.google.gwt.text.shared.AbstractSafeHtmlRenderer;
 import com.google.gwt.text.shared.SafeHtmlRenderer;
-import com.google.gwt.user.client.ui.AbstractImagePrototype;
+import org.gwtproject.user.client.ui.AbstractImagePrototype;
 
 /**
  * An {@link org.gwtproject.cell.client.AbstractCell} used to render an image. A loading indicator is used
