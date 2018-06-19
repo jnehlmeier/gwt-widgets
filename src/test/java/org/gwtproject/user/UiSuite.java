@@ -84,8 +84,6 @@ public class UiSuite {
     suite.addTestSuite(GridTest.class);
     suite.addTestSuite(HeaderPanelTest.class);
     suite.addTestSuite(HiddenTest.class);
-    suite.addTestSuite(HistoryTest.class);
-    suite.addTestSuite(HistoryTestNoopTokenEncoder.class);
     suite.addTestSuite(HorizontalPanelTest.class);
     suite.addTestSuite(HorizontalSplitPanelTest.class);
     suite.addTestSuite(HTMLPanelTest.class);
