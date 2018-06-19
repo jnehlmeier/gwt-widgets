@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.media.client;
+package org.gwtproject.media.client;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.AudioElement;

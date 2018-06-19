@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.media.client;
+package org.gwtproject.media.client;
 
 import com.google.gwt.dom.client.MediaElement;
 import com.google.gwt.junit.DoNotRunWith;
@@ -23,7 +23,7 @@ import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.RootPanel;
 
 /**
- * Tests {@link Video}.
+ * Tests {@link org.gwtproject.media.client.Video}.
  *
  *  Because HtmlUnit does not support HTML5, you will need to run these tests
  * manually in order to have them run. To do that, go to "run configurations" or
@@ -32,7 +32,7 @@ import com.google.gwt.user.client.ui.RootPanel;
  */
 @DoNotRunWith(Platform.HtmlUnitUnknown)
 public class VideoTest extends MediaTest {
-  protected Video video;
+  protected org.gwtproject.media.client.Video video;
 
   final static String posterUrl = "poster.jpg";
   final static String videoUrlH264 = "smallh264.mp4";
@@ -82,7 +82,7 @@ public class VideoTest extends MediaTest {
       return; // don't continue if not supported
     }
 
-    Video video = new Video("http://google.com/video");
+    org.gwtproject.media.client.Video video = new org.gwtproject.media.client.Video("http://google.com/video");
     assertNotNull(video);
     assertEquals("http://google.com/video", video.getSrc());
     video.setSrc("");

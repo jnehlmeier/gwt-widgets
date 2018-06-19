@@ -16,7 +16,7 @@
   <!-- Inherit the JUnit support -->
   <inherits name='com.google.gwt.junit.JUnit'/>
   
-  <inherits name="com.google.gwt.media.Media" />
+  <inherits name="org.gwtproject.media.Media" />
 
   <source path="client"/>
 

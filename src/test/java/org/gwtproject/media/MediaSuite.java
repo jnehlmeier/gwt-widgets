@@ -14,12 +14,12 @@
  * the License.
  */
 
-package com.google.gwt.media;
+package org.gwtproject.media;
 
 import com.google.gwt.junit.tools.GWTTestSuite;
-import com.google.gwt.media.client.AudioTest;
-import com.google.gwt.media.client.VideoTest;
-import com.google.gwt.user.client.MediaEventsSinkTest;
+import org.gwtproject.media.client.AudioTest;
+import org.gwtproject.media.client.VideoTest;
+import org.gwtproject.user.client.MediaEventsSinkTest;
 
 import junit.framework.Test;
 

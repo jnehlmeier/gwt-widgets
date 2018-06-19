@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.media.client;
+package org.gwtproject.media.client;
 
 import com.google.gwt.dom.client.MediaElement;
 import com.google.gwt.junit.DoNotRunWith;
@@ -21,7 +21,7 @@ import com.google.gwt.junit.Platform;
 import com.google.gwt.user.client.ui.RootPanel;
 
 /**
- * Tests {@link Audio}.
+ * Tests {@link org.gwtproject.media.client.Audio}.
  *
  *  Because HtmlUnit does not support HTML5, you will need to run these tests
  * manually in order to have them run. To do that, go to "run configurations" or
@@ -30,7 +30,7 @@ import com.google.gwt.user.client.ui.RootPanel;
  */
 @DoNotRunWith(Platform.HtmlUnitUnknown)
 public class AudioTest extends MediaTest {
-  protected Audio audio;
+  protected org.gwtproject.media.client.Audio audio;
 
   final static String audioUrlMp3 = "smallmp3.mp3";
   final static String audioFormatMp3 = "audio/mpeg";

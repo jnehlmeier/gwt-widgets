@@ -33,23 +33,23 @@
     <when-property-is name="user.agent" value="ie8" />
   </set-property>
 
-  <replace-with class="com.google.gwt.media.client.Video.VideoElementSupportDetectedMaybe">
-    <when-type-is class="com.google.gwt.media.client.Video.VideoElementSupportDetector" />
+  <replace-with class="org.gwtproject.media.client.Video.VideoElementSupportDetectedMaybe">
+    <when-type-is class="org.gwtproject.media.client.Video.VideoElementSupportDetector" />
     <when-property-is name="videoElementSupport" value="maybe" />
   </replace-with>
 
-  <replace-with class="com.google.gwt.media.client.Video.VideoElementSupportDetectedNo">
-    <when-type-is class="com.google.gwt.media.client.Video.VideoElementSupportDetector" />
+  <replace-with class="org.gwtproject.media.client.Video.VideoElementSupportDetectedNo">
+    <when-type-is class="org.gwtproject.media.client.Video.VideoElementSupportDetector" />
     <when-property-is name="videoElementSupport" value="no" />
   </replace-with>
   
-  <replace-with class="com.google.gwt.media.client.Audio.AudioElementSupportDetectedMaybe">
-    <when-type-is class="com.google.gwt.media.client.Audio.AudioElementSupportDetector" />
+  <replace-with class="org.gwtproject.media.client.Audio.AudioElementSupportDetectedMaybe">
+    <when-type-is class="org.gwtproject.media.client.Audio.AudioElementSupportDetector" />
     <when-property-is name="audioElementSupport" value="maybe" />
   </replace-with>
 
-  <replace-with class="com.google.gwt.media.client.Audio.AudioElementSupportDetectedNo">
-    <when-type-is class="com.google.gwt.media.client.Audio.AudioElementSupportDetector" />
+  <replace-with class="org.gwtproject.media.client.Audio.AudioElementSupportDetectedNo">
+    <when-type-is class="org.gwtproject.media.client.Audio.AudioElementSupportDetector" />
     <when-property-is name="audioElementSupport" value="no" />
   </replace-with>
 

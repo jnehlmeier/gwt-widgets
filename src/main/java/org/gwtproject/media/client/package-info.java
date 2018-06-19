@@ -18,4 +18,4 @@
  * <p>
  * Widgets for HTML Audio and Video support.
  */
-package com.google.gwt.media.client;
+package org.gwtproject.media.client;

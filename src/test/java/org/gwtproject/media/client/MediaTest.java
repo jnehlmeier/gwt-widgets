@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.media.client;
+package org.gwtproject.media.client;
 
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.RepeatingCommand;
@@ -27,9 +27,12 @@ import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.media.dom.client.MediaError;
 
 import junit.framework.Assert;
+import org.gwtproject.media.client.Audio;
+import org.gwtproject.media.client.MediaBase;
+import org.gwtproject.media.client.Video;
 
 /**
- * Base test for {@link MediaBase}.
+ * Base test for {@link org.gwtproject.media.client.MediaBase}.
  *
  *  Do not call this class directly. To use, extend this class and override the
  * getElement and isSupported methods.
@@ -60,7 +63,7 @@ public abstract class MediaTest extends GWTTestCase {
   }-*/;
 
   public void disabled_testPreload() {
-    final MediaBase media = getMedia();
+    final org.gwtproject.media.client.MediaBase media = getMedia();
     if (media == null) {
       return; // don't continue if not supported
     }
@@ -85,7 +88,7 @@ public abstract class MediaTest extends GWTTestCase {
    *
    * @return the Media associated with the test.
    */
-  public abstract MediaBase getMedia();
+  public abstract org.gwtproject.media.client.MediaBase getMedia();
 
   @Override
   public String getModuleName() {
@@ -93,7 +96,7 @@ public abstract class MediaTest extends GWTTestCase {
   }
 
   public void testAddSource() {
-    final MediaBase media = getMedia();
+    final org.gwtproject.media.client.MediaBase media = getMedia();
     if (media == null) {
       return; // don't continue if not supported
     }
@@ -117,7 +120,7 @@ public abstract class MediaTest extends GWTTestCase {
   }
 
   public void testAutoPlay() {
-    final MediaBase media = getMedia();
+    final org.gwtproject.media.client.MediaBase media = getMedia();
     if (media == null) {
       return; // don't continue if not supported
     }
@@ -129,7 +132,7 @@ public abstract class MediaTest extends GWTTestCase {
   }
 
   public void testControls() {
-    final MediaBase media = getMedia();
+    final org.gwtproject.media.client.MediaBase media = getMedia();
     if (media == null) {
       return; // don't continue if not supported
     }
@@ -141,7 +144,7 @@ public abstract class MediaTest extends GWTTestCase {
   }
 
   public void testCurrentSrc() {
-    final MediaBase media = getMedia();
+    final org.gwtproject.media.client.MediaBase media = getMedia();
     if (media == null) {
       return; // don't continue if not supported
     }
@@ -152,7 +155,7 @@ public abstract class MediaTest extends GWTTestCase {
   }
 
   public void testPlayAndSeek() {
-    final MediaBase media = getMedia();
+    final org.gwtproject.media.client.MediaBase media = getMedia();
     if (media == null) {
       return; // don't continue if not supported
     }
@@ -182,7 +185,7 @@ public abstract class MediaTest extends GWTTestCase {
   }
 
   public void testLoad() {
-    final MediaBase media = getMedia();
+    final org.gwtproject.media.client.MediaBase media = getMedia();
     if (media == null) {
       return; // don't continue if not supported
     }
@@ -198,7 +201,7 @@ public abstract class MediaTest extends GWTTestCase {
   }
 
   public void testLoop() {
-    final MediaBase media = getMedia();
+    final org.gwtproject.media.client.MediaBase media = getMedia();
     if (media == null) {
       return; // don't continue if not supported
     }
@@ -210,7 +213,7 @@ public abstract class MediaTest extends GWTTestCase {
   }
 
   public void testMuted() {
-    final MediaBase media = getMedia();
+    final org.gwtproject.media.client.MediaBase media = getMedia();
     if (media == null) {
       return; // don't continue if not supported
     }
@@ -222,7 +225,7 @@ public abstract class MediaTest extends GWTTestCase {
   }
 
   public void testNetworkState() {
-    final MediaBase media = getMedia();
+    final org.gwtproject.media.client.MediaBase media = getMedia();
     if (media == null) {
       return; // don't continue if not supported
     }
@@ -235,7 +238,7 @@ public abstract class MediaTest extends GWTTestCase {
   }
 
   public void testPlaybackRate() {
-    final MediaBase media = getMedia();
+    final org.gwtproject.media.client.MediaBase media = getMedia();
     if (media == null) {
       return; // don't continue if not supported
     }
@@ -267,7 +270,7 @@ public abstract class MediaTest extends GWTTestCase {
   }
 
   public void testReadyState() {
-    final MediaBase media = getMedia();
+    final org.gwtproject.media.client.MediaBase media = getMedia();
     if (media == null) {
       return; // don't continue if not supported
     }
@@ -281,7 +284,7 @@ public abstract class MediaTest extends GWTTestCase {
   }
 
   public void testRemoveSource() {
-    final MediaBase media = getMedia();
+    final org.gwtproject.media.client.MediaBase media = getMedia();
     if (media == null) {
       return; // don't continue if not supported
     }
@@ -313,8 +316,8 @@ public abstract class MediaTest extends GWTTestCase {
   public void testSupported() {
     // test the isxxxSupported() call if running known sup or not sup browsers.
     if (isIE8()) {
-      assertFalse(Audio.isSupported());
-      assertFalse(Video.isSupported());
+      assertFalse(org.gwtproject.media.client.Audio.isSupported());
+      assertFalse(org.gwtproject.media.client.Video.isSupported());
     }
     if (isFirefox35OrLater()) {
       assertTrue(Audio.isSupported());
@@ -323,7 +326,7 @@ public abstract class MediaTest extends GWTTestCase {
   }
 
   public void testVolume() {
-    final MediaBase media = getMedia();
+    final org.gwtproject.media.client.MediaBase media = getMedia();
     if (media == null) {
       return; // don't continue if not supported
     }

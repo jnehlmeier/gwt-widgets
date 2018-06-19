@@ -14,15 +14,14 @@
  * the License.
  */
 
-package com.google.gwt.user.client;
+package org.gwtproject.user.client;
 
 import com.google.gwt.event.dom.client.*;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.media.client.Audio;
-import com.google.gwt.media.client.Video;
+import org.gwtproject.media.client.Audio;
+import org.gwtproject.media.client.Video;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.Widget;
-import org.gwtproject.user.client.Event;
 
 /**
  * Test Case for sinking of media events.
