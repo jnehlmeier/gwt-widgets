@@ -13,11 +13,11 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.impl;
+package org.gwtproject.user.client.impl;
 
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.dom.client.Element;
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.Event;
 
 /**
  * Trident layout engine implementation of
@@ -100,7 +100,7 @@ public abstract class DOMImplTrident extends DOMImpl {
       $wnd.__gwt_globalEventArray = new Array();
     }
     $wnd.__gwt_globalEventArray[$wnd.__gwt_globalEventArray.length] = $entry(function() {
-      return @com.google.gwt.user.client.DOM::previewEvent(Lcom/google/gwt/user/client/Event;)($wnd.event);
+      return @org.gwtproject.user.client.DOM::previewEvent(Lcom/google/gwt/user/client/Event;)($wnd.event);
     });
 
     var dispatchEvent = $entry(function() {
@@ -130,7 +130,7 @@ public abstract class DOMImplTrident extends DOMImpl {
       }
 
       if (listener) {
-        @com.google.gwt.user.client.DOM::dispatchEvent(Lcom/google/gwt/user/client/Event;Lcom/google/gwt/dom/client/Element;Lcom/google/gwt/user/client/EventListener;)($wnd.event, curElem, listener);
+        @org.gwtproject.user.client.DOM::dispatchEvent(Lcom/google/gwt/user/client/Event;Lcom/google/gwt/dom/client/Element;Lcom/google/gwt/user/client/EventListener;)($wnd.event, curElem, listener);
       }
 
       @com.google.gwt.dom.client.DOMImplTrident::currentEventTarget = oldEventTarget;

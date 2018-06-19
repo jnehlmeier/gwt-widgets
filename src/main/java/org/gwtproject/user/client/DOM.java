@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client;
+package org.gwtproject.user.client;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -23,14 +23,15 @@ import com.google.gwt.dom.client.ImageElement;
 import com.google.gwt.dom.client.OptionElement;
 import com.google.gwt.dom.client.SelectElement;
 import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
-import com.google.gwt.user.client.Event.NativePreviewEvent;
-import com.google.gwt.user.client.impl.DOMImpl;
+import com.google.gwt.user.client.Window;
+import org.gwtproject.user.client.Event.NativePreviewEvent;
+import org.gwtproject.user.client.impl.DOMImpl;
 
 /**
  * This class provides a set of static methods that allow you to manipulate the
  * browser's Document Object Model (DOM). It contains methods for manipulating
- * both {@link com.google.gwt.user.client.Element elements} and
- * {@link com.google.gwt.user.client.Event events}.
+ * both {@link org.gwtproject.user.client.Element elements} and
+ * {@link Event events}.
  */
 public class DOM {
 
@@ -106,7 +107,7 @@ public class DOM {
    * @param elem the element to be cloned
    * @param deep should children be cloned as well?
    */
-  public static com.google.gwt.user.client.Element clone(Element elem, boolean deep) {
+  public static org.gwtproject.user.client.Element clone(Element elem, boolean deep) {
     return elem.cloneNode(deep).cast();
   }
 
@@ -129,7 +130,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createAnchor() {
+  public static org.gwtproject.user.client.Element createAnchor() {
     return Document.get().createAnchorElement().cast();
   }
 
@@ -139,7 +140,7 @@ public class DOM {
    * @return the newly-created element
    */
   @SuppressWarnings("deprecation")
-  public static com.google.gwt.user.client.Element createButton() {
+  public static org.gwtproject.user.client.Element createButton() {
     return Document.get().createButtonElement().cast();
   }
 
@@ -148,7 +149,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createCaption() {
+  public static org.gwtproject.user.client.Element createCaption() {
     return Document.get().createCaptionElement().cast();
   }
 
@@ -157,7 +158,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createCol() {
+  public static org.gwtproject.user.client.Element createCol() {
     return Document.get().createColElement().cast();
   }
 
@@ -166,7 +167,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createColGroup() {
+  public static org.gwtproject.user.client.Element createColGroup() {
     return Document.get().createColGroupElement().cast();
   }
 
@@ -175,7 +176,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createDiv() {
+  public static org.gwtproject.user.client.Element createDiv() {
     return Document.get().createDivElement().cast();
   }
 
@@ -185,7 +186,7 @@ public class DOM {
    * @param tagName the HTML tag of the element to be created
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createElement(String tagName) {
+  public static org.gwtproject.user.client.Element createElement(String tagName) {
     return Document.get().createElement(tagName).cast();
   }
 
@@ -194,7 +195,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createFieldSet() {
+  public static org.gwtproject.user.client.Element createFieldSet() {
     return Document.get().createFieldSetElement().cast();
   }
 
@@ -203,7 +204,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createForm() {
+  public static org.gwtproject.user.client.Element createForm() {
     return Document.get().createFormElement().cast();
   }
 
@@ -212,7 +213,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createIFrame() {
+  public static org.gwtproject.user.client.Element createIFrame() {
     return Document.get().createIFrameElement().cast();
   }
 
@@ -221,7 +222,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createImg() {
+  public static org.gwtproject.user.client.Element createImg() {
     return Document.get().createImageElement().cast();
   }
 
@@ -230,7 +231,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createInputCheck() {
+  public static org.gwtproject.user.client.Element createInputCheck() {
     return Document.get().createCheckInputElement().cast();
   }
 
@@ -239,7 +240,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createInputPassword() {
+  public static org.gwtproject.user.client.Element createInputPassword() {
     return Document.get().createPasswordInputElement().cast();
   }
 
@@ -250,7 +251,7 @@ public class DOM {
    *          associated
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createInputRadio(String name) {
+  public static org.gwtproject.user.client.Element createInputRadio(String name) {
     return Document.get().createRadioInputElement(name).cast();
   }
 
@@ -259,7 +260,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createInputText() {
+  public static org.gwtproject.user.client.Element createInputText() {
     return Document.get().createTextInputElement().cast();
   }
 
@@ -268,7 +269,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createLabel() {
+  public static org.gwtproject.user.client.Element createLabel() {
     return Document.get().createLabelElement().cast();
   }
 
@@ -277,7 +278,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createLegend() {
+  public static org.gwtproject.user.client.Element createLegend() {
     return Document.get().createLegendElement().cast();
   }
 
@@ -286,7 +287,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createOption() {
+  public static org.gwtproject.user.client.Element createOption() {
     return Document.get().createOptionElement().cast();
   }
 
@@ -298,7 +299,7 @@ public class DOM {
    *             instead
    */
   @Deprecated
-  public static com.google.gwt.user.client.Element createOptions() {
+  public static org.gwtproject.user.client.Element createOptions() {
     return Document.get().createElement("options").cast();
   }
 
@@ -311,7 +312,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createSelect() {
+  public static org.gwtproject.user.client.Element createSelect() {
     return Document.get().createSelectElement().cast();
   }
 
@@ -321,7 +322,7 @@ public class DOM {
    * @param multiple true if multiple selection of options is allowed
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createSelect(boolean multiple) {
+  public static org.gwtproject.user.client.Element createSelect(boolean multiple) {
     SelectElement selectElement = Document.get().createSelectElement();
     selectElement.setMultiple(multiple);
     return selectElement.cast();
@@ -332,7 +333,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createSpan() {
+  public static org.gwtproject.user.client.Element createSpan() {
     return Document.get().createSpanElement().cast();
   }
 
@@ -341,7 +342,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createTable() {
+  public static org.gwtproject.user.client.Element createTable() {
     return Document.get().createTableElement().cast();
   }
 
@@ -350,7 +351,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createTBody() {
+  public static org.gwtproject.user.client.Element createTBody() {
     return Document.get().createTBodyElement().cast();
   }
 
@@ -359,7 +360,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createTD() {
+  public static org.gwtproject.user.client.Element createTD() {
     return Document.get().createTDElement().cast();
   }
 
@@ -368,7 +369,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createTextArea() {
+  public static org.gwtproject.user.client.Element createTextArea() {
     return Document.get().createTextAreaElement().cast();
   }
 
@@ -377,7 +378,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createTFoot() {
+  public static org.gwtproject.user.client.Element createTFoot() {
     return Document.get().createTFootElement().cast();
   }
 
@@ -386,7 +387,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createTH() {
+  public static org.gwtproject.user.client.Element createTH() {
     return Document.get().createTHElement().cast();
   }
 
@@ -395,7 +396,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createTHead() {
+  public static org.gwtproject.user.client.Element createTHead() {
     return Document.get().createTHeadElement().cast();
   }
 
@@ -404,7 +405,7 @@ public class DOM {
    * 
    * @return the newly-created element
    */
-  public static com.google.gwt.user.client.Element createTR() {
+  public static org.gwtproject.user.client.Element createTR() {
     return Document.get().createTRElement().cast();
   }
 
@@ -508,7 +509,7 @@ public class DOM {
    * @return the event's current target element
    * @see DOM#eventGetTarget(Event)
    */
-  public static com.google.gwt.user.client.Element eventGetCurrentTarget(Event evt) {
+  public static org.gwtproject.user.client.Element eventGetCurrentTarget(Event evt) {
     return evt.getCurrentEventTarget().cast();
   }
 
@@ -519,7 +520,7 @@ public class DOM {
    * @param evt the event to be tested
    * @return the element from which the mouse pointer was moved
    */
-  public static com.google.gwt.user.client.Element eventGetFromElement(Event evt) {
+  public static org.gwtproject.user.client.Element eventGetFromElement(Event evt) {
     return asOld(impl.eventGetFromElement(evt));
   }
 
@@ -629,7 +630,7 @@ public class DOM {
    * @param evt the event to be tested
    * @return the target element
    */
-  public static com.google.gwt.user.client.Element eventGetTarget(Event evt) {
+  public static org.gwtproject.user.client.Element eventGetTarget(Event evt) {
     return evt.getEventTarget().cast();
   }
 
@@ -640,7 +641,7 @@ public class DOM {
    * @param evt the event to be tested
    * @return the element to which the mouse pointer was moved
    */
-  public static com.google.gwt.user.client.Element eventGetToElement(Event evt) {
+  public static org.gwtproject.user.client.Element eventGetToElement(Event evt) {
     return asOld(impl.eventGetToElement(evt));
   }
 
@@ -763,7 +764,7 @@ public class DOM {
    * @return a handle to the capture element, or <code>null</code> if none
    *         exists
    */
-  public static com.google.gwt.user.client.Element getCaptureElement() {
+  public static org.gwtproject.user.client.Element getCaptureElement() {
     return asOld(sCaptureElem);
   }
 
@@ -774,7 +775,7 @@ public class DOM {
    * @param index the index of the child element
    * @return the n-th child element
    */
-  public static com.google.gwt.user.client.Element getChild(Element parent, int index) {
+  public static org.gwtproject.user.client.Element getChild(Element parent, int index) {
     return asOld(impl.getChild(parent, index));
   }
 
@@ -820,7 +821,7 @@ public class DOM {
    * @param id the id whose associated element is to be retrieved
    * @return the associated element, or <code>null</code> if none is found
    */
-  public static com.google.gwt.user.client.Element getElementById(String id) {
+  public static org.gwtproject.user.client.Element getElementById(String id) {
     return asOld(Document.get().getElementById(id));
   }
 
@@ -891,7 +892,7 @@ public class DOM {
    * @param elem the element whose child is to be retrieved
    * @return the child element
    */
-  public static com.google.gwt.user.client.Element getFirstChild(Element elem) {
+  public static org.gwtproject.user.client.Element getFirstChild(Element elem) {
     return asOld(elem.getFirstChildElement());
   }
 
@@ -963,7 +964,7 @@ public class DOM {
    * @param elem the element whose sibling is to be retrieved
    * @return the sibling element
    */
-  public static com.google.gwt.user.client.Element getNextSibling(Element elem) {
+  public static org.gwtproject.user.client.Element getNextSibling(Element elem) {
     return elem.getNextSibling().cast();
   }
 
@@ -973,7 +974,7 @@ public class DOM {
    * @param elem the element whose parent is to be retrieved
    * @return the parent element
    */
-  public static com.google.gwt.user.client.Element getParent(Element elem) {
+  public static org.gwtproject.user.client.Element getParent(Element elem) {
     return asOld(elem.getParentElement());
   }
 
@@ -1483,13 +1484,13 @@ public class DOM {
 
   /**
    * Provided as a convenient way to upcast values statically typed as
-   * {@link Element} to {@link com.google.gwt.user.client.Element}.
+   * {@link Element} to {@link org.gwtproject.user.client.Element}.
    * For easier upgrades in the future, it's recommended that this function
    * only be called within a <code>return</code> statement.
    * <p>
    * Does <em>not</em> throw a {@link NullPointerException} if elem is null.
    */
-  public static com.google.gwt.user.client.Element asOld(Element elem) {
-    return (com.google.gwt.user.client.Element) elem;
+  public static org.gwtproject.user.client.Element asOld(Element elem) {
+    return (org.gwtproject.user.client.Element) elem;
   }
 }

@@ -16,7 +16,7 @@
 
 package org.gwtproject.user.client.ui.impl;
 
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.Event;
 
 /**
  * Methods that need browser-specific implementations for Hyperlink.

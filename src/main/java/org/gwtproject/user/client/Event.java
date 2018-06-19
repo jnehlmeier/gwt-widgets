@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client;
+package org.gwtproject.user.client;
 
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.NativeEvent;
@@ -30,7 +30,7 @@ import com.google.gwt.event.shared.HandlerRegistration;
  * native DOM event from JSNI methods. An <code>Event</code> passed back into
  * JSNI becomes the original DOM event the <code>Event</code> was created from,
  * and can be accessed in JavaScript code as expected. This is typically done by
- * calling methods in the {@link com.google.gwt.user.client.DOM} class.
+ * calling methods in the {@link DOM} class.
  * </p>
  */
 public class Event extends NativeEvent {

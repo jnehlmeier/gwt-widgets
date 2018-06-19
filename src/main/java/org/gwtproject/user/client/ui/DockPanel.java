@@ -17,7 +17,7 @@ package org.gwtproject.user.client.ui;
 
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.i18n.client.LocaleInfo;
-import com.google.gwt.user.client.DOM;
+import org.gwtproject.user.client.DOM;
 
 import java.util.HashMap;
 import java.util.Iterator;

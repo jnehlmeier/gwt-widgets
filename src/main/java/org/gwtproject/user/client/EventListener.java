@@ -13,12 +13,12 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client;
+package org.gwtproject.user.client;
 
 /**
  * Receives low-level browser events. The implementer registers for DOM events
  * using
- * {@link com.google.gwt.user.client.DOM#setEventListener(Element, EventListener)}.
+ * {@link DOM#setEventListener(Element, EventListener)}.
  * 
  * <p>
  * Only subclasses of {@link com.google.gwt.user.client.ui.Widget} should

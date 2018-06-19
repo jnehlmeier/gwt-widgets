@@ -17,7 +17,7 @@ package org.gwtproject.user.client.ui;
 
 import com.google.gwt.animation.client.Animation;
 import com.google.gwt.dom.client.Element;
-import com.google.gwt.user.client.DOM;
+import org.gwtproject.user.client.DOM;
 
 /**
  * A panel that displays all of its child widgets in a 'deck', where only one

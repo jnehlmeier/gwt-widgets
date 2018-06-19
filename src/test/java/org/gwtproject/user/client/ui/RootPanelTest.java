@@ -19,7 +19,7 @@ import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.user.client.DOM;
+import org.gwtproject.user.client.DOM;
 
 /**
  * Tests {@link RootPanel}.

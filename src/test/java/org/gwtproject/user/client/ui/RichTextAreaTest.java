@@ -29,7 +29,7 @@ import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.safehtml.shared.SafeHtmlUtils;
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.Event;
 import com.google.gwt.user.client.Timer;
 import org.gwtproject.user.client.ui.RichTextArea.BasicFormatter;
 

@@ -37,8 +37,8 @@ import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
 import com.google.gwt.safehtml.shared.annotations.SuppressIsSafeHtmlCastCheck;
-import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.DOM;
+import org.gwtproject.user.client.Event;
 
 /**
  * A horizontal bar of folder-style tabs, most commonly used as part of a

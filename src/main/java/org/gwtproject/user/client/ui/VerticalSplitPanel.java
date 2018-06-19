@@ -23,7 +23,7 @@ import com.google.gwt.dom.client.Style.TextAlign;
 import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.ImageResource;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
-import com.google.gwt.user.client.DOM;
+import org.gwtproject.user.client.DOM;
 import com.google.gwt.user.client.Timer;
 
 /**

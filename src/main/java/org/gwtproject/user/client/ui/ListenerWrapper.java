@@ -80,8 +80,8 @@ import com.google.gwt.event.shared.EventHandler;
 import com.google.gwt.event.shared.GwtEvent;
 import com.google.gwt.event.shared.GwtEvent.Type;
 import com.google.gwt.event.shared.HandlerManager;
-import com.google.gwt.user.client.BaseListenerWrapper;
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.BaseListenerWrapper;
+import org.gwtproject.user.client.Event;
 
 import java.util.EventListener;
 

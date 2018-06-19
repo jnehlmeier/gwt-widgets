@@ -22,7 +22,7 @@ import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
 import com.google.gwt.safehtml.shared.annotations.SuppressIsSafeHtmlCastCheck;
 import com.google.gwt.user.client.Command;
-import com.google.gwt.user.client.DOM;
+import org.gwtproject.user.client.DOM;
 
 /**
  * An entry in a

@@ -19,8 +19,8 @@ import com.google.gwt.dom.client.Element;
 import com.google.gwt.event.logical.shared.HasInitializeHandlers;
 import com.google.gwt.event.logical.shared.InitializeEvent;
 import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
-import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.DOM;
+import org.gwtproject.user.client.Event;
 import org.gwtproject.user.client.ui.RichTextArea;
 
 /**

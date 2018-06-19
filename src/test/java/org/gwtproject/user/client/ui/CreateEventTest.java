@@ -25,8 +25,8 @@ import com.google.gwt.dom.client.NativeEvent;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.EventListener;
+import org.gwtproject.user.client.Event;
+import org.gwtproject.user.client.EventListener;
 
 /**
  * Tests for the native event triggering methods in {@link Event}.

@@ -22,7 +22,7 @@ import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.SpanElement;
 import com.google.gwt.dom.client.Style;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.user.client.DOM;
+import org.gwtproject.user.client.DOM;
 
 /**
  * Tests UIObject. Currently, focuses on style name behaviors.

@@ -34,11 +34,11 @@ import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.i18n.client.LocaleInfo;
-import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.Event.NativePreviewEvent;
-import com.google.gwt.user.client.Event.NativePreviewHandler;
-import com.google.gwt.user.client.EventPreview;
+import org.gwtproject.user.client.DOM;
+import org.gwtproject.user.client.Event;
+import org.gwtproject.user.client.Event.NativePreviewEvent;
+import org.gwtproject.user.client.Event.NativePreviewHandler;
+import org.gwtproject.user.client.EventPreview;
 import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.Window;
@@ -1024,7 +1024,7 @@ public class PopupPanel extends SimplePanel implements SourcesPopupEvents,
   }
 
   @Override
-  protected com.google.gwt.user.client.Element getContainerElement() {
+  protected org.gwtproject.user.client.Element getContainerElement() {
     return impl.getContainerElement(getPopupImplElement()).cast();
   }
 
@@ -1039,7 +1039,7 @@ public class PopupPanel extends SimplePanel implements SourcesPopupEvents,
   }
 
   @Override
-  protected com.google.gwt.user.client.Element getStyleElement() {
+  protected org.gwtproject.user.client.Element getStyleElement() {
     return impl.getStyleElement(getPopupImplElement()).cast();
   }
 
@@ -1176,7 +1176,7 @@ public class PopupPanel extends SimplePanel implements SourcesPopupEvents,
    *
    * @return the Element that {@link PopupImpl} creates and expects
    */
-  private com.google.gwt.user.client.Element getPopupImplElement() {
+  private org.gwtproject.user.client.Element getPopupImplElement() {
     return DOM.getFirstChild(super.getContainerElement());
   }
 

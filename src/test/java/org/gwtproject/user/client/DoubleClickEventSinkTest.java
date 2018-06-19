@@ -14,13 +14,13 @@
  * the License.
  */
 
-package com.google.gwt.user.client;
+package org.gwtproject.user.client;
 
 import com.google.gwt.event.dom.client.DoubleClickEvent;
 import com.google.gwt.event.dom.client.DoubleClickHandler;
 import com.google.gwt.event.dom.client.HasDoubleClickHandlers;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.user.client.ui.*;
+import org.gwtproject.user.client.ui.*;
 
 /**
  * Test Case for sinking of double click events.
@@ -33,7 +33,7 @@ public class DoubleClickEventSinkTest extends GWTTestCase {
   }
 
   public void testDoubleClickBitFieldNotTriviallyZero() {
-    assertNotSame(0, Event.ONDBLCLICK);
+    assertNotSame(0, org.gwtproject.user.client.Event.ONDBLCLICK);
   }
 
   public void testFocusPanelDoubleClickEventSinkByAddingHandler() {
@@ -46,7 +46,7 @@ public class DoubleClickEventSinkTest extends GWTTestCase {
 
     CheckBox checkBox = new CheckBox();
     // Get the inputElem on which events are sunk
-    Element e = (Element) checkBox.getElement().getFirstChildElement();
+    org.gwtproject.user.client.Element e = (org.gwtproject.user.client.Element) checkBox.getElement().getFirstChildElement();
     verifyEventSinkOnAddHandler(checkBox, e, false);
 
     verifyEventSinkOnAddHandler(new ToggleButton(), false);
@@ -84,7 +84,7 @@ public class DoubleClickEventSinkTest extends GWTTestCase {
     super.gwtTearDown();
   }
 
-  private boolean isDoubleClickEventSunk(Element e) {
+  private boolean isDoubleClickEventSunk(org.gwtproject.user.client.Element e) {
     return (DOM.getEventsSunk(e) & Event.ONDBLCLICK) != 0;
   }
 

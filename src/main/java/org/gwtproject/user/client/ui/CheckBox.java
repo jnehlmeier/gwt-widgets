@@ -33,8 +33,8 @@ import com.google.gwt.i18n.shared.DirectionEstimator;
 import com.google.gwt.i18n.shared.HasDirectionEstimator;
 import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
-import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.DOM;
+import org.gwtproject.user.client.Event;
 
 /**
  * A standard check box widget.
@@ -537,7 +537,7 @@ public class CheckBox extends ButtonBase implements HasName, HasValue<Boolean>,
    * @deprecated Call and use {@link replaceInputElement(Element)} instead.
    */
   @Deprecated
-  protected void replaceInputElement(com.google.gwt.user.client.Element elem) {
+  protected void replaceInputElement(org.gwtproject.user.client.Element elem) {
     InputElement newInputElem = InputElement.as(elem);
     // Collect information we need to set
     int tabIndex = getTabIndex();

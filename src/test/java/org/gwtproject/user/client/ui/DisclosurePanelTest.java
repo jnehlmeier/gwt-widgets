@@ -19,7 +19,7 @@ import com.google.gwt.event.logical.shared.CloseEvent;
 import com.google.gwt.event.logical.shared.CloseHandler;
 import com.google.gwt.event.logical.shared.OpenEvent;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.user.client.DOM;
+import org.gwtproject.user.client.DOM;
 import com.google.gwt.user.client.Timer;
 
 /**

@@ -93,7 +93,7 @@ public class PotentialElement extends Element {
    * @return true if the given object is a PotentialElement instance
    */
   public static native boolean isPotential(JavaScriptObject o) /*-{
-    return @com.google.gwt.user.client.DOM::isPotential(*)(o);
+    return @org.gwtproject.user.client.DOM::isPotential(*)(o);
   }-*/;
 
   /**
@@ -210,6 +210,6 @@ public class PotentialElement extends Element {
    * on the associated UIObject.
    */
   private native Element resolve() /*-{
-    return @com.google.gwt.user.client.DOM::resolve(*)(o)
+    return @org.gwtproject.user.client.DOM::resolve(*)(o)
   }-*/;
 }

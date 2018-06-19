@@ -26,8 +26,8 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.safehtml.client.HasSafeHtml;
 import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
-import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.DOM;
+import org.gwtproject.user.client.Event;
 
 /**
  * CustomButton is a base button class with built in support for a set number

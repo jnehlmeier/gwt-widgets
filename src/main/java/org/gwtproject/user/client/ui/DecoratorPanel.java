@@ -17,7 +17,7 @@ package org.gwtproject.user.client.ui;
 
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.i18n.client.LocaleInfo;
-import com.google.gwt.user.client.DOM;
+import org.gwtproject.user.client.DOM;
 
 /**
  * <p>
@@ -189,14 +189,14 @@ public class DecoratorPanel extends SimplePanel {
    * @param cell the cell index
    * @return the Element at the given row and cell
    */
-  protected com.google.gwt.user.client.Element getCellElement(int row, int cell) {
+  protected org.gwtproject.user.client.Element getCellElement(int row, int cell) {
     Element tr = DOM.getChild(tbody, row);
     Element td = DOM.getChild(tr, cell);
     return DOM.asOld(DOM.getFirstChild(td));
   }
 
   @Override
-  protected com.google.gwt.user.client.Element getContainerElement() {
+  protected org.gwtproject.user.client.Element getContainerElement() {
     return DOM.asOld(containerElem);
   }
 }

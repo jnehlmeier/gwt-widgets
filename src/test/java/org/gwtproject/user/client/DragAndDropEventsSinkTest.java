@@ -14,11 +14,11 @@
  * the License.
  */
 
-package com.google.gwt.user.client;
+package org.gwtproject.user.client;
 
 import com.google.gwt.event.dom.client.*;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.user.client.ui.*;
+import org.gwtproject.user.client.ui.*;
 
 /**
  * Test Case for sinking of drag and drop events.

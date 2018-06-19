@@ -22,8 +22,8 @@ import com.google.gwt.dom.client.NativeEvent;
 import com.google.gwt.event.dom.client.DomEvent;
 import com.google.gwt.event.shared.EventHandler;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.user.client.impl.DOMImpl;
-import com.google.gwt.user.client.impl.DOMImplStandard;
+import org.gwtproject.user.client.impl.DOMImpl;
+import org.gwtproject.user.client.impl.DOMImplStandard;
 import org.gwtproject.user.client.ui.Button;
 import org.gwtproject.user.client.ui.RootPanel;
 
@@ -75,7 +75,7 @@ public class CustomEventsTest extends GWTTestCase {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.CustomEventsTest";
+    return "org.gwtproject.user.CustomEventsTest";
   }
 
   @Override
@@ -126,7 +126,7 @@ public class CustomEventsTest extends GWTTestCase {
   private static native JavaScriptObject getBitlessCustomDisptachers() /*-{
     return {
       c2: function(evt) {
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent(*)(evt);
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent(*)(evt);
         evt.target.title += "-custom_method";
       }
     };

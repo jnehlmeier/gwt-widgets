@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.ui;
+package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.GWT.UncaughtExceptionHandler;
@@ -29,8 +29,10 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.Event;
+import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.RootPanel;
+import org.gwtproject.user.client.DOM;
+import org.gwtproject.user.client.Event;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -90,14 +92,14 @@ public class DOMTest extends GWTTestCase {
    * {@link UncaughtExceptionHandler}.
    */
   public void testEventGetCurrentEventOnException() {
-    Button button = new Button("test", new ClickHandler() {
+    com.google.gwt.user.client.ui.Button button = new com.google.gwt.user.client.ui.Button("test", new ClickHandler() {
       @Override
       public void onClick(ClickEvent event) {
         // Intentionally trigger an error
         throw new IllegalArgumentException("_expected_");
       }
     });
-    RootPanel.get().add(button);
+    com.google.gwt.user.client.ui.RootPanel.get().add(button);
 
     // Verify the exception is captured
     final List<String> ret = new ArrayList<String>();
@@ -122,7 +124,7 @@ public class DOMTest extends GWTTestCase {
 
     assertEquals(1, ret.size());
     assertEquals("Success", ret.get(0));
-    RootPanel.get().remove(button);
+    com.google.gwt.user.client.ui.RootPanel.get().remove(button);
   }
 
   /**
@@ -138,7 +140,7 @@ public class DOMTest extends GWTTestCase {
     final int left = 14;
 
     final Element elem = DOM.createDiv();
-    DOM.appendChild(RootPanel.getBodyElement(), elem);
+    DOM.appendChild(com.google.gwt.user.client.ui.RootPanel.getBodyElement(), elem);
 
     DOM.setStyleAttribute(elem, "position", "absolute");
     DOM.setStyleAttribute(elem, "border", border + "px solid #000");
@@ -182,7 +184,7 @@ public class DOMTest extends GWTTestCase {
     DOM.setStyleAttribute(inner, "marginLeft", "800px");
 
     DOM.appendChild(outer, inner);
-    DOM.appendChild(RootPanel.getBodyElement(), outer);
+    DOM.appendChild(com.google.gwt.user.client.ui.RootPanel.getBodyElement(), outer);
     DOM.setInnerText(inner, ":-)");
     DOM.scrollIntoView(inner);
 
@@ -215,7 +217,7 @@ public class DOMTest extends GWTTestCase {
     inner.setInnerText("inner");
 
     outer.appendChild(inner);
-    RootPanel.getBodyElement().appendChild(outer);
+    com.google.gwt.user.client.ui.RootPanel.getBodyElement().appendChild(outer);
 
     // Get the position without a border
     int absTop = inner.getAbsoluteTop();
@@ -247,7 +249,7 @@ public class DOMTest extends GWTTestCase {
    * Tests the ability to do a parent-ward walk in the DOM.
    */
   public void testGetParent() {
-    Element element = RootPanel.get().getElement();
+    Element element = com.google.gwt.user.client.ui.RootPanel.get().getElement();
     int i = 0;
     while (i < 10 && element != null) {
       element = DOM.getParent(element);
@@ -266,10 +268,10 @@ public class DOMTest extends GWTTestCase {
    * 
    */
   public void testInsertChild() {
-    Element parent = RootPanel.get().getElement();
+    Element parent = com.google.gwt.user.client.ui.RootPanel.get().getElement();
     Element div = DOM.createDiv();
     DOM.insertChild(parent, div, Integer.MAX_VALUE);
-    Element child = DOM.getChild(RootPanel.get().getElement(),
+    Element child = DOM.getChild(com.google.gwt.user.client.ui.RootPanel.get().getElement(),
         DOM.getChildCount(parent) - 1);
     assertTrue(div == child);
   }
@@ -307,7 +309,7 @@ public class DOMTest extends GWTTestCase {
     assertFalse(text.isOrHasChild(doc));
 
     // attached, related
-    DOM.appendChild(RootPanel.getBodyElement(), div);
+    DOM.appendChild(com.google.gwt.user.client.ui.RootPanel.getBodyElement(), div);
     assertTrue(div.isOrHasChild(childDiv));
     assertTrue(childDiv.isOrHasChild(text));
     assertTrue(div.isOrHasChild(div));
@@ -355,7 +357,7 @@ public class DOMTest extends GWTTestCase {
    * Tests {@link DOM#toString(Element)} against likely failure points.
    */
   public void testToString() {
-    Button b = new Button("abcdef");
+    com.google.gwt.user.client.ui.Button b = new Button("abcdef");
     assertTrue(b.toString().indexOf("abcdef") != -1);
     assertTrue(b.toString().toLowerCase(Locale.ROOT).indexOf("button") != -1);
 

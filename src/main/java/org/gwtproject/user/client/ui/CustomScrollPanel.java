@@ -32,8 +32,8 @@ import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.CommonResources;
 import com.google.gwt.resources.client.CssResource;
 import com.google.gwt.resources.client.CssResource.ImportedWithPrefix;
-import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.DOM;
+import org.gwtproject.user.client.Event;
 
 /**
  * A custom version of the {@link ScrollPanel} that allows user provided

@@ -16,10 +16,10 @@
 package org.gwtproject.user;
 
 import com.google.gwt.junit.tools.GWTTestSuite;
-import com.google.gwt.user.client.*;
-import com.google.gwt.user.client.ui.DOMRtlTest;
-import com.google.gwt.user.client.ui.DOMTest;
+import org.gwtproject.user.client.*;
 import org.gwtproject.user.client.CustomEventsTest;
+import org.gwtproject.user.client.ui.DOMRtlTest;
+import org.gwtproject.user.client.ui.DOMTest;
 import org.gwtproject.user.client.ui.AbsolutePanelTest;
 import org.gwtproject.user.client.ui.AnchorTest;
 import org.gwtproject.user.client.ui.ButtonTest;

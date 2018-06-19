@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client;
+package org.gwtproject.user.client;
 
 /**
  * An opaque handle to a native DOM Element. An <code>Element</code> cannot be
@@ -22,7 +22,7 @@ package com.google.gwt.user.client;
  * into JSNI becomes the original DOM element the <code>Element</code> was
  * created from, and can be accessed in JavaScript code as expected. This is
  * typically done by calling methods in the
- * {@link com.google.gwt.user.client.DOM} class.
+ * {@link DOM} class.
  * <p>
  * As of GWT 2.6, users should use {@link com.google.gwt.dom.client.Element}
  * instead.  As an exception, some methods still return a <code>Element</code>

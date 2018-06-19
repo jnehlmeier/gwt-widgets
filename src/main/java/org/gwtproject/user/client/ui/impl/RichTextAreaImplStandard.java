@@ -19,7 +19,7 @@ import com.google.gwt.core.client.JavaScriptException;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
 import com.google.gwt.safehtml.shared.annotations.SuppressIsSafeHtmlCastCheck;
-import com.google.gwt.user.client.DOM;
+import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.ui.RichTextArea;
 import org.gwtproject.user.client.ui.RichTextArea.FontSize;
 import org.gwtproject.user.client.ui.RichTextArea.Justification;
@@ -317,7 +317,7 @@ public abstract class RichTextAreaImplStandard extends RichTextAreaImpl implemen
     var wnd = elem.contentWindow;
 
     elem.__gwt_handler = $entry(function(evt) {
-      @com.google.gwt.user.client.DOM::dispatchEvent(Lcom/google/gwt/user/client/Event;Lcom/google/gwt/dom/client/Element;)(evt, elem);
+      @org.gwtproject.user.client.DOM::dispatchEvent(Lcom/google/gwt/user/client/Event;Lcom/google/gwt/dom/client/Element;)(evt, elem);
     });
 
     elem.__gwt_focusHandler = function(evt) {

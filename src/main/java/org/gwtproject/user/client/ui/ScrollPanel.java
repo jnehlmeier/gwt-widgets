@@ -23,8 +23,8 @@ import com.google.gwt.event.dom.client.ScrollEvent;
 import com.google.gwt.event.dom.client.ScrollHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import org.gwtproject.touch.client.TouchScroller;
-import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.DOM;
+import org.gwtproject.user.client.Event;
 
 /**
  * A simple panel that wraps its contents in a scrollable area.
@@ -298,7 +298,7 @@ public class ScrollPanel extends SimplePanel implements SourcesScrollEvents,
   }
 
   @Override
-  protected com.google.gwt.user.client.Element getContainerElement() {
+  protected org.gwtproject.user.client.Element getContainerElement() {
     return DOM.asOld(containerElem);
   }
 
@@ -308,7 +308,7 @@ public class ScrollPanel extends SimplePanel implements SourcesScrollEvents,
    * 
    * @return the scrollable element
    */
-  protected com.google.gwt.user.client.Element getScrollableElement() {
+  protected org.gwtproject.user.client.Element getScrollableElement() {
     return DOM.asOld(scrollableElem);
   }
 

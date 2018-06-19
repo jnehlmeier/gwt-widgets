@@ -13,15 +13,16 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client.impl;
+package org.gwtproject.user.client.impl;
 
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.dom.client.Element;
-import com.google.gwt.user.client.Event;
-import com.google.gwt.user.client.EventListener;
+import org.gwtproject.user.client.Event;
+import org.gwtproject.user.client.EventListener;
+import org.gwtproject.user.client.DOM;
 
 /**
- * Native implementation associated with {@link com.google.gwt.user.client.DOM}.
+ * Native implementation associated with {@link DOM}.
  */
 public abstract class DOMImpl {
 
@@ -63,7 +64,7 @@ public abstract class DOMImpl {
      * TODO: make the generated code smaller!
      */
     return !(object instanceof JavaScriptObject)
-        && (object instanceof com.google.gwt.user.client.EventListener);
+        && (object instanceof org.gwtproject.user.client.EventListener);
   }
 
   public native void eventCancelBubble(Event evt, boolean cancel) /*-{

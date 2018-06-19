@@ -16,7 +16,7 @@
 package org.gwtproject.user.client.ui;
 
 import com.google.gwt.dom.client.Element;
-import com.google.gwt.user.client.DOM;
+import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant;
 import org.gwtproject.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant;
 
@@ -201,11 +201,11 @@ public abstract class CellPanel extends ComplexPanel {
     table.setPropertyInt("cellSpacing", spacing);
   }
 
-  protected com.google.gwt.user.client.Element getBody() {
+  protected org.gwtproject.user.client.Element getBody() {
     return DOM.asOld(body);
   }
 
-  protected com.google.gwt.user.client.Element getTable() {
+  protected org.gwtproject.user.client.Element getTable() {
     return DOM.asOld(table);
   }
 
@@ -220,8 +220,8 @@ public abstract class CellPanel extends ComplexPanel {
    *             HorizontalAlignmentConstant)} instead.
    */
   @Deprecated
-  protected void setCellHorizontalAlignment(com.google.gwt.user.client.Element td,
-      HorizontalAlignmentConstant align) {
+  protected void setCellHorizontalAlignment(org.gwtproject.user.client.Element td,
+                                            HorizontalAlignmentConstant align) {
     td.setPropertyString("align", align.getTextAlignString());
   }
 
@@ -236,8 +236,8 @@ public abstract class CellPanel extends ComplexPanel {
    *             VerticalAlignmentConstant)} instead.
    */
   @Deprecated
-  protected void setCellVerticalAlignment(com.google.gwt.user.client.Element td,
-      VerticalAlignmentConstant align) {
+  protected void setCellVerticalAlignment(org.gwtproject.user.client.Element td,
+                                          VerticalAlignmentConstant align) {
     td.getStyle().setProperty("verticalAlign", align.getVerticalAlignString());
   }
 

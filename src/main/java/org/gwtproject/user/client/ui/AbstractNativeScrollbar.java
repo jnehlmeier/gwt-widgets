@@ -24,7 +24,7 @@ import com.google.gwt.event.dom.client.HasScrollHandlers;
 import com.google.gwt.event.dom.client.ScrollEvent;
 import com.google.gwt.event.dom.client.ScrollHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.Event;
 
 /**
  * Abstract parent class for scrollbars implemented using the native browser

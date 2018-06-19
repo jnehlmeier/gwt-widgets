@@ -15,13 +15,15 @@
  */
 package org.gwtproject.user.client.ui;
 
+import org.gwtproject.user.client.Event;
+
 /**
  * A class that implements this interface receives a preview of keyboard events
  * before they are passed to the focused widget.
  * 
  * @see com.google.gwt.event.dom.client.KeyCodeEvent
  * @deprecated This interface is no longer implemented by any GWT library. Use
- *             {@link com.google.gwt.user.client.Event#addNativePreviewHandler}
+ *             {@link Event#addNativePreviewHandler}
  *             instead.
  */
 @Deprecated

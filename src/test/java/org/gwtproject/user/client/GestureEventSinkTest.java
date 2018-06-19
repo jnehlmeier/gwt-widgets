@@ -14,11 +14,11 @@
  * the License.
  */
 
-package com.google.gwt.user.client;
+package org.gwtproject.user.client;
 
 import com.google.gwt.event.dom.client.*;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.user.client.ui.*;
+import org.gwtproject.user.client.ui.*;
 
 /**
  * Test Case for sinking of gesture events.
@@ -47,17 +47,17 @@ public class GestureEventSinkTest extends GWTTestCase {
 
     CheckBox checkBox1 = new CheckBox();
     // Get the inputElem on which events are sunk
-    Element e1 = (Element) checkBox1.getElement().getFirstChildElement();
+    org.gwtproject.user.client.Element e1 = (Element) checkBox1.getElement().getFirstChildElement();
     verifyGestureStartEventSinkOnAddHandler(checkBox1, e1, false);
 
     CheckBox checkBox2 = new CheckBox();
     // Get the inputElem on which events are sunk
-    Element e2 = (Element) checkBox2.getElement().getFirstChildElement();
+    org.gwtproject.user.client.Element e2 = (org.gwtproject.user.client.Element) checkBox2.getElement().getFirstChildElement();
     verifyGestureChangeEventSinkOnAddHandler(checkBox2, e2, false);
 
     CheckBox checkBox3 = new CheckBox();
     // Get the inputElem on which events are sunk
-    Element e3 = (Element) checkBox3.getElement().getFirstChildElement();
+    org.gwtproject.user.client.Element e3 = (org.gwtproject.user.client.Element) checkBox3.getElement().getFirstChildElement();
     verifyGestureEndEventSinkOnAddHandler(checkBox3, e3, false);
 
     verifyGestureStartEventSinkOnAddHandler(new ToggleButton(), false);
@@ -92,9 +92,9 @@ public class GestureEventSinkTest extends GWTTestCase {
   }
 
   public void testGestureEventBitFieldsNotTriviallyZero() {
-    assertNotSame(0, Event.ONGESTURESTART);
-    assertNotSame(0, Event.ONGESTURECHANGE);
-    assertNotSame(0, Event.ONGESTUREEND);
+    assertNotSame(0, org.gwtproject.user.client.Event.ONGESTURESTART);
+    assertNotSame(0, org.gwtproject.user.client.Event.ONGESTURECHANGE);
+    assertNotSame(0, org.gwtproject.user.client.Event.ONGESTUREEND);
   }
 
   public void testImageGestureEventSinkByAddingHandler() {
@@ -142,16 +142,16 @@ public class GestureEventSinkTest extends GWTTestCase {
         + " once the widget has been attached", isSunk);
   }
 
-  private boolean isGestureChangeEventSunk(Element e) {
-    return (DOM.getEventsSunk(e) & Event.ONGESTURECHANGE) != 0;
+  private boolean isGestureChangeEventSunk(org.gwtproject.user.client.Element e) {
+    return (org.gwtproject.user.client.DOM.getEventsSunk(e) & org.gwtproject.user.client.Event.ONGESTURECHANGE) != 0;
   }
 
-  private boolean isGestureEndEventSunk(Element e) {
-    return (DOM.getEventsSunk(e) & Event.ONGESTUREEND) != 0;
+  private boolean isGestureEndEventSunk(org.gwtproject.user.client.Element e) {
+    return (DOM.getEventsSunk(e) & org.gwtproject.user.client.Event.ONGESTUREEND) != 0;
   }
 
-  private boolean isGestureStartEventSunk(Element e) {
-    return (DOM.getEventsSunk(e) & Event.ONGESTURESTART) != 0;
+  private boolean isGestureStartEventSunk(org.gwtproject.user.client.Element e) {
+    return (org.gwtproject.user.client.DOM.getEventsSunk(e) & Event.ONGESTURESTART) != 0;
   }
 
   private <W extends Widget & HasAllGestureHandlers>
@@ -162,7 +162,7 @@ public class GestureEventSinkTest extends GWTTestCase {
 
   private <W extends Widget & HasAllGestureHandlers>
       void verifyGestureChangeEventSinkOnAddHandler(
-      W w, Element e, boolean widgetSinksEventsOnAttach) {
+      W w, org.gwtproject.user.client.Element e, boolean widgetSinksEventsOnAttach) {
     RootPanel.get().add(w);
 
     if (widgetSinksEventsOnAttach) {
@@ -190,7 +190,7 @@ public class GestureEventSinkTest extends GWTTestCase {
 
   private <W extends Widget & HasAllGestureHandlers>
       void verifyGestureEndEventSinkOnAddHandler(
-      W w, Element e, boolean widgetSinksEventsOnAttach) {
+      W w, org.gwtproject.user.client.Element e, boolean widgetSinksEventsOnAttach) {
     RootPanel.get().add(w);
 
     if (widgetSinksEventsOnAttach) {
@@ -219,7 +219,7 @@ public class GestureEventSinkTest extends GWTTestCase {
 
   private <W extends Widget & HasAllGestureHandlers>
       void verifyGestureStartEventSinkOnAddHandler(
-      W w, Element e, boolean widgetSinksEventsOnAttach) {
+      W w, org.gwtproject.user.client.Element e, boolean widgetSinksEventsOnAttach) {
     RootPanel.get().add(w);
 
     if (widgetSinksEventsOnAttach) {

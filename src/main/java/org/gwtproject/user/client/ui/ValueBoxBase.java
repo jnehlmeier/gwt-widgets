@@ -32,8 +32,8 @@ import com.google.gwt.i18n.shared.DirectionEstimator;
 import com.google.gwt.i18n.shared.HasDirectionEstimator;
 import com.google.gwt.text.shared.Parser;
 import com.google.gwt.text.shared.Renderer;
-import com.google.gwt.user.client.DOM;
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.DOM;
+import org.gwtproject.user.client.Event;
 import org.gwtproject.user.client.ui.impl.TextBoxImpl;
 
 import java.text.ParseException;

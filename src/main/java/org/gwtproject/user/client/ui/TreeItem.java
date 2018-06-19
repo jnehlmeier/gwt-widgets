@@ -24,7 +24,7 @@ import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.safehtml.client.HasSafeHtml;
 import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
-import com.google.gwt.user.client.DOM;
+import org.gwtproject.user.client.DOM;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -84,7 +84,7 @@ import com.google.gwt.resources.client.ImageResource;
 import com.google.gwt.resources.client.impl.ImageResourcePrototype;
 import com.google.gwt.safehtml.shared.SafeUri;
 import com.google.gwt.safehtml.shared.UriUtils;
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.Event;
 import org.gwtproject.user.client.ui.impl.ClippedImageImpl;
 
 import java.util.HashMap;

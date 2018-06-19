@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.google.gwt.user.client;
+package org.gwtproject.user.client;
 
 import com.google.gwt.event.logical.shared.CloseEvent;
 import com.google.gwt.event.logical.shared.CloseHandler;
@@ -23,6 +23,10 @@ import com.google.gwt.event.logical.shared.ResizeHandler;
 import com.google.gwt.event.shared.EventHandler;
 import com.google.gwt.event.shared.GwtEvent.Type;
 import com.google.gwt.event.shared.HandlerManager;
+import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.WindowCloseListener;
+import com.google.gwt.user.client.WindowResizeListener;
+import com.google.gwt.user.client.WindowScrollListener;
 
 /**
  * Legacy listener support hierarchy root.

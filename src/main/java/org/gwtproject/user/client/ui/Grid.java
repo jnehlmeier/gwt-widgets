@@ -16,7 +16,7 @@
 package org.gwtproject.user.client.ui;
 
 import com.google.gwt.dom.client.Element;
-import com.google.gwt.user.client.DOM;
+import org.gwtproject.user.client.DOM;
 
 /**
  * A rectangular grid that can contain text, html, or a child
@@ -266,7 +266,7 @@ public class Grid extends HTMLTable {
    * Creates a new, empty cell.
    */
   @Override
-  protected com.google.gwt.user.client.Element createCell() {
+  protected org.gwtproject.user.client.Element createCell() {
     Element td = super.createCell();
 
     // Add a non-breaking space to the TD. This ensures that the cell is

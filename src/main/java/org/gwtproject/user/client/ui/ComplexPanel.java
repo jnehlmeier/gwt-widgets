@@ -16,7 +16,7 @@
 package org.gwtproject.user.client.ui;
 
 import com.google.gwt.dom.client.Element;
-import com.google.gwt.user.client.DOM;
+import org.gwtproject.user.client.DOM;
 
 import java.util.Iterator;
 
@@ -91,7 +91,7 @@ public abstract class ComplexPanel extends Panel implements IndexedPanel.ForIsWi
    * @deprecated Call and override {@link #add(Widget, Element)} instead.
    */
   @Deprecated
-  protected void add(Widget child, com.google.gwt.user.client.Element container) {
+  protected void add(Widget child, org.gwtproject.user.client.Element container) {
     // Detach new child.
     child.removeFromParent();
 
@@ -186,7 +186,7 @@ public abstract class ComplexPanel extends Panel implements IndexedPanel.ForIsWi
    * @deprecated Call and override {@link insert(Widget, Element, int, boolean)} instead.
    */
   @Deprecated
-  protected void insert(Widget child, com.google.gwt.user.client.Element container,
+  protected void insert(Widget child, org.gwtproject.user.client.Element container,
       int beforeIndex, boolean domInsert) {
     // Validate index; adjust if the widget is already a child of this panel.
     beforeIndex = adjustIndex(child, beforeIndex);

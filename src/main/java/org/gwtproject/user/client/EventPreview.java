@@ -13,14 +13,14 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.user.client;
+package org.gwtproject.user.client;
 
 /**
  * A listener interface for previewing browser events.
  * 
- * @see com.google.gwt.user.client.DOM#addEventPreview(EventPreview)
+ * @see DOM#addEventPreview(EventPreview)
  * @deprecated replaced by
- *             {@link com.google.gwt.user.client.Event.NativePreviewHandler}
+ *             {@link Event.NativePreviewHandler}
  */
 @Deprecated
 public interface EventPreview {
@@ -33,7 +33,7 @@ public interface EventPreview {
    * @return <code>false</code> to cancel the event
    * @see DOM#addEventPreview(EventPreview)
    * @deprecated replaced by
-   *             {@link com.google.gwt.user.client.Event.NativePreviewHandler#onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)}
+   *             {@link Event.NativePreviewHandler#onPreviewNativeEvent(Event.NativePreviewEvent)}
    */
   @Deprecated
   boolean onEventPreview(Event event);

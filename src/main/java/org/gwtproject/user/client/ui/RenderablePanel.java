@@ -23,7 +23,7 @@ import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
 import com.google.gwt.safehtml.shared.SafeHtmlUtils;
 import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
-import com.google.gwt.user.client.DOM;
+import org.gwtproject.user.client.DOM;
 
 /**
  * EXPERIMENTAL and subject to change. Do not use this in production code.
@@ -112,7 +112,7 @@ public class RenderablePanel extends ComplexPanel implements IsRenderable {
    */
   @Deprecated
   public void addAndReplaceElement(Widget widget,
-      com.google.gwt.user.client.Element toReplace) {
+      org.gwtproject.user.client.Element toReplace) {
     // Logic pulled from super.add(), replacing the element rather than adding.
     widget.removeFromParent();
     getChildren().add(widget);
@@ -129,7 +129,7 @@ public class RenderablePanel extends ComplexPanel implements IsRenderable {
    */
   @Deprecated
   public void addAndReplaceElement(IsWidget widget,
-      com.google.gwt.user.client.Element toReplace) {
+      org.gwtproject.user.client.Element toReplace) {
     this.addAndReplaceElement(widget.asWidget(), toReplace);
   }
 

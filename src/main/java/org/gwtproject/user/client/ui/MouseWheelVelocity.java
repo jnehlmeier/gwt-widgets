@@ -15,14 +15,15 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.DOM;
+import org.gwtproject.user.client.Event;
 
 /**
  * Encapsulates the direction and velocity of mouse wheel events. Not all
  * combinations of browser and user input devices can generate all combinations
  * of direction or range of velocity information.
  *
- * @see com.google.gwt.user.client.DOM#eventGetMouseWheelVelocityY An
+ * @see DOM#eventGetMouseWheelVelocityY An
  *      explanation of the units used for mouse wheel velocity.
  * @deprecated use
  *             {@link com.google.gwt.event.dom.client.MouseWheelEvent#getDeltaY()}

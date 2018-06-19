@@ -21,7 +21,7 @@ import com.google.gwt.dom.client.Element;
 import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
 import com.google.gwt.safehtml.shared.annotations.SuppressIsSafeHtmlCastCheck;
-import com.google.gwt.user.client.DOM;
+import org.gwtproject.user.client.DOM;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -201,7 +201,7 @@ public class HTMLPanel extends ComplexPanel {
    * @deprecated use {@link #addAndReplaceElement(Widget, Element)}
    */
   @Deprecated
-  public void addAndReplaceElement(Widget widget, com.google.gwt.user.client.Element toReplace) {
+  public void addAndReplaceElement(Widget widget, org.gwtproject.user.client.Element toReplace) {
     /*
      * Early exit if the element to replace and the replacement are the same. If
      * we remove the new widget, we would also remove the element to replace.
@@ -264,7 +264,7 @@ public class HTMLPanel extends ComplexPanel {
    */
   @Deprecated
   public void addAndReplaceElement(IsWidget widget,
-      com.google.gwt.user.client.Element toReplace) {
+      org.gwtproject.user.client.Element toReplace) {
     this.addAndReplaceElement(widget.asWidget(), toReplace);
   }
 
@@ -313,7 +313,7 @@ public class HTMLPanel extends ComplexPanel {
    * @param id the id of the element to be found
    * @return the element with the given id, or <code>null</code> if none is found
    */
-  public com.google.gwt.user.client.Element getElementById(String id) {
+  public org.gwtproject.user.client.Element getElementById(String id) {
     Element elem = isAttached() ? Document.get().getElementById(id) : attachToDomAndGetElement(id);
     return DOM.asOld(elem);
   }

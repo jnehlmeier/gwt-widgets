@@ -16,7 +16,7 @@
 package org.gwtproject.user.client.ui;
 
 import com.google.gwt.dom.client.Element;
-import com.google.gwt.user.client.DOM;
+import org.gwtproject.user.client.DOM;
 
 /**
  * A panel that lays all of its widgets out in a single vertical column.

@@ -19,7 +19,8 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.debug.client.DebugInfo;
 import com.google.gwt.dom.client.Element;
-import com.google.gwt.user.client.DOM;
+import org.gwtproject.user.client.DOM;
+import org.gwtproject.user.client.Event;
 
 import java.util.Locale;
 
@@ -138,7 +139,7 @@ public abstract class UIObject implements HasVisibility {
    * WARNING: For historical reasons, there are two Element classes being used
    * in this code. The dom.Element (com.google.gwt.dom.client.Element) class is
    * explicitly imported, while user.Element
-   * (com.google.gwt.user.client.Element) is fully-qualified in the code.
+   * (org.gwtproject.user.client.Element) is fully-qualified in the code.
    * 
    * All new methods should use dom.Element, because user.Element extends it but
    * adds no methods.
@@ -556,7 +557,7 @@ public abstract class UIObject implements HasVisibility {
    * 
    * @return the object's browser element
    */
-  public com.google.gwt.user.client.Element getElement() {
+  public org.gwtproject.user.client.Element getElement() {
     assert (element != null) : MISSING_ELEMENT_ERROR;
     return DOM.asOld(element);
   }
@@ -782,7 +783,7 @@ public abstract class UIObject implements HasVisibility {
    * them.
    * 
    * @param eventTypeName name of the event to sink on this element
-   * @see com.google.gwt.user.client.Event
+   * @see Event
    */
   public void sinkBitlessEvent(String eventTypeName) {
     DOM.sinkBitlessEvent(getElement(), eventTypeName);
@@ -795,7 +796,7 @@ public abstract class UIObject implements HasVisibility {
    * 
    * @param eventBitsToAdd a bitfield representing the set of events to be added
    *          to this element's event set
-   * @see com.google.gwt.user.client.Event
+   * @see Event
    */
   public void sinkEvents(int eventBitsToAdd) {
     DOM.sinkEvents(getElement(), eventBitsToAdd
@@ -822,7 +823,7 @@ public abstract class UIObject implements HasVisibility {
    * @param eventBitsToRemove a bitfield representing the set of events to be
    *          removed from this element's event set
    * @see #sinkEvents
-   * @see com.google.gwt.user.client.Event
+   * @see Event
    */
   public void unsinkEvents(int eventBitsToRemove) {
     DOM.sinkEvents(getElement(), DOM.getEventsSunk(getElement())
@@ -836,7 +837,7 @@ public abstract class UIObject implements HasVisibility {
    * 
    * @return the element to which style names will be applied
    */
-  protected com.google.gwt.user.client.Element getStyleElement() {
+  protected org.gwtproject.user.client.Element getStyleElement() {
     return getElement();
   }
 
@@ -916,7 +917,7 @@ public abstract class UIObject implements HasVisibility {
    * @deprecated Use and override {@link #setElement(Element)} instead.
    */
   @Deprecated
-  protected void setElement(com.google.gwt.user.client.Element elem) {
+  protected void setElement(org.gwtproject.user.client.Element elem) {
     assert (element == null || PotentialElement.isPotential(element)) : SETELEMENT_TWICE_ERROR;
     this.element = elem;
   }

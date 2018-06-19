@@ -23,7 +23,7 @@ import com.google.gwt.event.logical.shared.CloseHandler;
 import com.google.gwt.i18n.client.BidiUtils;
 import com.google.gwt.i18n.client.HasDirection;
 import com.google.gwt.i18n.client.LocaleInfo;
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.Event;
 import com.google.gwt.user.client.Window;
 
 import java.util.HashMap;
@@ -217,7 +217,7 @@ public class RootPanel extends AbsolutePanel {
    * 
    * @return the document's body element
    */
-  public static native com.google.gwt.user.client.Element getBodyElement() /*-{
+  public static native org.gwtproject.user.client.Element getBodyElement() /*-{
     return $doc.body;
   }-*/;
 

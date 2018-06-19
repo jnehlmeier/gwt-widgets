@@ -16,7 +16,7 @@
 
 package org.gwtproject.user.client.ui.impl;
 
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.Event;
 
 /**
  * HyperlinkImpl for Safari and Google Chrome. Safari has special behavior for

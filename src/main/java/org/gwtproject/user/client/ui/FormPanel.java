@@ -28,7 +28,7 @@ import com.google.gwt.safehtml.client.SafeHtmlTemplates;
 import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.SafeUri;
 import com.google.gwt.safehtml.shared.annotations.IsSafeUri;
-import com.google.gwt.user.client.Event;
+import org.gwtproject.user.client.Event;
 import org.gwtproject.user.client.ui.impl.FormPanelImpl;
 import org.gwtproject.user.client.ui.impl.FormPanelImplHost;
 
