@@ -399,19 +399,6 @@ public abstract class CustomButton extends ButtonBase {
    * Constructor for <code>CustomButton</code>.
    *
    * @param upImage image for the default (up) face of the button
-   * @param listener the click listener
-   * @deprecated Use {@link #CustomButton(Image, ClickHandler)} instead
-   */
-  @Deprecated
-  public CustomButton(Image upImage, ClickListener listener) {
-    this(upImage);
-    addClickListener(listener);
-  }
-
-  /**
-   * Constructor for <code>CustomButton</code>.
-   *
-   * @param upImage image for the default (up) face of the button
    * @param downImage image for the down face of the button
    */
   public CustomButton(Image upImage, Image downImage) {
@@ -428,20 +415,6 @@ public abstract class CustomButton extends ButtonBase {
    */
   public CustomButton(Image upImage, Image downImage, ClickHandler handler) {
     this(upImage, handler);
-    getDownFace().setImage(downImage);
-  }
-
-  /**
-   * Constructor for <code>CustomButton</code>.
-   *
-   * @param upImage image for the default (up) face of the button
-   * @param downImage image for the down face of the button
-   * @param listener clickListener
-   * @deprecated Use {@link #CustomButton(Image, Image, ClickHandler)} instead
-   */
-  @Deprecated
-  public CustomButton(Image upImage, Image downImage, ClickListener listener) {
-    this(upImage, listener);
     getDownFace().setImage(downImage);
   }
 
@@ -470,19 +443,6 @@ public abstract class CustomButton extends ButtonBase {
    * Constructor for <code>CustomButton</code>.
    *
    * @param upText the text for the default (up) face of the button
-   * @param listener the click listener
-   * @deprecated Use {@link #CustomButton(String, ClickListener)} instead
-   */
-  @Deprecated
-  public CustomButton(String upText, ClickListener listener) {
-    this(upText);
-    addClickListener(listener);
-  }
-
-  /**
-   * Constructor for <code>CustomButton</code>.
-   *
-   * @param upText the text for the default (up) face of the button
    * @param downText the text for the down face of the button
    */
   public CustomButton(String upText, String downText) {
@@ -500,20 +460,6 @@ public abstract class CustomButton extends ButtonBase {
   public CustomButton(String upText, String downText, ClickHandler handler) {
     this(upText, downText);
     addClickHandler(handler);
-  }
-
-  /**
-   * Constructor for <code>CustomButton</code>.
-   *
-   * @param upText the text for the default (up) face of the button
-   * @param downText the text for the down face of the button
-   * @param listener the click listener
-   * @deprecated Use {@link #CustomButton(String, String, ClickHandler)} instead
-   */
-  @Deprecated
-  public CustomButton(String upText, String downText, ClickListener listener) {
-    this(upText, downText);
-    addClickListener(listener);
   }
 
   /**

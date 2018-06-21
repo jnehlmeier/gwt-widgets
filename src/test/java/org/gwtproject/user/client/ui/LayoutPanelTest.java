@@ -39,7 +39,7 @@ public class LayoutPanelTest extends WidgetTestBase {
    * Tests for a bug in LayoutCommand, which caused an animate() call, just
    * before an unnecessary forceLayout(), to get stuck. See issue 4360.
    */
-  @SuppressWarnings("deprecation")
+
   public void testRedundantForceLayout() {
     final LayoutPanel p = new LayoutPanel();
     Label l = new Label("foo");
@@ -73,7 +73,7 @@ public class LayoutPanelTest extends WidgetTestBase {
    * cropped up on IE7 as a result of CSS expressions used in PopupImplIE6, as
    * described in issue 4532.
    */
-  @SuppressWarnings("deprecation")
+
   public void testWeirdPopupInteraction() {
     assertTrue(Document.get().isCSS1Compat());
 

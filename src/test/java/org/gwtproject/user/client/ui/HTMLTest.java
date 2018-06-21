@@ -68,7 +68,7 @@ public class HTMLTest extends LabelTest {
     assertEquals(html, htmlElement.getHTML().toLowerCase(Locale.ROOT));
   }
 
-  @SuppressWarnings("deprecation")
+
   public void testSetSafeHtmlWithDirection() {
     HTML htmlElement = new HTML("<b>foo</b>");
     htmlElement.setHTML(SafeHtmlUtils.fromSafeConstant(html), Direction.LTR);

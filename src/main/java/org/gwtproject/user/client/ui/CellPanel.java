@@ -210,7 +210,7 @@ public abstract class CellPanel extends ComplexPanel {
     return DOM.asOld(table);
   }
 
-  @SuppressWarnings("deprecation")
+
   protected void setCellHorizontalAlignment(Element td,
       HorizontalAlignmentConstant align) {
     setCellHorizontalAlignment(DOM.asOld(td), align);
@@ -226,7 +226,7 @@ public abstract class CellPanel extends ComplexPanel {
     td.setPropertyString("align", align.getTextAlignString());
   }
 
-  @SuppressWarnings("deprecation")
+
   protected void setCellVerticalAlignment(Element td,
       VerticalAlignmentConstant align) {
     setCellVerticalAlignment(DOM.asOld(td), align);

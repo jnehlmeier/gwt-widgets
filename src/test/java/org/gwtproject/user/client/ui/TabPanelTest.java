@@ -28,7 +28,7 @@ import java.util.Iterator;
 /**
  * Tests the TabPanel.
  */
-@SuppressWarnings("deprecation")
+
 public class TabPanelTest extends GWTTestCase {
 
   static class Adder implements HasWidgetsTester.WidgetAdder {

@@ -129,9 +129,8 @@ import com.google.gwt.user.client.Window;
  * </pre>
  * 
  */
-@SuppressWarnings("deprecation")
 public class DialogBox extends DecoratedPopupPanel implements HasHTML,
-    HasSafeHtml, MouseListener {
+    HasSafeHtml {
   /**
    * Set of characteristic interfaces supported by the {@link DialogBox}
    * caption.

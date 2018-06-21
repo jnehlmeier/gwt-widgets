@@ -62,8 +62,7 @@ import org.gwtproject.user.client.ui.impl.FormPanelImplHost;
  * {@example com.google.gwt.examples.FormPanelExample}
  * </p>
  */
-@SuppressWarnings("deprecation")
-public class FormPanel extends SimplePanel implements FiresFormEvents, FormPanelImplHost {
+public class FormPanel extends SimplePanel implements FormPanelImplHost {
   /**
    * Fired when a form has been submitted successfully.
    */
@@ -414,15 +413,6 @@ public class FormPanel extends SimplePanel implements FiresFormEvents, FormPanel
   }
 
   /**
-   * @deprecated Use {@link #addSubmitCompleteHandler} and
-   *             {@link #addSubmitHandler} instead
-   */
-  @Deprecated
-  public void addFormHandler(FormHandler handler) {
-    ListenerWrapper.WrappedOldFormHandler.add(this, handler);
-  }
-
-  /**
    * Adds a {@link SubmitCompleteEvent} handler.
    *
    * @param handler the handler
@@ -494,15 +484,6 @@ public class FormPanel extends SimplePanel implements FiresFormEvents, FormPanel
 
   public void onFrameLoad() {
     onFrameLoadImpl();
-  }
-
-  /**
-   * @deprecated Use the {@link HandlerRegistration#removeHandler} method on the
-   *             object returned by and add*Handler method instead
-   */
-  @Deprecated
-  public void removeFormHandler(FormHandler handler) {
-    ListenerWrapper.WrappedOldFormHandler.remove(this, handler);
   }
 
   /**

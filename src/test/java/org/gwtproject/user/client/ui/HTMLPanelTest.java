@@ -166,7 +166,7 @@ public class HTMLPanelTest extends GWTTestCase {
    * Ensures that {@link HTMLPanel#addAndReplaceElement(Widget, Element)} puts
    * the widget in exactly the right place in the DOM.
    */
-  @SuppressWarnings("deprecation")
+
   public void testAddAndReplaceElementForUserElement() {
     HTMLPanel hp = new HTMLPanel("<div id='parent'>foo<span id='placeholder'></span>bar</div>");
     RootPanel.get().add(hp);
@@ -248,7 +248,7 @@ public class HTMLPanelTest extends GWTTestCase {
    * correctly removes (physically and logically) the replaced element if the
    * element is an ancestor of a widget.
    */
-  @SuppressWarnings("deprecation")
+
   public void testAddAndReplaceElementLogicalDetachWidgetChildOfElement() {
     HTMLPanel hp = new HTMLPanel("<div id=\"container\"></div>");
     RootPanel.get().add(hp);
@@ -283,7 +283,7 @@ public class HTMLPanelTest extends GWTTestCase {
    * correctly removes (physically and logically) the replaced element if the
    * element itself is a widget (but not the same as the replacement).
    */
-  @SuppressWarnings("deprecation")
+
   public void testAddAndReplaceElementLogicalDetachWidgetIsElement() {
     HTMLPanel hp = new HTMLPanel("");
     RootPanel.get().add(hp);
@@ -314,7 +314,7 @@ public class HTMLPanelTest extends GWTTestCase {
    * correctly removes (physically and logically) and reattaches the replaced
    * element if the element both the widget being replaced and the replacement.
    */
-  @SuppressWarnings("deprecation")
+
   public void testAddAndReplaceElementSameWidget() {
     HTMLPanel hp = new HTMLPanel("");
     RootPanel.get().add(hp);

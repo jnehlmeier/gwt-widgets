@@ -99,7 +99,7 @@ public class SuggestBoxTest extends WidgetTestBase {
   /**
    * Test the basic accessors.
    */
-  @SuppressWarnings("deprecation")
+
   public void testAccessors() {
     SuggestBox box = createSuggestBox();
 
@@ -252,7 +252,7 @@ public class SuggestBoxTest extends WidgetTestBase {
         display.getSuggestion(3).getDisplayString());
   }
 
-  @SuppressWarnings("deprecation")
+
   public void testShowAndHide() {
     SuggestBox box = createSuggestBox();
     TestSuggestionDisplay display = (TestSuggestionDisplay) box.getSuggestionDisplay();

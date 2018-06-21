@@ -32,13 +32,13 @@ public class DatePickerCellTest extends EditableCellTestBase<Date, Date> {
   }
 
   @Override
-  @SuppressWarnings("deprecation")
+
   protected Date createCellValue() {
     return new Date(2010 - 1900, 0, 1);
   }
 
   @Override
-  @SuppressWarnings("deprecation")
+
   protected Date createCellViewData() {
     return new Date(2010 - 1900, 0, 3);
   }

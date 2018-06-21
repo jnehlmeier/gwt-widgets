@@ -179,7 +179,7 @@ public class RadioButtonTest extends GWTTestCase {
   /**
    * Test the name and grouping methods via deprecated calls.
    */
-  @SuppressWarnings("deprecation")
+
   public void testGroupingDeprecated() {
     // Create some radio buttons
     RadioButton r1 = new RadioButton("group1", "Radio 1");

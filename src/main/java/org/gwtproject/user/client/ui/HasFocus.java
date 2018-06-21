@@ -21,7 +21,6 @@ package org.gwtproject.user.client.ui;
  * @deprecated Use {@link Focusable} instead
  */
 @Deprecated
-public interface HasFocus extends Focusable, SourcesFocusEvents,
-    SourcesKeyboardEvents {
+public interface HasFocus extends Focusable {
 
 }

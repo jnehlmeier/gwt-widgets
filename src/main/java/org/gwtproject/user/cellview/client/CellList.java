@@ -410,7 +410,7 @@ public class CellList<T> extends AbstractHasData<T> {
     return cellIsEditing;
   }
 
-  @SuppressWarnings("deprecation")
+
   @Override
   protected void onBrowserEvent2(Event event) {
     // Get the event target.

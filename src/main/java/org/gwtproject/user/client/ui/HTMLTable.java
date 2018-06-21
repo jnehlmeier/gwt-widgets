@@ -63,8 +63,7 @@ import java.util.NoSuchElementException;
  * <img class='gallery' src='doc-files/Table.png'/>
  * </p>
  */
-@SuppressWarnings("deprecation")
-public abstract class HTMLTable extends Panel implements SourcesTableEvents,
+public abstract class HTMLTable extends Panel implements
     HasAllDragAndDropHandlers, HasClickHandlers, HasDoubleClickHandlers {
 
   /**
@@ -726,7 +725,7 @@ public abstract class HTMLTable extends Panel implements SourcesTableEvents,
       return DOM.asOld(getRow(bodyElem, row));
     }
 
-    @SuppressWarnings("deprecation")
+
     protected org.gwtproject.user.client.Element getRow(Element tbody, int row) {
       return getRow(DOM.asOld(tbody), row);
     }
@@ -827,19 +826,6 @@ public abstract class HTMLTable extends Panel implements SourcesTableEvents,
 
   public HandlerRegistration addDropHandler(DropHandler handler) {
     return addBitlessDomHandler(handler, DropEvent.getType());
-  }
-
-  /**
-   * Adds a listener to the current table.
-   * 
-   * @param listener listener to add
-   * @deprecated add a click handler instead and use
-   *             {@link HTMLTable#getCellForEvent(ClickEvent)} to get the cell
-   *             information (remember to check for a null return value)
-   */
-  @Deprecated
-  public void addTableListener(TableListener listener) {
-    ListenerWrapper.WrappedTableListener.add(this, listener);
   }
 
   /**
@@ -1094,19 +1080,6 @@ public abstract class HTMLTable extends Panel implements SourcesTableEvents,
   }
 
   /**
-   * Removes the specified table listener.
-   * 
-   * @param listener listener to remove
-   *
-   * @deprecated Use the {@link HandlerRegistration#removeHandler}
-   * method on the object returned by an add*Handler method instead
-   */
-  @Deprecated
-  public void removeTableListener(TableListener listener) {
-    ListenerWrapper.WrappedTableListener.remove(this, listener);
-  }
-
-  /**
    * Sets the width of the table's border. This border is displayed around all
    * cells in the table.
    * 
@@ -1284,7 +1257,7 @@ public abstract class HTMLTable extends Panel implements SourcesTableEvents,
    * @param row the row
    * @return number of columns in the row
    */
-  @SuppressWarnings("deprecation")
+
   protected int getDOMCellCount(Element tableBody, int row) {
     return getDOMCellCount(DOM.asOld(tableBody), row);
   }
@@ -1317,7 +1290,7 @@ public abstract class HTMLTable extends Panel implements SourcesTableEvents,
     return getDOMRowCount(bodyElem);
   }
 
-  @SuppressWarnings("deprecation")
+
   protected int getDOMRowCount(Element tbody) {
     return getDOMRowCount(DOM.asOld(tbody));
   }
@@ -1413,7 +1386,7 @@ public abstract class HTMLTable extends Panel implements SourcesTableEvents,
    * @param clearInnerHTML should the cell's inner html be cleared?
    * @return returns whether a widget was cleared
    */
-  @SuppressWarnings("deprecation")
+
   protected boolean internalClearCell(Element td, boolean clearInnerHTML) {
     return internalClearCell(DOM.asOld(td), clearInnerHTML);
   }

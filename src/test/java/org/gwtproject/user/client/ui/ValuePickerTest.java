@@ -15,9 +15,9 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.cell.client.TextCell;
+import org.gwtproject.cell.client.TextCell;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.user.cellview.client.CellList;
+import org.gwtproject.user.cellview.client.CellList;
 
 import java.util.Arrays;
 import java.util.List;

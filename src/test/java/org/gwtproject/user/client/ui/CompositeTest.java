@@ -40,29 +40,15 @@ public class CompositeTest extends GWTTestCase {
 
   private static class EventTestComposite extends Composite {
     TextBox tb = new TextBox();
-    boolean widgetFocusFired;
-    boolean widgetLostFocusFired;
     boolean widgetFocusHandlerFired;
     boolean widgetBlurHandlerFired;
     boolean domFocusFired;
     boolean domBlurFired;
 
-    @SuppressWarnings("deprecation")
+
     public EventTestComposite() {
       initWidget(tb);
       sinkEvents(Event.FOCUSEVENTS);
-
-      tb.addFocusListener(new FocusListener() {
-        @Override
-        public void onLostFocus(Widget sender) {
-          widgetLostFocusFired = true;
-        }
-
-        @Override
-        public void onFocus(Widget sender) {
-          widgetFocusFired = true;
-        }
-      });
 
       tb.addFocusHandler(new FocusHandler() {
         @Override
@@ -116,12 +102,10 @@ public class CompositeTest extends GWTTestCase {
             // Ensure all events fired as expected.
             assertTrue(c.domFocusFired);
             assertTrue(c.domBlurFired);
-            assertTrue(c.widgetLostFocusFired);
             assertTrue(c.widgetBlurHandlerFired);
 
             // Ensure that the widget's focus event was eaten by the
             // composite's implementation of onBrowserEvent().
-            assertFalse(c.widgetFocusFired);
             assertFalse(c.widgetFocusHandlerFired);
             finishTest();
           }

@@ -22,7 +22,7 @@ import org.gwtproject.user.client.DOM;
 /**
  * Tests the DockPanel widget.
  */
-@SuppressWarnings("deprecation")
+
 public class DockPanelTest extends GWTTestCase {
 
   static class Adder implements HasWidgetsTester.WidgetAdder {

@@ -59,7 +59,6 @@ public class UiSuite {
     suite.addTestSuite(DecoratedTabPanelTest.class);
     suite.addTestSuite(DecoratorPanelTest.class);
     suite.addTestSuite(DefaultSuggestionDisplayTest.class);
-    suite.addTestSuite(DelegatingKeyboardListenerCollectionTest.class);
     suite.addTestSuite(DialogBoxTest.class);
     suite.addTestSuite(DirectionalTextHelperTest.class);
     suite.addTestSuite(DisclosurePanelTest.class);

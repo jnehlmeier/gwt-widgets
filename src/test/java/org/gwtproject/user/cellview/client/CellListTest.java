@@ -125,7 +125,7 @@ public class CellListTest extends AbstractHasDataTestBase {
     RootPanel.get().remove(display);
   }
 
-  @SuppressWarnings("deprecation")
+
   public void testSetEmptyListWidget() {
     CellList<String> cellList = createAbstractHasData(new TextCell());
 

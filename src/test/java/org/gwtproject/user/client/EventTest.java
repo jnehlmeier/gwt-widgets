@@ -26,38 +26,9 @@ import org.gwtproject.user.client.ui.Label;
 import org.gwtproject.user.client.ui.RootPanel;
 
 /**
- * Test Case for {@link org.gwtproject.user.client.Event}.
+ * Test Case for {@link Event}.
  */
 public class EventTest extends GWTTestCase {
-  /**
-   * An EventPreview used for testing.
-   */
-  @SuppressWarnings("deprecation")
-  private static class TestEventPreview implements EventPreview {
-    private boolean doCancel;
-    private boolean isFired = false;
-
-    /**
-     * Construct a new {@link TestEventPreview}.
-     * 
-     * @param doCancel if true, cancel the event
-     */
-    public TestEventPreview(boolean doCancel) {
-      this.doCancel = doCancel;
-    }
-
-    @Override
-    @Deprecated
-    public boolean onEventPreview(org.gwtproject.user.client.Event event) {
-      assertFalse(isFired);
-      isFired = true;
-      return !doCancel;
-    }
-
-    public void assertIsFired(boolean expected) {
-      assertEquals(expected, isFired);
-    }
-  }
 
   /**
    * A NativePreviewHandler used for testing.
@@ -69,7 +40,7 @@ public class EventTest extends GWTTestCase {
 
     /**
      * Construct a new {@link TestNativePreviewHandler}.
-     * 
+     *
      * @param doCancel if true, cancel the event
      * @param doPreventCancel if true, prevent the event from being canceled
      */
@@ -127,7 +98,7 @@ public class EventTest extends GWTTestCase {
     // Add handler0
     final TestNativePreviewHandler handler0 = new TestNativePreviewHandler(
         false, false);
-    final HandlerRegistration reg0 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler0);
+    final HandlerRegistration reg0 = Event.addNativePreviewHandler(handler0);
 
     // Add handler 1
     final TestNativePreviewHandler handler1 = new TestNativePreviewHandler(
@@ -139,8 +110,8 @@ public class EventTest extends GWTTestCase {
         reg0.removeHandler();
       }
     };
-    HandlerRegistration reg1 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler1);
-    assertTrue(org.gwtproject.user.client.Event.fireNativePreviewEvent(null));
+    HandlerRegistration reg1 = Event.addNativePreviewHandler(handler1);
+    assertTrue(Event.fireNativePreviewEvent(null));
 
     // Verify both handlers fired even though one was removed
     handler0.assertIsFired(true);
@@ -151,7 +122,7 @@ public class EventTest extends GWTTestCase {
   /**
    * Test that a double click results in exactly one simulated click event in
    * IE. See issue 3392 for more info.
-   */  
+   */
   public void testDoubleClickEvent() {
     TestLabel label = new TestLabel();
     RootPanel.get().add(label);
@@ -193,7 +164,7 @@ public class EventTest extends GWTTestCase {
   }
 
   /**
-   * Test that {@link org.gwtproject.user.client.Event#fireNativePreviewEvent(NativeEvent)} returns the
+   * Test that {@link Event#fireNativePreviewEvent(NativeEvent)} returns the
    * correct value if the native event is canceled.
    */
   public void testFireNativePreviewEventCancel() {
@@ -201,9 +172,9 @@ public class EventTest extends GWTTestCase {
         false);
     TestNativePreviewHandler handler1 = new TestNativePreviewHandler(true,
         false);
-    HandlerRegistration reg0 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler0);
-    HandlerRegistration reg1 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler1);
-    assertFalse(org.gwtproject.user.client.Event.fireNativePreviewEvent(null));
+    HandlerRegistration reg0 = Event.addNativePreviewHandler(handler0);
+    HandlerRegistration reg1 = Event.addNativePreviewHandler(handler1);
+    assertFalse(Event.fireNativePreviewEvent(null));
     handler0.assertIsFired(true);
     handler1.assertIsFired(true);
     reg0.removeHandler();
@@ -211,7 +182,7 @@ public class EventTest extends GWTTestCase {
   }
 
   /**
-   * Test that {@link org.gwtproject.user.client.Event#fireNativePreviewEvent(NativeEvent)} returns the
+   * Test that {@link Event#fireNativePreviewEvent(NativeEvent)} returns the
    * correct value if the native event is prevented from being canceled, even if
    * another handler cancels the event.
    */
@@ -220,9 +191,9 @@ public class EventTest extends GWTTestCase {
         true);
     TestNativePreviewHandler handler1 = new TestNativePreviewHandler(true,
         false);
-    HandlerRegistration reg0 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler0);
-    HandlerRegistration reg1 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler1);
-    assertTrue(org.gwtproject.user.client.Event.fireNativePreviewEvent(null));
+    HandlerRegistration reg0 = Event.addNativePreviewHandler(handler0);
+    HandlerRegistration reg1 = Event.addNativePreviewHandler(handler1);
+    assertTrue(Event.fireNativePreviewEvent(null));
     handler0.assertIsFired(true);
     handler1.assertIsFired(true);
     reg0.removeHandler();
@@ -230,21 +201,17 @@ public class EventTest extends GWTTestCase {
   }
 
   /**
-   * Test that {@link org.gwtproject.user.client.Event#fireNativePreviewEvent(NativeEvent)} fires handlers
+   * Test that {@link Event#fireNativePreviewEvent(NativeEvent)} fires handlers
    * in reverse order, and that the legacy EventPreview fires only if it is at
    * the top of the stack.
    */
-  @SuppressWarnings("deprecation")
+
   public void testFireNativePreviewEventReverseOrder() {
-    final TestEventPreview preview0 = new TestEventPreview(false);
-    final TestEventPreview preview1 = new TestEventPreview(false);
     final TestNativePreviewHandler handler0 = new TestNativePreviewHandler(
         false, false) {
       @Override
       public void onPreviewNativeEvent(NativePreviewEvent event) {
         super.onPreviewNativeEvent(event);
-        preview0.assertIsFired(false);
-        preview1.assertIsFired(true);
         assertFalse(event.isFirstHandler());
       }
     };
@@ -254,8 +221,6 @@ public class EventTest extends GWTTestCase {
       public void onPreviewNativeEvent(NativePreviewEvent event) {
         super.onPreviewNativeEvent(event);
         handler0.assertIsFired(false);
-        preview0.assertIsFired(false);
-        preview1.assertIsFired(true);
         assertFalse(event.isFirstHandler());
       }
     };
@@ -266,8 +231,6 @@ public class EventTest extends GWTTestCase {
         super.onPreviewNativeEvent(event);
         handler0.assertIsFired(false);
         handler1.assertIsFired(false);
-        preview0.assertIsFired(false);
-        preview1.assertIsFired(true);
         assertFalse(event.isFirstHandler());
       }
     };
@@ -279,30 +242,22 @@ public class EventTest extends GWTTestCase {
         handler0.assertIsFired(false);
         handler1.assertIsFired(false);
         handler2.assertIsFired(false);
-        preview0.assertIsFired(false);
-        preview1.assertIsFired(true);
         assertFalse(event.isFirstHandler());
       }
     };
-    org.gwtproject.user.client.DOM.addEventPreview(preview0);
-    HandlerRegistration reg0 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler0);
-    HandlerRegistration reg1 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler1);
-    HandlerRegistration reg2 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler2);
-    HandlerRegistration reg3 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler3);
-    org.gwtproject.user.client.DOM.addEventPreview(preview1);
-    assertTrue(org.gwtproject.user.client.DOM.previewEvent(null));
+    HandlerRegistration reg0 = Event.addNativePreviewHandler(handler0);
+    HandlerRegistration reg1 = Event.addNativePreviewHandler(handler1);
+    HandlerRegistration reg2 = Event.addNativePreviewHandler(handler2);
+    HandlerRegistration reg3 = Event.addNativePreviewHandler(handler3);
+    assertTrue(DOM.previewEvent(null));
     handler0.assertIsFired(true);
     handler1.assertIsFired(true);
     handler2.assertIsFired(true);
     handler3.assertIsFired(true);
-    preview0.assertIsFired(false);
-    preview1.assertIsFired(true);
     reg0.removeHandler();
     reg1.removeHandler();
     reg2.removeHandler();
     reg3.removeHandler();
-    org.gwtproject.user.client.DOM.removeEventPreview(preview0);
-    org.gwtproject.user.client.DOM.removeEventPreview(preview1);
   }
 
   /**
@@ -313,17 +268,17 @@ public class EventTest extends GWTTestCase {
         false);
     TestNativePreviewHandler handler1 = new TestNativePreviewHandler(false,
         false);
-    HandlerRegistration reg0 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler0);
-    HandlerRegistration reg1 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler1);
+    HandlerRegistration reg0 = Event.addNativePreviewHandler(handler0);
+    HandlerRegistration reg1 = Event.addNativePreviewHandler(handler1);
     reg1.removeHandler();
-    assertTrue(org.gwtproject.user.client.Event.fireNativePreviewEvent(null));
+    assertTrue(Event.fireNativePreviewEvent(null));
     handler0.assertIsFired(true);
     handler1.assertIsFired(false);
     reg0.removeHandler();
   }
 
   /**
-   * Test that {@link org.gwtproject.user.client.Event#fireNativePreviewEvent(NativeEvent)} returns the
+   * Test that {@link Event#fireNativePreviewEvent(NativeEvent)} returns the
    * correct value even if another event is fired while handling the current
    * event.
    */
@@ -336,18 +291,18 @@ public class EventTest extends GWTTestCase {
         if (first) {
           event.cancel();
           first = false;
-          assertTrue(org.gwtproject.user.client.Event.fireNativePreviewEvent(null));
+          assertTrue(Event.fireNativePreviewEvent(null));
           assertTrue(event.isCanceled());
         }
       }
     };
-    HandlerRegistration reg = org.gwtproject.user.client.Event.addNativePreviewHandler(handler);
-    assertFalse(org.gwtproject.user.client.Event.fireNativePreviewEvent(null));
+    HandlerRegistration reg = Event.addNativePreviewHandler(handler);
+    assertFalse(Event.fireNativePreviewEvent(null));
     reg.removeHandler();
   }
 
   /**
-   * Test that {@link org.gwtproject.user.client.Event#fireNativePreviewEvent(NativeEvent)} returns the
+   * Test that {@link Event#fireNativePreviewEvent(NativeEvent)} returns the
    * correct value if the native event is not canceled.
    */
   public void testFireNativePreviewEventWithoutCancel() {
@@ -355,9 +310,9 @@ public class EventTest extends GWTTestCase {
         false);
     TestNativePreviewHandler handler1 = new TestNativePreviewHandler(false,
         false);
-    HandlerRegistration reg0 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler0);
-    HandlerRegistration reg1 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler1);
-    assertTrue(org.gwtproject.user.client.Event.fireNativePreviewEvent(null));
+    HandlerRegistration reg0 = Event.addNativePreviewHandler(handler0);
+    HandlerRegistration reg1 = Event.addNativePreviewHandler(handler1);
+    assertTrue(Event.fireNativePreviewEvent(null));
     handler0.assertIsFired(true);
     handler1.assertIsFired(true);
     reg0.removeHandler();
@@ -365,140 +320,29 @@ public class EventTest extends GWTTestCase {
   }
 
   /**
-   * Test that {@link org.gwtproject.user.client.Event#fireNativePreviewEvent(NativeEvent)} returns the
+   * Test that {@link Event#fireNativePreviewEvent(NativeEvent)} returns the
    * correct value if no handlers are present.
    */
   public void testFireNativePreviewEventWithoutHandlers() {
-    assertTrue(org.gwtproject.user.client.Event.fireNativePreviewEvent(null));
+    assertTrue(Event.fireNativePreviewEvent(null));
   }
 
   public void testGetTypeInt() {
-    assertEquals(org.gwtproject.user.client.Event.ONBLUR, org.gwtproject.user.client.Event.getTypeInt("blur"));
-    assertEquals(org.gwtproject.user.client.Event.ONCHANGE, org.gwtproject.user.client.Event.getTypeInt("change"));
-    assertEquals(org.gwtproject.user.client.Event.ONCLICK, org.gwtproject.user.client.Event.getTypeInt("click"));
-    assertEquals(org.gwtproject.user.client.Event.ONERROR, org.gwtproject.user.client.Event.getTypeInt("error"));
-    assertEquals(org.gwtproject.user.client.Event.ONFOCUS, org.gwtproject.user.client.Event.getTypeInt("focus"));
-    assertEquals(org.gwtproject.user.client.Event.ONKEYDOWN, org.gwtproject.user.client.Event.getTypeInt("keydown"));
-    assertEquals(org.gwtproject.user.client.Event.ONKEYPRESS, Event.getTypeInt("keypress"));
-    assertEquals(org.gwtproject.user.client.Event.ONKEYUP, org.gwtproject.user.client.Event.getTypeInt("keyup"));
-    assertEquals(org.gwtproject.user.client.Event.ONLOAD, org.gwtproject.user.client.Event.getTypeInt("load"));
-    assertEquals(org.gwtproject.user.client.Event.ONMOUSEDOWN, org.gwtproject.user.client.Event.getTypeInt("mousedown"));
-    assertEquals(org.gwtproject.user.client.Event.ONMOUSEMOVE, org.gwtproject.user.client.Event.getTypeInt("mousemove"));
-    assertEquals(org.gwtproject.user.client.Event.ONMOUSEOUT, org.gwtproject.user.client.Event.getTypeInt("mouseout"));
-    assertEquals(org.gwtproject.user.client.Event.ONMOUSEOVER, org.gwtproject.user.client.Event.getTypeInt("mouseover"));
-    assertEquals(org.gwtproject.user.client.Event.ONMOUSEUP, org.gwtproject.user.client.Event.getTypeInt("mouseup"));
-    assertEquals(-1, org.gwtproject.user.client.Event.getTypeInt("undefined"));
-  }
-
-  /**
-   * Test that legacy EventPreview and NativePreviewHandlers can both cancel the
-   * event.
-   */
-  @Deprecated
-  public void testLegacyEventPreviewCancelByBoth() {
-    // Add handlers
-    TestNativePreviewHandler handler0 = new TestNativePreviewHandler(false,
-        false);
-    TestNativePreviewHandler handler1 = new TestNativePreviewHandler(true,
-        false);
-    HandlerRegistration reg0 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler0);
-    HandlerRegistration reg1 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler1);
-
-    // Add legacy EventPreview
-    TestEventPreview preview = new TestEventPreview(true);
-    org.gwtproject.user.client.DOM.addEventPreview(preview);
-
-    // Fire the event
-    assertFalse(DOM.previewEvent(null));
-    handler0.assertIsFired(true);
-    handler1.assertIsFired(true);
-    preview.assertIsFired(true);
-    reg0.removeHandler();
-    reg1.removeHandler();
-    org.gwtproject.user.client.DOM.removeEventPreview(preview);
-  }
-
-  /**
-   * Test that legacy EventPreview can cancel the event.
-   */
-  @Deprecated
-  public void testLegacyEventPreviewCancelByEventPreview() {
-    // Add handlers
-    TestNativePreviewHandler handler0 = new TestNativePreviewHandler(false,
-        false);
-    TestNativePreviewHandler handler1 = new TestNativePreviewHandler(false,
-        false);
-    HandlerRegistration reg0 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler0);
-    HandlerRegistration reg1 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler1);
-
-    // Add legacy EventPreview
-    TestEventPreview preview = new TestEventPreview(true);
-    org.gwtproject.user.client.DOM.addEventPreview(preview);
-
-    // Fire the event
-    assertFalse(org.gwtproject.user.client.DOM.previewEvent(null));
-    handler0.assertIsFired(true);
-    handler1.assertIsFired(true);
-    preview.assertIsFired(true);
-    reg0.removeHandler();
-    reg1.removeHandler();
-    org.gwtproject.user.client.DOM.removeEventPreview(preview);
-  }
-
-  /**
-   * Test that legacy EventPreview still fires after the NativeHandler cancels
-   * the event.
-   */
-  @Deprecated
-  public void testLegacyEventPreviewCancelByHandler() {
-    // Add handlers
-    TestNativePreviewHandler handler0 = new TestNativePreviewHandler(false,
-        false);
-    TestNativePreviewHandler handler1 = new TestNativePreviewHandler(true,
-        false);
-    HandlerRegistration reg0 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler0);
-    HandlerRegistration reg1 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler1);
-
-    // Add legacy EventPreview
-    TestEventPreview preview = new TestEventPreview(false);
-    org.gwtproject.user.client.DOM.addEventPreview(preview);
-
-    // Fire the event
-    assertFalse(org.gwtproject.user.client.DOM.previewEvent(null));
-    handler0.assertIsFired(true);
-    handler1.assertIsFired(true);
-    preview.assertIsFired(true);
-    reg0.removeHandler();
-    reg1.removeHandler();
-    org.gwtproject.user.client.DOM.removeEventPreview(preview);
-  }
-
-  /**
-   * Test that legacy EventPreview still fires after the NativeHandlers without
-   * canceling the event.
-   */
-  @Deprecated
-  public void testLegacyEventPreviewWithoutCancel() {
-    // Add handlers
-    TestNativePreviewHandler handler0 = new TestNativePreviewHandler(false,
-        false);
-    TestNativePreviewHandler handler1 = new TestNativePreviewHandler(false,
-        false);
-    HandlerRegistration reg0 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler0);
-    HandlerRegistration reg1 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler1);
-
-    // Add legacy EventPreview
-    TestEventPreview preview = new TestEventPreview(false);
-    org.gwtproject.user.client.DOM.addEventPreview(preview);
-
-    // Fire the event
-    assertTrue(org.gwtproject.user.client.DOM.previewEvent(null));
-    handler0.assertIsFired(true);
-    handler1.assertIsFired(true);
-    preview.assertIsFired(true);
-    reg0.removeHandler();
-    reg1.removeHandler();
-    org.gwtproject.user.client.DOM.removeEventPreview(preview);
+    assertEquals(Event.ONBLUR, Event.getTypeInt("blur"));
+    assertEquals(Event.ONCHANGE, Event.getTypeInt("change"));
+    assertEquals(Event.ONCLICK, Event.getTypeInt("click"));
+    assertEquals(Event.ONERROR, Event.getTypeInt("error"));
+    assertEquals(Event.ONFOCUS, Event.getTypeInt("focus"));
+    assertEquals(Event.ONKEYDOWN, Event.getTypeInt("keydown"));
+    assertEquals(Event.ONKEYPRESS, Event.getTypeInt("keypress"));
+    assertEquals(Event.ONKEYUP, Event.getTypeInt("keyup"));
+    assertEquals(Event.ONLOAD, Event.getTypeInt("load"));
+    assertEquals(Event.ONMOUSEDOWN, Event.getTypeInt("mousedown"));
+    assertEquals(Event.ONMOUSEMOVE, Event.getTypeInt("mousemove"));
+    assertEquals(Event.ONMOUSEOUT, Event.getTypeInt("mouseout"));
+    assertEquals(Event.ONMOUSEOVER, Event.getTypeInt("mouseover"));
+    assertEquals(Event.ONMOUSEUP, Event.getTypeInt("mouseup"));
+    assertEquals(-1, Event.getTypeInt("undefined"));
   }
 
   /**
@@ -541,8 +385,8 @@ public class EventTest extends GWTTestCase {
   public void testReviveNativePreviewEvent() {
     // Fire the event and cancel it
     TestNativePreviewHandler handler0 = new TestNativePreviewHandler(true, true);
-    HandlerRegistration reg0 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler0);
-    org.gwtproject.user.client.Event.fireNativePreviewEvent(null);
+    HandlerRegistration reg0 = Event.addNativePreviewHandler(handler0);
+    Event.fireNativePreviewEvent(null);
     handler0.assertIsFired(true);
     reg0.removeHandler();
 
@@ -557,8 +401,8 @@ public class EventTest extends GWTTestCase {
         super.onPreviewNativeEvent(event);
       }
     };
-    HandlerRegistration reg1 = org.gwtproject.user.client.Event.addNativePreviewHandler(handler1);
-    assertTrue(org.gwtproject.user.client.Event.fireNativePreviewEvent(null));
+    HandlerRegistration reg1 = Event.addNativePreviewHandler(handler1);
+    assertTrue(Event.fireNativePreviewEvent(null));
     handler1.assertIsFired(true);
     reg1.removeHandler();
   }

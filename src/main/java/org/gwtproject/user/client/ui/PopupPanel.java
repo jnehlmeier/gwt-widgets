@@ -38,7 +38,6 @@ import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.Event;
 import org.gwtproject.user.client.Event.NativePreviewEvent;
 import org.gwtproject.user.client.Event.NativePreviewHandler;
-import org.gwtproject.user.client.EventPreview;
 import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.Window;
@@ -87,9 +86,8 @@ import java.util.List;
  * <dd>the glass background behind the popup</dd>
  * </dl>
  */
-@SuppressWarnings("deprecation")
-public class PopupPanel extends SimplePanel implements SourcesPopupEvents,
-    EventPreview, HasAnimation, HasCloseHandlers<PopupPanel> {
+public class PopupPanel extends SimplePanel implements
+    HasAnimation, HasCloseHandlers<PopupPanel> {
 
   /**
    * A callback that is used to set the position of a {@link PopupPanel} right
@@ -491,14 +489,6 @@ public class PopupPanel extends SimplePanel implements SourcesPopupEvents,
   }
 
   /**
-   * @deprecated Use {@link #addCloseHandler} instead
-   */
-  @Deprecated
-  public void addPopupListener(final PopupListener listener) {
-    ListenerWrapper.WrappedPopupListener.add(this, listener);
-  }
-
-  /**
    * Centers the popup in the browser window and shows it. If the popup was
    * already showing, then the popup is centered.
    */
@@ -707,51 +697,6 @@ public class PopupPanel extends SimplePanel implements SourcesPopupEvents,
   }
 
   /**
-   * Popups get an opportunity to preview keyboard events before they are passed
-   * to a widget contained by the Popup.
-   *
-   * @param key the key code of the depressed key
-   * @param modifiers keyboard modifiers, as specified in
-   *          {@link com.google.gwt.event.dom.client.KeyCodes}.
-   * @return <code>false</code> to suppress the event
-   * @deprecated Use {@link #onPreviewNativeEvent} instead
-   */
-  @Deprecated
-  public boolean onKeyDownPreview(char key, int modifiers) {
-    return true;
-  }
-
-  /**
-   * Popups get an opportunity to preview keyboard events before they are passed
-   * to a widget contained by the Popup.
-   *
-   * @param key the unicode character pressed
-   * @param modifiers keyboard modifiers, as specified in
-   *          {@link com.google.gwt.event.dom.client.KeyCodes}.
-   * @return <code>false</code> to suppress the event
-   * @deprecated Use {@link #onPreviewNativeEvent} instead
-   */
-  @Deprecated
-  public boolean onKeyPressPreview(char key, int modifiers) {
-    return true;
-  }
-
-  /**
-   * Popups get an opportunity to preview keyboard events before they are passed
-   * to a widget contained by the Popup.
-   *
-   * @param key the key code of the released key
-   * @param modifiers keyboard modifiers, as specified in
-   *          {@link com.google.gwt.event.dom.client.KeyCodes}.
-   * @return <code>false</code> to suppress the event
-   * @deprecated Use {@link #onPreviewNativeEvent} instead
-   */
-  @Deprecated
-  public boolean onKeyUpPreview(char key, int modifiers) {
-    return true;
-  }
-
-  /**
    * Remove an autoHide partner.
    *
    * @param partner the auto hide partner to remove
@@ -761,15 +706,6 @@ public class PopupPanel extends SimplePanel implements SourcesPopupEvents,
     if (autoHidePartners != null) {
       autoHidePartners.remove(partner);
     }
-  }
-
-  /**
-   * @deprecated Use the {@link HandlerRegistration#removeHandler} method on the
-   *             object returned by {@link #addCloseHandler} instead
-   */
-  @Deprecated
-  public void removePopupListener(PopupListener listener) {
-    ListenerWrapper.WrappedPopupListener.remove(this, listener);
   }
 
   public void setAnimationEnabled(boolean enable) {
@@ -1350,24 +1286,12 @@ public class PopupPanel extends SimplePanel implements SourcesPopupEvents,
     int type = nativeEvent.getTypeInt();
     switch (type) {
       case Event.ONKEYDOWN: {
-        if (!onKeyDownPreview((char) nativeEvent.getKeyCode(),
-            KeyboardListenerCollection.getKeyboardModifiers(nativeEvent))) {
-          event.cancel();
-        }
         return;
       }
       case Event.ONKEYUP: {
-        if (!onKeyUpPreview((char) nativeEvent.getKeyCode(),
-            KeyboardListenerCollection.getKeyboardModifiers(nativeEvent))) {
-          event.cancel();
-        }
         return;
       }
       case Event.ONKEYPRESS: {
-        if (!onKeyPressPreview((char) nativeEvent.getKeyCode(),
-            KeyboardListenerCollection.getKeyboardModifiers(nativeEvent))) {
-          event.cancel();
-        }
         return;
       }
 

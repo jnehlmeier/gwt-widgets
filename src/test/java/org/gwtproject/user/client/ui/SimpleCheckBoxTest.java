@@ -39,7 +39,7 @@ public class SimpleCheckBoxTest extends GWTTestCase {
     return "com.google.gwt.user.UserTest";
   }
 
-  @SuppressWarnings("deprecation")
+
   public void testProperties() {
     SimpleCheckBox checkbox = new SimpleCheckBox();
 
@@ -64,7 +64,7 @@ public class SimpleCheckBoxTest extends GWTTestCase {
     assertEquals(true, checkbox.isChecked());
   }
 
-  @SuppressWarnings("deprecation")
+
   public void testValueChangeEvent() {
     SimpleCheckBox cb = new SimpleCheckBox();
     Handler h = new Handler();

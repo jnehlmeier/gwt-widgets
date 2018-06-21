@@ -92,11 +92,10 @@ import java.util.Map;
  * {@example com.google.gwt.examples.TreeExample}
  * </p>
  */
-@SuppressWarnings("deprecation")
 public class Tree extends Widget implements HasTreeItems.ForIsWidget, HasWidgets.ForIsWidget,
-    SourcesTreeEvents, HasFocus, HasAnimation, HasAllKeyHandlers,
+    HasFocus, HasAnimation, HasAllKeyHandlers,
     HasAllFocusHandlers, HasSelectionHandlers<TreeItem>,
-    HasOpenHandlers<TreeItem>, HasCloseHandlers<TreeItem>, SourcesMouseEvents,
+    HasOpenHandlers<TreeItem>, HasCloseHandlers<TreeItem>,
     HasAllMouseHandlers {
   /*
    * For compatibility with UiBinder interface HasTreeItems should be declared
@@ -287,15 +286,6 @@ public class Tree extends Widget implements HasTreeItems.ForIsWidget, HasWidgets
   }
 
   /**
-   * @deprecated Use {@link #addFocusHandler} instead
-   */
-  @Override
-  @Deprecated
-  public void addFocusListener(FocusListener listener) {
-    ListenerWrapper.WrappedFocusListener.add(this, listener);
-  }
-
-  /**
    * Adds a simple tree item containing the specified html.
    *
    * @param itemHtml the html of the item to be added
@@ -347,16 +337,6 @@ public class Tree extends Widget implements HasTreeItems.ForIsWidget, HasWidgets
     return this.addItem(asWidgetOrNull(w));
   }
 
-  /**
-   * @deprecated Use {@link #addKeyDownHandler}, {@link #addKeyUpHandler} and
-   *             {@link #addKeyPressHandler} instead
-   */
-  @Override
-  @Deprecated
-  public void addKeyboardListener(KeyboardListener listener) {
-    ListenerWrapper.WrappedKeyboardListener.add(this, listener);
-  }
-
   @Override
   public HandlerRegistration addKeyDownHandler(KeyDownHandler handler) {
     return addDomHandler(handler, KeyDownEvent.getType());
@@ -375,17 +355,6 @@ public class Tree extends Widget implements HasTreeItems.ForIsWidget, HasWidgets
   @Override
   public HandlerRegistration addMouseDownHandler(MouseDownHandler handler) {
     return addHandler(handler, MouseDownEvent.getType());
-  }
-
-  /**
-   * @deprecated Use {@link #addMouseOverHandler} {@link #addMouseMoveHandler},
-   *             {@link #addMouseDownHandler}, {@link #addMouseUpHandler} and
-   *             {@link #addMouseOutHandler} instead
-   */
-  @Override
-  @Deprecated
-  public void addMouseListener(MouseListener listener) {
-    ListenerWrapper.WrappedMouseListener.add(this, listener);
   }
 
   @Override
@@ -433,16 +402,6 @@ public class Tree extends Widget implements HasTreeItems.ForIsWidget, HasWidgets
   @Override
   public TreeItem addTextItem(String itemText) {
     return root.addTextItem(itemText);
-  }
-
-  /**
-   * @deprecated Use {@link #addSelectionHandler}, {@link #addOpenHandler}, and
-   *             {@link #addCloseHandler} instead
-   */
-  @Override
-  @Deprecated
-  public void addTreeListener(TreeListener listener) {
-    ListenerWrapper.WrappedTreeListener.add(this, listener);
   }
 
   /**
@@ -690,16 +649,6 @@ public class Tree extends Widget implements HasTreeItems.ForIsWidget, HasWidgets
   }
 
   /**
-   * @deprecated Use the {@link HandlerRegistration#removeHandler} method on the
-   *             object returned by {@link #addFocusHandler} instead
-   */
-  @Override
-  @Deprecated
-  public void removeFocusListener(FocusListener listener) {
-    ListenerWrapper.WrappedFocusListener.remove(this, listener);
-  }
-
-  /**
    * Removes an item from the root level of this tree.
    *
    * @param item the item to be removed
@@ -730,36 +679,6 @@ public class Tree extends Widget implements HasTreeItems.ForIsWidget, HasWidgets
     while (getItemCount() > 0) {
       removeItem(getItem(0));
     }
-  }
-
-  /**
-   * @deprecated Use the {@link HandlerRegistration#removeHandler} method on the
-   *             object returned by an add*Handler method instead
-   */
-  @Override
-  @Deprecated
-  public void removeKeyboardListener(KeyboardListener listener) {
-    ListenerWrapper.WrappedKeyboardListener.remove(this, listener);
-  }
-
-  /**
-   * @deprecated Use the {@link HandlerRegistration#removeHandler} method on the
-   *             object returned by an add*Handler method instead
-   */
-  @Override
-  @Deprecated
-  public void removeMouseListener(MouseListener listener) {
-    ListenerWrapper.WrappedMouseListener.remove(this, listener);
-  }
-
-  /**
-   * @deprecated Use the {@link HandlerRegistration#removeHandler} method on the
-   *             object returned by an add*Handler method instead
-   */
-  @Override
-  @Deprecated
-  public void removeTreeListener(TreeListener listener) {
-    ListenerWrapper.WrappedTreeListener.remove(this, listener);
   }
 
   @Override

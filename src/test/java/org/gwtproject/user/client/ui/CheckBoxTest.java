@@ -34,23 +34,7 @@ import java.util.Locale;
  * Tests the CheckBox Widget.
  */
 public class CheckBoxTest extends GWTTestCase {
-  @SuppressWarnings("deprecation")  
-  static class ListenerTester implements ClickListener {
-    static int fired = 0;
-    static HandlerManager manager;
 
-    public static void fire() {
-      fired = 0;
-      manager.fireEvent(new ClickEvent() {
-      });
-    }
-
-    @Override
-    public void onClick(Widget sender) {
-      ++fired;
-    }
-  }
-  
   private static class Handler implements ValueChangeHandler<Boolean> {
     Boolean received = null;
 
@@ -72,7 +56,7 @@ public class CheckBoxTest extends GWTTestCase {
   /**
    * Test accessors.
    */
-  @SuppressWarnings("deprecation")
+
   public void testAccessors() {
     cb.setHTML("test HTML");
     assertEquals("test HTML", cb.getHTML());
@@ -158,26 +142,6 @@ public class CheckBoxTest extends GWTTestCase {
     assertEquals("invaluable", cb.getFormValue());
   }
 
-  @SuppressWarnings("deprecation")
-  public void testListenerRemoval() {
-    ClickListener r1 = new ListenerTester();
-    ClickListener r2 = new ListenerTester();
-    ListenerTester.manager = cb.ensureHandlers();
-    cb.addClickListener(r1);
-    cb.addClickListener(r2);
-
-    ListenerTester.fire();
-    assertEquals(2, ListenerTester.fired);
-
-    cb.removeClickListener(r1);
-    ListenerTester.fire();
-    assertEquals(1, ListenerTester.fired);
-
-    cb.removeClickListener(r2);
-    ListenerTester.fire();
-    assertEquals(0, ListenerTester.fired);
-  }
-
   public void testCheckboxClick() {
     final int[] clickCount = {0};
 
@@ -242,7 +206,7 @@ public class CheckBoxTest extends GWTTestCase {
     assertEquals(html, box.getHTML().toLowerCase(Locale.ROOT));
   }
 
-  @SuppressWarnings("deprecation")
+
   public void testValueChangeEvent() {
     Handler h = new Handler();
     cb.addValueChangeHandler(h);

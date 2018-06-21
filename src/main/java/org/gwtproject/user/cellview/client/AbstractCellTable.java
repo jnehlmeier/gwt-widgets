@@ -1772,7 +1772,7 @@ public abstract class AbstractCellTable<T> extends AbstractHasData<T> {
     }
   }
 
-  @SuppressWarnings("deprecation")
+
   @Override
   protected void onBrowserEvent2(Event event) {
     // Get the event target.
@@ -2162,7 +2162,7 @@ public abstract class AbstractCellTable<T> extends AbstractHasData<T> {
         html));
   }
 
-  @SuppressWarnings("deprecation")
+
   @Override
   protected void replaceChildren(List<T> values, int start, SafeHtml html) {
     refreshHeadersAndColumnsImpl();

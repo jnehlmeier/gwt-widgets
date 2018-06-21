@@ -75,7 +75,7 @@ public class DatePickerCell extends org.gwtproject.cell.client.AbstractEditableC
    * Constructs a new DatePickerCell that uses the date/time format given by
    * {@link DateTimeFormat#getFullDateFormat}.
    */
-  @SuppressWarnings("deprecation")
+
   public DatePickerCell() {
     this(DateTimeFormat.getFullDateFormat(),
         SimpleSafeHtmlRenderer.getInstance());

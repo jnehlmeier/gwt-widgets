@@ -41,6 +41,7 @@ import org.gwtproject.user.client.Event.NativePreviewEvent;
 import com.google.gwt.user.client.Window;
 import org.gwtproject.user.client.ui.PopupPanel.PositionCallback;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -148,8 +149,7 @@ import java.util.List;
  */
 // Nothing we can do about MenuBar implementing PopupListener until next
 // release.
-@SuppressWarnings("deprecation")
-public class MenuBar extends Widget implements PopupListener, HasAnimation,
+public class MenuBar extends Widget implements HasAnimation, CloseHandler<PopupPanel>,
     HasCloseHandlers<PopupPanel> {
 
   /**
@@ -774,12 +774,11 @@ public class MenuBar extends Widget implements PopupListener, HasAnimation,
 
   /**
    * Closes the menu bar.
-   *
-   * @deprecated Use {@link #addCloseHandler(CloseHandler)} instead
    */
   @Override
-  @Deprecated
-  public void onPopupClosed(PopupPanel sender, boolean autoClosed) {
+  public void onClose(CloseEvent<PopupPanel> event) {
+    PopupPanel sender = event.getTarget();
+    boolean autoClosed = event.isAutoClosed();
     // If the menu popup was auto-closed, close all of its parents as well.
     if (autoClosed) {
       closeAllParents();
@@ -1290,7 +1289,7 @@ public class MenuBar extends Widget implements PopupListener, HasAnimation,
 
     popup = new MenuPopup();
     popup.setWidget(shownChildMenu);
-    popup.addPopupListener(this);
+    popup.addCloseHandler(this);
     popup.setPopupPositionAndShow(new PositionCallback() {
       @Override
       public void setPosition(int offsetWidth, int offsetHeight) {
