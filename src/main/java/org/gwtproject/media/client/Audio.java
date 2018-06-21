@@ -15,7 +15,6 @@
  */
 package org.gwtproject.media.client;
 
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.AudioElement;
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.PartialSupport;
@@ -33,70 +32,17 @@ import com.google.gwt.dom.client.PartialSupport;
  */
 @PartialSupport
 public class Audio extends MediaBase {
-  /**
-   * Detector for permutations that might support {@link AudioElement}.
-   */
-  @SuppressWarnings("unused")
-  private static class AudioElementSupportDetectedMaybe
-      extends AudioElementSupportDetector {
-    /**
-     * Using a compile-time check, return true if {@link AudioElement} might be
-     * supported.
-     *
-     * @return true if might be supported, false otherwise.
-     */
-    @Override
-    boolean isSupportedCompileTime() {
-      return true;
-    }
-  }
 
   /**
-   * Detector for permutations that do not support {@link AudioElement}.
+   * Using a run-time check, return true if the {@link AudioElement} is
+   * supported.
+   *
+   * @return true if supported, false otherwise.
    */
-  @SuppressWarnings("unused")
-  private static class AudioElementSupportDetectedNo
-      extends AudioElementSupportDetector {
-    /**
-     * Using a compile-time check, return true if {@link AudioElement} might be
-     * supported.
-     *
-     * @return true if might be supported, false otherwise.
-     */
-    @Override
-    boolean isSupportedCompileTime() {
-      return false;
-    }
-  }
-
-  /**
-   * Detector for browser support of {@link AudioElement}.
-   */
-  private static class AudioElementSupportDetector {
-    /**
-     * Using a run-time check, return true if the {@link AudioElement} is
-     * supported.
-     *
-     * @return true if supported, false otherwise.
-     */
-    static native boolean isSupportedRunTime(AudioElement element) /*-{
+  // TODO: probably safe to assume that everyone supports Audio
+  private static native boolean isSupportedRunTime(AudioElement element) /*-{
       return !!element.canPlayType;
-    }-*/;
-
-    /**
-     * Using a compile-time check, return true if {@link AudioElement} might be
-     * supported.
-     *
-     * @return true if might be supported, false otherwise.
-     */
-    boolean isSupportedCompileTime() {
-      // will be true in AudioElementSupportDetectedMaybe
-      // will be false in AudioElementSupportDetectedNo
-      return false;
-    }
-  }
-
-  private static AudioElementSupportDetector detector;
+  }-*/;
 
   /**
    * Return a new {@link Audio} if supported, and null otherwise.
@@ -104,14 +50,8 @@ public class Audio extends MediaBase {
    * @return a new {@link Audio} if supported, and null otherwise
    */
   public static Audio createIfSupported() {
-    if (detector == null) {
-      detector = GWT.create(AudioElementSupportDetector.class);
-    }
-    if (!detector.isSupportedCompileTime()) {
-      return null;
-    }
     AudioElement element = Document.get().createAudioElement();
-    if (!detector.isSupportedRunTime(element)) {
+    if (!isSupportedRunTime(element)) {
       return null;
     }
     return new Audio(element);
@@ -123,17 +63,8 @@ public class Audio extends MediaBase {
    * @return whether the audio element is supported
    */
   public static boolean isSupported() {
-    if (detector == null) {
-      detector = GWT.create(AudioElementSupportDetector.class);
-    }
-    if (!detector.isSupportedCompileTime()) {
-      return false;
-    }
     AudioElement element = Document.get().createAudioElement();
-    if (!detector.isSupportedRunTime(element)) {
-      return false;
-    }
-    return true;
+    return isSupportedRunTime(element);
   }
 
   /**

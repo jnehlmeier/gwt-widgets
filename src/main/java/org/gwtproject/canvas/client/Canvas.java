@@ -17,7 +17,6 @@ package org.gwtproject.canvas.client;
 
 import com.google.gwt.canvas.dom.client.Context;
 import com.google.gwt.canvas.dom.client.Context2d;
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.CanvasElement;
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.PartialSupport;
@@ -31,7 +30,6 @@ import org.gwtproject.user.client.ui.RootPanel;
  */
 @PartialSupport
 public class Canvas extends FocusWidget {
-  private static CanvasElementSupportDetector detector;
 
   /**
    * Return a new {@link Canvas} if supported,  and null otherwise.
@@ -39,14 +37,8 @@ public class Canvas extends FocusWidget {
    * @return a new {@link Canvas} if supported, and null otherwise
    */
   public static Canvas createIfSupported() {
-    if (detector == null) {
-      detector = GWT.create(CanvasElementSupportDetector.class);
-    }
-    if (!detector.isSupportedCompileTime()) {
-      return null;
-    }
     CanvasElement element = Document.get().createCanvasElement();
-    if (!detector.isSupportedRunTime(element)) {
+    if (!isSupportedRunTime(element)) {
       return null;
     }
     return new Canvas(element);
@@ -86,17 +78,7 @@ public class Canvas extends FocusWidget {
   }
 
   private static boolean isSupported(CanvasElement element) {
-    if (detector == null) {
-      detector = GWT.create(CanvasElementSupportDetector.class);
-    }
-    if (!detector.isSupportedCompileTime()) {
-      return false;
-    }
-
-    if (!detector.isSupportedRunTime(element)) {
-      return false;
-    }
-    return true;
+    return isSupportedRunTime(element);
   }
 
   /**
@@ -198,65 +180,14 @@ public class Canvas extends FocusWidget {
   }
 
   /**
-   * Detector for browser support of {@link CanvasElement}.
+   * Using a run-time check, return true if the {@link CanvasElement} is
+   * supported.
+   *
+   * @return true if supported, false otherwise.
    */
-  private static class CanvasElementSupportDetector {
-    /**
-     * Using a run-time check, return true if the {@link CanvasElement} is 
-     * supported.
-     *
-     * @return true if supported, false otherwise.
-     */
-    static native boolean isSupportedRunTime(CanvasElement element) /*-{
-        return !!element.getContext;
-    }-*/;
+  // TODO: probably safe to assume that everyone supports Canvas
+  private static native boolean isSupportedRunTime(CanvasElement element) /*-{
+      return !!element.getContext;
+  }-*/;
 
-    /**
-     * Using a compile-time check, return true if {@link CanvasElement} might 
-     * be supported.
-     *
-     * @return true if might be supported, false otherwise.
-     */
-    boolean isSupportedCompileTime() {
-      // will be true in CanvasElementSupportDetectedMaybe
-      // will be false in CanvasElementSupportDetectedNo
-      return false;
-    }
-  }
-
-  /**
-   * Detector for permutations that might support {@link CanvasElement}.
-   */
-  @SuppressWarnings("unused")
-  private static class CanvasElementSupportDetectedMaybe
-      extends CanvasElementSupportDetector {
-    /**
-     * Using a compile-time check, return true if {@link CanvasElement} might be
-     * supported.
-     *
-     * @return true if might be supported, false otherwise.
-     */
-    @Override
-    boolean isSupportedCompileTime() {
-      return true;
-    }
-  }
-
-  /**
-   * Detector for permutations that do not support {@link CanvasElement}.
-   */
-  @SuppressWarnings("unused")
-  private static class CanvasElementSupportDetectedNo
-      extends CanvasElementSupportDetector {
-    /**
-     * Using a compile-time check, return true if {@link CanvasElement} might be
-     * supported.
-     *
-     * @return true if might be supported, false otherwise.
-     */
-    @Override
-    boolean isSupportedCompileTime() {
-      return false;
-    }
-  }
 }

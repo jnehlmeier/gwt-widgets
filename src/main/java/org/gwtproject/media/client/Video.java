@@ -15,7 +15,6 @@
  */
 package org.gwtproject.media.client;
 
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.VideoElement;
 
@@ -31,70 +30,17 @@ import com.google.gwt.dom.client.VideoElement;
  * This widget may not be supported on all browsers.
  */
 public class Video extends MediaBase {
-  /**
-   * Detector for permutations that might support {@link VideoElement}.
-   */
-  @SuppressWarnings("unused")
-  private static class VideoElementSupportDetectedMaybe
-      extends VideoElementSupportDetector {
-    /**
-     * Using a compile-time check, return true if {@link VideoElement} might be
-     * supported.
-     *
-     * @return true if might be supported, false otherwise.
-     */
-    @Override
-    boolean isSupportedCompileTime() {
-      return true;
-    }
-  }
 
   /**
-   * Detector for permutations that do not support {@link VideoElement}.
+   * Using a run-time check, return true if the {@link VideoElement} is
+   * supported.
+   *
+   * @return true if supported, false otherwise.
    */
-  @SuppressWarnings("unused")
-  private static class VideoElementSupportDetectedNo
-      extends VideoElementSupportDetector {
-    /**
-     * Using a compile-time check, return true if {@link VideoElement} might be
-     * supported.
-     *
-     * @return true if might be supported, false otherwise.
-     */
-    @Override
-    boolean isSupportedCompileTime() {
-      return false;
-    }
-  }
-
-  /**
-   * Detector for browser support of {@link VideoElement}.
-   */
-  private static class VideoElementSupportDetector {
-    /**
-     * Using a run-time check, return true if the {@link VideoElement} is
-     * supported.
-     *
-     * @return true if supported, false otherwise.
-     */
-    static native boolean isSupportedRunTime(VideoElement element) /*-{
+  // TODO: probably safe to assume that everyone supports Video
+  private static native boolean isSupportedRunTime(VideoElement element) /*-{
       return !!element.canPlayType;
-    }-*/;
-
-    /**
-     * Using a compile-time check, return true if {@link VideoElement} might be
-     * supported.
-     *
-     * @return true if might be supported, false otherwise.
-     */
-    boolean isSupportedCompileTime() {
-      // will be true in VideoElementSupportDetectedMaybe
-      // will be false in VideoElementSupportDetectedNo
-      return false;
-    }
-  }
-
-  private static VideoElementSupportDetector detector;
+  }-*/;
 
   /**
    * Return a new {@link Video} if supported, and null otherwise.
@@ -102,14 +48,8 @@ public class Video extends MediaBase {
    * @return a new {@link Video} if supported, and null otherwise
    */
   public static Video createIfSupported() {
-    if (detector == null) {
-      detector = GWT.create(VideoElementSupportDetector.class);
-    }
-    if (!detector.isSupportedCompileTime()) {
-      return null;
-    }
     VideoElement element = Document.get().createVideoElement();
-    if (!detector.isSupportedRunTime(element)) {
+    if (!isSupportedRunTime(element)) {
       return null;
     }
     return new Video(element);
@@ -121,17 +61,8 @@ public class Video extends MediaBase {
    * @return whether the video element is supported
    */
   public static boolean isSupported() {
-    if (detector == null) {
-      detector = GWT.create(VideoElementSupportDetector.class);
-    }
-    if (!detector.isSupportedCompileTime()) {
-      return false;
-    }
     VideoElement element = Document.get().createVideoElement();
-    if (!detector.isSupportedRunTime(element)) {
-      return false;
-    }
-    return true;
+    return isSupportedRunTime(element);
   }
 
   /**
