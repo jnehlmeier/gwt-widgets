@@ -41,7 +41,6 @@ import org.gwtproject.user.client.Event.NativePreviewEvent;
 import com.google.gwt.user.client.Window;
 import org.gwtproject.user.client.ui.PopupPanel.PositionCallback;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 

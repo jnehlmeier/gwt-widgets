@@ -106,7 +106,7 @@ public class RichTextAreaImplIE8toIE10 extends RichTextAreaImplStandard {
       // this code is shared with all IE implementations (see RichText.gwt.xml)
       // the event can be passed in as argument (IE9) or from the content window (IE8/7/6)
       evt = evt || elem.contentWindow.event;
-      @org.gwtproject.user.client.DOM::dispatchEvent(Lcom/google/gwt/user/client/Event;Lcom/google/gwt/dom/client/Element;)(evt, elem);
+      @org.gwtproject.user.client.DOM::dispatchEvent(Lorg/gwtproject/user/client/Event;Lcom/google/gwt/dom/client/Element;)(evt, elem);
     });
 
     body.onkeydown =

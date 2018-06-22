@@ -92,7 +92,7 @@ public abstract class MediaTest extends GWTTestCase {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.media.MediaTest";
+    return "org.gwtproject.media.MediaTest";
   }
 
   public void testAddSource() {

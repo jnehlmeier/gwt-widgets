@@ -27,8 +27,8 @@ class DOMImplMozilla extends DOMImplStandard {
   }
 
   private static native void addMozillaCaptureEventDispatchers() /*-{
-    @com.google.gwt.user.client.impl.DOMImplStandard::captureEventDispatchers['DOMMouseScroll'] =
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*);
+    @org.gwtproject.user.client.impl.DOMImplStandard::captureEventDispatchers['DOMMouseScroll'] =
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*);
   }-*/;
 
   @Override
@@ -40,7 +40,7 @@ class DOMImplMozilla extends DOMImplStandard {
 
   public native void sinkEventsMozilla(Element elem, int bits) /*-{
     if (bits & 0x20000) {
-      elem.addEventListener('DOMMouseScroll', @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent, false);
+      elem.addEventListener('DOMMouseScroll', @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent, false);
     }
   }-*/;
 
@@ -54,7 +54,7 @@ class DOMImplMozilla extends DOMImplStandard {
     $wnd.addEventListener(
       'mouseout',
       $entry(function(evt) {
-        var cap = @com.google.gwt.user.client.impl.DOMImplStandard::captureElem; 
+        var cap = @org.gwtproject.user.client.impl.DOMImplStandard::captureElem;
         if (cap && !evt.relatedTarget) {
           // Mozilla has the interesting habit of sending a mouseout event
           // with an 'html' element as the target when the mouse is released

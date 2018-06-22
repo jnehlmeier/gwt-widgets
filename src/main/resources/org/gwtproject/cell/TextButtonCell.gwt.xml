@@ -18,9 +18,5 @@
   <inherits name="com.google.gwt.safehtml.SafeHtml"/>
   <inherits name="com.google.gwt.text.Text"/>
 
-  <replace-with class="org.gwtproject.cell.client.TextButtonCell.DefaultAppearance">
-    <when-type-is class="org.gwtproject.cell.client.TextButtonCell.Appearance" />
-  </replace-with>
-
   <source path="client"/>
 </module>

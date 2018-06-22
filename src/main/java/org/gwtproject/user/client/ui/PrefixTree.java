@@ -161,7 +161,7 @@ class PrefixTree extends AbstractCollection<String> {
               }
               var target = frame.prefix + unsafe(key);
               var subtree = frame.subtrees[key];
-              this.@org.gwtproject.user.client.ui.PrefixTree$PrefixTreeIterator::addTree(Lcom/google/gwt/user/client/ui/PrefixTree;Ljava/lang/String;)(subtree, target);
+              this.@org.gwtproject.user.client.ui.PrefixTree$PrefixTreeIterator::addTree(Lorg/gwtproject/user/client/ui/PrefixTree;Ljava/lang/String;)(subtree, target);
             }
           }
 
@@ -176,7 +176,7 @@ class PrefixTree extends AbstractCollection<String> {
            var target = frame.prefix + unsafe(key);
            var subtree = frame.subtrees[key];
 
-           this.@org.gwtproject.user.client.ui.PrefixTree$PrefixTreeIterator::addTree(Lcom/google/gwt/user/client/ui/PrefixTree;Ljava/lang/String;)(subtree, target);
+           this.@org.gwtproject.user.client.ui.PrefixTree$PrefixTreeIterator::addTree(Lorg/gwtproject/user/client/ui/PrefixTree;Ljava/lang/String;)(subtree, target);
          }
        }
      }

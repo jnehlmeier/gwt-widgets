@@ -1246,7 +1246,7 @@ public abstract class AbstractHasData<T> extends Composite implements HasData<T>
    * @param child the child to adopt
    */
   native void adopt(Widget child) /*-{
-    child.@org.gwtproject.user.client.ui.Widget::setParent(Lcom/google/gwt/user/client/ui/Widget;)(this);
+    child.@org.gwtproject.user.client.ui.Widget::setParent(Lorg/gwtproject/user/client/ui/Widget;)(this);
   }-*/;
 
   /**

@@ -34,7 +34,7 @@ import java.util.Date;
 public class DateBoxTest extends WidgetTestBase {
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.User";
+    return "org.gwtproject.user.Widgets";
   }
 
   public void testAccessors() {

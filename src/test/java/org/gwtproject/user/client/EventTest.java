@@ -86,7 +86,7 @@ public class EventTest extends GWTTestCase {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.User";
+    return "org.gwtproject.user.Widgets";
   }
 
   /**
@@ -242,7 +242,7 @@ public class EventTest extends GWTTestCase {
         handler0.assertIsFired(false);
         handler1.assertIsFired(false);
         handler2.assertIsFired(false);
-        assertFalse(event.isFirstHandler());
+        assertTrue(event.isFirstHandler());
       }
     };
     HandlerRegistration reg0 = Event.addNativePreviewHandler(handler0);

@@ -32,7 +32,7 @@ public abstract class SplitPanelTestBase<T extends SplitPanel> extends
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.DebugTest";
+    return "org.gwtproject.user.DebugTest";
   }
 
   @Override

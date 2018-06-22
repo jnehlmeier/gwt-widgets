@@ -29,7 +29,7 @@ public class ValuePickerTest extends GWTTestCase {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.User";
+    return "org.gwtproject.user.cellview.CellView";
   }
 
   // See https://code.google.com/p/google-web-toolkit/issues/detail?id=8613

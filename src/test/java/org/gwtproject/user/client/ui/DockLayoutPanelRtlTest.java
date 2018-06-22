@@ -25,7 +25,7 @@ public class DockLayoutPanelRtlTest extends WidgetTestBase {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.UserTestRtl";
+    return "org.gwtproject.user.UserTestRtl";
   }
 
   public void testGetResolvedDirection() {

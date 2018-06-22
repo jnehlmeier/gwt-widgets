@@ -13,6 +13,6 @@
 <!-- limitations under the License.                                         -->
 
 <module>
-    <inherits name="com.google.gwt.user.User"/>
+    <inherits name="org.gwtproject.user.Widgets"/>
     <inherits name="com.google.gwt.user.Debug"/>
 </module>

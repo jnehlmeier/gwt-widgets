@@ -29,7 +29,7 @@ import org.gwtproject.user.client.DOM;
 public class DOMRtlTest extends GWTTestCase {
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.UserTestRtl";
+    return "org.gwtproject.user.UserTestRtl";
   }
 
   /**

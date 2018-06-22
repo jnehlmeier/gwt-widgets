@@ -24,7 +24,7 @@ public class NamedFrameTest extends GWTTestCase {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.User";
+    return "org.gwtproject.user.Widgets";
   }
 
   public void testNormalName() {

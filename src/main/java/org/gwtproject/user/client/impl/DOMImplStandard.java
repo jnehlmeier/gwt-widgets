@@ -68,8 +68,8 @@ public abstract class DOMImplStandard extends DOMImpl {
    *
    * private static native JavaScriptObject getMsPointerCaptureDispatchers() /*-{
    *   return {
-   *     MSPointerDown: @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
-   *     MSPointerUp:   @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
+   *     MSPointerDown: @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
+   *     MSPointerUp:   @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
    *     ...
    *   };
    * }-* /;
@@ -221,20 +221,20 @@ public abstract class DOMImplStandard extends DOMImpl {
   @Override
   protected native void initEventSystem() /*-{
     // Ensure $entry for bitfull event dispatchers
-    @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent =
-        $entry(@com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent(*));
+    @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent =
+        $entry(@org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent(*));
 
-    @com.google.gwt.user.client.impl.DOMImplStandard::dispatchUnhandledEvent =
-        $entry(@com.google.gwt.user.client.impl.DOMImplStandard::dispatchUnhandledEvent(*));
+    @org.gwtproject.user.client.impl.DOMImplStandard::dispatchUnhandledEvent =
+        $entry(@org.gwtproject.user.client.impl.DOMImplStandard::dispatchUnhandledEvent(*));
 
-    var foreach = @com.google.gwt.user.client.impl.EventMap::foreach(*);
+    var foreach = @org.gwtproject.user.client.impl.EventMap::foreach(*);
 
     // Ensure $entry for bitless event dispatchers
-    var bitlessEvents = @com.google.gwt.user.client.impl.DOMImplStandard::bitlessEventDispatchers;
+    var bitlessEvents = @org.gwtproject.user.client.impl.DOMImplStandard::bitlessEventDispatchers;
     foreach(bitlessEvents, function(e, fn) { bitlessEvents[e] = $entry(fn); });
 
     // Ensure $entry for capture event dispatchers
-    var captureEvents = @com.google.gwt.user.client.impl.DOMImplStandard::captureEventDispatchers;
+    var captureEvents = @org.gwtproject.user.client.impl.DOMImplStandard::captureEventDispatchers;
     foreach(captureEvents, function(e, fn) { captureEvents[e] = $entry(fn); });
 
     // Add capture event listeners
@@ -242,7 +242,7 @@ public abstract class DOMImplStandard extends DOMImpl {
   }-*/;
 
   protected native void sinkBitlessEventImpl(Element elem, String eventTypeName) /*-{
-    var dispatchMap = @com.google.gwt.user.client.impl.DOMImplStandard::bitlessEventDispatchers;
+    var dispatchMap = @org.gwtproject.user.client.impl.DOMImplStandard::bitlessEventDispatchers;
     var dispatcher = dispatchMap[eventTypeName] || dispatchMap['_default_'];
     elem.addEventListener(eventTypeName, dispatcher, false);
   }-*/;
@@ -254,59 +254,59 @@ public abstract class DOMImplStandard extends DOMImpl {
     if (!chMask) return;
 
     if (chMask & 0x00001) elem.onclick       = (bits & 0x00001) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x00002) elem.ondblclick    = (bits & 0x00002) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x00004) elem.onmousedown   = (bits & 0x00004) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x00008) elem.onmouseup     = (bits & 0x00008) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x00010) elem.onmouseover   = (bits & 0x00010) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x00020) elem.onmouseout    = (bits & 0x00020) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x00040) elem.onmousemove   = (bits & 0x00040) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x00080) elem.onkeydown     = (bits & 0x00080) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x00100) elem.onkeypress    = (bits & 0x00100) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x00200) elem.onkeyup       = (bits & 0x00200) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x00400) elem.onchange      = (bits & 0x00400) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x00800) elem.onfocus       = (bits & 0x00800) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x01000) elem.onblur        = (bits & 0x01000) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x02000) elem.onlosecapture = (bits & 0x02000) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x04000) elem.onscroll      = (bits & 0x04000) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x08000) elem.onload        = (bits & 0x08000) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchUnhandledEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchUnhandledEvent : null;
     if (chMask & 0x10000) elem.onerror       = (bits & 0x10000) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x20000) elem.onmousewheel  = (bits & 0x20000) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x40000) elem.oncontextmenu = (bits & 0x40000) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x80000) elem.onpaste       = (bits & 0x80000) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x100000) elem.ontouchstart = (bits & 0x100000) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x200000) elem.ontouchmove  = (bits & 0x200000) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x400000) elem.ontouchend   = (bits & 0x400000) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x800000) elem.ontouchcancel= (bits & 0x800000) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x1000000) elem.ongesturestart  =(bits & 0x1000000) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x2000000) elem.ongesturechange =(bits & 0x2000000) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
     if (chMask & 0x4000000) elem.ongestureend    = (bits & 0x4000000) ?
-        @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent : null;
+        @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent : null;
   }-*/;
 
   private static void dispatchEvent(Event evt) {
@@ -353,37 +353,37 @@ public abstract class DOMImplStandard extends DOMImpl {
 
   private static native EventMap getBitlessEventDispatchers() /*-{
     return {
-      _default_: @com.google.gwt.user.client.impl.DOMImplStandard::dispatchEvent(*),
-      dragenter: @com.google.gwt.user.client.impl.DOMImplStandard::dispatchDragEvent(*),
-      dragover:  @com.google.gwt.user.client.impl.DOMImplStandard::dispatchDragEvent(*),
+      _default_: @org.gwtproject.user.client.impl.DOMImplStandard::dispatchEvent(*),
+      dragenter: @org.gwtproject.user.client.impl.DOMImplStandard::dispatchDragEvent(*),
+      dragover:  @org.gwtproject.user.client.impl.DOMImplStandard::dispatchDragEvent(*),
     };
   }-*/;
 
   private static native EventMap getCaptureEventDispatchers() /*-{
     return {
       // Mouse events
-      click:      @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
-      dblclick:   @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
-      mousedown:  @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
-      mouseup:    @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
-      mousemove:  @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
-      mouseover:  @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
-      mouseout:   @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
-      mousewheel: @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
+      click:      @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
+      dblclick:   @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
+      mousedown:  @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
+      mouseup:    @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
+      mousemove:  @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
+      mouseover:  @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
+      mouseout:   @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
+      mousewheel: @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
 
       // Keyboard events
-      keydown:    @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedEvent(*),
-      keyup:      @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedEvent(*),
-      keypress:   @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedEvent(*),
+      keydown:    @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedEvent(*),
+      keyup:      @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedEvent(*),
+      keypress:   @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedEvent(*),
 
       // Touch events
-      touchstart:   @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
-      touchend:     @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
-      touchmove:    @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
-      touchcancel:  @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
-      gesturestart: @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
-      gestureend:   @com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
-      gesturechange:@com.google.gwt.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
+      touchstart:   @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
+      touchend:     @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
+      touchmove:    @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
+      touchcancel:  @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
+      gesturestart: @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
+      gestureend:   @org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
+      gesturechange:@org.gwtproject.user.client.impl.DOMImplStandard::dispatchCapturedMouseEvent(*),
     };
   }-*/;
 }

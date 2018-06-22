@@ -55,7 +55,7 @@ public class DockPanelTest extends GWTTestCase {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.DebugTest";
+    return "org.gwtproject.user.DebugTest";
   }
 
   public void testAddRemove() {

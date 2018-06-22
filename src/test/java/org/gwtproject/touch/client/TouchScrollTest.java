@@ -651,7 +651,7 @@ public class TouchScrollTest extends GWTTestCase {
    * Get the momentum command from the specified {@link TouchScroller}.
    */
   private native RepeatingCommand getMomentumCommand(TouchScroller scroller) /*-{
-    return scroller.@com.google.gwt.touch.client.TouchScroller::momentumCommand;
+    return scroller.@org.gwtproject.touch.client.TouchScroller::momentumCommand;
   }-*/;
 
   /**

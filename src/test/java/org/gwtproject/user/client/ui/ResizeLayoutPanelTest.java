@@ -55,7 +55,7 @@ public class ResizeLayoutPanelTest extends
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.User";
+    return "org.gwtproject.user.Widgets";
   }
 
   /**

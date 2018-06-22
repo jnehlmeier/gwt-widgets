@@ -35,7 +35,7 @@ public class ButtonTest extends GWTTestCase {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.User";
+    return "org.gwtproject.user.Widgets";
   }
 
   private static class H implements ClickHandler {

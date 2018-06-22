@@ -34,7 +34,7 @@ public class StackPanelTest extends PanelTestBase<StackPanel> {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.DebugTest";
+    return "org.gwtproject.user.DebugTest";
   }
 
   public String curContents(StackPanel p) {

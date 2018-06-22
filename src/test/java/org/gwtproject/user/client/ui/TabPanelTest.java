@@ -66,7 +66,7 @@ public class TabPanelTest extends GWTTestCase {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.DebugTest";
+    return "org.gwtproject.user.DebugTest";
   }
 
   /**

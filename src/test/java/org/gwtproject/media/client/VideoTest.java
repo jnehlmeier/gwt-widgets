@@ -50,7 +50,7 @@ public class VideoTest extends MediaTest {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.media.MediaTest";
+    return "org.gwtproject.media.MediaTest";
   }
 
   public void testPoster() {

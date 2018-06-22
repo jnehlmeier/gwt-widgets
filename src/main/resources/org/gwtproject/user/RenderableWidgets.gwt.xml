@@ -3,7 +3,6 @@
     <inherits name="org.gwtproject.user.DOM" />
     <inherits name="org.gwtproject.canvas.Canvas" />
     <inherits name="org.gwtproject.media.Media" />
-    <inherits name="org.gwtproject.touch.Touch" />
     <inherits name="org.gwtproject.user.datepicker.DatePicker" />
     <inherits name="org.gwtproject.user.CaptionPanel" />
     <inherits name="org.gwtproject.user.ClippedImage" />
@@ -20,12 +19,7 @@
     <inherits name="org.gwtproject.user.TextBox" />
     <inherits name="org.gwtproject.user.Tree" />
 
-    <!-- ValueListBox uses ProvidesKey, SimpleKeyProvider -->
-    <inherits name="org.gwtproject.view.View" />
-
-    <inherits name="org.gwtproject.WidgetsEditorSupport" />
-
     <source path="client/ui">
-        <!--<skip name="ValuePicker" />-->
+        <skip name="ValuePicker" />
     </source>
 </module>

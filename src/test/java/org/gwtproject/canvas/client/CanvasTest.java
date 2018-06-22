@@ -50,7 +50,7 @@ public class CanvasTest extends GWTTestCase {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.canvas.Canvas";
+    return "org.gwtproject.canvas.Canvas";
   }
 
   /*

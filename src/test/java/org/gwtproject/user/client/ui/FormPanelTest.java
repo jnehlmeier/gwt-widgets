@@ -41,7 +41,7 @@ public class FormPanelTest extends SimplePanelTestBase<FormPanel> {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.FormPanelTest";
+    return "org.gwtproject.user.FormPanelTest";
   }
 
   public void testCancelSubmit() {

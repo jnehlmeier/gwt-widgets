@@ -15,7 +15,6 @@
  */
 package org.gwtproject.cell.client;
 
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.text.shared.SimpleSafeHtmlRenderer;
 
 /**
@@ -70,7 +69,7 @@ public class TextButtonCell extends ButtonCellBase<String> {
    * {@link #TextButtonCell(Appearance)}.
    */
   public TextButtonCell() {
-    this(GWT.<Appearance> create(Appearance.class));
+    this(new DefaultAppearance());
   }
 
   /**

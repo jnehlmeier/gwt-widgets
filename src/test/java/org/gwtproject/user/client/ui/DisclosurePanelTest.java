@@ -19,6 +19,7 @@ import com.google.gwt.event.logical.shared.CloseEvent;
 import com.google.gwt.event.logical.shared.CloseHandler;
 import com.google.gwt.event.logical.shared.OpenEvent;
 import com.google.gwt.event.logical.shared.OpenHandler;
+import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.user.client.DOM;
 import com.google.gwt.user.client.Timer;
@@ -34,7 +35,7 @@ public class DisclosurePanelTest extends GWTTestCase {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.DebugTest";
+    return "org.gwtproject.user.DebugTest";
   }
 
   /**
@@ -158,7 +159,9 @@ public class DisclosurePanelTest extends GWTTestCase {
 
     panel.addOpenHandler(openHandleA);
     panel.addCloseHandler(closeHandleA);
-    // There is one to begin with.
+    HandlerRegistration openHandleBReg = panel.addOpenHandler(openHandleB);
+    HandlerRegistration closeHandleBReg = panel.addCloseHandler(closeHandleB);
+    // DisclosePanel registers itself as Open- and CloseHandler. So we are at 3 each.
     assertEquals(3,
         panel.getHandlerManager().getHandlerCount(CloseEvent.getType()));
     assertEquals(3,
@@ -178,8 +181,8 @@ public class DisclosurePanelTest extends GWTTestCase {
 
     aDidFire[OPEN] = bDidFire[CLOSE] = false;
 
-    panel.addOpenHandler(openHandleB);
-    panel.addCloseHandler(closeHandleB);
+    openHandleBReg.removeHandler();
+    closeHandleBReg.removeHandler();
     assertEquals(2,
         panel.getHandlerManager().getHandlerCount(OpenEvent.getType()));
     assertEquals(2,

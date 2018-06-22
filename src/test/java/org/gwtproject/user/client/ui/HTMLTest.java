@@ -30,7 +30,7 @@ public class HTMLTest extends LabelTest {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.User";
+    return "org.gwtproject.user.Widgets";
   }
 
   public void testDirectionEstimator() {

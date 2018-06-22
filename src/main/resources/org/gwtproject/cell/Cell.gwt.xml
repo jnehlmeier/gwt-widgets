@@ -18,6 +18,8 @@
   <inherits name="com.google.gwt.safehtml.SafeHtml"/>
   <inherits name="com.google.gwt.text.Text"/>
 
+  <inherits name="org.gwtproject.user.DOM" />
+  <inherits name="org.gwtproject.user.Widgets" />
   <inherits name="org.gwtproject.cell.TextButtonCell"/>
 
   <source path="client"/>

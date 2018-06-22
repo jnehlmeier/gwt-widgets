@@ -65,7 +65,7 @@ public abstract class HTMLTableTestBase extends GWTTestCase {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.DebugTest";
+    return "org.gwtproject.user.DebugTest";
   }
 
   public abstract HTMLTable getTable(int row, int column);

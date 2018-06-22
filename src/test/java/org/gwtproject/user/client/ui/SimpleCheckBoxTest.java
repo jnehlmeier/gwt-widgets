@@ -36,7 +36,7 @@ public class SimpleCheckBoxTest extends GWTTestCase {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.UserTest";
+    return "org.gwtproject.user.UserTest";
   }
 
 

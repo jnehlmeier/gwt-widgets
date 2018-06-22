@@ -358,7 +358,7 @@ class CellBasedWidgetImplTrident extends org.gwtproject.user.cellview.client.Cel
    */
   private native void initFocusEventSystem() /*-{
     @org.gwtproject.user.cellview.client.CellBasedWidgetImplTrident::dispatchFocusEvent = $entry(function() {
-      @org.gwtproject.user.cellview.client.CellBasedWidgetImplTrident::handleNonBubblingEvent(Lcom/google/gwt/user/client/Event;)($wnd.event);
+      @org.gwtproject.user.cellview.client.CellBasedWidgetImplTrident::handleNonBubblingEvent(Lorg/gwtproject/user/client/Event;)($wnd.event);
     });
   }-*/;
 
@@ -377,7 +377,7 @@ class CellBasedWidgetImplTrident extends org.gwtproject.user.cellview.client.Cel
 
     // Add an entry for the specified module.
     $wnd.__gwt_CellBasedWidgetImplLoadListeners[moduleName] = $entry(function() {
-      @org.gwtproject.user.cellview.client.CellBasedWidgetImplTrident::handleNonBubblingEvent(Lcom/google/gwt/user/client/Event;)($wnd.event);
+      @org.gwtproject.user.cellview.client.CellBasedWidgetImplTrident::handleNonBubblingEvent(Lorg/gwtproject/user/client/Event;)($wnd.event);
     });
   }-*/;
 

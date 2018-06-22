@@ -118,7 +118,7 @@ class CellBasedWidgetImplStandard extends CellBasedWidgetImpl {
    */
   private native void initEventSystem() /*-{
     @CellBasedWidgetImplStandard::dispatchNonBubblingEvent = $entry(function (evt) {
-      @CellBasedWidgetImplStandard::handleNonBubblingEvent(Lcom/google/gwt/user/client/Event;)(evt);
+      @CellBasedWidgetImplStandard::handleNonBubblingEvent(Lorg/gwtproject/user/client/Event;)(evt);
     });
   }-*/;
 

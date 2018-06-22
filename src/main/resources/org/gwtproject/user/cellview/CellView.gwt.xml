@@ -17,8 +17,9 @@
   <inherits name="com.google.gwt.aria.Aria"/>
   <inherits name="org.gwtproject.cell.Cell"/>
   <inherits name="com.google.gwt.editor.Editor"/>
-  <inherits name="com.google.gwt.view.View"/>
+  <inherits name="org.gwtproject.view.View"/>
   <inherits name="com.google.gwt.user.UserAgent"/>
+  <inherits name="org.gwtproject.user.Widgets" />
   <source path="client"/>
   <public path="public" />
 

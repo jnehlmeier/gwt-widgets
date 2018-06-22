@@ -30,7 +30,7 @@ public class InlineHTMLTest extends LabelTest {
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.User";
+    return "org.gwtproject.user.Widgets";
   }
 
   // test that the SafeHtml constructor creates the HTML element correctly.

@@ -13,6 +13,6 @@
 <!-- limitations under the License.                                         -->
 
 <module>
-    <inherits name="com.google.gwt.user.User"/>
+    <inherits name="org.gwtproject.user.Widgets"/>
     <servlet path='/formHandler' class='org.gwtproject.user.server.ui.FormPanelTestServlet'/>
 </module>

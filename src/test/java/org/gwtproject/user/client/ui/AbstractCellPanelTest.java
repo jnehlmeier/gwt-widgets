@@ -27,7 +27,7 @@ public abstract class AbstractCellPanelTest<T extends CellPanel> extends
 
   @Override
   public String getModuleName() {
-    return "com.google.gwt.user.DebugTest";
+    return "org.gwtproject.user.DebugTest";
   }
 
   /**

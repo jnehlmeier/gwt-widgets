@@ -66,7 +66,7 @@ public class PotentialElement extends Element {
   public static native PotentialElement build(UIObject o, String tagName) /*-{
     var el = new $wnd.GwtPotentialElementShim();
     el.tagName = tagName;
-    el.__gwt_resolve = @org.gwtproject.user.client.ui.PotentialElement::buildResolveCallback(Lcom/google/gwt/user/client/ui/UIObject;)(o);
+    el.__gwt_resolve = @org.gwtproject.user.client.ui.PotentialElement::buildResolveCallback(Lorg/gwtproject/user/client/ui/UIObject;)(o);
     return @com.google.gwt.dom.client.Element::as(Lcom/google/gwt/core/client/JavaScriptObject;)(el);
   }-*/;
 
@@ -152,7 +152,7 @@ public class PotentialElement extends Element {
   }
 
   final native Element setResolver(UIObject resolver) /*-{
-    this.__gwt_resolve = @org.gwtproject.user.client.ui.PotentialElement::buildResolveCallback(Lcom/google/gwt/user/client/ui/UIObject;)(resolver);
+    this.__gwt_resolve = @org.gwtproject.user.client.ui.PotentialElement::buildResolveCallback(Lorg/gwtproject/user/client/ui/UIObject;)(resolver);
   }-*/;
 
   /**
