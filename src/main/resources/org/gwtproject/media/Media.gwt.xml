@@ -18,12 +18,12 @@
   <public path="public" />
 
   <!-- Define the support property for Video and Audio-->
-  <define-property name="videoElementSupport" values="maybe,no" />
-  <define-property name="audioElementSupport" values="maybe,no" />
+  <define-property name="widgets.videoElementSupport" values="maybe,no" />
+  <define-property name="widgets.audioElementSupport" values="maybe,no" />
 
   <!-- Give default support value of maybe -->
-  <set-property name="videoElementSupport" value="maybe" />
-  <set-property name="audioElementSupport" value="maybe" />
+  <set-property name="widgets.videoElementSupport" value="maybe" />
+  <set-property name="widgets.audioElementSupport" value="maybe" />
 
   <source path="client"/>
 </module>

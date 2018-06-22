@@ -15,5 +15,5 @@
 <module>
   <inherits name="org.gwtproject.user.Widgets"/>
   <inherits name="org.gwtproject.debug.Debug"/>
-  <set-property name="gwt.enableDebugId" value="false"/>
+  <set-property name="widgets.gwt.enableDebugId" value="false"/>
 </module>

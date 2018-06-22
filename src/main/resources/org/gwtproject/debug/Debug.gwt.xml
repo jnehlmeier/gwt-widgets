@@ -18,5 +18,5 @@
 
   
   <!-- Enable debug IDs -->
-  <set-property name="gwt.enableDebugId" value="true"/> 
+  <set-property name="widgets.gwt.enableDebugId" value="true"/>
 </module>

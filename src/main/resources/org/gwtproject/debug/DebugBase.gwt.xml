@@ -19,18 +19,18 @@
   <public path="public" />
   
   <!-- Enable or disable the UIObject.ensureDebugID method -->
-  <define-property name="gwt.enableDebugId" values="true, false"/>
-  <set-property name="gwt.enableDebugId" value="false"/> 
+  <define-property name="widgets.gwt.enableDebugId" values="true, false"/>
+  <set-property name="widgets.gwt.enableDebugId" value="false"/>
 
   <!-- Replace the DebugIdImpl -->
   <replace-with class="org.gwtproject.user.client.ui.UIObject.DebugIdImplEnabled">
     <when-type-is class="org.gwtproject.user.client.ui.UIObject.DebugIdImpl"/>
-    <when-property-is name="gwt.enableDebugId" value="true"/>
+    <when-property-is name="widgets.gwt.enableDebugId" value="true"/>
   </replace-with>
 
   <!-- Replace the DebugInfoImpl -->
   <replace-with class="org.gwtproject.debug.client.DebugInfo.DebugInfoImplEnabled">
     <when-type-is class="org.gwtproject.debug.client.DebugInfo.DebugInfoImpl"/>
-    <when-property-is name="gwt.enableDebugId" value="true"/>
+    <when-property-is name="widgets.gwt.enableDebugId" value="true"/>
   </replace-with>
 </module>
