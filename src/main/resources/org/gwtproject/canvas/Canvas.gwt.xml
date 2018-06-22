@@ -15,6 +15,7 @@
 -->
 <module>
   <inherits name='com.google.gwt.useragent.UserAgent'/>
+  <inherits name="org.gwtproject.user.Widgets" />
 
   <!-- Define the support property -->
   <define-property name="widgets.canvasElementSupport" values="maybe,no" />
