@@ -137,6 +137,10 @@ public class VideoTest extends MediaTest {
       throw new Exception("Could not find suitable video format");
     }
 
+    // allow tests to autoplay audio without user interaction in browsers with
+    // strict autoplay policies, e.g. Chrome
+    video.setMuted(true);
+
     RootPanel.get().add(video);
   }
 
