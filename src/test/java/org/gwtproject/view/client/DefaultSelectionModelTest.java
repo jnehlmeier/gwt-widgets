@@ -16,6 +16,9 @@
 package org.gwtproject.view.client;
 
 
+import com.google.gwt.core.client.Scheduler;
+import com.google.gwt.user.client.Timer;
+
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
@@ -65,18 +68,32 @@ public class DefaultSelectionModelTest extends AbstractSelectionModelTest {
   }
 
   public void testNoDuplicateChangeEvent() {
-    org.gwtproject.view.client.DefaultSelectionModel<String> model = createSelectionModel(null);
-    org.gwtproject.view.client.SelectionChangeEvent.Handler handler = new org.gwtproject.view.client.SelectionChangeEvent.Handler() {
-      @Override
-      public void onSelectionChange(SelectionChangeEvent event) {
-        fail();
-      }
-    };
+    delayTestFinish(2000);
+    final DefaultSelectionModel<String> model = createSelectionModel(null);
+    final MockSelectionChangeHandler handler = new AssertOneSelectionChangeEventOnlyHandler();
 
-    model.setSelected("selected999", false);
     model.addSelectionChangeHandler(handler);
-    model.setSelected("selected999", false); // Should not fire change event
-    model.setSelected("selected999", false); // Should not fire change event
+    model.setSelected("selected999", false);
+    // selection events fire at the end of current event loop (finally command)
+    handler.assertEventFired(false);
+
+    Scheduler.get().scheduleDeferred(new Scheduler.ScheduledCommand() {
+      @Override
+      public void execute() {
+        handler.assertEventFired(true);
+        // No further selection events should be fired
+        model.addSelectionChangeHandler(new FailingSelectionChangeEventHandler());
+        model.setSelected("selected999", false);
+        model.setSelected("selected999", false);
+      }
+    });
+
+    new Timer() {
+      @Override
+      public void run() {
+        finishTest();
+      }
+    }.schedule(1000);
   }
 
   public void testSetSelectedDefault() {
