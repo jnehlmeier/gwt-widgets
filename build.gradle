@@ -19,6 +19,8 @@ dependencies {
     testRuntimeOnly 'com.google.gwt:gwt-dev:2.8.2'
 }
 
+compileJava.options.encoding = 'UTF-8'
+
 jar {
     from sourceSets.main.allJava
 }
