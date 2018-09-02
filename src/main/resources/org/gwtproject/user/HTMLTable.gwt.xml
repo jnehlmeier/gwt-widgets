@@ -25,12 +25,4 @@
     <when-type-is class="org.gwtproject.user.client.ui.HTMLTable.HTMLTableImpl"/>
   </replace-with>
 
-  <!-- Implementation for IE -->
-  <replace-with class="org.gwtproject.user.client.ui.HTMLTable.HTMLTableIEImpl">
-    <when-type-is class="org.gwtproject.user.client.ui.HTMLTable.HTMLTableImpl"/>
-    <any>
-      <when-property-is name="user.agent" value="ie8"/>
-      <when-property-is name="user.agent" value="ie9"/>
-    </any>
-  </replace-with>
 </module>

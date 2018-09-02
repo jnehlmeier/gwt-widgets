@@ -263,6 +263,7 @@ public class ResizeLayoutPanel extends SimplePanel implements ProvidesResize,
   /**
    * Implementation of resize event used by IE.
    */
+  // FIXME: Unused in deferred binding, but might be usable in all browsers?
   static class ImplTrident extends Impl {
 
     @Override

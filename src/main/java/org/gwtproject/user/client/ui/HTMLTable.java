@@ -92,23 +92,6 @@ public abstract class HTMLTable extends Panel implements
     }-*/;
   }
 
-  /**
-   * IE specific implementation for accessing the Table DOM.
-   * see: issue 6938
-   */
-  @SuppressWarnings("unused") // used due to rebinding
-  private static class HTMLTableIEImpl implements HTMLTableImpl {
-
-    @Override
-    public native JsArray<Element> getRows(Element tbody) /*-{
-      return tbody.children;
-    }-*/;
-
-    @Override
-    public native JsArray<Element> getCells(Element row) /*-{
-      return row.children;
-    }-*/;
-  }
 
   /**
    * Return value for {@link HTMLTable#getCellForEvent}.

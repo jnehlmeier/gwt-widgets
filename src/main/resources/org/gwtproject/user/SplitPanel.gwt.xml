@@ -19,11 +19,6 @@
     <when-type-is class="org.gwtproject.user.client.ui.HorizontalSplitPanel.Impl"/>
   </replace-with>
 
-  <replace-with class="org.gwtproject.user.client.ui.HorizontalSplitPanel.ImplIE8">
-    <when-type-is class="org.gwtproject.user.client.ui.HorizontalSplitPanel.Impl"/>
-    <when-property-is name="user.agent" value="ie8"/>
-  </replace-with>
-
   <replace-with class="org.gwtproject.user.client.ui.HorizontalSplitPanel.ImplSafari">
     <when-type-is class="org.gwtproject.user.client.ui.HorizontalSplitPanel.Impl"/>
     <when-property-is name="user.agent" value="safari"/>
@@ -33,8 +28,4 @@
     <when-type-is class="org.gwtproject.user.client.ui.VerticalSplitPanel.Impl"/>
   </replace-with>
 
-  <replace-with class="org.gwtproject.user.client.ui.VerticalSplitPanel.ImplIE8">
-    <when-type-is class="org.gwtproject.user.client.ui.VerticalSplitPanel.Impl"/>
-    <when-property-is name="user.agent" value="ie8"/>
-  </replace-with>
 </module>

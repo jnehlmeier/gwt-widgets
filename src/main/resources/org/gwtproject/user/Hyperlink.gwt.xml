@@ -7,11 +7,4 @@
     <when-property-is name="user.agent" value="safari"/>
   </replace-with>
 
-  <replace-with class="org.gwtproject.user.client.ui.impl.HyperlinkImplIE">
-    <when-type-is class="org.gwtproject.user.client.ui.impl.HyperlinkImpl"/>
-    <any>
-      <when-property-is name="user.agent" value="ie8"/>
-      <when-property-is name="user.agent" value="ie9" />
-    </any>
-  </replace-with>
 </module>

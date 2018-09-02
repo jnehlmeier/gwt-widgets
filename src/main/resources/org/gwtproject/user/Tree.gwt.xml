@@ -16,14 +16,4 @@
 <module>
   <inherits name="com.google.gwt.core.Core"/>
   <inherits name="com.google.gwt.user.UserAgent"/>
-
-  <!-- IE-specific implementation -->
-  <replace-with class="org.gwtproject.user.client.ui.TreeItem.TreeItemImplIE8ToIE10">
-    <when-type-is class="org.gwtproject.user.client.ui.TreeItem.TreeItemImpl"/>
-    <any>
-      <when-property-is name="user.agent" value="ie8"/>
-      <when-property-is name="user.agent" value="ie9"/>
-      <when-property-is name="user.agent" value="ie10"/>
-    </any>
-  </replace-with>
 </module>

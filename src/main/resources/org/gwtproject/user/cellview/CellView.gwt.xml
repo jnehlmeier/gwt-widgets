@@ -31,21 +31,11 @@
     </any>
   </replace-with>
 
-  <!-- IE-specific CellBasedWidgetImpl implementation. -->
-  <replace-with class="org.gwtproject.user.cellview.client.CellBasedWidgetImplTrident">
-    <when-type-is class="org.gwtproject.user.cellview.client.CellBasedWidgetImpl"/>
-    <any>
-      <when-property-is name="user.agent" value="ie8"/>
-    </any>
-  </replace-with>
-
   <!-- StandardBase CellBasedWidgetImpl implementation. -->
   <replace-with class="org.gwtproject.user.cellview.client.CellBasedWidgetImplStandardBase">
     <when-type-is class="org.gwtproject.user.cellview.client.CellBasedWidgetImpl"/>
     <any>
       <when-property-is name="user.agent" value="safari"/>
-      <when-property-is name="user.agent" value="ie9"/>
-      <when-property-is name="user.agent" value="ie10"/>
     </any>
   </replace-with>
 
@@ -57,13 +47,4 @@
     </any>
   </replace-with>
 
-  <!-- IE-specific CellTable implementation. -->
-  <replace-with class="org.gwtproject.user.cellview.client.AbstractCellTable.ImplTrident">
-    <when-type-is class="org.gwtproject.user.cellview.client.AbstractCellTable.Impl"/>
-    <any>
-      <when-property-is name="user.agent" value="ie8"/>
-      <when-property-is name="user.agent" value="ie9"/>
-      <when-property-is name="user.agent" value="ie10"/>
-    </any>
-  </replace-with>
 </module>

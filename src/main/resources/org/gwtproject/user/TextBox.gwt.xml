@@ -25,9 +25,4 @@
     <when-type-is class="org.gwtproject.user.client.ui.impl.TextBoxImpl"/>
   </replace-with>
 
-  <!-- IE has a completely different TextBox implementation -->
-  <replace-with class="org.gwtproject.user.client.ui.impl.TextBoxImplIE8">
-    <when-type-is class="org.gwtproject.user.client.ui.impl.TextBoxImpl"/>
-    <when-property-is name="user.agent" value="ie8"/>
-  </replace-with>
 </module>
