@@ -24,7 +24,7 @@ import com.google.gwt.event.dom.client.LoadedMetadataHandler;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.media.dom.client.MediaError;
+import org.gwtproject.media.dom.client.MediaError;
 
 import junit.framework.Assert;
 import org.gwtproject.media.client.Audio;

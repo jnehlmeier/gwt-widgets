@@ -20,8 +20,8 @@ import org.gwtproject.dom.client.MediaElement;
 import org.gwtproject.dom.client.SourceElement;
 import com.google.gwt.event.dom.client.*;
 import com.google.gwt.event.shared.HandlerRegistration;
-import com.google.gwt.media.dom.client.MediaError;
-import com.google.gwt.media.dom.client.TimeRanges;
+import org.gwtproject.media.dom.client.MediaError;
+import org.gwtproject.media.dom.client.TimeRanges;
 import org.gwtproject.user.client.ui.FocusWidget;
 
 /**

@@ -17,7 +17,7 @@
 package org.gwtproject.canvas;
 
 import org.gwtproject.canvas.client.CanvasTest;
-//import com.google.gwt.canvas.dom.client.Context2dTest;
+//import org.gwtproject.canvas.dom.client.Context2dTest;
 import com.google.gwt.junit.tools.GWTTestSuite;
 
 import junit.framework.Test;

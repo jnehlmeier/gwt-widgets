@@ -15,8 +15,8 @@
  */
 package org.gwtproject.canvas.client;
 
-import com.google.gwt.canvas.dom.client.Context;
-import com.google.gwt.canvas.dom.client.Context2d;
+import org.gwtproject.canvas.dom.client.Context;
+import org.gwtproject.canvas.dom.client.Context2d;
 import org.gwtproject.dom.client.CanvasElement;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.PartialSupport;
