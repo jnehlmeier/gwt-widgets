@@ -15,10 +15,10 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.aria.client.ExpandedValue;
-import com.google.gwt.aria.client.Id;
-import com.google.gwt.aria.client.Roles;
-import com.google.gwt.aria.client.SelectedValue;
+import org.gwtproject.aria.client.ExpandedValue;
+import org.gwtproject.aria.client.Id;
+import org.gwtproject.aria.client.Roles;
+import org.gwtproject.aria.client.SelectedValue;
 import com.google.gwt.core.client.GWT;
 import org.gwtproject.dom.client.Element;
 import com.google.gwt.event.dom.client.BlurEvent;

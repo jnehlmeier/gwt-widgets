@@ -16,7 +16,7 @@
 package org.gwtproject.user.cellview.client;
 
 import com.google.gwt.animation.client.Animation;
-import com.google.gwt.aria.client.Roles;
+import org.gwtproject.aria.client.Roles;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.Scheduler;
 import org.gwtproject.dom.client.BrowserEvents;

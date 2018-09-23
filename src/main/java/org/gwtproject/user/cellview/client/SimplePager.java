@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.cellview.client;
 
-import com.google.gwt.aria.client.Roles;
+import org.gwtproject.aria.client.Roles;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;

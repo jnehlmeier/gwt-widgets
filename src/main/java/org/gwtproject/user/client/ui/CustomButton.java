@@ -16,8 +16,8 @@
 
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.aria.client.PressedValue;
-import com.google.gwt.aria.client.Roles;
+import org.gwtproject.aria.client.PressedValue;
+import org.gwtproject.aria.client.Roles;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.NativeEvent;

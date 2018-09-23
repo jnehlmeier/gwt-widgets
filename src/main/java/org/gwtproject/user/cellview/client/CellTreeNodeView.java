@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.cellview.client;
 
-import com.google.gwt.aria.client.ExpandedValue;
-import com.google.gwt.aria.client.Roles;
+import org.gwtproject.aria.client.ExpandedValue;
+import org.gwtproject.aria.client.Roles;
 import org.gwtproject.user.cellview.client.AbstractHasData;
 import org.gwtproject.user.cellview.client.CellBasedWidgetImpl;
 import org.gwtproject.user.cellview.client.HasDataPresenter;

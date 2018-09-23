@@ -37,7 +37,7 @@ import org.gwtproject.dom.client.Element;
  * updated on changes.</p>
  *
  * @deprecated Use the new GWT ARIA library with the factory class for the ARIA roles
- * {@link com.google.gwt.aria.client.Roles}. There are getters for all ARIA roles. For each
+ * {@link org.gwtproject.aria.client.Roles}. There are getters for all ARIA roles. For each
  * role there are get/set/remove methods defined for all (own and inherited) supported states
  * and properties.
  */

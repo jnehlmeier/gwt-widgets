@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.datepicker.client;
 
-import com.google.gwt.aria.client.Roles;
-import com.google.gwt.aria.client.SelectedValue;
+import org.gwtproject.aria.client.Roles;
+import org.gwtproject.aria.client.SelectedValue;
 import org.gwtproject.user.client.ui.HTMLTable.CellFormatter;
 import org.gwtproject.user.datepicker.client.DefaultCalendarView.CellGrid.DateCell;
 

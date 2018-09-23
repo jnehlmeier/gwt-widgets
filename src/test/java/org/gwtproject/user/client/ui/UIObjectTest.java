@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.aria.client.State;
+import org.gwtproject.aria.client.State;
 import com.google.gwt.debug.client.DebugInfo;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;

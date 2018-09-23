@@ -15,9 +15,9 @@
  */
 package org.gwtproject.user.cellview.client;
 
-import com.google.gwt.aria.client.Property;
-import com.google.gwt.aria.client.Roles;
-import com.google.gwt.aria.client.State;
+import org.gwtproject.aria.client.Property;
+import org.gwtproject.aria.client.Roles;
+import org.gwtproject.aria.client.State;
 import com.google.gwt.core.client.GWT;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.NodeList;
