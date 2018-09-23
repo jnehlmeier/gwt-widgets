@@ -19,10 +19,10 @@ import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Style.Unit;
-import com.google.gwt.layout.client.LayerFriend;
-import com.google.gwt.layout.client.Layout;
-import com.google.gwt.layout.client.Layout.AnimationCallback;
-import com.google.gwt.layout.client.Layout.Layer;
+import org.gwtproject.layout.client.LayerFriend;
+import org.gwtproject.layout.client.Layout;
+import org.gwtproject.layout.client.Layout.AnimationCallback;
+import org.gwtproject.layout.client.Layout.Layer;
 import com.google.gwt.user.client.Command;
 
 import java.util.ArrayList;
@@ -31,7 +31,7 @@ import java.util.List;
 /**
  * Tests for {@link LayoutPanel}. Note that this only tests LayoutPanel-specific
  * behavior, not general layout correctness, which is covered by
- * {@link com.google.gwt.layout.client.LayoutTest}.
+ * {@link org.gwtproject.layout.client.LayoutTest}.
  */
 public class LayoutPanelTest extends WidgetTestBase {
 

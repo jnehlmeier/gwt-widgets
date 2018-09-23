@@ -16,8 +16,8 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.Style.Unit;
-import com.google.gwt.layout.client.Layout;
-import com.google.gwt.layout.client.Layout.Layer;
+import org.gwtproject.layout.client.Layout;
+import org.gwtproject.layout.client.Layout.Layer;
 
 /**
  * A simple panel that {@link ProvidesResize} to its one child.

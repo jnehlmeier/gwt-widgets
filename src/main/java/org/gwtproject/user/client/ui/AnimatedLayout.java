@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.layout.client.Layout.AnimationCallback;
+import org.gwtproject.layout.client.Layout.AnimationCallback;
 
 /**
  * Specifies that a panel can animate between layouts.

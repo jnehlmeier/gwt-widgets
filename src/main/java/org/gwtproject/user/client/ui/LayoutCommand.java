@@ -17,9 +17,9 @@ package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
-import com.google.gwt.layout.client.Layout;
-import com.google.gwt.layout.client.Layout.AnimationCallback;
-import com.google.gwt.layout.client.Layout.Layer;
+import org.gwtproject.layout.client.Layout;
+import org.gwtproject.layout.client.Layout.AnimationCallback;
+import org.gwtproject.layout.client.Layout.Layer;
 
 /**
  * A scheduled command used by animated layouts to ensure that only layout is

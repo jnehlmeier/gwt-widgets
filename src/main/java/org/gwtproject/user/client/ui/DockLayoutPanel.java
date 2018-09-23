@@ -19,8 +19,8 @@ import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.Style.Unit;
 import com.google.gwt.i18n.client.LocaleInfo;
-import com.google.gwt.layout.client.Layout;
-import com.google.gwt.layout.client.Layout.Layer;
+import org.gwtproject.layout.client.Layout;
+import org.gwtproject.layout.client.Layout.Layer;
 
 /**
  * A panel that lays its child widgets out "docked" at its outer edges, and

@@ -13,10 +13,10 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.layout.client;
+package org.gwtproject.layout.client;
 
 import org.gwtproject.dom.client.Style.Unit;
-import com.google.gwt.layout.client.Layout.Layer;
+import org.gwtproject.layout.client.Layout.Layer;
 
 /**
  * A helper class to gain access to the package protected internals of a

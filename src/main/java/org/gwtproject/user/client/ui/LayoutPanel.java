@@ -18,10 +18,10 @@ package org.gwtproject.user.client.ui;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.Style.Unit;
-import com.google.gwt.layout.client.Layout;
-import com.google.gwt.layout.client.Layout.Alignment;
-import com.google.gwt.layout.client.Layout.AnimationCallback;
-import com.google.gwt.layout.client.Layout.Layer;
+import org.gwtproject.layout.client.Layout;
+import org.gwtproject.layout.client.Layout.Alignment;
+import org.gwtproject.layout.client.Layout.AnimationCallback;
+import org.gwtproject.layout.client.Layout.Layer;
 
 /**
  * A panel that lays its children out in arbitrary

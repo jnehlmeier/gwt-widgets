@@ -18,9 +18,9 @@ package org.gwtproject.user.client.ui;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Style.Unit;
 import com.google.gwt.i18n.client.LocaleInfo;
-import com.google.gwt.layout.client.Layout;
-import com.google.gwt.layout.client.Layout.AnimationCallback;
-import com.google.gwt.layout.client.Layout.Layer;
+import org.gwtproject.layout.client.Layout;
+import org.gwtproject.layout.client.Layout.AnimationCallback;
+import org.gwtproject.layout.client.Layout.Layer;
 
 /**
  * A panel that displays all of its child widgets in a 'deck', where only one
