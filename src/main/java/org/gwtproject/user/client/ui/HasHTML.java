@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
+import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
 
 /**
  * An object that implements this interface contains text, which can be set and

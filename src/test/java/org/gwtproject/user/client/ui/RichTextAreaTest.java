@@ -28,7 +28,7 @@ import com.google.gwt.event.logical.shared.InitializeHandler;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.safehtml.shared.SafeHtmlUtils;
+import org.gwtproject.safehtml.shared.SafeHtmlUtils;
 import org.gwtproject.user.client.Event;
 import com.google.gwt.user.client.Timer;
 import org.gwtproject.user.client.ui.RichTextArea.BasicFormatter;

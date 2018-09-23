@@ -19,8 +19,8 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.IFrameElement;
-import com.google.gwt.safehtml.client.SafeHtmlTemplates;
-import com.google.gwt.safehtml.shared.SafeHtml;
+import org.gwtproject.safehtml.client.SafeHtmlTemplates;
+import org.gwtproject.safehtml.shared.SafeHtml;
 import com.google.gwt.uibinder.client.UiConstructor;
 import org.gwtproject.user.client.DOM;
 

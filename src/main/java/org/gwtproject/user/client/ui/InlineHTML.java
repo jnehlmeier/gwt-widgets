@@ -18,8 +18,8 @@ package org.gwtproject.user.client.ui;
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.i18n.shared.DirectionEstimator;
-import com.google.gwt.safehtml.shared.SafeHtml;
-import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
+import org.gwtproject.safehtml.shared.SafeHtml;
+import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
 
 /**
  * A widget that can contain arbitrary HTML.

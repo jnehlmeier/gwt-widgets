@@ -16,8 +16,8 @@
 package org.gwtproject.user.client.ui;
 
 import com.google.gwt.dom.client.Element;
-import com.google.gwt.safehtml.shared.SafeHtml;
-import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
+import org.gwtproject.safehtml.shared.SafeHtml;
+import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 
 /**
  * An interface for UI elements that can be built by first generating a piece

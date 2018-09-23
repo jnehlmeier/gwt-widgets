@@ -18,7 +18,7 @@ package org.gwtproject.user.client.ui;
 import com.google.gwt.aria.client.Roles;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.safehtml.shared.SafeHtmlUtils;
+import org.gwtproject.safehtml.shared.SafeHtmlUtils;
 import com.google.gwt.user.client.Command;
 
 import java.util.Locale;

@@ -30,9 +30,9 @@ import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.layout.client.Layout.Alignment;
 import com.google.gwt.layout.client.Layout.AnimationCallback;
 import com.google.gwt.resources.client.CommonResources;
-import com.google.gwt.safehtml.shared.SafeHtml;
-import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
-import com.google.gwt.safehtml.shared.annotations.SuppressIsSafeHtmlCastCheck;
+import org.gwtproject.safehtml.shared.SafeHtml;
+import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
+import org.gwtproject.safehtml.shared.annotations.SuppressIsSafeHtmlCastCheck;
 
 import java.util.ArrayList;
 import java.util.Iterator;

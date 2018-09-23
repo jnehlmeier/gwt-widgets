@@ -22,7 +22,7 @@ import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.ImageElement;
 import com.google.gwt.dom.client.OptionElement;
 import com.google.gwt.dom.client.SelectElement;
-import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
+import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
 import com.google.gwt.user.client.Window;
 import org.gwtproject.user.client.Event.NativePreviewEvent;
 import org.gwtproject.user.client.impl.DOMImpl;

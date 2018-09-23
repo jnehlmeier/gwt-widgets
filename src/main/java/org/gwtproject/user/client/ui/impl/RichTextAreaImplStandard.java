@@ -17,8 +17,8 @@ package org.gwtproject.user.client.ui.impl;
 
 import com.google.gwt.core.client.JavaScriptException;
 import com.google.gwt.dom.client.Element;
-import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
-import com.google.gwt.safehtml.shared.annotations.SuppressIsSafeHtmlCastCheck;
+import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
+import org.gwtproject.safehtml.shared.annotations.SuppressIsSafeHtmlCastCheck;
 import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.ui.RichTextArea;
 import org.gwtproject.user.client.ui.RichTextArea.FontSize;

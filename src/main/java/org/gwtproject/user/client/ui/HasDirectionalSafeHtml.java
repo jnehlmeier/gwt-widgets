@@ -16,8 +16,8 @@
 package org.gwtproject.user.client.ui;
 
 import com.google.gwt.i18n.client.HasDirection.Direction;
-import com.google.gwt.safehtml.client.HasSafeHtml;
-import com.google.gwt.safehtml.shared.SafeHtml;
+import org.gwtproject.safehtml.client.HasSafeHtml;
+import org.gwtproject.safehtml.shared.SafeHtml;
 
 /**
  * An object that implements this interface contains html that has a direction.

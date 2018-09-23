@@ -17,7 +17,7 @@ package org.gwtproject.cell.client;
 
 import org.gwtproject.cell.client.Cell;
 import com.google.gwt.resources.client.ImageResource;
-import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
+import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.user.client.ui.ImageResourceRenderer;
 
 /**

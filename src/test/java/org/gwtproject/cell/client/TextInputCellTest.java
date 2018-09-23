@@ -18,7 +18,7 @@ package org.gwtproject.cell.client;
 import org.gwtproject.cell.client.Cell.Context;
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.NativeEvent;
-import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
+import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 
 /**
  * Tests for {@link org.gwtproject.cell.client.TextInputCell}.

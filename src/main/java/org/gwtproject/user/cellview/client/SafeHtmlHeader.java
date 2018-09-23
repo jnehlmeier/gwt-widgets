@@ -16,7 +16,7 @@
 package org.gwtproject.user.cellview.client;
 
 import org.gwtproject.cell.client.SafeHtmlCell;
-import com.google.gwt.safehtml.shared.SafeHtml;
+import org.gwtproject.safehtml.shared.SafeHtml;
 
 /**
  * A Header containing safe HTML data rendered by a SafeHtmlCell.

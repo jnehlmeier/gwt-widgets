@@ -15,8 +15,8 @@
  */
 package org.gwtproject.cell.client;
 
-import com.google.gwt.safehtml.shared.SafeHtml;
-import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
+import org.gwtproject.safehtml.shared.SafeHtml;
+import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 
 /**
  * A {@link org.gwtproject.cell.client.Cell} used to render safe HTML markup.

@@ -17,7 +17,7 @@ package org.gwtproject.cell.client;
 
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.NativeEvent;
-import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
+import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 
 /**
  * Bases tests for subclasses if {@link org.gwtproject.cell.client.ButtonCellBase}.

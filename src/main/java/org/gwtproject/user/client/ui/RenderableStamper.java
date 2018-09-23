@@ -18,8 +18,8 @@ package org.gwtproject.user.client.ui;
 import com.google.gwt.dom.builder.shared.HtmlElementBuilderBase;
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.Element;
-import com.google.gwt.safehtml.shared.SafeHtml;
-import com.google.gwt.safehtml.shared.SafeHtmlUtils;
+import org.gwtproject.safehtml.shared.SafeHtml;
+import org.gwtproject.safehtml.shared.SafeHtmlUtils;
 
 /**
  * Used by {@link IsRenderable} to mark their root element in such a way that

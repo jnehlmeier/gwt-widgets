@@ -15,9 +15,9 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
-import com.google.gwt.safehtml.shared.SafeHtmlUtils;
-import com.google.gwt.safehtml.shared.annotations.IsSafeHtml;
+import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
+import org.gwtproject.safehtml.shared.SafeHtmlUtils;
+import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
 import com.google.gwt.user.client.rpc.IsSerializable;
 
 import java.util.ArrayList;

@@ -15,7 +15,7 @@
 -->
 <module>
   <inherits name="com.google.gwt.dom.DOM"/>
-  <inherits name="com.google.gwt.safehtml.SafeHtml"/>
+  <inherits name="org.gwtproject.safehtml.SafeHtml"/>
   <inherits name="com.google.gwt.text.Text"/>
 
   <source path="client"/>
