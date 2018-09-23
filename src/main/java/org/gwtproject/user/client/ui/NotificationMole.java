@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.animation.client.Animation;
+import org.gwtproject.animation.client.Animation;
 import org.gwtproject.core.client.GWT;
 import org.gwtproject.dom.client.DivElement;
 import org.gwtproject.dom.client.SpanElement;

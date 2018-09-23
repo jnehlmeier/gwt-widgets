@@ -17,6 +17,7 @@ dependencies {
     annotationProcessor 'org.gwtproject.safehtml:gwt-safehtml-template-processor:1.0-SNAPSHOT'
     api 'com.google.gwt:gwt-user:2.8.2'
     api 'org.gwtproject.core:gwt-core:1.0-SNAPSHOT'
+    api 'org.gwtproject.animation:gwt-animation:1.0-SNAPSHOT'
     api 'org.gwtproject.aria:gwt-aria:1.0-SNAPSHOT'
     api 'org.gwtproject.layout:gwt-layout:1.0-SNAPSHOT'
     api 'org.gwtproject.safehtml:gwt-safehtml:1.0-SNAPSHOT'
