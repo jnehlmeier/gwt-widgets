@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.cellview.client;
 
-import com.google.gwt.core.client.Scheduler;
-import com.google.gwt.core.client.Scheduler.ScheduledCommand;
+import org.gwtproject.core.client.Scheduler;
+import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import org.gwtproject.user.cellview.client.CellBasedWidgetImpl;
 import org.gwtproject.user.cellview.client.CellBasedWidgetImplStandard;
 

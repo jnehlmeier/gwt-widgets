@@ -38,7 +38,7 @@ import java.util.Set;
  * 
  * <p>
  * Most applications will add widgets to the default root panel in their
- * {@link com.google.gwt.core.client.EntryPoint#onModuleLoad} methods.
+ * {@link org.gwtproject.core.client.EntryPoint#onModuleLoad} methods.
  * </p>
  */
 public class RootPanel extends AbsolutePanel {

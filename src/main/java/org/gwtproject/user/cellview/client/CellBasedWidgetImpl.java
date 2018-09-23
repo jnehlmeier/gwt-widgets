@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.cellview.client;
 
-import com.google.gwt.core.client.GWT;
-import com.google.gwt.core.client.Scheduler.ScheduledCommand;
+import org.gwtproject.core.client.GWT;
+import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.user.client.Event;

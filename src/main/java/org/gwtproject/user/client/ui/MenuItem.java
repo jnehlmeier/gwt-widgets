@@ -16,7 +16,7 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.aria.client.Roles;
-import com.google.gwt.core.client.Scheduler.ScheduledCommand;
+import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import org.gwtproject.safehtml.client.HasSafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;

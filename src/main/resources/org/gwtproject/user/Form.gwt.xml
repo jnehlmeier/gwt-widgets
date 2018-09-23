@@ -17,7 +17,7 @@
 <!-- This module is typically inherited via com.google.gwt.user.User.        -->
 <!--                                                                        -->
 <module>
-  <inherits name="com.google.gwt.core.Core"/>
+  <inherits name="org.gwtproject.core.Core"/>
   <inherits name="com.google.gwt.user.UserAgent"/>
 
   <!-- Fall through to this rule for everything but IE -->

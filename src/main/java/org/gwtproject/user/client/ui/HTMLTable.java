@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.core.client.JsArray;
-import com.google.gwt.core.shared.GWT;
+import org.gwtproject.core.shared.GWT;
+import org.gwtproject.core.client.JsArray;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.TableCellElement;

@@ -15,7 +15,6 @@
  */
 package org.gwtproject.user.client.ui.impl;
 
-import com.google.gwt.core.client.JavaScriptException;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
 import org.gwtproject.safehtml.shared.annotations.SuppressIsSafeHtmlCastCheck;
@@ -475,7 +474,7 @@ public abstract class RichTextAreaImplStandard extends RichTextAreaImpl implemen
       setFocus(true);
       try {
         return queryCommandValueAssumingFocus(cmd);
-      } catch (JavaScriptException e) {
+      } catch (Exception e) {
         return "";
       }
     }

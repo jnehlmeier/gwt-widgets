@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.core.client.Scheduler;
-import com.google.gwt.core.client.Scheduler.ScheduledCommand;
+import org.gwtproject.core.client.Scheduler;
+import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import org.gwtproject.layout.client.Layout;
 import org.gwtproject.layout.client.Layout.AnimationCallback;
 import org.gwtproject.layout.client.Layout.Layer;

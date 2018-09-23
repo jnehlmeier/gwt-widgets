@@ -15,7 +15,7 @@
  */
 package org.gwtproject.view.client;
 
-import com.google.gwt.core.client.Scheduler;
+import org.gwtproject.core.client.Scheduler;
 import com.google.gwt.user.client.Timer;
 
 import java.util.Locale;

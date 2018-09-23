@@ -16,7 +16,7 @@
 
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.core.client.JavaScriptObject;
+import org.gwtproject.core.client.JavaScriptObject;
 
 import java.util.AbstractCollection;
 import java.util.ArrayList;

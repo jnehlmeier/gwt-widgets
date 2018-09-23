@@ -14,7 +14,7 @@
 
 <!-- Base module for Debug code.                                            -->
 <module>
-  <inherits name="com.google.gwt.core.Core" />
+  <inherits name="org.gwtproject.core.Core" />
   <source path="client" />
   <public path="public" />
   

@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.core.client.JavaScriptObject;
+import org.gwtproject.core.client.JavaScriptObject;
 import org.gwtproject.dom.builder.shared.HtmlBuilderFactory;
 import org.gwtproject.dom.builder.shared.HtmlElementBuilder;
 import org.gwtproject.dom.client.Element;

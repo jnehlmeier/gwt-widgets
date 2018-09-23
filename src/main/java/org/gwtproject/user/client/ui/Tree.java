@@ -19,7 +19,7 @@ import org.gwtproject.aria.client.ExpandedValue;
 import org.gwtproject.aria.client.Id;
 import org.gwtproject.aria.client.Roles;
 import org.gwtproject.aria.client.SelectedValue;
-import com.google.gwt.core.client.GWT;
+import org.gwtproject.core.client.GWT;
 import org.gwtproject.dom.client.Element;
 import com.google.gwt.event.dom.client.BlurEvent;
 import com.google.gwt.event.dom.client.BlurHandler;

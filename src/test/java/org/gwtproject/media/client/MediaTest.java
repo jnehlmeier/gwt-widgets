@@ -15,8 +15,8 @@
  */
 package org.gwtproject.media.client;
 
-import com.google.gwt.core.client.Scheduler;
-import com.google.gwt.core.client.Scheduler.RepeatingCommand;
+import org.gwtproject.core.client.Scheduler;
+import org.gwtproject.core.client.Scheduler.RepeatingCommand;
 import org.gwtproject.dom.client.MediaElement;
 import org.gwtproject.dom.client.SourceElement;
 import com.google.gwt.event.dom.client.LoadedMetadataEvent;

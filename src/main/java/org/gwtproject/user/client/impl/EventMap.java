@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.impl;
 
-import com.google.gwt.core.client.JavaScriptObject;
+import org.gwtproject.core.client.JavaScriptObject;
 
 /**
  * A simple helper class to abstract event maps.

@@ -15,7 +15,7 @@
  */
 package org.gwtproject.debug.client;
 
-import com.google.gwt.core.client.GWT;
+import org.gwtproject.core.client.GWT;
 
 /**
  * Provides low-level functionality to support the creation of testing and

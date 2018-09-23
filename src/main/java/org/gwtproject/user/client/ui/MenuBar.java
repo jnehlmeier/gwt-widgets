@@ -17,9 +17,9 @@ package org.gwtproject.user.client.ui;
 
 import org.gwtproject.aria.client.Id;
 import org.gwtproject.aria.client.Roles;
-import com.google.gwt.core.client.GWT;
-import com.google.gwt.core.client.Scheduler;
-import com.google.gwt.core.client.Scheduler.ScheduledCommand;
+import org.gwtproject.core.client.GWT;
+import org.gwtproject.core.client.Scheduler;
+import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.EventTarget;
 import com.google.gwt.event.dom.client.BlurEvent;

@@ -1,5 +1,5 @@
 <module>
-  <inherits name="com.google.gwt.core.Core"/>
+  <inherits name="org.gwtproject.core.Core"/>
   <inherits name="com.google.gwt.user.UserAgent"/>
 
   <replace-with class="org.gwtproject.user.client.ui.impl.HyperlinkImplSafari">

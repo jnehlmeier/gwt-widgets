@@ -15,10 +15,10 @@
  */
 package org.gwtproject.touch.client;
 
-import com.google.gwt.core.client.Duration;
-import com.google.gwt.core.client.JsArray;
-import com.google.gwt.core.client.Scheduler;
-import com.google.gwt.core.client.Scheduler.RepeatingCommand;
+import org.gwtproject.core.client.Duration;
+import org.gwtproject.core.client.JsArray;
+import org.gwtproject.core.client.Scheduler;
+import org.gwtproject.core.client.Scheduler.RepeatingCommand;
 import org.gwtproject.dom.client.PartialSupport;
 import org.gwtproject.dom.client.Touch;
 import com.google.gwt.event.dom.client.TouchCancelEvent;

@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.client.ui.impl;
 
-import com.google.gwt.core.client.Scheduler;
-import com.google.gwt.core.client.Scheduler.ScheduledCommand;
+import org.gwtproject.core.client.Scheduler;
+import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.Style.Display;
 import org.gwtproject.dom.client.Style.Overflow;

@@ -16,7 +16,7 @@
 package org.gwtproject.user.cellview.client;
 
 import org.gwtproject.cell.client.Cell;
-import com.google.gwt.core.client.Scheduler;
+import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.dom.client.BrowserEvents;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;

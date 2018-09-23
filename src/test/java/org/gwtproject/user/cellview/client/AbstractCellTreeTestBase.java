@@ -17,7 +17,7 @@ package org.gwtproject.user.cellview.client;
 
 import org.gwtproject.cell.client.Cell;
 import org.gwtproject.cell.client.TextCell;
-import com.google.gwt.core.client.Scheduler;
+import org.gwtproject.core.client.Scheduler;
 import com.google.gwt.event.logical.shared.CloseEvent;
 import com.google.gwt.event.logical.shared.CloseHandler;
 import com.google.gwt.event.logical.shared.OpenEvent;

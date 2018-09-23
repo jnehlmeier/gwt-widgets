@@ -16,7 +16,7 @@
 package org.gwtproject.user.client.ui;
 
 import com.google.gwt.animation.client.Animation;
-import com.google.gwt.core.client.GWT;
+import org.gwtproject.core.client.GWT;
 import org.gwtproject.dom.client.Element;
 import com.google.gwt.event.logical.shared.CloseEvent;
 import com.google.gwt.event.logical.shared.CloseHandler;
