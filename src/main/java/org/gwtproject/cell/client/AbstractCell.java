@@ -15,9 +15,9 @@
  */
 package org.gwtproject.cell.client;
 
-import com.google.gwt.dom.client.BrowserEvents;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.NativeEvent;
+import org.gwtproject.dom.client.BrowserEvents;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.NativeEvent;
 import com.google.gwt.event.dom.client.KeyCodes;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 
@@ -55,10 +55,10 @@ public abstract class AbstractCell<C> implements org.gwtproject.cell.client.Cell
    * Construct a new {@link AbstractCell} with the specified consumed events.
    * The input arguments are passed by copy.
    * 
-   * @param consumedEvents the {@link com.google.gwt.dom.client.BrowserEvents
+   * @param consumedEvents the {@link org.gwtproject.dom.client.BrowserEvents
    *          events} that this cell consumes
    *
-   * @see com.google.gwt.dom.client.BrowserEvents
+   * @see org.gwtproject.dom.client.BrowserEvents
    */
   public AbstractCell(String... consumedEvents) {
     Set<String> events = null;

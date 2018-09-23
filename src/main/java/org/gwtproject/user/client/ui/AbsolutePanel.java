@@ -16,7 +16,7 @@
 package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.Element;
+import org.gwtproject.dom.client.Element;
 import org.gwtproject.user.client.DOM;
 
 import java.util.Locale;

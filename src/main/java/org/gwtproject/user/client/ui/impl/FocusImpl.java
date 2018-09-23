@@ -16,8 +16,8 @@
 package org.gwtproject.user.client.ui.impl;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.Element;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.Element;
 
 /**
  * Implementation interface for creating and manipulating focusable elements

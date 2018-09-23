@@ -17,8 +17,8 @@ package org.gwtproject.touch.client;
 
 import com.google.gwt.core.client.Duration;
 import com.google.gwt.core.client.Scheduler.RepeatingCommand;
-import com.google.gwt.dom.client.NativeEvent;
-import com.google.gwt.dom.client.Touch;
+import org.gwtproject.dom.client.NativeEvent;
+import org.gwtproject.dom.client.Touch;
 import com.google.gwt.event.dom.client.TouchEvent;
 import com.google.gwt.event.dom.client.TouchStartEvent;
 import com.google.gwt.junit.client.GWTTestCase;

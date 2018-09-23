@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.dom.client.DivElement;
-import com.google.gwt.dom.client.Document;
+import org.gwtproject.dom.client.DivElement;
+import org.gwtproject.dom.client.Document;
 
 /**
  * Testing TextBox.

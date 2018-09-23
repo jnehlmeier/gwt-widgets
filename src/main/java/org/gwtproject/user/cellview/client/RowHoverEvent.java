@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.cellview.client;
 
-import com.google.gwt.dom.client.TableRowElement;
+import org.gwtproject.dom.client.TableRowElement;
 import com.google.gwt.event.shared.EventHandler;
 import com.google.gwt.event.shared.GwtEvent;
 import com.google.gwt.event.shared.HasHandlers;

@@ -15,7 +15,7 @@
  */
 package org.gwtproject.cell.client;
 
-import com.google.gwt.dom.client.Element;
+import org.gwtproject.dom.client.Element;
 
 import java.util.HashMap;
 import java.util.Map;

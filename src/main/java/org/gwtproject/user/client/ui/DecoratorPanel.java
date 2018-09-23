@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.dom.client.Element;
+import org.gwtproject.dom.client.Element;
 import com.google.gwt.i18n.client.LocaleInfo;
 import org.gwtproject.user.client.DOM;
 

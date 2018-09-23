@@ -15,9 +15,9 @@
  */
 package org.gwtproject.media.client;
 
-import com.google.gwt.dom.client.AudioElement;
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.PartialSupport;
+import org.gwtproject.dom.client.AudioElement;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.PartialSupport;
 
 /**
  * <p>

@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.dom.client.SelectElement;
+import org.gwtproject.dom.client.SelectElement;
 import com.google.gwt.i18n.client.HasDirection.Direction;
 import com.google.gwt.i18n.shared.BidiFormatter;
 import com.google.gwt.junit.client.GWTTestCase;

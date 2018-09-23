@@ -16,8 +16,8 @@
 package org.gwtproject.cell.client;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.NativeEvent;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.NativeEvent;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.resources.client.ImageResource;
 import com.google.gwt.safecss.shared.SafeStyles;

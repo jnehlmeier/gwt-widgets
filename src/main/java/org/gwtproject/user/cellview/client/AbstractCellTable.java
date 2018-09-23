@@ -22,19 +22,19 @@ import org.gwtproject.cell.client.HasCell;
 import org.gwtproject.cell.client.ValueUpdater;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.Scheduler;
-import com.google.gwt.dom.builder.shared.HtmlTableSectionBuilder;
-import com.google.gwt.dom.builder.shared.TableSectionBuilder;
-import com.google.gwt.dom.client.BrowserEvents;
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.EventTarget;
-import com.google.gwt.dom.client.NativeEvent;
-import com.google.gwt.dom.client.NodeList;
-import com.google.gwt.dom.client.Style.Unit;
-import com.google.gwt.dom.client.TableCellElement;
-import com.google.gwt.dom.client.TableElement;
-import com.google.gwt.dom.client.TableRowElement;
-import com.google.gwt.dom.client.TableSectionElement;
+import org.gwtproject.dom.builder.shared.HtmlTableSectionBuilder;
+import org.gwtproject.dom.builder.shared.TableSectionBuilder;
+import org.gwtproject.dom.client.BrowserEvents;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.EventTarget;
+import org.gwtproject.dom.client.NativeEvent;
+import org.gwtproject.dom.client.NodeList;
+import org.gwtproject.dom.client.Style.Unit;
+import org.gwtproject.dom.client.TableCellElement;
+import org.gwtproject.dom.client.TableElement;
+import org.gwtproject.dom.client.TableRowElement;
+import org.gwtproject.dom.client.TableSectionElement;
 import com.google.gwt.event.dom.client.KeyCodes;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.i18n.client.LocaleInfo;
@@ -668,7 +668,7 @@ public abstract class AbstractCellTable<T> extends AbstractHasData<T> {
      * Return true if using Gecko 1.9.2 (Firefox 3.6) or earlier.
      */
     private native boolean isGecko192OrBefore() /*-{
-      return @com.google.gwt.dom.client.DOMImplMozilla::isGecko192OrBefore()();
+      return @org.gwtproject.dom.client.DOMImplMozilla::isGecko192OrBefore()();
     }-*/;
   }
 

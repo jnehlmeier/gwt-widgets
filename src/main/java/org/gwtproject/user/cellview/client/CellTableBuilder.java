@@ -18,9 +18,9 @@ package org.gwtproject.user.cellview.client;
 import org.gwtproject.user.cellview.client.DefaultCellTableBuilder;
 import org.gwtproject.cell.client.Cell.Context;
 import org.gwtproject.cell.client.HasCell;
-import com.google.gwt.dom.builder.shared.TableSectionBuilder;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.TableRowElement;
+import org.gwtproject.dom.builder.shared.TableSectionBuilder;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.TableRowElement;
 
 import java.util.Collection;
 
@@ -46,7 +46,7 @@ public interface CellTableBuilder<T> {
 
   /**
    * Finish the building of rows and return the table section builder. Currently
-   * only {@link com.google.gwt.dom.builder.shared.HtmlTableSectionBuilder} and
+   * only {@link org.gwtproject.dom.builder.shared.HtmlTableSectionBuilder} and
    * its subclasses are supported.
    */
   TableSectionBuilder finish();

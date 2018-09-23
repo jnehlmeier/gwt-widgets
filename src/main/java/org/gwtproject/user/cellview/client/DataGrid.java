@@ -16,15 +16,15 @@
 package org.gwtproject.user.cellview.client;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.Style.Display;
-import com.google.gwt.dom.client.Style.Overflow;
-import com.google.gwt.dom.client.Style.TableLayout;
-import com.google.gwt.dom.client.Style.Unit;
-import com.google.gwt.dom.client.TableColElement;
-import com.google.gwt.dom.client.TableElement;
-import com.google.gwt.dom.client.TableSectionElement;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.Style.Display;
+import org.gwtproject.dom.client.Style.Overflow;
+import org.gwtproject.dom.client.Style.TableLayout;
+import org.gwtproject.dom.client.Style.Unit;
+import org.gwtproject.dom.client.TableColElement;
+import org.gwtproject.dom.client.TableElement;
+import org.gwtproject.dom.client.TableSectionElement;
 import com.google.gwt.event.dom.client.ScrollEvent;
 import com.google.gwt.event.dom.client.ScrollHandler;
 import com.google.gwt.resources.client.ClientBundle;

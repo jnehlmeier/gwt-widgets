@@ -17,10 +17,10 @@ package org.gwtproject.user.client.ui;
 
 import com.google.gwt.animation.client.Animation;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.DivElement;
-import com.google.gwt.dom.client.SpanElement;
-import com.google.gwt.dom.client.Style.Display;
-import com.google.gwt.dom.client.Style.Unit;
+import org.gwtproject.dom.client.DivElement;
+import org.gwtproject.dom.client.SpanElement;
+import org.gwtproject.dom.client.Style.Display;
+import org.gwtproject.dom.client.Style.Unit;
 import com.google.gwt.resources.client.CssResource;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;

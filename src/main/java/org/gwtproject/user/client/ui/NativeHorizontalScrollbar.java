@@ -16,8 +16,8 @@
 package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.Style.Unit;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.Style.Unit;
 import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.CommonResources;
 import com.google.gwt.resources.client.CssResource;

@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.dom.client.Document;
+import org.gwtproject.dom.client.Document;
 import com.google.gwt.text.client.DoubleParser;
 import com.google.gwt.text.client.DoubleRenderer;
 

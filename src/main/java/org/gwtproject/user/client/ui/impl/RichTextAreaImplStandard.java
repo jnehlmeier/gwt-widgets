@@ -16,7 +16,7 @@
 package org.gwtproject.user.client.ui.impl;
 
 import com.google.gwt.core.client.JavaScriptException;
-import com.google.gwt.dom.client.Element;
+import org.gwtproject.dom.client.Element;
 import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
 import org.gwtproject.safehtml.shared.annotations.SuppressIsSafeHtmlCastCheck;
 import org.gwtproject.user.client.DOM;

@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.Style.Unit;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.Style.Unit;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.layout.client.Layout;
 import com.google.gwt.layout.client.Layout.AnimationCallback;

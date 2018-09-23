@@ -16,9 +16,9 @@
 package org.gwtproject.user.cellview.client;
 
 import com.google.gwt.core.client.JavaScriptObject;
-import com.google.gwt.dom.client.BrowserEvents;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.EventTarget;
+import org.gwtproject.dom.client.BrowserEvents;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.EventTarget;
 import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.Event;
 import org.gwtproject.user.client.EventListener;

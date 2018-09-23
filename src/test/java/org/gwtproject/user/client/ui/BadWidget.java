@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.Element;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.Element;
 
 import java.util.HashSet;
 import java.util.Set;

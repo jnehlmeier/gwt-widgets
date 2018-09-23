@@ -16,10 +16,10 @@
 package org.gwtproject.user.cellview.client;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.TableCellElement;
-import com.google.gwt.dom.client.TableElement;
-import com.google.gwt.dom.client.TableRowElement;
-import com.google.gwt.dom.client.TableSectionElement;
+import org.gwtproject.dom.client.TableCellElement;
+import org.gwtproject.dom.client.TableElement;
+import org.gwtproject.dom.client.TableRowElement;
+import org.gwtproject.dom.client.TableSectionElement;
 import org.gwtproject.user.cellview.client.AbstractHeaderOrFooterBuilder;
 import org.gwtproject.user.cellview.client.DataGrid;
 import org.gwtproject.user.cellview.client.DataGrid.Resources;

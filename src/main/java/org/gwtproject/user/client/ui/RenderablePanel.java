@@ -16,9 +16,9 @@
 package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
-import com.google.gwt.dom.builder.shared.HtmlElementBuilder;
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.Element;
+import org.gwtproject.dom.builder.shared.HtmlElementBuilder;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.Element;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.safehtml.shared.SafeHtmlUtils;

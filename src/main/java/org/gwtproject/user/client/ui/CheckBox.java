@@ -15,11 +15,11 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.InputElement;
-import com.google.gwt.dom.client.LabelElement;
-import com.google.gwt.dom.client.Style.WhiteSpace;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.InputElement;
+import org.gwtproject.dom.client.LabelElement;
+import org.gwtproject.dom.client.Style.WhiteSpace;
 import com.google.gwt.editor.client.IsEditor;
 import com.google.gwt.editor.client.LeafValueEditor;
 import com.google.gwt.editor.client.adapters.TakesValueEditor;

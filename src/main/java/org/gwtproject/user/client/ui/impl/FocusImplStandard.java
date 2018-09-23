@@ -16,7 +16,7 @@
 package org.gwtproject.user.client.ui.impl;
 
 import com.google.gwt.core.client.JavaScriptObject;
-import com.google.gwt.dom.client.Element;
+import org.gwtproject.dom.client.Element;
 
 /**
  * Implementation of {@link FocusImpl} that

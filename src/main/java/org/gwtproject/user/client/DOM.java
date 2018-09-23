@@ -17,11 +17,11 @@ package org.gwtproject.user.client;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.JavaScriptObject;
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.ImageElement;
-import com.google.gwt.dom.client.OptionElement;
-import com.google.gwt.dom.client.SelectElement;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.ImageElement;
+import org.gwtproject.dom.client.OptionElement;
+import org.gwtproject.dom.client.SelectElement;
 import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
 import com.google.gwt.user.client.Window;
 import org.gwtproject.user.client.Event.NativePreviewEvent;

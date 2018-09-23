@@ -15,8 +15,8 @@
  */
 package org.gwtproject.cell.client;
 
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.NativeEvent;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.NativeEvent;
 import com.google.gwt.event.logical.shared.CloseEvent;
 import com.google.gwt.event.logical.shared.CloseHandler;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
@@ -34,8 +34,8 @@ import org.gwtproject.user.datepicker.client.DatePicker;
 
 import java.util.Date;
 
-import static com.google.gwt.dom.client.BrowserEvents.CLICK;
-import static com.google.gwt.dom.client.BrowserEvents.KEYDOWN;
+import static org.gwtproject.dom.client.BrowserEvents.CLICK;
+import static org.gwtproject.dom.client.BrowserEvents.KEYDOWN;
 
 /**
  * A {@link org.gwtproject.cell.client.Cell} used to render and edit {@link Date}s. When a cell is selected

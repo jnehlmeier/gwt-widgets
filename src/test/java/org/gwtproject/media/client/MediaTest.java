@@ -17,8 +17,8 @@ package org.gwtproject.media.client;
 
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.RepeatingCommand;
-import com.google.gwt.dom.client.MediaElement;
-import com.google.gwt.dom.client.SourceElement;
+import org.gwtproject.dom.client.MediaElement;
+import org.gwtproject.dom.client.SourceElement;
 import com.google.gwt.event.dom.client.LoadedMetadataEvent;
 import com.google.gwt.event.dom.client.LoadedMetadataHandler;
 import com.google.gwt.junit.DoNotRunWith;
@@ -46,16 +46,16 @@ import org.gwtproject.media.client.Video;
 public abstract class MediaTest extends GWTTestCase {
 
   static native boolean isFirefox35OrLater() /*-{
-    var geckoVersion = @com.google.gwt.dom.client.DOMImplMozilla::getGeckoVersion()();
+    var geckoVersion = @org.gwtproject.dom.client.DOMImplMozilla::getGeckoVersion()();
     return (geckoVersion != -1) && (geckoVersion >= 1009001);
   }-*/;
 
   static native boolean isFirefox40OrEarlier() /*-{
-    return @com.google.gwt.dom.client.DOMImplMozilla::isGecko2OrBefore()();
+    return @org.gwtproject.dom.client.DOMImplMozilla::isGecko2OrBefore()();
   }-*/;
 
   static native boolean isOldFirefox() /*-{
-    return @com.google.gwt.dom.client.DOMImplMozilla::isGecko191OrBefore()();
+    return @org.gwtproject.dom.client.DOMImplMozilla::isGecko191OrBefore()();
   }-*/;
 
   public void disabled_testPreload() {

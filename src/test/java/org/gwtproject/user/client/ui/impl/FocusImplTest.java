@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui.impl;
 
-import com.google.gwt.dom.client.Style.Display;
+import org.gwtproject.dom.client.Style.Display;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.user.client.ui.FocusPanel;
 import org.gwtproject.user.client.ui.RootPanel;

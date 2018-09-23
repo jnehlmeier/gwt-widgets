@@ -16,8 +16,8 @@
 package org.gwtproject.editor.ui.client;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.DivElement;
-import com.google.gwt.dom.client.Style.Display;
+import org.gwtproject.dom.client.DivElement;
+import org.gwtproject.dom.client.Style.Display;
 import com.google.gwt.editor.client.EditorError;
 import com.google.gwt.editor.client.HasEditorErrors;
 import com.google.gwt.editor.client.IsEditor;

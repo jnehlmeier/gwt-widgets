@@ -14,7 +14,7 @@
   the License.
 -->
 <module>
-  <inherits name="com.google.gwt.dom.DOM"/>
+  <inherits name="org.gwtproject.dom.DOM"/>
   <inherits name="org.gwtproject.safehtml.SafeHtml"/>
   <inherits name="com.google.gwt.text.Text"/>
 

@@ -17,14 +17,14 @@ package org.gwtproject.user.cellview.client;
 
 import org.gwtproject.cell.client.Cell.Context;
 import org.gwtproject.cell.client.HasCell;
-import com.google.gwt.dom.builder.shared.ElementBuilderBase;
-import com.google.gwt.dom.builder.shared.HtmlBuilderFactory;
-import com.google.gwt.dom.builder.shared.HtmlTableSectionBuilder;
-import com.google.gwt.dom.builder.shared.TableRowBuilder;
-import com.google.gwt.dom.builder.shared.TableSectionBuilder;
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.TableRowElement;
+import org.gwtproject.dom.builder.shared.ElementBuilderBase;
+import org.gwtproject.dom.builder.shared.HtmlBuilderFactory;
+import org.gwtproject.dom.builder.shared.HtmlTableSectionBuilder;
+import org.gwtproject.dom.builder.shared.TableRowBuilder;
+import org.gwtproject.dom.builder.shared.TableSectionBuilder;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.TableRowElement;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 
 import java.util.Collection;

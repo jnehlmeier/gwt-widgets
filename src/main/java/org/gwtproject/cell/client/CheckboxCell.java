@@ -15,10 +15,10 @@
  */
 package org.gwtproject.cell.client;
 
-import com.google.gwt.dom.client.BrowserEvents;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.InputElement;
-import com.google.gwt.dom.client.NativeEvent;
+import org.gwtproject.dom.client.BrowserEvents;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.InputElement;
+import org.gwtproject.dom.client.NativeEvent;
 import com.google.gwt.event.dom.client.KeyCodes;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;

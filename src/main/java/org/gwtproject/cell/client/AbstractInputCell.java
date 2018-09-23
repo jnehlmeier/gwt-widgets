@@ -15,9 +15,9 @@
  */
 package org.gwtproject.cell.client;
 
-import com.google.gwt.dom.client.BrowserEvents;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.NativeEvent;
+import org.gwtproject.dom.client.BrowserEvents;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.NativeEvent;
 
 import java.util.HashSet;
 import java.util.Set;

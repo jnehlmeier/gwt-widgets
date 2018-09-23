@@ -16,15 +16,15 @@
 package org.gwtproject.cell.client;
 
 import org.gwtproject.cell.client.Cell;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.NativeEvent;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.NativeEvent;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import com.google.gwt.text.shared.SafeHtmlRenderer;
 import com.google.gwt.text.shared.SimpleSafeHtmlRenderer;
 
-import static com.google.gwt.dom.client.BrowserEvents.CLICK;
-import static com.google.gwt.dom.client.BrowserEvents.KEYDOWN;
+import static org.gwtproject.dom.client.BrowserEvents.CLICK;
+import static org.gwtproject.dom.client.BrowserEvents.KEYDOWN;
 
 /**
  * A {@link org.gwtproject.cell.client.Cell} used to render text. Clicking on the cell causes its

@@ -16,15 +16,15 @@
 package org.gwtproject.cell.client;
 
 import org.gwtproject.cell.client.Cell;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.EventTarget;
-import com.google.gwt.dom.client.NativeEvent;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.EventTarget;
+import org.gwtproject.dom.client.NativeEvent;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.safehtml.shared.SafeHtmlUtils;
 
-import static com.google.gwt.dom.client.BrowserEvents.CLICK;
-import static com.google.gwt.dom.client.BrowserEvents.KEYDOWN;
+import static org.gwtproject.dom.client.BrowserEvents.CLICK;
+import static org.gwtproject.dom.client.BrowserEvents.KEYDOWN;
 
 /**
  * A cell that renders a button and takes a delegate to perform actions on

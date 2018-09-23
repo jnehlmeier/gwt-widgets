@@ -15,9 +15,9 @@
  */
 package org.gwtproject.media.client;
 
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.MediaElement;
-import com.google.gwt.dom.client.SourceElement;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.MediaElement;
+import org.gwtproject.dom.client.SourceElement;
 import com.google.gwt.event.dom.client.*;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.media.dom.client.MediaError;
@@ -93,10 +93,10 @@ public abstract class MediaBase extends FocusWidget
    * <p>
    * The type is the format or encoding of the media represented by the source
    * element. For example, the type of an
-   * {@link com.google.gwt.dom.client.AudioElement} could be one of
-   * {@value com.google.gwt.dom.client.AudioElement#TYPE_OGG},
-   * {@link com.google.gwt.dom.client.AudioElement#TYPE_MP3}, or
-   * {@link com.google.gwt.dom.client.AudioElement#TYPE_WAV}.
+   * {@link org.gwtproject.dom.client.AudioElement} could be one of
+   * {@value org.gwtproject.dom.client.AudioElement#TYPE_OGG},
+   * {@link org.gwtproject.dom.client.AudioElement#TYPE_MP3}, or
+   * {@link org.gwtproject.dom.client.AudioElement#TYPE_WAV}.
    * </p>
    *
    * <p>

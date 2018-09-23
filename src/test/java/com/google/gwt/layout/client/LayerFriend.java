@@ -15,7 +15,7 @@
  */
 package com.google.gwt.layout.client;
 
-import com.google.gwt.dom.client.Style.Unit;
+import org.gwtproject.dom.client.Style.Unit;
 import com.google.gwt.layout.client.Layout.Layer;
 
 /**

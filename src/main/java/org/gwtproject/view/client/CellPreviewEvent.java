@@ -16,7 +16,7 @@
 package org.gwtproject.view.client;
 
 import org.gwtproject.cell.client.Cell.Context;
-import com.google.gwt.dom.client.NativeEvent;
+import org.gwtproject.dom.client.NativeEvent;
 import com.google.gwt.event.shared.EventHandler;
 import com.google.gwt.event.shared.GwtEvent;
 

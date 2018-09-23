@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui.impl;
 
-import com.google.gwt.dom.client.Element;
+import org.gwtproject.dom.client.Element;
 
 /**
  * Implementation class used by {@link org.gwtproject.user.client.ui.TextBox}.

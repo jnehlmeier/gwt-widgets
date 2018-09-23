@@ -16,7 +16,7 @@
 
 package org.gwtproject.user.client.impl;
 
-import com.google.gwt.dom.client.Element;
+import org.gwtproject.dom.client.Element;
 import org.gwtproject.user.client.ui.UIObject;
 
 import java.util.ArrayList;

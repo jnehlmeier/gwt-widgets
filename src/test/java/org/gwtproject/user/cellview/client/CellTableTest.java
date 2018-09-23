@@ -17,12 +17,12 @@ package org.gwtproject.user.cellview.client;
 
 import org.gwtproject.cell.client.TextCell;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.Style.Unit;
-import com.google.gwt.dom.client.TableCellElement;
-import com.google.gwt.dom.client.TableElement;
-import com.google.gwt.dom.client.TableRowElement;
-import com.google.gwt.dom.client.TableSectionElement;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.Style.Unit;
+import org.gwtproject.dom.client.TableCellElement;
+import org.gwtproject.dom.client.TableElement;
+import org.gwtproject.dom.client.TableRowElement;
+import org.gwtproject.dom.client.TableSectionElement;
 import com.google.gwt.resources.client.ImageResource;
 import org.gwtproject.user.cellview.client.AbstractHasData.RedrawEvent.Handler;
 import org.gwtproject.user.cellview.client.CellTable.Resources;

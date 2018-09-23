@@ -16,10 +16,10 @@
 package org.gwtproject.cell.client;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.EventTarget;
-import com.google.gwt.dom.client.InputElement;
-import com.google.gwt.dom.client.NativeEvent;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.EventTarget;
+import org.gwtproject.dom.client.InputElement;
+import org.gwtproject.dom.client.NativeEvent;
 import com.google.gwt.event.dom.client.KeyCodes;
 import org.gwtproject.safehtml.client.SafeHtmlTemplates;
 import org.gwtproject.safehtml.shared.SafeHtml;
@@ -29,7 +29,7 @@ import com.google.gwt.text.shared.SimpleSafeHtmlRenderer;
 
 import java.util.Locale;
 
-import static com.google.gwt.dom.client.BrowserEvents.*;
+import static org.gwtproject.dom.client.BrowserEvents.*;
 
 /**
  * An editable text cell. Click to edit, escape to cancel, return to commit.

@@ -16,16 +16,16 @@
 package org.gwtproject.user.cellview.client;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.BrowserEvents;
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.Style.Display;
-import com.google.gwt.dom.client.Style.TableLayout;
-import com.google.gwt.dom.client.Style.Unit;
-import com.google.gwt.dom.client.TableCellElement;
-import com.google.gwt.dom.client.TableColElement;
-import com.google.gwt.dom.client.TableElement;
-import com.google.gwt.dom.client.TableRowElement;
-import com.google.gwt.dom.client.TableSectionElement;
+import org.gwtproject.dom.client.BrowserEvents;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.Style.Display;
+import org.gwtproject.dom.client.Style.TableLayout;
+import org.gwtproject.dom.client.Style.Unit;
+import org.gwtproject.dom.client.TableCellElement;
+import org.gwtproject.dom.client.TableColElement;
+import org.gwtproject.dom.client.TableElement;
+import org.gwtproject.dom.client.TableRowElement;
+import org.gwtproject.dom.client.TableSectionElement;
 import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.CssResource;
 import com.google.gwt.resources.client.CssResource.ImportedWithPrefix;

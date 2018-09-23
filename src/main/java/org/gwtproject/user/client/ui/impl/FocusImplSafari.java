@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui.impl;
 
-import com.google.gwt.dom.client.Element;
+import org.gwtproject.dom.client.Element;
 
 /**
  * Safari-specific implementation of {@link FocusImpl} that creates a completely

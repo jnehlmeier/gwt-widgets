@@ -15,7 +15,7 @@
  */
 package org.gwtproject.media.client;
 
-import com.google.gwt.dom.client.MediaElement;
+import org.gwtproject.dom.client.MediaElement;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 import com.google.gwt.media.dom.client.MediaError;

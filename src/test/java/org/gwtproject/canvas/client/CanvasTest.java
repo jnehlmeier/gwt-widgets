@@ -32,12 +32,12 @@ import org.gwtproject.user.client.ui.RootPanel;
 @DoNotRunWith(Platform.HtmlUnitUnknown)
 public class CanvasTest extends GWTTestCase {
   private static native boolean isFirefox35OrLater() /*-{
-      var geckoVersion = @com.google.gwt.dom.client.DOMImplMozilla::getGeckoVersion()();
+      var geckoVersion = @org.gwtproject.dom.client.DOMImplMozilla::getGeckoVersion()();
       return (geckoVersion != -1) && (geckoVersion >= 1009001);
   }-*/;
 
   private static native boolean isWebkit525OrBefore() /*-{
-      return @com.google.gwt.dom.client.DOMImplWebkit::isWebkit525OrBefore()();
+      return @org.gwtproject.dom.client.DOMImplWebkit::isWebkit525OrBefore()();
   }-*/;
 
   protected Canvas canvas1;

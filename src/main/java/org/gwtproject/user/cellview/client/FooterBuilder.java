@@ -15,9 +15,9 @@
  */
 package org.gwtproject.user.cellview.client;
 
-import com.google.gwt.dom.builder.shared.TableSectionBuilder;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.TableRowElement;
+import org.gwtproject.dom.builder.shared.TableSectionBuilder;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.TableRowElement;
 
 /**
  * Builds the DOM elements for the footer section of a CellTable. It also

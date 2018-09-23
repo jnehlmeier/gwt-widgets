@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.dom.client.Style.Unit;
+import org.gwtproject.dom.client.Style.Unit;
 import org.gwtproject.user.client.ui.DockLayoutPanel.Direction;
 
 /**

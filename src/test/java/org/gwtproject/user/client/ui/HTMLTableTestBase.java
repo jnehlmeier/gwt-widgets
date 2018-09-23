@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.TableCellElement;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.TableCellElement;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.safehtml.shared.SafeHtmlUtils;
 import org.gwtproject.user.client.ui.HTMLTable.Cell;

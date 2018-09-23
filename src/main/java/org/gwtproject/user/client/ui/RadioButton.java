@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.EventTarget;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.EventTarget;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.i18n.client.HasDirection.Direction;
 import com.google.gwt.i18n.shared.DirectionEstimator;

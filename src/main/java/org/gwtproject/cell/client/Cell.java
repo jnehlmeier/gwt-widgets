@@ -15,8 +15,8 @@
  */
 package org.gwtproject.cell.client;
 
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.NativeEvent;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.NativeEvent;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 
 import java.util.Set;
@@ -156,7 +156,7 @@ public interface Cell<C> {
 
   /**
    * Get the set of events that this cell consumes (see
-   * {@link com.google.gwt.dom.client.BrowserEvents BrowserEvents} for useful
+   * {@link org.gwtproject.dom.client.BrowserEvents BrowserEvents} for useful
    * constants). The container that uses this cell should only pass these events
    * to
    * {@link #onBrowserEvent(Context, Element, Object, NativeEvent, ValueUpdater)}
@@ -169,7 +169,7 @@ public interface Cell<C> {
    * 
    * @return the consumed events, or null if no events are consumed
    * 
-   * @see com.google.gwt.dom.client.BrowserEvents
+   * @see org.gwtproject.dom.client.BrowserEvents
    */
   Set<String> getConsumedEvents();
 

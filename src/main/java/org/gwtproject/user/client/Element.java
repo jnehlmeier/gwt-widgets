@@ -24,7 +24,7 @@ package org.gwtproject.user.client;
  * typically done by calling methods in the
  * {@link DOM} class.
  * <p>
- * As of GWT 2.6, users should use {@link com.google.gwt.dom.client.Element}
+ * As of GWT 2.6, users should use {@link org.gwtproject.dom.client.Element}
  * instead.  As an exception, some methods still return a <code>Element</code>
  * object for backwards compatibility (though this will change in a future
  * release), so overriding them will require returning an <code>Element</code>
@@ -33,7 +33,7 @@ package org.gwtproject.user.client;
  * @see DOM#asOld
  */
 @Deprecated
-public class Element extends com.google.gwt.dom.client.Element {
+public class Element extends org.gwtproject.dom.client.Element {
 
   /**
    * Not directly instantiable. Subclasses should also define a protected no-arg

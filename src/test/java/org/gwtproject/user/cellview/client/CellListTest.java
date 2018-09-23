@@ -17,8 +17,8 @@ package org.gwtproject.user.cellview.client;
 
 import org.gwtproject.cell.client.Cell;
 import org.gwtproject.cell.client.TextCell;
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.NativeEvent;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.NativeEvent;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.safehtml.shared.SafeHtmlUtils;

@@ -20,8 +20,8 @@ import org.gwtproject.cell.client.Cell.Context;
 import org.gwtproject.cell.client.FieldUpdater;
 import org.gwtproject.cell.client.HasCell;
 import org.gwtproject.cell.client.ValueUpdater;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.NativeEvent;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.NativeEvent;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.user.client.ui.HasAlignment;
 

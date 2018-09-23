@@ -17,10 +17,10 @@ package org.gwtproject.user.client.ui;
 
 import com.google.gwt.aria.client.State;
 import com.google.gwt.debug.client.DebugInfo;
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.SpanElement;
-import com.google.gwt.dom.client.Style;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.SpanElement;
+import org.gwtproject.dom.client.Style;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.user.client.DOM;
 

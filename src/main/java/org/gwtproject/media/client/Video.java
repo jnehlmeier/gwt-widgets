@@ -15,8 +15,8 @@
  */
 package org.gwtproject.media.client;
 
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.VideoElement;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.VideoElement;
 
 /**
  * <p>

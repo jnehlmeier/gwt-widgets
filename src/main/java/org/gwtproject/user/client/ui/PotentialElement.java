@@ -16,9 +16,9 @@
 package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.JavaScriptObject;
-import com.google.gwt.dom.builder.shared.HtmlBuilderFactory;
-import com.google.gwt.dom.builder.shared.HtmlElementBuilder;
-import com.google.gwt.dom.client.Element;
+import org.gwtproject.dom.builder.shared.HtmlBuilderFactory;
+import org.gwtproject.dom.builder.shared.HtmlElementBuilder;
+import org.gwtproject.dom.client.Element;
 
 /**
  * EXPERIMENTAL and subject to change. Do not use this in production code.
@@ -67,7 +67,7 @@ public class PotentialElement extends Element {
     var el = new $wnd.GwtPotentialElementShim();
     el.tagName = tagName;
     el.__gwt_resolve = @org.gwtproject.user.client.ui.PotentialElement::buildResolveCallback(Lorg/gwtproject/user/client/ui/UIObject;)(o);
-    return @com.google.gwt.dom.client.Element::as(Lcom/google/gwt/core/client/JavaScriptObject;)(el);
+    return @org.gwtproject.dom.client.Element::as(Lcom/google/gwt/core/client/JavaScriptObject;)(el);
   }-*/;
 
   /**
@@ -132,7 +132,7 @@ public class PotentialElement extends Element {
       href: '',
       id: '',
       lang: '',
-      // should be @com.google.gwt.dom.client.Node.ELEMENT_MODE, but the compiler
+      // should be @org.gwtproject.dom.client.Node.ELEMENT_MODE, but the compiler
       // doesn't like that.
       nodeType: 1,
       removeAttribute: function(name, value) {
@@ -174,7 +174,7 @@ public class PotentialElement extends Element {
       // className needs special treatment because the actual HTML attribute is
       // called "class" and not "className".
       if (this.className) {
-        builder.@com.google.gwt.dom.builder.shared.ElementBuilder::className(Ljava/lang/String;)(
+        builder.@org.gwtproject.dom.builder.shared.ElementBuilder::className(Ljava/lang/String;)(
             this.className);
         this.className = null;
       }
@@ -186,10 +186,10 @@ public class PotentialElement extends Element {
           continue;
         }
         if (typeof this[attr] == 'number') {
-          builder.@com.google.gwt.dom.builder.shared.ElementBuilder::attribute(Ljava/lang/String;I)(
+          builder.@org.gwtproject.dom.builder.shared.ElementBuilder::attribute(Ljava/lang/String;I)(
               attr, this[attr]);
         } else if (typeof this[attr] == 'string') {
-          builder.@com.google.gwt.dom.builder.shared.ElementBuilder::attribute(Ljava/lang/String;Ljava/lang/String;)(
+          builder.@org.gwtproject.dom.builder.shared.ElementBuilder::attribute(Ljava/lang/String;Ljava/lang/String;)(
               attr, this[attr]);
         }
       }

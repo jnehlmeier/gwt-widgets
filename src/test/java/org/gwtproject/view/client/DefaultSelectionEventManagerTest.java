@@ -16,8 +16,8 @@
 package org.gwtproject.view.client;
 
 import org.gwtproject.cell.client.Cell.Context;
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.NativeEvent;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.NativeEvent;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.view.client.DefaultSelectionEventManager.BlacklistEventTranslator;
 import org.gwtproject.view.client.DefaultSelectionEventManager.SelectAction;

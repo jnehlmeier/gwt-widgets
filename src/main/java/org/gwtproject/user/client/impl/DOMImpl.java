@@ -16,7 +16,7 @@
 package org.gwtproject.user.client.impl;
 
 import com.google.gwt.core.client.JavaScriptObject;
-import com.google.gwt.dom.client.Element;
+import org.gwtproject.dom.client.Element;
 import org.gwtproject.user.client.Event;
 import org.gwtproject.user.client.EventListener;
 import org.gwtproject.user.client.DOM;

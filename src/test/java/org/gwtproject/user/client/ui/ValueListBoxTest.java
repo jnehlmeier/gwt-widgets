@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.dom.client.SelectElement;
+import org.gwtproject.dom.client.SelectElement;
 import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.text.shared.AbstractRenderer;
 import org.gwtproject.view.client.ProvidesKey;

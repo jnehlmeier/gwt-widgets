@@ -16,8 +16,8 @@
 package org.gwtproject.user.client.ui;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.Node;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.client.Node;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.safehtml.client.SafeHtmlTemplates;
 import org.gwtproject.safehtml.shared.SafeHtml;

@@ -16,8 +16,8 @@
 package org.gwtproject.cell.client;
 
 import org.gwtproject.cell.client.Cell.Context;
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.Element;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.Element;
 
 /**
  * Tests for {@link org.gwtproject.cell.client.AbstractCell}.

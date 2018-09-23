@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.client;
 
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.NativeEvent;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.NativeEvent;
 import com.google.gwt.event.dom.client.*;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.junit.client.GWTTestCase;

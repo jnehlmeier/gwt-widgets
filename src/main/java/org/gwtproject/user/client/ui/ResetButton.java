@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.dom.client.ButtonElement;
-import com.google.gwt.dom.client.Document;
+import org.gwtproject.dom.client.ButtonElement;
+import org.gwtproject.dom.client.Document;
 import com.google.gwt.event.dom.client.ClickHandler;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
@@ -42,7 +42,7 @@ public class ResetButton extends Button {
    * 
    * @param element the element to be wrapped
    */
-  public static Button wrap(com.google.gwt.dom.client.Element element) {
+  public static Button wrap(org.gwtproject.dom.client.Element element) {
     // Assert that the element is attached.
     assert Document.get().getBody().isOrHasChild(element);
 
@@ -109,7 +109,7 @@ public class ResetButton extends Button {
    * 
    * @param element the element to be used
    */
-  protected ResetButton(com.google.gwt.dom.client.Element element) {
+  protected ResetButton(org.gwtproject.dom.client.Element element) {
     super(element);
     assert "reset".equalsIgnoreCase(element.<ButtonElement> cast().getType());
   }

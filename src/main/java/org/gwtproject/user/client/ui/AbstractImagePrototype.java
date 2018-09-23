@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.dom.client.Element;
+import org.gwtproject.dom.client.Element;
 import com.google.gwt.resources.client.ImageResource;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.user.client.ui.impl.ClippedImagePrototype;

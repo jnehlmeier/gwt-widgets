@@ -15,8 +15,8 @@
  */
 package org.gwtproject.cell.client;
 
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.NativeEvent;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.NativeEvent;
 
 /**
  * Tests for {@link org.gwtproject.cell.client.ButtonCell}.

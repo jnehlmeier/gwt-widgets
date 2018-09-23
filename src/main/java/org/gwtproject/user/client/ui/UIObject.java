@@ -18,7 +18,7 @@ package org.gwtproject.user.client.ui;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.debug.client.DebugInfo;
-import com.google.gwt.dom.client.Element;
+import org.gwtproject.dom.client.Element;
 import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.Event;
 
@@ -112,7 +112,7 @@ import java.util.Locale;
  * 
  * There is also special case handling for two common method signatures,
  * <code>(int, int)</code> and <code>(double, {@link 
- * com.google.gwt.dom.client.Style.Unit Unit})</code>
+ * org.gwtproject.dom.client.Style.Unit Unit})</code>
  * 
  * <pre>
  * &lt;g:Label pixelSize='100, 100'>Hello there&lt;/g:Label></pre>
@@ -137,7 +137,7 @@ public abstract class UIObject implements HasVisibility {
 
   /*
    * WARNING: For historical reasons, there are two Element classes being used
-   * in this code. The dom.Element (com.google.gwt.dom.client.Element) class is
+   * in this code. The dom.Element (org.gwtproject.dom.client.Element) class is
    * explicitly imported, while user.Element
    * (org.gwtproject.user.client.Element) is fully-qualified in the code.
    * 
