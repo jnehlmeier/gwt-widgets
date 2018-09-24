@@ -17,8 +17,8 @@ package org.gwtproject.view.client;
 
 import org.gwtproject.cell.client.Cell.Context;
 import org.gwtproject.dom.client.NativeEvent;
-import com.google.gwt.event.shared.EventHandler;
-import com.google.gwt.event.shared.GwtEvent;
+import org.gwtproject.event.legacy.shared.EventHandler;
+import org.gwtproject.event.legacy.shared.GwtEvent;
 
 /**
  * Allows the previewing of events before they are fired to Cells.

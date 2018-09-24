@@ -18,7 +18,7 @@ package org.gwtproject.cell.client;
 import org.gwtproject.dom.client.BrowserEvents;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.NativeEvent;
-import com.google.gwt.event.dom.client.KeyCodes;
+import org.gwtproject.event.dom.client.KeyCodes;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 
 import java.util.Collections;

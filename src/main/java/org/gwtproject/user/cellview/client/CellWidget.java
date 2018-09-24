@@ -24,9 +24,9 @@ import org.gwtproject.dom.client.Style.Unit;
 import com.google.gwt.editor.client.IsEditor;
 import com.google.gwt.editor.client.LeafValueEditor;
 import com.google.gwt.editor.client.adapters.TakesValueEditor;
-import com.google.gwt.event.logical.shared.ValueChangeEvent;
-import com.google.gwt.event.logical.shared.ValueChangeHandler;
-import com.google.gwt.event.shared.HandlerRegistration;
+import org.gwtproject.event.logical.shared.ValueChangeEvent;
+import org.gwtproject.event.logical.shared.ValueChangeHandler;
+import org.gwtproject.event.shared.HandlerRegistration;
 import com.google.gwt.resources.client.CommonResources;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.user.client.Event;
@@ -247,7 +247,7 @@ public class CellWidget<C> extends Widget implements HasKeyProvider<C>, HasValue
 
   /**
    * Sets this object's value and optionally redraw the widget. Fires
-   * {@link com.google.gwt.event.logical.shared.ValueChangeEvent} when
+   * {@link org.gwtproject.event.logical.shared.ValueChangeEvent} when
    * fireEvents is true and the new value does not equal the existing value.
    * Redraws the widget when redraw is true and the new value does not equal the
    * existing value.

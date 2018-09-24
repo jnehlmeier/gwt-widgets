@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.event.logical.shared.ResizeEvent;
-import com.google.gwt.event.logical.shared.ResizeHandler;
+import org.gwtproject.event.logical.shared.ResizeEvent;
+import org.gwtproject.event.logical.shared.ResizeHandler;
 import com.google.gwt.user.client.Window;
 
 /**

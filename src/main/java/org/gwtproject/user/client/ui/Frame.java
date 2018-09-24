@@ -19,10 +19,10 @@ import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.FrameElement;
 import org.gwtproject.dom.client.IFrameElement;
-import com.google.gwt.event.dom.client.HasLoadHandlers;
-import com.google.gwt.event.dom.client.LoadEvent;
-import com.google.gwt.event.dom.client.LoadHandler;
-import com.google.gwt.event.shared.HandlerRegistration;
+import org.gwtproject.event.dom.client.HasLoadHandlers;
+import org.gwtproject.event.dom.client.LoadEvent;
+import org.gwtproject.event.dom.client.LoadHandler;
+import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.safehtml.shared.SafeUri;
 import org.gwtproject.safehtml.shared.annotations.IsTrustedResourceUri;
 

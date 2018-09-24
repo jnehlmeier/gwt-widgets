@@ -20,7 +20,7 @@ import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.NativeEvent;
-import com.google.gwt.event.dom.client.KeyCodes;
+import org.gwtproject.event.dom.client.KeyCodes;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 import org.gwtproject.safehtml.shared.SafeHtmlUtils;

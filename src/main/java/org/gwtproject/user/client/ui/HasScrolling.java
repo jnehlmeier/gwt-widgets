@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.event.dom.client.HasScrollHandlers;
+import org.gwtproject.event.dom.client.HasScrollHandlers;
 
 /**
  * Implemented by widgets that support scrolling.

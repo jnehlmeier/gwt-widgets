@@ -17,8 +17,8 @@ package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.NativeEvent;
-import com.google.gwt.event.logical.shared.ValueChangeEvent;
-import com.google.gwt.event.logical.shared.ValueChangeHandler;
+import org.gwtproject.event.logical.shared.ValueChangeEvent;
+import org.gwtproject.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.i18n.client.DateTimeFormat;
 import com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat;
 import org.gwtproject.user.datepicker.client.CalendarUtil;

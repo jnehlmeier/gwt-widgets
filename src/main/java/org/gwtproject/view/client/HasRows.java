@@ -15,8 +15,8 @@
  */
 package org.gwtproject.view.client;
 
-import com.google.gwt.event.shared.HandlerRegistration;
-import com.google.gwt.event.shared.HasHandlers;
+import org.gwtproject.event.shared.HandlerRegistration;
+import org.gwtproject.event.shared.HasHandlers;
 
 /**
  * Describes an object that displays a range of rows.

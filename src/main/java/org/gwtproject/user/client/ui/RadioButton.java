@@ -17,7 +17,7 @@ package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.EventTarget;
-import com.google.gwt.event.logical.shared.ValueChangeEvent;
+import org.gwtproject.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.i18n.client.HasDirection.Direction;
 import com.google.gwt.i18n.shared.DirectionEstimator;
 import org.gwtproject.safehtml.shared.SafeHtml;
@@ -28,7 +28,7 @@ import org.gwtproject.user.client.Event;
 
 /**
  * A mutually-exclusive selection radio button widget. Fires
- * {@link com.google.gwt.event.dom.client.ClickEvent ClickEvents} when the
+ * {@link org.gwtproject.event.dom.client.ClickEvent ClickEvents} when the
  * radio button is clicked, and {@link ValueChangeEvent ValueChangeEvents}
  * when the button becomes checked.
  * Note, however, that browser limitations prevent ValueChangeEvents from

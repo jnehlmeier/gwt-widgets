@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.cellview.client;
 
-import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.dom.client.ClickHandler;
+import org.gwtproject.event.dom.client.ClickEvent;
+import org.gwtproject.event.dom.client.ClickHandler;
 import com.google.gwt.uibinder.client.UiConstructor;
 import org.gwtproject.user.cellview.client.AbstractPager;
 import org.gwtproject.user.client.ui.Anchor;

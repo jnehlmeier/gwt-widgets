@@ -20,10 +20,10 @@ import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.Style.Overflow;
 import org.gwtproject.dom.client.Style.Position;
 import org.gwtproject.dom.client.Style.Unit;
-import com.google.gwt.event.dom.client.HasScrollHandlers;
-import com.google.gwt.event.dom.client.ScrollEvent;
-import com.google.gwt.event.dom.client.ScrollHandler;
-import com.google.gwt.event.shared.HandlerRegistration;
+import org.gwtproject.event.dom.client.HasScrollHandlers;
+import org.gwtproject.event.dom.client.ScrollEvent;
+import org.gwtproject.event.dom.client.ScrollHandler;
+import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.user.client.Event;
 
 /**

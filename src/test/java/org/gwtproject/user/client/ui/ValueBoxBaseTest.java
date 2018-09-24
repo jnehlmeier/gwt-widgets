@@ -17,8 +17,8 @@ package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
-import com.google.gwt.event.logical.shared.ValueChangeEvent;
-import com.google.gwt.event.logical.shared.ValueChangeHandler;
+import org.gwtproject.event.logical.shared.ValueChangeEvent;
+import org.gwtproject.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.text.shared.Renderer;
 import com.google.gwt.text.shared.testing.PassthroughRenderer;

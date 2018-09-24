@@ -15,11 +15,11 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.event.dom.client.BlurEvent;
-import com.google.gwt.event.dom.client.BlurHandler;
-import com.google.gwt.event.dom.client.FocusEvent;
-import com.google.gwt.event.dom.client.FocusHandler;
-import com.google.gwt.event.logical.shared.AttachEvent;
+import org.gwtproject.event.dom.client.BlurEvent;
+import org.gwtproject.event.dom.client.BlurHandler;
+import org.gwtproject.event.dom.client.FocusEvent;
+import org.gwtproject.event.dom.client.FocusHandler;
+import org.gwtproject.event.logical.shared.AttachEvent;
 import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.user.client.Command;
 import org.gwtproject.user.client.DOM;

@@ -17,7 +17,7 @@ package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.ButtonElement;
 import org.gwtproject.dom.client.Document;
-import com.google.gwt.event.dom.client.ClickHandler;
+import org.gwtproject.event.dom.client.ClickHandler;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
 

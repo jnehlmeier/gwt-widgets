@@ -16,8 +16,8 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.Element;
-import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.dom.client.ClickHandler;
+import org.gwtproject.event.dom.client.ClickEvent;
+import org.gwtproject.event.dom.client.ClickHandler;
 import com.google.gwt.i18n.client.HasDirection;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.safehtml.shared.SafeHtmlUtils;

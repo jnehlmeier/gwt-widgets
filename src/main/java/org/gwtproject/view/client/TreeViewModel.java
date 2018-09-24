@@ -17,7 +17,7 @@ package org.gwtproject.view.client;
 
 import org.gwtproject.cell.client.Cell;
 import org.gwtproject.cell.client.ValueUpdater;
-import com.google.gwt.event.shared.HandlerRegistration;
+import org.gwtproject.event.shared.HandlerRegistration;
 
 /**
  * A model of a tree.

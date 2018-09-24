@@ -16,8 +16,8 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.ButtonElement;
-import com.google.gwt.event.logical.shared.ValueChangeEvent;
-import com.google.gwt.event.logical.shared.ValueChangeHandler;
+import org.gwtproject.event.logical.shared.ValueChangeEvent;
+import org.gwtproject.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.junit.client.GWTTestCase;
 
 /**

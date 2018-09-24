@@ -16,9 +16,9 @@
 
 package org.gwtproject.user.client;
 
-import com.google.gwt.event.dom.client.DoubleClickEvent;
-import com.google.gwt.event.dom.client.DoubleClickHandler;
-import com.google.gwt.event.dom.client.HasDoubleClickHandlers;
+import org.gwtproject.event.dom.client.DoubleClickEvent;
+import org.gwtproject.event.dom.client.DoubleClickHandler;
+import org.gwtproject.event.dom.client.HasDoubleClickHandlers;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.user.client.ui.*;
 

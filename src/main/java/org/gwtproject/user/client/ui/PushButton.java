@@ -16,7 +16,7 @@
 
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.event.dom.client.ClickHandler;
+import org.gwtproject.event.dom.client.ClickHandler;
 
 /**
  * A normal push button with custom styling.

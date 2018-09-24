@@ -20,7 +20,7 @@ import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.EventTarget;
 import org.gwtproject.dom.client.InputElement;
 import org.gwtproject.dom.client.NativeEvent;
-import com.google.gwt.event.dom.client.KeyCodes;
+import org.gwtproject.event.dom.client.KeyCodes;
 import org.gwtproject.safehtml.client.SafeHtmlTemplates;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;

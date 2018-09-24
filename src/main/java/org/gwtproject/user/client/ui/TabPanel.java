@@ -16,13 +16,13 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.aria.client.Roles;
-import com.google.gwt.event.logical.shared.BeforeSelectionEvent;
-import com.google.gwt.event.logical.shared.BeforeSelectionHandler;
-import com.google.gwt.event.logical.shared.HasBeforeSelectionHandlers;
-import com.google.gwt.event.logical.shared.HasSelectionHandlers;
-import com.google.gwt.event.logical.shared.SelectionEvent;
-import com.google.gwt.event.logical.shared.SelectionHandler;
-import com.google.gwt.event.shared.HandlerRegistration;
+import org.gwtproject.event.logical.shared.BeforeSelectionEvent;
+import org.gwtproject.event.logical.shared.BeforeSelectionHandler;
+import org.gwtproject.event.logical.shared.HasBeforeSelectionHandlers;
+import org.gwtproject.event.logical.shared.HasSelectionHandlers;
+import org.gwtproject.event.logical.shared.SelectionEvent;
+import org.gwtproject.event.logical.shared.SelectionHandler;
+import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
 import org.gwtproject.safehtml.shared.annotations.SuppressIsSafeHtmlCastCheck;
 

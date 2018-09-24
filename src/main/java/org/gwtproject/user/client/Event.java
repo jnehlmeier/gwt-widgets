@@ -17,11 +17,11 @@ package org.gwtproject.user.client;
 
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.NativeEvent;
-import com.google.gwt.event.dom.client.HasNativeEvent;
-import com.google.gwt.event.shared.EventHandler;
-import com.google.gwt.event.shared.GwtEvent;
-import com.google.gwt.event.shared.HandlerManager;
-import com.google.gwt.event.shared.HandlerRegistration;
+import org.gwtproject.event.dom.client.HasNativeEvent;
+import org.gwtproject.event.legacy.shared.EventHandler;
+import org.gwtproject.event.legacy.shared.GwtEvent;
+import org.gwtproject.event.shared.HandlerManager;
+import org.gwtproject.event.shared.HandlerRegistration;
 
 /**
  * <p>

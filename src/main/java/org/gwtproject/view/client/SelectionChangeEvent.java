@@ -15,10 +15,10 @@
  */
 package org.gwtproject.view.client;
 
-import com.google.gwt.event.shared.EventHandler;
-import com.google.gwt.event.shared.GwtEvent;
-import com.google.gwt.event.shared.HandlerRegistration;
-import com.google.gwt.event.shared.HasHandlers;
+import org.gwtproject.event.legacy.shared.EventHandler;
+import org.gwtproject.event.legacy.shared.GwtEvent;
+import org.gwtproject.event.shared.HandlerRegistration;
+import org.gwtproject.event.shared.HasHandlers;
 
 /**
  * Represents a selection change event.

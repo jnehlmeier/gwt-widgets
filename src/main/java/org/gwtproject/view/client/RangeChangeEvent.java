@@ -15,8 +15,8 @@
  */
 package org.gwtproject.view.client;
 
-import com.google.gwt.event.shared.EventHandler;
-import com.google.gwt.event.shared.GwtEvent;
+import org.gwtproject.event.legacy.shared.EventHandler;
+import org.gwtproject.event.legacy.shared.GwtEvent;
 
 /**
  * Represents a range change event.

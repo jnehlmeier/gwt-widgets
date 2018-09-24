@@ -15,9 +15,9 @@
  */
 package org.gwtproject.user.cellview.client;
 
-import com.google.gwt.event.shared.EventHandler;
-import com.google.gwt.event.shared.GwtEvent;
-import com.google.gwt.event.shared.HasHandlers;
+import org.gwtproject.event.legacy.shared.EventHandler;
+import org.gwtproject.event.legacy.shared.GwtEvent;
+import org.gwtproject.event.shared.HasHandlers;
 import org.gwtproject.view.client.AsyncDataProvider;
 import org.gwtproject.view.client.HasData;
 import org.gwtproject.view.client.ListDataProvider;

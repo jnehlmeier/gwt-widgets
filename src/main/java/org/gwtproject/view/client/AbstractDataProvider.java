@@ -15,7 +15,7 @@
  */
 package org.gwtproject.view.client;
 
-import com.google.gwt.event.shared.HandlerRegistration;
+import org.gwtproject.event.shared.HandlerRegistration;
 
 import java.util.*;
 

@@ -16,9 +16,9 @@
 
 package org.gwtproject.user.datepicker.client;
 
-import com.google.gwt.event.logical.shared.HasValueChangeHandlers;
-import com.google.gwt.event.logical.shared.ValueChangeEvent;
-import com.google.gwt.event.shared.HasHandlers;
+import org.gwtproject.event.logical.shared.HasValueChangeHandlers;
+import org.gwtproject.event.logical.shared.ValueChangeEvent;
+import org.gwtproject.event.shared.HasHandlers;
 
 import java.util.Date;
 

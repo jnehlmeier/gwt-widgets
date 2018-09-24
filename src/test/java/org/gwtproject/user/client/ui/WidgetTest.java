@@ -15,11 +15,11 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.event.dom.client.ChangeEvent;
-import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.dom.client.ClickHandler;
-import com.google.gwt.event.shared.HandlerManager;
-import com.google.gwt.event.shared.HandlerRegistration;
+import org.gwtproject.event.dom.client.ChangeEvent;
+import org.gwtproject.event.dom.client.ClickEvent;
+import org.gwtproject.event.dom.client.ClickHandler;
+import org.gwtproject.event.shared.HandlerManager;
+import org.gwtproject.event.shared.HandlerRegistration;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.user.client.Event;
 

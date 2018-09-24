@@ -17,9 +17,10 @@ package org.gwtproject.view.client;
 
 import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.core.client.Scheduler.ScheduledCommand;
-import com.google.gwt.event.shared.GwtEvent;
-import com.google.gwt.event.shared.HandlerManager;
-import com.google.gwt.event.shared.HandlerRegistration;
+import org.gwtproject.event.legacy.shared.GwtEvent;
+import org.gwtproject.event.shared.Event;
+import org.gwtproject.event.shared.HandlerManager;
+import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.view.client.SelectionChangeEvent.HasSelectionChangedHandlers;
 
 /**
@@ -68,7 +69,7 @@ public interface SelectionModel<T> extends HasSelectionChangedHandlers, org.gwtp
     }
 
     @Override
-    public void fireEvent(GwtEvent<?> event) {
+    public void fireEvent(Event<?> event) {
       handlerManager.fireEvent(event);
     }
 

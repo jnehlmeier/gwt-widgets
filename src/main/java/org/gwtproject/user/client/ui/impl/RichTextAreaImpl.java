@@ -16,8 +16,8 @@
 package org.gwtproject.user.client.ui.impl;
 
 import org.gwtproject.dom.client.Element;
-import com.google.gwt.event.logical.shared.HasInitializeHandlers;
-import com.google.gwt.event.logical.shared.InitializeEvent;
+import org.gwtproject.event.logical.shared.HasInitializeHandlers;
+import org.gwtproject.event.logical.shared.InitializeEvent;
 import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
 import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.Event;

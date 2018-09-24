@@ -15,11 +15,11 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.event.logical.shared.CloseEvent;
-import com.google.gwt.event.logical.shared.CloseHandler;
-import com.google.gwt.event.logical.shared.OpenEvent;
-import com.google.gwt.event.logical.shared.OpenHandler;
-import com.google.gwt.event.shared.HandlerRegistration;
+import org.gwtproject.event.logical.shared.CloseEvent;
+import org.gwtproject.event.logical.shared.CloseHandler;
+import org.gwtproject.event.logical.shared.OpenEvent;
+import org.gwtproject.event.logical.shared.OpenHandler;
+import org.gwtproject.event.shared.HandlerRegistration;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.user.client.DOM;
 import com.google.gwt.user.client.Timer;

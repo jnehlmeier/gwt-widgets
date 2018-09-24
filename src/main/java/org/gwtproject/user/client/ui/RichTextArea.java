@@ -16,10 +16,10 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.core.client.GWT;
-import com.google.gwt.event.logical.shared.HasInitializeHandlers;
-import com.google.gwt.event.logical.shared.InitializeEvent;
-import com.google.gwt.event.logical.shared.InitializeHandler;
-import com.google.gwt.event.shared.HandlerRegistration;
+import org.gwtproject.event.logical.shared.HasInitializeHandlers;
+import org.gwtproject.event.logical.shared.InitializeEvent;
+import org.gwtproject.event.logical.shared.InitializeHandler;
+import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.safehtml.client.HasSafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;

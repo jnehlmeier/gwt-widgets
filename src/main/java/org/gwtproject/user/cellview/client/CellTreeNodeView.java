@@ -17,6 +17,7 @@ package org.gwtproject.user.cellview.client;
 
 import org.gwtproject.aria.client.ExpandedValue;
 import org.gwtproject.aria.client.Roles;
+import org.gwtproject.event.shared.Event;
 import org.gwtproject.user.cellview.client.AbstractHasData;
 import org.gwtproject.user.cellview.client.CellBasedWidgetImpl;
 import org.gwtproject.user.cellview.client.HasDataPresenter;
@@ -31,13 +32,13 @@ import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.NativeEvent;
 import org.gwtproject.dom.client.Style.Display;
 import org.gwtproject.dom.client.Style.Overflow;
-import com.google.gwt.event.logical.shared.CloseEvent;
-import com.google.gwt.event.logical.shared.OpenEvent;
-import com.google.gwt.event.shared.EventHandler;
-import com.google.gwt.event.shared.GwtEvent;
-import com.google.gwt.event.shared.GwtEvent.Type;
-import com.google.gwt.event.shared.HandlerManager;
-import com.google.gwt.event.shared.HandlerRegistration;
+import org.gwtproject.event.logical.shared.CloseEvent;
+import org.gwtproject.event.logical.shared.OpenEvent;
+import org.gwtproject.event.legacy.shared.EventHandler;
+import org.gwtproject.event.legacy.shared.GwtEvent;
+import org.gwtproject.event.legacy.shared.GwtEvent.Type;
+import org.gwtproject.event.shared.HandlerManager;
+import org.gwtproject.event.shared.HandlerRegistration;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.safecss.shared.SafeStyles;
 import com.google.gwt.safecss.shared.SafeStylesUtils;
@@ -480,7 +481,7 @@ class CellTreeNodeView<T> extends UIObject {
     }
 
     @Override
-    public void fireEvent(GwtEvent<?> event) {
+    public void fireEvent(Event<?> event) {
       handlerManger.fireEvent(event);
     }
 

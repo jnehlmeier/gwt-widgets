@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.event.shared.UmbrellaException;
+import org.gwtproject.event.shared.UmbrellaException;
 
 import java.util.HashSet;
 import java.util.Set;

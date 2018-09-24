@@ -18,7 +18,7 @@ package org.gwtproject.user.client.ui;
 import org.gwtproject.dom.builder.shared.HtmlBuilderFactory;
 import org.gwtproject.dom.builder.shared.HtmlSpanBuilder;
 import org.gwtproject.dom.client.Element;
-import com.google.gwt.event.logical.shared.AttachEvent;
+import org.gwtproject.event.logical.shared.AttachEvent;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.user.client.DOM;

@@ -15,10 +15,10 @@
  */
 package org.gwtproject.view.client;
 
-import com.google.gwt.event.shared.GwtEvent;
-import com.google.gwt.event.shared.GwtEvent.Type;
-import com.google.gwt.event.shared.HandlerManager;
-import com.google.gwt.event.shared.HandlerRegistration;
+import org.gwtproject.event.legacy.shared.GwtEvent;
+import org.gwtproject.event.shared.GwtEvent.Type;
+import org.gwtproject.event.shared.HandlerManager;
+import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.view.client.CellPreviewEvent.Handler;
 
 import java.util.ArrayList;

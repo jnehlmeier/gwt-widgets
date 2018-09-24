@@ -16,7 +16,7 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.Element;
-import com.google.gwt.event.logical.shared.AttachEvent;
+import org.gwtproject.event.logical.shared.AttachEvent;
 import com.google.gwt.junit.client.GWTTestCase;
 
 /**

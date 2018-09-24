@@ -264,11 +264,11 @@ public abstract class SuggestOracle {
    * 
    * <p>
    * To access a suggestion's DTO when the suggestion is selected, add a
-   * {@link com.google.gwt.event.logical.shared.SelectionHandler} to the SuggestBox
+   * {@link org.gwtproject.event.logical.shared.SelectionHandler} to the SuggestBox
    * (see SuggestBox's documentation for more information). In the
    * <code>SelectionHandler.onSelection(SelectionEvent&lt;Suggestion&gt; event)</code>
    * method, obtain the selected <code>Suggestion</code> object from the
-   * {@link com.google.gwt.event.logical.shared.SelectionEvent} object, and downcast
+   * {@link org.gwtproject.event.logical.shared.SelectionEvent} object, and downcast
    * the <code>Suggestion</code> object to the subinterface. Then, access the DTO
    * using the DTO getter method that was defined on the subinterface.
    * </p>

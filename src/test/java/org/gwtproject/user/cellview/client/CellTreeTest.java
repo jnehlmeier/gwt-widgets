@@ -19,7 +19,7 @@ import org.gwtproject.user.cellview.client.CellTree;
 import org.gwtproject.user.cellview.client.TreeNode;
 import org.gwtproject.cell.client.AbstractCell;
 import org.gwtproject.cell.client.TextCell;
-import com.google.gwt.event.dom.client.KeyCodes;
+import org.gwtproject.event.dom.client.KeyCodes;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.user.client.ui.RootPanel;
 import org.gwtproject.view.client.ListDataProvider;

@@ -17,8 +17,8 @@ package org.gwtproject.user.client.ui;
 
 import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.core.client.Scheduler.ScheduledCommand;
-import com.google.gwt.event.dom.client.ScrollEvent;
-import com.google.gwt.event.dom.client.ScrollHandler;
+import org.gwtproject.event.dom.client.ScrollEvent;
+import org.gwtproject.event.dom.client.ScrollHandler;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 import com.google.gwt.user.client.Timer;

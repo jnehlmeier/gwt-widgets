@@ -25,7 +25,7 @@ import org.gwtproject.dom.client.Style.Display;
 import org.gwtproject.dom.client.Style.Overflow;
 import org.gwtproject.dom.client.Style.Position;
 import org.gwtproject.dom.client.Style.Unit;
-import com.google.gwt.event.dom.client.KeyCodes;
+import org.gwtproject.event.dom.client.KeyCodes;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.i18n.client.LocalizableResource.DefaultLocale;
 import com.google.gwt.i18n.client.Messages;

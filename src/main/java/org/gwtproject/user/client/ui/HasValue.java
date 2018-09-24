@@ -15,12 +15,12 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.event.logical.shared.HasValueChangeHandlers;
+import org.gwtproject.event.logical.shared.HasValueChangeHandlers;
 import com.google.gwt.user.client.TakesValue;
 
 /**
  * Extends {@link TakesValue} to allow the value to be pulled back out, and to
- * throw {@link com.google.gwt.event.logical.shared.ValueChangeEvent
+ * throw {@link org.gwtproject.event.logical.shared.ValueChangeEvent
  * ValueChangeEvent} events.
  * <p>
  * An object that implements this interface should be a user input widget, where
@@ -57,7 +57,7 @@ public interface HasValue<T> extends TakesValue<T>, HasValueChangeHandlers<T> {
 
   /**
    * Sets this object's value. Fires
-   * {@link com.google.gwt.event.logical.shared.ValueChangeEvent} when
+   * {@link org.gwtproject.event.logical.shared.ValueChangeEvent} when
    * fireEvents is true and the new value does not equal the existing value.
    * <p>
    * It is acceptable to fail assertions or throw (documented) unchecked

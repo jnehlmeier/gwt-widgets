@@ -16,10 +16,10 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.Style.Unit;
-import com.google.gwt.event.logical.shared.BeforeSelectionEvent;
-import com.google.gwt.event.logical.shared.BeforeSelectionHandler;
-import com.google.gwt.event.logical.shared.SelectionEvent;
-import com.google.gwt.event.logical.shared.SelectionHandler;
+import org.gwtproject.event.logical.shared.BeforeSelectionEvent;
+import org.gwtproject.event.logical.shared.BeforeSelectionHandler;
+import org.gwtproject.event.logical.shared.SelectionEvent;
+import org.gwtproject.event.logical.shared.SelectionHandler;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 import com.google.gwt.junit.client.GWTTestCase;

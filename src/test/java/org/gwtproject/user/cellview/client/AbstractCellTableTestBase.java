@@ -27,7 +27,7 @@ import org.gwtproject.dom.client.Style.Unit;
 import org.gwtproject.dom.client.TableCellElement;
 import org.gwtproject.dom.client.TableRowElement;
 import org.gwtproject.dom.client.TableSectionElement;
-import com.google.gwt.event.dom.client.KeyCodes;
+import org.gwtproject.event.dom.client.KeyCodes;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.user.cellview.client.AbstractHasData.DefaultKeyboardSelectionHandler;
 import org.gwtproject.user.cellview.client.HasKeyboardPagingPolicy.KeyboardPagingPolicy;

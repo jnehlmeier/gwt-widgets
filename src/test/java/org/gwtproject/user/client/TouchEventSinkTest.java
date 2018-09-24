@@ -16,7 +16,7 @@
 
 package org.gwtproject.user.client;
 
-import com.google.gwt.event.dom.client.*;
+import org.gwtproject.event.dom.client.*;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.user.client.ui.*;
 

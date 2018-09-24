@@ -16,14 +16,14 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.Element;
-import com.google.gwt.event.dom.client.DomEvent;
-import com.google.gwt.event.logical.shared.AttachEvent;
-import com.google.gwt.event.logical.shared.AttachEvent.Handler;
-import com.google.gwt.event.logical.shared.HasAttachHandlers;
-import com.google.gwt.event.shared.EventHandler;
-import com.google.gwt.event.shared.GwtEvent;
-import com.google.gwt.event.shared.HandlerManager;
-import com.google.gwt.event.shared.HandlerRegistration;
+import org.gwtproject.event.dom.client.DomEvent;
+import org.gwtproject.event.logical.shared.AttachEvent;
+import org.gwtproject.event.logical.shared.AttachEvent.Handler;
+import org.gwtproject.event.logical.shared.HasAttachHandlers;
+import org.gwtproject.event.legacy.shared.EventHandler;
+import org.gwtproject.event.legacy.shared.GwtEvent;
+import org.gwtproject.event.shared.HandlerManager;
+import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.Event;
 import org.gwtproject.user.client.EventListener;

@@ -1,7 +1,7 @@
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.event.dom.client.LoadEvent;
-import com.google.gwt.event.dom.client.LoadHandler;
+import org.gwtproject.event.dom.client.LoadEvent;
+import org.gwtproject.event.dom.client.LoadHandler;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.user.client.Event;
 import org.gwtproject.user.client.ui.Frame;
