@@ -19,7 +19,7 @@ import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
-import com.google.gwt.user.client.Window;
+import org.gwtproject.user.window.client.Window;
 
 /**
  * Tests for {@link AbsolutePanel}.

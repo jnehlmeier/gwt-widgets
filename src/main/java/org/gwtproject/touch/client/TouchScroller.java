@@ -38,7 +38,7 @@ import org.gwtproject.touch.client.Momentum.State;
 import org.gwtproject.user.client.Event;
 import org.gwtproject.user.client.Event.NativePreviewEvent;
 import org.gwtproject.user.client.Event.NativePreviewHandler;
-import com.google.gwt.user.client.Window;
+import org.gwtproject.user.window.client.Window;
 import org.gwtproject.user.client.ui.HasScrolling;
 
 import java.util.ArrayList;

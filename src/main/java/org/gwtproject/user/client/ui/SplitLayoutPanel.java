@@ -23,7 +23,7 @@ import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.Style.Position;
 import org.gwtproject.dom.client.Style.Unit;
 import org.gwtproject.user.client.Event;
-import com.google.gwt.user.client.Window;
+import org.gwtproject.user.window.client.Window;
 
 /**
  * A panel that adds user-positioned splitters between each of its child

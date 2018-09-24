@@ -27,7 +27,7 @@ import com.google.gwt.regexp.shared.RegExp;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.user.cellview.client.AbstractHasData.RedrawEvent.Handler;
 import org.gwtproject.user.cellview.client.HasKeyboardSelectionPolicy.KeyboardSelectionPolicy;
-import com.google.gwt.user.client.Window;
+import org.gwtproject.user.window.client.Window;
 import org.gwtproject.view.client.ListDataProvider;
 import org.gwtproject.view.client.Range;
 

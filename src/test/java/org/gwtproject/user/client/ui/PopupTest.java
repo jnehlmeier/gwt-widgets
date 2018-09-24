@@ -23,7 +23,7 @@ import org.gwtproject.event.logical.shared.CloseHandler;
 import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.Timer;
-import com.google.gwt.user.client.Window;
+import org.gwtproject.user.window.client.Window;
 
 /**
  * Tests for {@link PopupPanel}.

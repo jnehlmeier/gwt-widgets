@@ -38,7 +38,7 @@ import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
 import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.Event;
 import org.gwtproject.user.client.Event.NativePreviewEvent;
-import com.google.gwt.user.client.Window;
+import org.gwtproject.user.window.client.Window;
 import org.gwtproject.user.client.ui.PopupPanel.PositionCallback;
 
 import java.util.ArrayList;

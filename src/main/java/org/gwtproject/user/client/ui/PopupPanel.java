@@ -40,7 +40,7 @@ import org.gwtproject.user.client.Event.NativePreviewEvent;
 import org.gwtproject.user.client.Event.NativePreviewHandler;
 import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.Timer;
-import com.google.gwt.user.client.Window;
+import org.gwtproject.user.window.client.Window;
 import org.gwtproject.user.client.ui.impl.PopupImpl;
 
 import java.util.ArrayList;

@@ -46,7 +46,7 @@ import org.gwtproject.safehtml.shared.SafeHtmlUtils;
 import com.google.gwt.uibinder.client.UiChild;
 import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.Event;
-import com.google.gwt.user.client.Window;
+import org.gwtproject.user.window.client.Window;
 import org.gwtproject.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant;
 import org.gwtproject.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant;
 import org.gwtproject.user.client.ui.Widget;

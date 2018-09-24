@@ -24,7 +24,7 @@ import com.google.gwt.i18n.client.BidiUtils;
 import com.google.gwt.i18n.client.HasDirection;
 import com.google.gwt.i18n.client.LocaleInfo;
 import org.gwtproject.user.client.Event;
-import com.google.gwt.user.client.Window;
+import org.gwtproject.user.window.client.Window;
 
 import java.util.HashMap;
 import java.util.HashSet;
