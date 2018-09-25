@@ -23,7 +23,7 @@ import org.gwtproject.layout.client.LayerFriend;
 import org.gwtproject.layout.client.Layout;
 import org.gwtproject.layout.client.Layout.AnimationCallback;
 import org.gwtproject.layout.client.Layout.Layer;
-import com.google.gwt.user.client.Command;
+import org.gwtproject.user.client.Command;
 
 import java.util.ArrayList;
 import java.util.List;

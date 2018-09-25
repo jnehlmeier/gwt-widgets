@@ -24,7 +24,7 @@ import org.gwtproject.event.dom.client.KeyCodes;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 import org.gwtproject.safehtml.shared.SafeHtmlUtils;
-import com.google.gwt.user.client.Command;
+import org.gwtproject.user.client.Command;
 
 import java.util.List;
 import java.util.Locale;

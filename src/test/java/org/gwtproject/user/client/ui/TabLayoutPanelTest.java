@@ -23,7 +23,7 @@ import org.gwtproject.event.logical.shared.SelectionHandler;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.user.client.Command;
+import org.gwtproject.user.client.Command;
 import com.google.gwt.user.client.DeferredCommand;
 import org.gwtproject.timer.client.Timer;
 

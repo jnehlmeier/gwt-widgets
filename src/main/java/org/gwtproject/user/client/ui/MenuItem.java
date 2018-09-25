@@ -21,7 +21,7 @@ import org.gwtproject.safehtml.client.HasSafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
 import org.gwtproject.safehtml.shared.annotations.SuppressIsSafeHtmlCastCheck;
-import com.google.gwt.user.client.Command;
+import org.gwtproject.user.client.Command;
 import org.gwtproject.user.client.DOM;
 
 /**

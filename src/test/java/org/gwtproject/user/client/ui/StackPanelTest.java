@@ -16,7 +16,7 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.Element;
-import com.google.gwt.user.client.Command;
+import org.gwtproject.user.client.Command;
 import org.gwtproject.user.client.DOM;
 import com.google.gwt.user.client.DeferredCommand;
 

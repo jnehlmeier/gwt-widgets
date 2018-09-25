@@ -19,7 +19,7 @@ import org.gwtproject.aria.client.Roles;
 import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.safehtml.shared.SafeHtmlUtils;
-import com.google.gwt.user.client.Command;
+import org.gwtproject.user.client.Command;
 
 import java.util.Locale;
 

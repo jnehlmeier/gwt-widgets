@@ -22,7 +22,7 @@ import org.gwtproject.event.logical.shared.ResizeEvent;
 import org.gwtproject.event.logical.shared.ResizeHandler;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
-import com.google.gwt.user.client.Command;
+import org.gwtproject.user.client.Command;
 import org.gwtproject.timer.client.Timer;
 
 import java.util.ArrayList;
