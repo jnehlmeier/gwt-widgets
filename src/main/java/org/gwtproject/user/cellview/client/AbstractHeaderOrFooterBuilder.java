@@ -29,7 +29,7 @@ import org.gwtproject.dom.client.Style.Position;
 import org.gwtproject.dom.client.Style.Unit;
 import org.gwtproject.dom.client.TableRowElement;
 import com.google.gwt.i18n.client.LocaleInfo;
-import com.google.gwt.resources.client.ImageResource;
+import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.safehtml.shared.SafeHtmlUtils;

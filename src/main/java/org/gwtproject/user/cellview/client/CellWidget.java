@@ -27,7 +27,7 @@ import com.google.gwt.editor.client.adapters.TakesValueEditor;
 import org.gwtproject.event.logical.shared.ValueChangeEvent;
 import org.gwtproject.event.logical.shared.ValueChangeHandler;
 import org.gwtproject.event.shared.HandlerRegistration;
-import com.google.gwt.resources.client.CommonResources;
+import org.gwtproject.resources.client.CommonResources;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.user.client.Event;
 import org.gwtproject.user.client.ui.HasValue;

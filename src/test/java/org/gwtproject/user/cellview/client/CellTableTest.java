@@ -23,7 +23,7 @@ import org.gwtproject.dom.client.TableCellElement;
 import org.gwtproject.dom.client.TableElement;
 import org.gwtproject.dom.client.TableRowElement;
 import org.gwtproject.dom.client.TableSectionElement;
-import com.google.gwt.resources.client.ImageResource;
+import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.user.cellview.client.AbstractHasData.RedrawEvent.Handler;
 import org.gwtproject.user.cellview.client.CellTable.Resources;
 import org.gwtproject.user.cellview.client.CellTable.Style;

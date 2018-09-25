@@ -21,7 +21,7 @@ import org.gwtproject.dom.client.DivElement;
 import org.gwtproject.dom.client.SpanElement;
 import org.gwtproject.dom.client.Style.Display;
 import org.gwtproject.dom.client.Style.Unit;
-import com.google.gwt.resources.client.CssResource;
+import org.gwtproject.resources.client.CssResource;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.Timer;

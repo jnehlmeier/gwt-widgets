@@ -28,10 +28,10 @@ import org.gwtproject.event.dom.client.ScrollHandler;
 import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.layout.client.Layout;
 import org.gwtproject.layout.client.Layout.Layer;
-import com.google.gwt.resources.client.ClientBundle;
-import com.google.gwt.resources.client.CommonResources;
-import com.google.gwt.resources.client.CssResource;
-import com.google.gwt.resources.client.CssResource.ImportedWithPrefix;
+import org.gwtproject.resources.client.ClientBundle;
+import org.gwtproject.resources.client.CommonResources;
+import org.gwtproject.resources.client.CssResource;
+import org.gwtproject.resources.client.CssResource.ImportedWithPrefix;
 import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.Event;
 

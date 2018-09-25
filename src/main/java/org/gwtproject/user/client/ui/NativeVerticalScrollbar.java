@@ -18,10 +18,10 @@ package org.gwtproject.user.client.ui;
 import org.gwtproject.core.client.GWT;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.Style.Unit;
-import com.google.gwt.resources.client.ClientBundle;
-import com.google.gwt.resources.client.CommonResources;
-import com.google.gwt.resources.client.CssResource;
-import com.google.gwt.resources.client.CssResource.ImportedWithPrefix;
+import org.gwtproject.resources.client.ClientBundle;
+import org.gwtproject.resources.client.CommonResources;
+import org.gwtproject.resources.client.CssResource;
+import org.gwtproject.resources.client.CssResource.ImportedWithPrefix;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 

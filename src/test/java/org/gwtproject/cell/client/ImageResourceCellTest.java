@@ -16,8 +16,8 @@
 package org.gwtproject.cell.client;
 
 import org.gwtproject.core.client.GWT;
-import com.google.gwt.resources.client.ClientBundle;
-import com.google.gwt.resources.client.ImageResource;
+import org.gwtproject.resources.client.ClientBundle;
+import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.user.client.ui.ImageResourceRenderer;
 
 /**
