@@ -20,8 +20,8 @@ import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.NativeEvent;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
-import com.google.gwt.text.shared.SafeHtmlRenderer;
-import com.google.gwt.text.shared.SimpleSafeHtmlRenderer;
+import org.gwtproject.text.shared.SafeHtmlRenderer;
+import org.gwtproject.text.shared.SimpleSafeHtmlRenderer;
 
 import static org.gwtproject.dom.client.BrowserEvents.CLICK;
 import static org.gwtproject.dom.client.BrowserEvents.KEYDOWN;

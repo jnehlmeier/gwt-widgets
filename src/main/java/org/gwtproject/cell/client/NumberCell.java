@@ -17,8 +17,8 @@ package org.gwtproject.cell.client;
 
 import com.google.gwt.i18n.client.NumberFormat;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
-import com.google.gwt.text.shared.SafeHtmlRenderer;
-import com.google.gwt.text.shared.SimpleSafeHtmlRenderer;
+import org.gwtproject.text.shared.SafeHtmlRenderer;
+import org.gwtproject.text.shared.SimpleSafeHtmlRenderer;
 
 /**
  * A {@link Cell} used to render formatted numbers.

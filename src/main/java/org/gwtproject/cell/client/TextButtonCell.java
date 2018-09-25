@@ -15,7 +15,7 @@
  */
 package org.gwtproject.cell.client;
 
-import com.google.gwt.text.shared.SimpleSafeHtmlRenderer;
+import org.gwtproject.text.shared.SimpleSafeHtmlRenderer;
 
 /**
  * {@code TextButtonCell} is a simple button with text content.

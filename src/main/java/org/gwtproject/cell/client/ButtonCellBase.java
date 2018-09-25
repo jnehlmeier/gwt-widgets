@@ -35,7 +35,7 @@ import org.gwtproject.safehtml.client.SafeHtmlTemplates;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.safehtml.shared.SafeHtmlUtils;
-import com.google.gwt.text.shared.SafeHtmlRenderer;
+import org.gwtproject.text.shared.SafeHtmlRenderer;
 import org.gwtproject.user.client.Event;
 import org.gwtproject.user.client.Event.NativePreviewEvent;
 import org.gwtproject.user.client.Event.NativePreviewHandler;

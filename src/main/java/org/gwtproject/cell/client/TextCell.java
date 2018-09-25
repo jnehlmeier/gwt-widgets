@@ -17,8 +17,8 @@ package org.gwtproject.cell.client;
 
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
-import com.google.gwt.text.shared.SafeHtmlRenderer;
-import com.google.gwt.text.shared.SimpleSafeHtmlRenderer;
+import org.gwtproject.text.shared.SafeHtmlRenderer;
+import org.gwtproject.text.shared.SimpleSafeHtmlRenderer;
 
 /**
  * A {@link org.gwtproject.cell.client.Cell} used to render text.

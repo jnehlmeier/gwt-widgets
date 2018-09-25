@@ -17,7 +17,7 @@ package org.gwtproject.cell.client;
 
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
-import com.google.gwt.text.shared.SafeHtmlRenderer;
+import org.gwtproject.text.shared.SafeHtmlRenderer;
 
 import java.util.Set;
 

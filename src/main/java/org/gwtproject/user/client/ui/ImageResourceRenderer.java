@@ -21,7 +21,7 @@ import org.gwtproject.resources.client.impl.ImageResourcePrototype;
 import org.gwtproject.safehtml.client.SafeHtmlTemplates;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.SafeUri;
-import com.google.gwt.text.shared.AbstractSafeHtmlRenderer;
+import org.gwtproject.text.shared.AbstractSafeHtmlRenderer;
 
 /**
  * Given an {@link ImageResource}, renders an element to show it.
