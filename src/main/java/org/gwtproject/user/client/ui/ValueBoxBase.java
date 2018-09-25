@@ -27,7 +27,7 @@ import org.gwtproject.event.logical.shared.ValueChangeHandler;
 import org.gwtproject.event.shared.HandlerRegistration;
 import com.google.gwt.i18n.client.AutoDirectionHandler;
 import com.google.gwt.i18n.client.BidiPolicy;
-import com.google.gwt.i18n.client.BidiUtils;
+import org.gwtproject.i18n.client.BidiUtils;
 import com.google.gwt.i18n.shared.DirectionEstimator;
 import com.google.gwt.i18n.shared.HasDirectionEstimator;
 import com.google.gwt.text.shared.Parser;

@@ -71,7 +71,7 @@ import org.gwtproject.event.dom.client.TouchMoveHandler;
 import org.gwtproject.event.dom.client.TouchStartEvent;
 import org.gwtproject.event.dom.client.TouchStartHandler;
 import org.gwtproject.event.shared.HandlerRegistration;
-import com.google.gwt.i18n.client.BidiUtils;
+import org.gwtproject.i18n.client.BidiUtils;
 import com.google.gwt.i18n.client.HasDirection;
 import com.google.gwt.i18n.shared.DirectionEstimator;
 

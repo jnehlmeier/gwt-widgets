@@ -17,7 +17,7 @@ package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
-import com.google.gwt.i18n.client.BidiUtils;
+import org.gwtproject.i18n.client.BidiUtils;
 import com.google.gwt.i18n.client.HasDirection.Direction;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.i18n.shared.AnyRtlDirectionEstimator;

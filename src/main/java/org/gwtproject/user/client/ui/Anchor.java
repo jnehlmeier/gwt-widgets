@@ -21,7 +21,7 @@ import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.Style.WhiteSpace;
 import org.gwtproject.event.dom.client.ClickEvent;
 import org.gwtproject.event.dom.client.ClickHandler;
-import com.google.gwt.i18n.client.BidiUtils;
+import org.gwtproject.i18n.client.BidiUtils;
 import com.google.gwt.i18n.client.HasDirection;
 import com.google.gwt.i18n.shared.DirectionEstimator;
 import com.google.gwt.i18n.shared.HasDirectionEstimator;

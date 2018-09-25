@@ -19,7 +19,7 @@ import org.gwtproject.dom.client.DivElement;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.SpanElement;
-import com.google.gwt.i18n.client.BidiUtils;
+import org.gwtproject.i18n.client.BidiUtils;
 import com.google.gwt.i18n.client.HasDirection.Direction;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.user.client.ui.HasHorizontalAlignment.AutoHorizontalAlignmentConstant;
