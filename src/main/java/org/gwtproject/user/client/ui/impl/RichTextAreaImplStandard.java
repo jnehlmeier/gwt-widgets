@@ -438,7 +438,7 @@ public abstract class RichTextAreaImplStandard extends RichTextAreaImpl implemen
       setFocus(true);
       try {
         execCommandAssumingFocus(cmd, param);
-      } catch (JavaScriptException e) {
+      } catch (Exception e) {
         // In mozilla, editing throws a JS exception if the iframe is
         // *hidden, but attached*.
       }
@@ -456,7 +456,7 @@ public abstract class RichTextAreaImplStandard extends RichTextAreaImpl implemen
       setFocus(true);
       try {
         return queryCommandStateAssumingFocus(cmd);
-      } catch (JavaScriptException e) { 
+      } catch (Exception e) {
         return false;
       }
     }
