@@ -21,7 +21,7 @@ import org.gwtproject.dom.client.Element;
 import org.gwtproject.event.logical.shared.CloseEvent;
 import org.gwtproject.event.logical.shared.CloseHandler;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.user.client.History;
+import org.gwtproject.user.history.client.History;
 import org.gwtproject.timer.client.Timer;
 import org.gwtproject.user.window.client.Window;
 

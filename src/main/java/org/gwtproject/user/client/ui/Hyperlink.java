@@ -30,7 +30,7 @@ import org.gwtproject.safehtml.shared.annotations.SuppressIsSafeHtmlCastCheck;
 import org.gwtproject.safehtml.shared.annotations.SuppressIsSafeUriCastCheck;
 import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.Event;
-import com.google.gwt.user.client.History;
+import org.gwtproject.user.history.client.History;
 import org.gwtproject.user.client.ui.impl.HyperlinkImpl;
 
 /**

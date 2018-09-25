@@ -23,7 +23,7 @@ import org.gwtproject.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.safehtml.shared.SafeHtmlUtils;
 import org.gwtproject.user.client.DOM;
-import com.google.gwt.user.client.History;
+import org.gwtproject.user.history.client.History;
 import com.google.web.bindery.event.shared.HandlerRegistration;
 
 import java.util.Locale;

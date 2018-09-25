@@ -38,7 +38,7 @@ import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.Event;
 import org.gwtproject.user.client.Event.NativePreviewEvent;
 import org.gwtproject.user.client.Event.NativePreviewHandler;
-import com.google.gwt.user.client.History;
+import org.gwtproject.user.history.client.History;
 import org.gwtproject.timer.client.Timer;
 import org.gwtproject.user.window.client.Window;
 import org.gwtproject.user.client.ui.impl.PopupImpl;
