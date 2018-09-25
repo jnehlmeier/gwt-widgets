@@ -99,7 +99,7 @@ public class DOM {
    */
 
   public static org.gwtproject.user.client.Element createButton() {
-    return Document.get().createButtonElement().cast();
+    return Document.get().createPushButtonElement().cast();
   }
 
   /**
