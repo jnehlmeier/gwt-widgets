@@ -120,16 +120,16 @@ public interface HasHorizontalAlignment {
    * the right. In a LTR layout, specifies that the widget's constants should be
    * aligned to the left.
    */
-  HorizontalAlignmentConstant ALIGN_LOCALE_START = GWT.isClient()
-      && LocaleInfo.getCurrentLocale().isRTL() ? ALIGN_RIGHT : ALIGN_LEFT;
+  HorizontalAlignmentConstant ALIGN_LOCALE_START =
+      LocaleInfo.getCurrentLocale().isRTL() ? ALIGN_RIGHT : ALIGN_LEFT;
 
   /**
    * In a RTL layout, specifies that the widget's contents should be aligned to
    * the left. In a LTR layout, specifies that the widget's constants should be
    * aligned to the right.
    */
-  HorizontalAlignmentConstant ALIGN_LOCALE_END = GWT.isClient()
-      && LocaleInfo.getCurrentLocale().isRTL() ? ALIGN_LEFT : ALIGN_RIGHT;
+  HorizontalAlignmentConstant ALIGN_LOCALE_END =
+      LocaleInfo.getCurrentLocale().isRTL() ? ALIGN_LEFT : ALIGN_RIGHT;
 
   /**
    * Synonym of {@link #ALIGN_LOCALE_START}.

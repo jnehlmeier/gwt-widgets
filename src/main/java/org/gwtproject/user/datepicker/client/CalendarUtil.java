@@ -32,13 +32,11 @@ public class CalendarUtil {
   private static int startingDay;
 
   static {
-    if (GWT.isClient()) {
-      DateTimeFormatInfo dateTimeFormatInfo = LocaleInfo.getCurrentLocale().getDateTimeFormatInfo();
-      // Finding the start and end of weekend
-      firstDayOfWeekend = dateTimeFormatInfo.weekendStart();
-      lastDayOfWeekend = dateTimeFormatInfo.weekendEnd();
-      startingDay = dateTimeFormatInfo.firstDayOfTheWeek();
-    }
+    DateTimeFormatInfo dateTimeFormatInfo = LocaleInfo.getCurrentLocale().getDateTimeFormatInfo();
+    // Finding the start and end of weekend
+    firstDayOfWeekend = dateTimeFormatInfo.weekendStart();
+    lastDayOfWeekend = dateTimeFormatInfo.weekendEnd();
+    startingDay = dateTimeFormatInfo.firstDayOfTheWeek();
   }
 
   /**

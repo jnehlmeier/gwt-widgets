@@ -47,9 +47,7 @@ public class NamedFrame extends Frame {
   private static JavaScriptObject PATTERN_NAME;
 
   static {
-    if (GWT.isClient()) {
-      initStatics();
-    }
+    initStatics();
   }
 
   /**

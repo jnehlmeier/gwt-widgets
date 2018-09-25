@@ -82,31 +82,29 @@ public class TreeItem extends UIObject implements IsTreeItem, HasTreeItems,
      * Setup clonable elements.
      */
     void initializeClonableElements() {
-      if (GWT.isClient()) {
-        // Create the base table element that will be cloned.
-        BASE_INTERNAL_ELEM = DOM.createTable();
-        Element contentElem = DOM.createDiv();
-        Element tbody = DOM.createTBody(), tr = DOM.createTR();
-        Element tdImg = DOM.createTD(), tdContent = DOM.createTD();
-        DOM.appendChild(BASE_INTERNAL_ELEM, tbody);
-        DOM.appendChild(tbody, tr);
-        DOM.appendChild(tr, tdImg);
-        DOM.appendChild(tr, tdContent);
-        tdImg.getStyle().setProperty("verticalAlign", "middle");
-        tdContent.getStyle().setProperty("verticalAlign", "middle");
-        DOM.appendChild(tdContent, contentElem);
-        contentElem.getStyle().setProperty("display", "inline");
-        setStyleName(contentElem, "gwt-TreeItem");
-        BASE_INTERNAL_ELEM.getStyle().setProperty("whiteSpace", "nowrap");
+      // Create the base table element that will be cloned.
+      BASE_INTERNAL_ELEM = DOM.createTable();
+      Element contentElem = DOM.createDiv();
+      Element tbody = DOM.createTBody(), tr = DOM.createTR();
+      Element tdImg = DOM.createTD(), tdContent = DOM.createTD();
+      DOM.appendChild(BASE_INTERNAL_ELEM, tbody);
+      DOM.appendChild(tbody, tr);
+      DOM.appendChild(tr, tdImg);
+      DOM.appendChild(tr, tdContent);
+      tdImg.getStyle().setProperty("verticalAlign", "middle");
+      tdContent.getStyle().setProperty("verticalAlign", "middle");
+      DOM.appendChild(tdContent, contentElem);
+      contentElem.getStyle().setProperty("display", "inline");
+      setStyleName(contentElem, "gwt-TreeItem");
+      BASE_INTERNAL_ELEM.getStyle().setProperty("whiteSpace", "nowrap");
 
-        // Create the base element that will be cloned
-        BASE_BARE_ELEM = DOM.createDiv();
+      // Create the base element that will be cloned
+      BASE_BARE_ELEM = DOM.createDiv();
 
-        // Simulates padding from table element.
-        BASE_BARE_ELEM.getStyle().setProperty("padding", "3px");
-        DOM.appendChild(BASE_BARE_ELEM, contentElem);
-        Roles.getTreeitemRole().set(contentElem);
-      }
+      // Simulates padding from table element.
+      BASE_BARE_ELEM.getStyle().setProperty("padding", "3px");
+      DOM.appendChild(BASE_BARE_ELEM, contentElem);
+      Roles.getTreeitemRole().set(contentElem);
     }
   }
 
