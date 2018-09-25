@@ -23,7 +23,7 @@ import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.safehtml.shared.UriUtils;
-import com.google.gwt.user.client.Timer;
+import org.gwtproject.timer.client.Timer;
 import org.gwtproject.user.client.ui.Image;
 import org.gwtproject.user.client.ui.ImageTest;
 import org.gwtproject.user.client.ui.RootPanel;

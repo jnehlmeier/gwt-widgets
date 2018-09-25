@@ -27,7 +27,7 @@ import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.NativeEvent;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
-import com.google.gwt.user.client.Timer;
+import org.gwtproject.timer.client.Timer;
 
 /**
  * Tests for {@link Column}.

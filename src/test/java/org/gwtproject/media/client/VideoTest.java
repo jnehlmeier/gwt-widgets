@@ -19,7 +19,7 @@ import org.gwtproject.dom.client.MediaElement;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 import org.gwtproject.media.dom.client.MediaError;
-import com.google.gwt.user.client.Timer;
+import org.gwtproject.timer.client.Timer;
 import org.gwtproject.user.client.ui.RootPanel;
 
 /**

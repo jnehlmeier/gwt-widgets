@@ -16,7 +16,7 @@
 package org.gwtproject.view.client;
 
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.user.client.Timer;
+import org.gwtproject.timer.client.Timer;
 import org.gwtproject.view.client.SelectionModel.AbstractSelectionModel;
 
 import java.util.Locale;

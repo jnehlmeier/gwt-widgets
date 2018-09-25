@@ -20,7 +20,7 @@ import org.gwtproject.event.dom.client.ClickEvent;
 import org.gwtproject.event.dom.client.ClickHandler;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.safehtml.shared.SafeHtmlUtils;
-import com.google.gwt.user.client.Timer;
+import org.gwtproject.timer.client.Timer;
 import org.gwtproject.user.client.ui.FormPanel.SubmitEvent;
 import org.gwtproject.user.client.ui.FormPanel.SubmitHandler;
 

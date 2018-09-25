@@ -19,7 +19,7 @@ import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.Style.Overflow;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
-import com.google.gwt.user.client.Timer;
+import org.gwtproject.timer.client.Timer;
 
 /**
  * Tests the ScrollPanel widget.

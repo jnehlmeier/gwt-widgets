@@ -22,7 +22,7 @@ import org.gwtproject.event.logical.shared.CloseEvent;
 import org.gwtproject.event.logical.shared.CloseHandler;
 import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.user.client.History;
-import com.google.gwt.user.client.Timer;
+import org.gwtproject.timer.client.Timer;
 import org.gwtproject.user.window.client.Window;
 
 /**

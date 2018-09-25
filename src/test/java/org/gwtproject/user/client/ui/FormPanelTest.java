@@ -19,7 +19,7 @@ import org.gwtproject.core.client.GWT;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.InputElement;
-import com.google.gwt.user.client.Timer;
+import org.gwtproject.timer.client.Timer;
 import org.gwtproject.user.client.ui.FormPanel.SubmitCompleteEvent;
 import org.gwtproject.user.client.ui.FormPanel.SubmitCompleteHandler;
 import org.gwtproject.user.client.ui.FormPanel.SubmitEvent;

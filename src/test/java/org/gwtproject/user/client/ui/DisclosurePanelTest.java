@@ -22,7 +22,7 @@ import org.gwtproject.event.logical.shared.OpenHandler;
 import org.gwtproject.event.shared.HandlerRegistration;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.user.client.DOM;
-import com.google.gwt.user.client.Timer;
+import org.gwtproject.timer.client.Timer;
 
 /**
  * Tests core functionality of {@link DisclosurePanel}.

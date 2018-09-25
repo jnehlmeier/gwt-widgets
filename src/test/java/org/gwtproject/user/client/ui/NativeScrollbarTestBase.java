@@ -21,7 +21,7 @@ import org.gwtproject.event.dom.client.ScrollEvent;
 import org.gwtproject.event.dom.client.ScrollHandler;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
-import com.google.gwt.user.client.Timer;
+import org.gwtproject.timer.client.Timer;
 
 /**
  * Base tests the subclasses of {@link AbstractNativeScrollbar}.

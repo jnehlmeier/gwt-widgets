@@ -24,7 +24,7 @@ import org.gwtproject.dom.client.Style.Unit;
 import org.gwtproject.resources.client.CssResource;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.user.client.Timer;
+import org.gwtproject.timer.client.Timer;
 
 /**
  * Simple widget for providing notification feedback.

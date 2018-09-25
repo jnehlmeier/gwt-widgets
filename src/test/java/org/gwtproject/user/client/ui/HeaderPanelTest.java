@@ -19,7 +19,7 @@ import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
-import com.google.gwt.user.client.Timer;
+import org.gwtproject.timer.client.Timer;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
