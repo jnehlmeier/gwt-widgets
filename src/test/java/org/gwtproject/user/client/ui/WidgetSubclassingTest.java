@@ -41,7 +41,7 @@ public class WidgetSubclassingTest extends GWTTestCase {
 
   private static class TestButton extends Button {
     public TestButton() {
-      super(Document.get().createButtonElement());
+      super(Document.get().createPushButtonElement());
     }
   }
 
