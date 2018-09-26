@@ -15,6 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
+import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.event.dom.client.BlurEvent;
 import org.gwtproject.event.dom.client.BlurHandler;
 import org.gwtproject.event.dom.client.FocusEvent;
@@ -23,7 +24,6 @@ import org.gwtproject.event.logical.shared.AttachEvent;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.user.client.Command;
 import org.gwtproject.user.client.DOM;
-import com.google.gwt.user.client.DeferredCommand;
 import org.gwtproject.user.client.Event;
 
 /**
@@ -93,10 +93,10 @@ public class CompositeTest extends GWTTestCase {
     // Focus, then blur, the composite's text box. This has to be done in
     // deferred commands, because focus events usually require the event loop
     // to be pumped in order to fire.
-    DeferredCommand.addCommand(new Command() {
+    Scheduler.get().scheduleDeferred(new Scheduler.ScheduledCommand() {
       @Override
       public void execute() {
-        DeferredCommand.addCommand(new Command() {
+        Scheduler.get().scheduleDeferred(new Scheduler.ScheduledCommand() {
           @Override
           public void execute() {
             // Ensure all events fired as expected.

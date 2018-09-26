@@ -50,7 +50,7 @@ public class LayoutPanelTest extends WidgetTestBase {
 
     delayTestFinish(5000);
     // Fully qualified to avoid the deprecation warning in the import section
-    com.google.gwt.user.client.DeferredCommand.addCommand(new Command() {
+    Scheduler.get().scheduleDeferred(new Scheduler.ScheduledCommand() {
       @Override
       public void execute() {
         p.animate(100, new AnimationCallback() {
@@ -86,7 +86,7 @@ public class LayoutPanelTest extends WidgetTestBase {
 
     delayTestFinish(2000);
     // Fully qualified to avoid the deprecation warning in the import section
-    com.google.gwt.user.client.DeferredCommand.addCommand(new Command() {
+    Scheduler.get().scheduleDeferred(new Scheduler.ScheduledCommand() {
       @Override
       public void execute() {
         int offsetWidth = lp.getOffsetWidth();

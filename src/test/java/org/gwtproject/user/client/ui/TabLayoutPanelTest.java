@@ -15,6 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
+import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.dom.client.Style.Unit;
 import org.gwtproject.event.logical.shared.BeforeSelectionEvent;
 import org.gwtproject.event.logical.shared.BeforeSelectionHandler;
@@ -24,7 +25,6 @@ import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.user.client.Command;
-import com.google.gwt.user.client.DeferredCommand;
 import org.gwtproject.timer.client.Timer;
 
 import java.util.ArrayList;
@@ -95,14 +95,14 @@ public class TabLayoutPanelTest extends GWTTestCase {
     p.add(bar, new Label("bar"));
 
     delayTestFinish(2000);
-    DeferredCommand.addCommand(new Command() {
+    Scheduler.get().scheduleDeferred(new Scheduler.ScheduledCommand() {
       @Override
       public void execute() {
         assertEquals(128, foo.getOffsetWidth());
         assertEquals(128 - 32, foo.getOffsetHeight());
 
         p.selectTab(1);
-        DeferredCommand.addCommand(new Command() {
+        Scheduler.get().scheduleDeferred(new Scheduler.ScheduledCommand() {
           @Override
           public void execute() {
             assertEquals(128, bar.getOffsetWidth());
@@ -137,11 +137,11 @@ public class TabLayoutPanelTest extends GWTTestCase {
     p.add(inner, new Label("bar"));
 
     delayTestFinish(2000);
-    DeferredCommand.addCommand(new Command() {
+    Scheduler.get().scheduleDeferred(new Scheduler.ScheduledCommand() {
       @Override
       public void execute() {
         p.selectTab(1);
-        DeferredCommand.addCommand(new Command() {
+        Scheduler.get().scheduleDeferred(new Scheduler.ScheduledCommand() {
           @Override
           public void execute() {
             // Assert that the 'bar' label is of non-zero size on both axes.

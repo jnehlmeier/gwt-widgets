@@ -15,12 +15,12 @@
  */
 package org.gwtproject.user.client.ui;
 
+import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.dom.client.SelectElement;
 import com.google.gwt.i18n.client.HasDirection.Direction;
 import com.google.gwt.i18n.shared.BidiFormatter;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.user.client.Command;
-import com.google.gwt.user.client.DeferredCommand;
 
 /**
  * Tests {@link ListBox}. Needs many, many more tests.
@@ -59,7 +59,7 @@ public class ListBoxTest extends GWTTestCase {
     UIObjectTest.assertDebugId("myList", list.getElement());
 
     delayTestFinish(5000);
-    DeferredCommand.addCommand(new Command() {
+    Scheduler.get().scheduleDeferred(new Scheduler.ScheduledCommand() {
       @Override
       public void execute() {
         UIObjectTest.assertDebugIdContents("myList-item0", "option0");

@@ -59,7 +59,7 @@ public class UIObjectTest extends GWTTestCase {
    * method is useful to test debug IDs of private, inaccessible members of a
    * Widget. Note that this method requires that the Widget is added to the
    * {@link RootPanel} and should be called from a
-   * {@link com.google.gwt.user.client.DeferredCommand} to give the browser
+   * {@link org.gwtproject.core.client.Scheduler.ScheduledCommand} to give the browser
    * enough time to register the ID.
    * 
    * @param debugID the debug ID of the element

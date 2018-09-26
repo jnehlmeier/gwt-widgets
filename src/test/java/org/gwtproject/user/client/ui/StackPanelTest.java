@@ -15,10 +15,10 @@
  */
 package org.gwtproject.user.client.ui;
 
+import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.user.client.Command;
 import org.gwtproject.user.client.DOM;
-import com.google.gwt.user.client.DeferredCommand;
 
 /**
  * Test cases for {@link StackPanel}.
@@ -79,7 +79,7 @@ public class StackPanelTest extends PanelTestBase<StackPanel> {
     delayTestFinish(5000);
 
     // Check the header IDs
-    DeferredCommand.addCommand(new Command() {
+    Scheduler.get().scheduleDeferred(new Scheduler.ScheduledCommand() {
       @Override
       public void execute() {
         UIObjectTest.assertDebugIdContents("myStack-text0", "header a");
