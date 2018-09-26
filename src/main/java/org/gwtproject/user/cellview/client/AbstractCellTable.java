@@ -20,7 +20,6 @@ import org.gwtproject.cell.client.Cell.Context;
 import org.gwtproject.cell.client.FieldUpdater;
 import org.gwtproject.cell.client.HasCell;
 import org.gwtproject.cell.client.ValueUpdater;
-import org.gwtproject.core.client.GWT;
 import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.dom.builder.shared.HtmlTableSectionBuilder;
 import org.gwtproject.dom.builder.shared.TableSectionBuilder;
@@ -636,40 +635,6 @@ public abstract class AbstractCellTable<T> extends AbstractHasData<T> {
                                       SafeHtml html) {
       section.setInnerSafeHtml(html);
     }
-  }
-
-  /**
-   * Implementation of {@link CellTable} used by Firefox.
-   */
-  @SuppressWarnings("unused")
-  private static class ImplMozilla extends Impl {
-    /**
-     * Firefox 3.6 and earlier convert td elements to divs if the tbody is
-     * removed from the table element.
-     */
-    @Override
-    protected void detachSectionElement(TableSectionElement section) {
-      if (isGecko192OrBefore()) {
-        return;
-      }
-      super.detachSectionElement(section);
-    }
-
-    @Override
-    protected void reattachSectionElement(Element parent, TableSectionElement section,
-                                          Element nextSection) {
-      if (isGecko192OrBefore()) {
-        return;
-      }
-      super.reattachSectionElement(parent, section, nextSection);
-    }
-
-    /**
-     * Return true if using Gecko 1.9.2 (Firefox 3.6) or earlier.
-     */
-    private native boolean isGecko192OrBefore() /*-{
-      return @org.gwtproject.dom.client.DOMImplMozilla::isGecko192OrBefore()();
-    }-*/;
   }
 
   /**
@@ -2444,7 +2409,7 @@ public abstract class AbstractCellTable<T> extends AbstractHasData<T> {
    */
   private void init() {
     if (TABLE_IMPL == null) {
-      TABLE_IMPL = GWT.create(Impl.class);
+      TABLE_IMPL = new Impl();
     }
     if (template == null) {
       template = new AbstractCellTable_TemplateImpl();

@@ -39,12 +39,4 @@
     </any>
   </replace-with>
 
-  <!-- Mozilla-specific CellTable implementation. -->
-  <replace-with class="org.gwtproject.user.cellview.client.AbstractCellTable.ImplMozilla">
-    <when-type-is class="org.gwtproject.user.cellview.client.AbstractCellTable.Impl"/>
-    <any>
-      <when-property-is name="user.agent" value="gecko1_8"/>
-    </any>
-  </replace-with>
-
 </module>
