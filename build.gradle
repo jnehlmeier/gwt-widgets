@@ -14,6 +14,8 @@ repositories {
 }
 
 sourceSets.main.java.srcDir 'src/tmp/java'
+sourceSets.main.java.srcDir 'src-generated/main/java'
+sourceSets.test.java.srcDir 'src-generated/test/java'
 
 dependencies {
     annotationProcessor 'org.gwtproject.safehtml:gwt-safehtml-template-processor:1.0-SNAPSHOT'
