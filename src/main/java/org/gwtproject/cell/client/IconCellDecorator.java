@@ -105,7 +105,7 @@ public class IconCellDecorator<C> implements org.gwtproject.cell.client.Cell<C> 
   public IconCellDecorator(ImageResource icon, org.gwtproject.cell.client.Cell<C> cell, VerticalAlignmentConstant valign,
                            int spacing) {
     if (template == null) {
-      template = GWT.create(Template.class);
+      template = new IconCellDecorator_TemplateImpl();
     }
     this.cell = cell;
     this.iconHtml = getImageHtml(icon, valign, false);

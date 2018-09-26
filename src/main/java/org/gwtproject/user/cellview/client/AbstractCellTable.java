@@ -2447,7 +2447,7 @@ public abstract class AbstractCellTable<T> extends AbstractHasData<T> {
       TABLE_IMPL = GWT.create(Impl.class);
     }
     if (template == null) {
-      template = GWT.create(Template.class);
+      template = new AbstractCellTable_TemplateImpl();
     }
     // Set the cell table style
     setStyleName(style.widget());

@@ -1001,7 +1001,7 @@ public class CellBrowser extends AbstractCellTree implements ProvidesResize, Req
   protected <T> CellBrowser(Builder<T> builder) {
     super(builder.viewModel);
     if (template == null) {
-      template = GWT.create(Template.class);
+      template = new CellBrowser_TemplateImpl();
     }
     Resources resources = builder.resources();
     this.style = resources.cellBrowserStyle();

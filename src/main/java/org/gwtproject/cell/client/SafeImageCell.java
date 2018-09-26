@@ -47,7 +47,7 @@ public class SafeImageCell extends org.gwtproject.cell.client.AbstractCell<SafeU
    */
   public SafeImageCell() {
     if (template == null) {
-      template = GWT.create(Template.class);
+      template = new SafeImageCell_TemplateImpl();
     }
   }
 

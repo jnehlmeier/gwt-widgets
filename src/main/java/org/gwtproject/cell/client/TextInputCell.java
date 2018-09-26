@@ -135,7 +135,7 @@ public class TextInputCell extends
   public TextInputCell() {
     super(BrowserEvents.CHANGE, BrowserEvents.KEYUP);
     if (template == null) {
-      template = GWT.create(Template.class);
+      template = new TextInputCell_TemplateImpl();
     }
   }
 

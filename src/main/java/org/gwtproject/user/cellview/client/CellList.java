@@ -142,7 +142,7 @@ public class CellList<T> extends AbstractHasData<T> {
 
   private static Resources DEFAULT_RESOURCES;
 
-  private static final Template TEMPLATE = GWT.create(Template.class);
+  private static final Template TEMPLATE = new CellList_TemplateImpl();
 
   private static Resources getDefaultResources() {
     if (DEFAULT_RESOURCES == null) {

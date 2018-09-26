@@ -209,7 +209,7 @@ public class FormPanel extends SimplePanel implements FormPanelImplHost {
   }
 
   interface IFrameTemplate extends SafeHtmlTemplates {
-    static final IFrameTemplate INSTANCE = GWT.create(IFrameTemplate.class);
+    static final IFrameTemplate INSTANCE = new FormPanel_IFrameTemplateImpl();
 
     @Template("<iframe src=\"about:blank\" name='{0}' tabindex='-1' "
         + "style='position:absolute;width:0;height:0;border:0'>")

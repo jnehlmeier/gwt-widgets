@@ -697,7 +697,7 @@ class CellTreeNodeView<T> extends UIObject {
   private static final SafeHtml LEAF_IMAGE = SafeHtmlUtils
       .fromSafeConstant("<div style='position:absolute;display:none;'></div>");
 
-  private static final Template template = GWT.create(Template.class);
+  private static final Template template = new CellTreeNodeView_TemplateImpl();
 
   /**
    * The temporary element used to render child items.

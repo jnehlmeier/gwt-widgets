@@ -171,7 +171,7 @@ public class ImageLoadingCell extends org.gwtproject.cell.client.AbstractCell<St
   public ImageLoadingCell(Renderers renderers) {
     super(BrowserEvents.LOAD, BrowserEvents.ERROR);
     if (template == null) {
-      template = GWT.create(Template.class);
+      template = new ImageLoadingCell_TemplateImpl();
     }
     this.errorRenderer = renderers.getErrorRenderer();
     this.imageRenderer = renderers.getImageRenderer();

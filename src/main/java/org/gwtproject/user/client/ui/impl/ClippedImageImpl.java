@@ -103,7 +103,7 @@ public class ClippedImageImpl {
   private DraggableTemplate getDraggableTemplate() {
     // no need to synchronize, JavaScript in the browser is single-threaded
     if (draggableTemplate == null) {
-      draggableTemplate = GWT.create(DraggableTemplate.class);
+      draggableTemplate = new ClippedImageImpl_DraggableTemplateImpl();
     }
     return draggableTemplate;
   }
@@ -111,7 +111,7 @@ public class ClippedImageImpl {
   private Template getTemplate() {
     // no need to synchronize, JavaScript in the browser is single-threaded
     if (template == null) {
-      template = GWT.create(Template.class);
+      template = new ClippedImageImpl_TemplateImpl();
     }
     return template;
   }

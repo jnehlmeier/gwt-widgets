@@ -33,7 +33,7 @@ public class ImageResourceRenderer extends AbstractSafeHtmlRenderer<ImageResourc
     SafeHtml image(SafeUri imageUri, int width, int height);
   }
 
-  private static final Template TEMPLATE = GWT.create(Template.class);
+  private static final Template TEMPLATE = new ImageResourceRenderer_TemplateImpl();
 
   @Override
   public SafeHtml render(ImageResource image) {

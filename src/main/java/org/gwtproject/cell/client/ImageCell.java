@@ -47,7 +47,7 @@ public class ImageCell extends AbstractCell<String> {
    */
   public ImageCell() {
     if (template == null) {
-      template = GWT.create(Template.class);
+      template = new ImageCell_TemplateImpl();
     }
   }
 

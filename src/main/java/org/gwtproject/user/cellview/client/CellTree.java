@@ -619,7 +619,7 @@ public class CellTree extends AbstractCellTree implements HasAnimation,
     super(viewModel);
     this.defaultNodeSize = defaultNodeSize;
     if (template == null) {
-      template = GWT.create(Template.class);
+      template = new CellTree_TemplateImpl();
     }
     this.style = resources.cellTreeStyle();
     this.style.ensureInjected();

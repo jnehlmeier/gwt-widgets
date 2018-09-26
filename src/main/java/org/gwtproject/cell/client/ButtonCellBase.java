@@ -231,7 +231,7 @@ public class ButtonCellBase<C> extends org.gwtproject.cell.client.AbstractCell<C
       this.style = resources.buttonCellBaseStyle();
       this.style.ensureInjected();
       if (template == null) {
-        template = GWT.create(Template.class);
+        template = new ButtonCellBase_DefaultAppearance_TemplateImpl();
       }
     }
 

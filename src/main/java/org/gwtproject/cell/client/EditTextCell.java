@@ -154,7 +154,7 @@ public class EditTextCell extends
   public EditTextCell(SafeHtmlRenderer<String> renderer) {
     super(CLICK, KEYUP, KEYDOWN, BLUR);
     if (template == null) {
-      template = GWT.create(Template.class);
+      template = new EditTextCell_TemplateImpl();
     }
     if (renderer == null) {
       throw new IllegalArgumentException("renderer == null");

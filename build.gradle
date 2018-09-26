@@ -38,6 +38,8 @@ dependencies {
 }
 
 compileJava.options.encoding = 'UTF-8'
+compileJava.options.annotationProcessorGeneratedSourcesDirectory = file('src-generated/main/java')
+compileTestJava.options.annotationProcessorGeneratedSourcesDirectory = file('src-generated/test/java')
 
 jar {
     from sourceSets.main.allJava

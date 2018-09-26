@@ -55,7 +55,7 @@ public class SelectionCell extends org.gwtproject.cell.client.AbstractInputCell<
   public SelectionCell(List<String> options) {
     super(BrowserEvents.CHANGE);
     if (template == null) {
-      template = GWT.create(Template.class);
+      template = new SelectionCell_TemplateImpl();
     }
     this.options = new ArrayList<String>(options);
     int index = 0;
