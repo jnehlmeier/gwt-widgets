@@ -16,7 +16,6 @@
 
 package org.gwtproject.user.datepicker.client;
 
-import org.gwtproject.core.client.GWT;
 import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.editor.client.IsEditor;
@@ -256,7 +255,7 @@ public class DateBox extends Composite implements HasEnabled, HasValue<Date>,
    * Default style name.
    */
   public static final String DEFAULT_STYLENAME = "gwt-DateBox";
-  private static final DefaultFormat DEFAULT_FORMAT = GWT.create(DefaultFormat.class);
+  private static final DefaultFormat DEFAULT_FORMAT = new DefaultFormat();
   private final PopupPanel popup;
   private final TextBox box = new TextBox();
   private final DatePicker picker;
