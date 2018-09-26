@@ -18,8 +18,6 @@ package org.gwtproject.user.client;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.NativeEvent;
 import org.gwtproject.event.dom.client.HasNativeEvent;
-import org.gwtproject.event.legacy.shared.EventHandler;
-import org.gwtproject.event.legacy.shared.GwtEvent;
 import org.gwtproject.event.shared.HandlerManager;
 import org.gwtproject.event.shared.HandlerRegistration;
 
@@ -38,7 +36,7 @@ public class Event extends NativeEvent {
   /**
    * Represents a preview of a native {@link Event}.
    */
-  public static class NativePreviewEvent extends GwtEvent<NativePreviewHandler>
+  public static class NativePreviewEvent extends org.gwtproject.event.shared.Event<NativePreviewHandler>
       implements HasNativeEvent {
 
     /**
@@ -196,9 +194,10 @@ public class Event extends NativeEvent {
       singleton.isFirstHandler = false;
     }
 
-    @Override
+    // FIXME: not called anymore by HandlerManager
+    //@Override
     protected void revive() {
-      super.revive();
+      //super.revive();
       isCanceled = false;
       isConsumed = false;
       isFirstHandler = true;
@@ -218,7 +217,7 @@ public class Event extends NativeEvent {
   /**
    * Handler interface for {@link NativePreviewEvent} events.
    */
-  public static interface NativePreviewHandler extends EventHandler {
+  public static interface NativePreviewHandler {
     /**
      * Called when {@link NativePreviewEvent} is fired.
      * 

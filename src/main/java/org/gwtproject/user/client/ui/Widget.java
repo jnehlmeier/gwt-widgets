@@ -21,7 +21,6 @@ import org.gwtproject.event.logical.shared.AttachEvent;
 import org.gwtproject.event.logical.shared.AttachEvent.Handler;
 import org.gwtproject.event.logical.shared.HasAttachHandlers;
 import org.gwtproject.event.legacy.shared.EventHandler;
-import org.gwtproject.event.legacy.shared.GwtEvent;
 import org.gwtproject.event.shared.HandlerManager;
 import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.user.client.DOM;
@@ -115,8 +114,8 @@ public class Widget extends UIObject implements EventListener, HasAttachHandlers
    * @param handler the handler
    * @return {@link HandlerRegistration} used to remove the handler
    */
-  public final <H extends EventHandler> HandlerRegistration addHandler(
-      final H handler, GwtEvent.Type<H> type) {
+  public final <H> HandlerRegistration addHandler(
+      final H handler, org.gwtproject.event.shared.Event.Type<H> type) {
     return ensureHandlers().addHandler(type, handler);
   }
 
@@ -124,7 +123,9 @@ public class Widget extends UIObject implements EventListener, HasAttachHandlers
     return this;
   }
 
-  public void fireEvent(GwtEvent<?> event) {
+
+  @Override
+  public void fireEvent(org.gwtproject.event.shared.Event<?> event) {
     if (handlerManager != null) {
       handlerManager.fireEvent(event);
     }
@@ -270,7 +271,7 @@ public class Widget extends UIObject implements EventListener, HasAttachHandlers
    * @param event the event
    * @param target fire the event on the given target
    */
-  protected void delegateEvent(Widget target, GwtEvent<?> event) {
+  protected void delegateEvent(Widget target, org.gwtproject.event.shared.Event<?> event) {
     target.fireEvent(event);
   }
 
@@ -302,7 +303,7 @@ public class Widget extends UIObject implements EventListener, HasAttachHandlers
    * @param type the event type
    * @return the number of registered handlers
    */
-  protected int getHandlerCount(GwtEvent.Type<?> type) {
+  protected int getHandlerCount(org.gwtproject.event.shared.Event.Type<?> type) {
     return handlerManager == null ? 0 : handlerManager.getHandlerCount(type);
   }
 

@@ -16,8 +16,6 @@
 package org.gwtproject.user.cellview.client;
 
 import org.gwtproject.dom.client.TableRowElement;
-import org.gwtproject.event.legacy.shared.EventHandler;
-import org.gwtproject.event.legacy.shared.GwtEvent;
 import org.gwtproject.event.shared.HasHandlers;
 import org.gwtproject.user.client.Event;
 
@@ -26,12 +24,12 @@ import org.gwtproject.user.client.Event;
  * row (e.g. the mouse moves over another row) and cell hover events (e.g.
  * the mouse moves over another cell within the actual row).
  */
-public class RowHoverEvent extends GwtEvent<RowHoverEvent.Handler> {
+public class RowHoverEvent extends org.gwtproject.event.shared.Event<RowHoverEvent.Handler> {
 
   /**
    * Handler for {@link RowHoverEvent}.
    */
-  public static interface Handler extends EventHandler {
+  public static interface Handler {
 
     /**
      * Called when {@link RowHoverEvent} is fired.

@@ -18,7 +18,7 @@ package org.gwtproject.user.datepicker.client;
 
 import org.gwtproject.event.logical.shared.ValueChangeEvent;
 import org.gwtproject.event.logical.shared.ValueChangeHandler;
-import org.gwtproject.event.legacy.shared.GwtEvent;
+import org.gwtproject.event.shared.Event;
 import org.gwtproject.event.shared.HandlerManager;
 import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.user.client.ui.DateValueChangeTester;
@@ -44,7 +44,7 @@ public class DateChangeEventTest extends TestCase {
     }
 
     @Override
-    public void fireEvent(GwtEvent<?> event) {
+    public void fireEvent(Event<?> event) {
       handlers.fireEvent(event);
     }
 

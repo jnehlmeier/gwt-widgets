@@ -17,7 +17,6 @@ package org.gwtproject.view.client;
 
 import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.core.client.Scheduler.ScheduledCommand;
-import org.gwtproject.event.legacy.shared.GwtEvent;
 import org.gwtproject.event.shared.Event;
 import org.gwtproject.event.shared.HandlerManager;
 import org.gwtproject.event.shared.HandlerRegistration;

@@ -21,8 +21,6 @@ import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.FormElement;
-import org.gwtproject.event.legacy.shared.EventHandler;
-import org.gwtproject.event.legacy.shared.GwtEvent;
 import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.safehtml.client.SafeHtmlTemplates;
 import org.gwtproject.safehtml.shared.SafeHtml;
@@ -66,7 +64,7 @@ public class FormPanel extends SimplePanel implements FormPanelImplHost {
   /**
    * Fired when a form has been submitted successfully.
    */
-  public static class SubmitCompleteEvent extends GwtEvent<SubmitCompleteHandler> {
+  public static class SubmitCompleteEvent extends org.gwtproject.event.shared.Event<SubmitCompleteHandler> {
     /**
      * The event type.
      */
@@ -121,7 +119,7 @@ public class FormPanel extends SimplePanel implements FormPanelImplHost {
   /**
    * Handler for {@link SubmitCompleteEvent} events.
    */
-  public interface SubmitCompleteHandler extends EventHandler {
+  public interface SubmitCompleteHandler {
     /**
      * Fired when a form has been submitted successfully.
      *
@@ -133,7 +131,7 @@ public class FormPanel extends SimplePanel implements FormPanelImplHost {
   /**
    * Fired when the form is submitted.
    */
-  public static class SubmitEvent extends GwtEvent<SubmitHandler> {
+  public static class SubmitEvent extends org.gwtproject.event.shared.Event<SubmitHandler> {
     /**
      * The event type.
      */
@@ -195,7 +193,7 @@ public class FormPanel extends SimplePanel implements FormPanelImplHost {
   /**
    * Handler for {@link SubmitEvent} events.
    */
-  public interface SubmitHandler extends EventHandler {
+  public interface SubmitHandler {
     /**
      * Fired when the form is submitted.
      *

@@ -20,8 +20,7 @@ import org.gwtproject.core.client.JsArrayInteger;
 import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import org.gwtproject.dom.client.Element;
-import org.gwtproject.event.legacy.shared.EventHandler;
-import org.gwtproject.event.legacy.shared.GwtEvent;
+import org.gwtproject.event.shared.Event;
 import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.user.cellview.client.LoadingStateChangeEvent.LoadingState;
@@ -95,7 +94,7 @@ class HasDataPresenter<T> implements HasData<T>, HasKeyProvider<T>, HasKeyboardP
      * @param handler the handler to add
      * @param type the event type
      */
-    <H extends EventHandler> HandlerRegistration addHandler(final H handler, GwtEvent.Type<H> type);
+    <H> HandlerRegistration addHandler(final H handler, Event.Type<H> type);
 
     /**
      * Replace all children with the specified values.
@@ -506,7 +505,7 @@ class HasDataPresenter<T> implements HasData<T>, HasKeyProvider<T>, HasKeyboardP
    * @throws UnsupportedOperationException
    */
   @Override
-  public void fireEvent(GwtEvent<?> event) {
+  public void fireEvent(Event<?> event) {
     // HasData should fire their own events.
     throw new UnsupportedOperationException();
   }

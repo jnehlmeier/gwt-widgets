@@ -15,8 +15,7 @@
  */
 package org.gwtproject.user.cellview.client;
 
-import org.gwtproject.event.legacy.shared.EventHandler;
-import org.gwtproject.event.legacy.shared.GwtEvent;
+import org.gwtproject.event.shared.Event;
 import org.gwtproject.event.shared.HasHandlers;
 import org.gwtproject.view.client.AsyncDataProvider;
 import org.gwtproject.view.client.HasData;
@@ -32,12 +31,12 @@ import java.util.Map;
 /**
  * Represents a column sort event.
  */
-public class ColumnSortEvent extends GwtEvent<ColumnSortEvent.Handler> {
+public class ColumnSortEvent extends Event<ColumnSortEvent.Handler> {
 
   /**
    * Handler for {@link ColumnSortEvent}.
    */
-  public static interface Handler extends EventHandler {
+  public static interface Handler {
 
     /**
      * Called when {@link ColumnSortEvent} is fired.

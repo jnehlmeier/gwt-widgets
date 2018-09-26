@@ -15,13 +15,12 @@
  */
 package org.gwtproject.view.client;
 
-import org.gwtproject.event.legacy.shared.EventHandler;
-import org.gwtproject.event.legacy.shared.GwtEvent;
+import org.gwtproject.event.shared.Event;
 
 /**
  * Represents a range change event.
  */
-public class RangeChangeEvent extends GwtEvent<RangeChangeEvent.Handler> {
+public class RangeChangeEvent extends Event<RangeChangeEvent.Handler> {
 
   /**
    * Handler type.
@@ -31,7 +30,7 @@ public class RangeChangeEvent extends GwtEvent<RangeChangeEvent.Handler> {
   /**
    * Handler interface for {@link RangeChangeEvent} events.
    */
-  public static interface Handler extends EventHandler {
+  public static interface Handler {
 
     /**
      * Called when a {@link RangeChangeEvent} is fired.

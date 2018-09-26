@@ -34,9 +34,6 @@ import org.gwtproject.dom.client.Style.Display;
 import org.gwtproject.dom.client.Style.Overflow;
 import org.gwtproject.event.logical.shared.CloseEvent;
 import org.gwtproject.event.logical.shared.OpenEvent;
-import org.gwtproject.event.legacy.shared.EventHandler;
-import org.gwtproject.event.legacy.shared.GwtEvent;
-import org.gwtproject.event.legacy.shared.GwtEvent.Type;
 import org.gwtproject.event.shared.HandlerManager;
 import org.gwtproject.event.shared.HandlerRegistration;
 import com.google.gwt.i18n.client.LocaleInfo;
@@ -110,7 +107,7 @@ class CellTreeNodeView<T> extends UIObject {
       }
 
       @Override
-      public <H extends EventHandler> HandlerRegistration addHandler(H handler, Type<H> type) {
+      public <H> HandlerRegistration addHandler(H handler, Event.Type<H> type) {
         return handlerManger.addHandler(type, handler);
       }
 

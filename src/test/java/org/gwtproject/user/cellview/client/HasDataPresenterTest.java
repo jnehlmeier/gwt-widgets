@@ -18,9 +18,7 @@ package org.gwtproject.user.cellview.client;
 import org.gwtproject.core.client.JavaScriptObject;
 import org.gwtproject.core.client.JsArrayInteger;
 import org.gwtproject.core.client.Scheduler;
-import org.gwtproject.event.legacy.shared.EventHandler;
-import org.gwtproject.event.legacy.shared.GwtEvent;
-import org.gwtproject.event.shared.GwtEvent.Type;
+import org.gwtproject.event.shared.Event;
 import org.gwtproject.event.shared.HandlerRegistration;
 import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.user.cellview.client.HasDataPresenter;
@@ -121,7 +119,7 @@ public class HasDataPresenterTest extends GWTTestCase {
     private LoadingState loadingState;
 
     @Override
-    public <H extends EventHandler> HandlerRegistration addHandler(H handler, Type<H> type) {
+    public <H> HandlerRegistration addHandler(H handler, Event.Type<H> type) {
       throw new UnsupportedOperationException();
     }
 
@@ -289,7 +287,7 @@ public class HasDataPresenterTest extends GWTTestCase {
   public void testBadViewSelectionModel() {
     SelectionModel<String> badModel = new SelectionModel<String>() {
       @Override
-      public void fireEvent(GwtEvent<?> event) {
+      public void fireEvent(Event<?> event) {
       }
 
       @Override

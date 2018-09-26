@@ -15,8 +15,7 @@
  */
 package org.gwtproject.view.client;
 
-import org.gwtproject.event.legacy.shared.GwtEvent;
-import org.gwtproject.event.shared.GwtEvent.Type;
+import org.gwtproject.event.shared.Event;
 import org.gwtproject.event.shared.HandlerManager;
 import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.view.client.CellPreviewEvent.Handler;
@@ -121,7 +120,7 @@ public class MockHasData<T> implements HasData<T> {
   }
 
   @Override
-  public void fireEvent(GwtEvent<?> event) {
+  public void fireEvent(Event<?> event) {
     handlerManager.fireEvent(event);
   }
 
@@ -146,7 +145,7 @@ public class MockHasData<T> implements HasData<T> {
    * @param type the event type
    * @return the number of registered handlers
    */
-  public int getHandlerCount(Type<?> type) {
+  public int getHandlerCount(Event.Type<?> type) {
     return handlerManager.getHandlerCount(type);
   }
 

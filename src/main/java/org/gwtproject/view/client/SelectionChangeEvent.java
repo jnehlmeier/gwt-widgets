@@ -15,8 +15,7 @@
  */
 package org.gwtproject.view.client;
 
-import org.gwtproject.event.legacy.shared.EventHandler;
-import org.gwtproject.event.legacy.shared.GwtEvent;
+import org.gwtproject.event.shared.Event;
 import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.event.shared.HasHandlers;
 
@@ -24,12 +23,12 @@ import org.gwtproject.event.shared.HasHandlers;
  * Represents a selection change event.
  */
 public class SelectionChangeEvent extends
-    GwtEvent<SelectionChangeEvent.Handler> {
+    Event<SelectionChangeEvent.Handler> {
 
   /**
    * Handler interface for {@link SelectionChangeEvent} events.
    */
-  public static interface Handler extends EventHandler {
+  public static interface Handler {
 
     /**
      * Called when a {@link SelectionChangeEvent} is fired.

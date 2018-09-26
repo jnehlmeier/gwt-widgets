@@ -15,19 +15,18 @@
  */
 package org.gwtproject.user.cellview.client;
 
-import org.gwtproject.event.legacy.shared.EventHandler;
-import org.gwtproject.event.legacy.shared.GwtEvent;
+
+import org.gwtproject.event.shared.Event;
 
 /**
  * An event used to indicate that the data loading state has changed.
  */
-public class LoadingStateChangeEvent extends
-    GwtEvent<LoadingStateChangeEvent.Handler> {
+public class LoadingStateChangeEvent extends Event<LoadingStateChangeEvent.Handler> {
 
   /**
    * Implemented by handlers of {@link LoadingStateChangeEvent}.
    */
-  public interface Handler extends EventHandler {
+  public interface Handler {
     /**
      * Called when a {@link LoadingStateChangeEvent} is fired.
      * 

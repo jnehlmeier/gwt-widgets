@@ -15,23 +15,23 @@
  */
 package org.gwtproject.view.client;
 
-import org.gwtproject.event.legacy.shared.EventHandler;
-import org.gwtproject.event.legacy.shared.GwtEvent;
+
+import org.gwtproject.event.shared.Event;
 
 /**
  * Represents a row count change event.
  */
-public class RowCountChangeEvent extends GwtEvent<RowCountChangeEvent.Handler> {
+public class RowCountChangeEvent extends Event<RowCountChangeEvent.Handler> {
 
   /**
    * Handler type.
    */
-  private static Type<Handler> TYPE;
+  private static Event.Type<Handler> TYPE;
 
   /**
    * Handler interface for {@link RowCountChangeEvent} events.
    */
-  public static interface Handler extends EventHandler {
+  public static interface Handler {
 
     /**
      * Called when a {@link RowCountChangeEvent} is fired.

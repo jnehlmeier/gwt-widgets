@@ -17,22 +17,21 @@ package org.gwtproject.view.client;
 
 import org.gwtproject.cell.client.Cell.Context;
 import org.gwtproject.dom.client.NativeEvent;
-import org.gwtproject.event.legacy.shared.EventHandler;
-import org.gwtproject.event.legacy.shared.GwtEvent;
+import org.gwtproject.event.shared.Event;
 
 /**
  * Allows the previewing of events before they are fired to Cells.
  * 
  * @param <T> the data type of the {@link org.gwtproject.view.client.HasData} source
  */
-public class CellPreviewEvent<T> extends GwtEvent<CellPreviewEvent.Handler<T>> {
+public class CellPreviewEvent<T> extends Event<CellPreviewEvent.Handler<T>> {
 
   /**
    * Handler for {@link CellPreviewEvent}.
    * 
    * @param <T> the data type of the {@link org.gwtproject.view.client.HasData}
    */
-  public static interface Handler<T> extends EventHandler {
+  public static interface Handler<T> {
 
     /**
      * Called when {@link CellPreviewEvent} is fired.

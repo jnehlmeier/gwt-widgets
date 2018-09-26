@@ -26,9 +26,7 @@ import org.gwtproject.dom.client.Style.Display;
 import org.gwtproject.event.dom.client.KeyCodes;
 import org.gwtproject.event.logical.shared.ValueChangeEvent;
 import org.gwtproject.event.logical.shared.ValueChangeHandler;
-import org.gwtproject.event.legacy.shared.EventHandler;
-import org.gwtproject.event.legacy.shared.GwtEvent;
-import org.gwtproject.event.legacy.shared.GwtEvent.Type;
+import org.gwtproject.event.shared.Event.Type;
 import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
@@ -218,14 +216,14 @@ public abstract class AbstractHasData<T> extends Composite implements HasData<T>
   /**
    * Event fired when one or more existing rows are re-rendered.
    */
-  public static class RedrawEvent extends GwtEvent<RedrawEvent.Handler> {
+  public static class RedrawEvent extends org.gwtproject.event.shared.Event<RedrawEvent.Handler> {
 
     private static final Type<Handler> TYPE = new Type<Handler>();
 
     /**
      * Implemented by objects that handle {@link RedrawEvent}.
      */
-    public interface Handler extends EventHandler {
+    public interface Handler {
       /**
        * Performs implementation-specific work when the cell list re-renders one or more existing
        * rows.
@@ -257,7 +255,7 @@ public abstract class AbstractHasData<T> extends Composite implements HasData<T>
     }
 
     @Override
-    public <H extends EventHandler> HandlerRegistration addHandler(H handler, Type<H> type) {
+    public <H> HandlerRegistration addHandler(H handler, Type<H> type) {
       return hasData.addHandler(handler, type);
     }
 
