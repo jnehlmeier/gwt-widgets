@@ -97,7 +97,7 @@ public class ImageLoadingCell extends org.gwtproject.cell.client.AbstractCell<St
         };
       }
       if (LOADING_RENDERER == null) {
-        Resources resources = GWT.create(Resources.class);
+        Resources resources = com.google.gwt.core.client.GWT.create(Resources.class);
         ImageResource res = resources.loading();
         final SafeHtml loadingHtml = AbstractImagePrototype.create(res).getSafeHtml();
         LOADING_RENDERER = new AbstractSafeHtmlRenderer<String>() {

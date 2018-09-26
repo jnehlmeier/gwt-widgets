@@ -20,7 +20,7 @@ import org.gwtproject.user.cellview.client.CellBasedWidgetImpl;
 import org.gwtproject.cell.client.Cell;
 import org.gwtproject.cell.client.Cell.Context;
 import org.gwtproject.cell.client.ValueUpdater;
-import org.gwtproject.core.client.GWT;
+import com.google.gwt.core.client.GWT;
 import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.dom.client.BrowserEvents;
 import org.gwtproject.dom.client.DivElement;

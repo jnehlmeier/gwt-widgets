@@ -178,7 +178,7 @@ public final class VerticalSplitPanel extends SplitPanel {
   private String lastSplitPosition;
 
   public VerticalSplitPanel() {
-    this(GWT.<Resources> create(Resources.class));
+    this(com.google.gwt.core.client.GWT.<Resources> create(Resources.class));
   }
 
   /**

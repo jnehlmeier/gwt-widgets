@@ -15,7 +15,6 @@
  */
 package org.gwtproject.user.client.ui;
 
-import org.gwtproject.core.client.GWT;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.Node;
 import com.google.gwt.junit.client.GWTTestCase;
@@ -413,7 +412,7 @@ public class HTMLPanelTest extends GWTTestCase {
    * Tests SafeHtml constructor.
    */
   public void testSafeHtml() {
-    TestTemplates templates = GWT.create(TestTemplates.class);
+    TestTemplates templates = new HTMLPanelTest_TestTemplatesImpl();
     SafeHtml table = templates.tableTemplate("Hello");
 
     HTMLPanel hp = new HTMLPanel(table);

@@ -110,7 +110,7 @@ public class CustomScrollPanel extends ScrollPanel {
    */
   private static Resources getDefaultResources() {
     if (DEFAULT_RESOURCES == null) {
-      DEFAULT_RESOURCES = GWT.create(Resources.class);
+      DEFAULT_RESOURCES = com.google.gwt.core.client.GWT.create(Resources.class);
     }
     return DEFAULT_RESOURCES;
   }

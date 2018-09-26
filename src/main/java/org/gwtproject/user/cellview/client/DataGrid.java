@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.cellview.client;
 
-import org.gwtproject.core.client.GWT;
+import com.google.gwt.core.client.GWT;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.Style.Display;

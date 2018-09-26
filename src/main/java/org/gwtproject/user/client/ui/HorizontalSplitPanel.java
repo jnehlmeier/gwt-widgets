@@ -231,7 +231,7 @@ public final class HorizontalSplitPanel extends SplitPanel {
   private int initialLeftWidth;
 
   public HorizontalSplitPanel() {
-    this(GWT.<Resources> create(Resources.class));
+    this(com.google.gwt.core.client.GWT.<Resources> create(Resources.class));
   }
 
   /**
