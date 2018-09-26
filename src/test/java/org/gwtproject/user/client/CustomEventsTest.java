@@ -16,7 +16,7 @@
 package org.gwtproject.user.client;
 
 import org.gwtproject.core.client.JavaScriptObject;
-import org.gwtproject.core.shared.GWT;
+import org.gwtproject.core.client.GWT;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.NativeEvent;
 import org.gwtproject.event.dom.client.DomEvent;

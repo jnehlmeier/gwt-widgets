@@ -10,7 +10,17 @@ import elemental2.dom.DomGlobal.SetTimeoutCallbackFn;
 import jsinterop.annotations.JsMethod;
 
 public final class GWT {
+
+  public interface UncaughtExceptionHandler {
+    void onUncaughtException(Throwable e);
+  }
+
   public GWT() {
+  }
+
+
+  public static void setUncaughtExceptionHandler(UncaughtExceptionHandler handler) {
+
   }
 
   /** @deprecated */
