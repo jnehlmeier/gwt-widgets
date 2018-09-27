@@ -19,10 +19,4 @@
 <module>
   <inherits name="org.gwtproject.core.Core"/>
   <inherits name="com.google.gwt.user.UserAgent"/>
-
-  <!-- Fall back to this rule if the browser isn't IE -->
-  <replace-with class="org.gwtproject.user.client.ui.HTMLTable.HTMLTableStandardImpl">
-    <when-type-is class="org.gwtproject.user.client.ui.HTMLTable.HTMLTableImpl"/>
-  </replace-with>
-
 </module>

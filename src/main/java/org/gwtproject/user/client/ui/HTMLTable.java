@@ -15,7 +15,6 @@
  */
 package org.gwtproject.user.client.ui;
 
-import org.gwtproject.core.client.GWT;
 import org.gwtproject.core.client.JsArray;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
@@ -65,33 +64,6 @@ import java.util.NoSuchElementException;
  */
 public abstract class HTMLTable extends Panel implements
     HasAllDragAndDropHandlers, HasClickHandlers, HasDoubleClickHandlers {
-
-  /**
-   * Interface to access {@link HTMLTable}'s DOM.
-   */
-  private interface HTMLTableImpl {
-    JsArray<Element> getRows(Element tbody);
-
-    JsArray<Element> getCells(Element row);
-  }
-
-  /**
-   * Standard implementation for accessing the Table DOM.
-   */
-  @SuppressWarnings("unused") // used due to rebinding
-  private static class HTMLTableStandardImpl implements HTMLTableImpl {
-
-    @Override
-    public native JsArray<Element> getRows(Element tbody) /*-{
-      return tbody.rows;
-    }-*/;
-
-    @Override
-    public native JsArray<Element> getCells(Element row) /*-{
-      return row.cells;
-    }-*/;
-  }
-
 
   /**
    * Return value for {@link HTMLTable#getCellForEvent}.
@@ -408,7 +380,7 @@ public abstract class HTMLTable extends Panel implements
      * @return the element
      */
     private Element getCellElement(Element tbody, int row, int col) {
-      return impl.getCells(impl.getRows(tbody).get(row)).get(col);
+      return getCells(getRows(tbody).get(row)).get(col);
     }
 
     /**
@@ -719,7 +691,7 @@ public abstract class HTMLTable extends Panel implements
     @Deprecated
     protected org.gwtproject.user.client.Element getRow(
         org.gwtproject.user.client.Element tbody, int row) {
-      return DOM.asOld(impl.getRows(tbody).get(row));
+      return DOM.asOld(getRows(tbody).get(row));
     }
 
     /**
@@ -735,8 +707,6 @@ public abstract class HTMLTable extends Panel implements
       elem.setAttribute(attrName, value);
     }
   }
-
-  private static final HTMLTableImpl impl = GWT.create(HTMLTableImpl.class);
 
   /**
    * Table's body.
@@ -1250,8 +1220,8 @@ public abstract class HTMLTable extends Panel implements
    */
   @Deprecated
   protected int getDOMCellCount(org.gwtproject.user.client.Element tableBody, int row) {
-    Element rowElement = impl.getRows(tableBody).get(row);
-    return impl.getCells(rowElement).length();
+    Element rowElement = getRows(tableBody).get(row);
+    return getCells(rowElement).length();
   }
 
   /**
@@ -1283,7 +1253,7 @@ public abstract class HTMLTable extends Panel implements
    */
   @Deprecated
   protected int getDOMRowCount(org.gwtproject.user.client.Element tbody) {
-    return impl.getRows(tbody).length();
+    return getRows(tbody).length();
   }
 
   /**
@@ -1514,12 +1484,20 @@ public abstract class HTMLTable extends Panel implements
   }
 
   void addCells(Element tbody, int row, int num) {
-    Element rowElem = impl.getRows(tbody).get(row);
+    Element rowElem = getRows(tbody).get(row);
     for (int i = 0; i < num; i++) {
       TableCellElement tdElement = Document.get().createTDElement();
       rowElem.appendChild(tdElement);
     }
   }
+
+  private native JsArray<Element> getRows(Element tbody) /*-{
+      return tbody.rows;
+  }-*/;
+
+  private native JsArray<Element> getCells(Element row) /*-{
+      return row.cells;
+  }-*/;
 
   /**
    * Removes any widgets, text, and HTML within the cell. This method assumes
