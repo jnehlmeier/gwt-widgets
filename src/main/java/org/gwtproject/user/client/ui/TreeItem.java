@@ -17,7 +17,6 @@ package org.gwtproject.user.client.ui;
 
 import org.gwtproject.animation.client.Animation;
 import org.gwtproject.aria.client.Roles;
-import org.gwtproject.core.client.GWT;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.Style.Unit;
 import com.google.gwt.i18n.client.LocaleInfo;
@@ -245,7 +244,7 @@ public class TreeItem extends UIObject implements IsTreeItem, HasTreeItems,
    */
   private static Element BASE_BARE_ELEM;
 
-  private static TreeItemImpl impl = GWT.create(TreeItemImpl.class);
+  private static TreeItemImpl impl = new TreeItemImpl();
 
   private ArrayList<TreeItem> children;
   private Element contentElem, childSpanElem, imageHolder;
