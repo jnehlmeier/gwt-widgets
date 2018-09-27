@@ -19,10 +19,4 @@
 <module>
   <inherits name="org.gwtproject.core.Core"/>
   <inherits name="com.google.gwt.user.UserAgent"/>
-
-  <!-- Fall through to this rule is the browser isn't IE -->
-  <replace-with class="org.gwtproject.user.client.ui.impl.TextBoxImpl">
-    <when-type-is class="org.gwtproject.user.client.ui.impl.TextBoxImpl"/>
-  </replace-with>
-
 </module>

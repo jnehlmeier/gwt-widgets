@@ -17,7 +17,6 @@ package org.gwtproject.user.client.ui;
 
 import com.google.gwt.event.dom.client.KeyUpHandler;
 import com.google.gwt.event.shared.GwtEvent;
-import org.gwtproject.core.client.GWT;
 import org.gwtproject.dom.client.Element;
 import com.google.gwt.editor.client.IsEditor;
 import org.gwtproject.editor.ui.client.adapters.ValueBoxEditor;
@@ -83,7 +82,7 @@ public class ValueBoxBase<T> extends FocusWidget implements
     abstract String getTextAlignString();
   }
 
-  private static TextBoxImpl impl = GWT.create(TextBoxImpl.class);
+  private static TextBoxImpl impl = new TextBoxImpl();
   private final AutoDirectionHandler autoDirHandler;
 
   private final Parser<T> parser;
