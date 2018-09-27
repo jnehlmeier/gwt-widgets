@@ -243,7 +243,7 @@ public class FormPanel extends SimplePanel implements FormPanelImplHost {
   public static final String METHOD_POST = "post";
 
   private static int formId = 0;
-  private static FormPanelImpl impl = GWT.create(FormPanelImpl.class);
+  private static FormPanelImpl impl = new FormPanelImpl();
 
   /**
    * Creates a FormPanel that wraps an existing &lt;form&gt; element.

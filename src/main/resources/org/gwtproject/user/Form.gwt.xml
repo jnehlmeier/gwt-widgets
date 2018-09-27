@@ -19,10 +19,4 @@
 <module>
   <inherits name="org.gwtproject.core.Core"/>
   <inherits name="com.google.gwt.user.UserAgent"/>
-
-  <!-- Fall through to this rule for everything but IE -->
-  <replace-with class="org.gwtproject.user.client.ui.impl.FormPanelImpl">
-    <when-type-is class="org.gwtproject.user.client.ui.impl.FormPanelImpl"/>
-  </replace-with>
-
 </module>
