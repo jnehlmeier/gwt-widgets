@@ -20,7 +20,7 @@
  * 
  * <p>
  * To use the functionality in this package, your GWT module should inherit the
- * module <code>com.google.gwt.debug.Debug</code>. The <code>Debug</code>
+ * module <code>org.gwtproject.debug.Debug</code>. The <code>Debug</code>
  * module introduces the client property <code>gwt.enableDebugId</code>,
  * which controls whether or not this debug code is enabled (and therefore
  * included in the final compiled result). It is set to <code>true</code> by
@@ -36,7 +36,7 @@
  *   &lt;inherits name='com.google.gwt.user.User'/>
  *   
  *   &lt;!-- Inheriting 'Debug' on the next line makes the features available. -->
- *   &lt;inherits name='com.google.gwt.debug.Debug'/>
+ *   &lt;inherits name='org.gwtproject.debug.Debug'/>
  *   
  *   &lt;!-- Disable for production by uncommenting the next line -->
  *   &lt;!-- &lt;set-property name="gwt.enableDebugId" value="false"/> -->
@@ -45,4 +45,4 @@
  * &lt;/module>
  * </pre>
  */
-package com.google.gwt.debug.client;
+package org.gwtproject.debug.client;

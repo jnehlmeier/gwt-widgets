@@ -15,9 +15,8 @@
  */
 package org.gwtproject.user.client.ui;
 
-import org.gwtproject.core.client.GWT;
 import org.gwtproject.core.client.JavaScriptObject;
-import com.google.gwt.debug.client.DebugInfo;
+import org.gwtproject.debug.client.DebugInfo;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.Event;
@@ -194,7 +193,8 @@ public abstract class UIObject implements HasVisibility {
 
   static final String SETELEMENT_TWICE_ERROR = "Element may only be set once";
 
-  private static DebugIdImpl debugIdImpl = GWT.create(DebugIdImpl.class);
+  private static DebugIdImpl debugIdImpl =
+      DebugInfo.isDebugIdEnabled() ? new DebugIdImplEnabled() : new DebugIdImpl();
 
   private static final String EMPTY_STYLENAME_MSG = "Style names cannot be empty";
 

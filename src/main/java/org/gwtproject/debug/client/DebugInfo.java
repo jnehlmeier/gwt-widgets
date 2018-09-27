@@ -15,8 +15,6 @@
  */
 package org.gwtproject.debug.client;
 
-import org.gwtproject.core.client.GWT;
-
 /**
  * Provides low-level functionality to support the creation of testing and
  * diagnostic frameworks.
@@ -24,53 +22,14 @@ import org.gwtproject.core.client.GWT;
  * @see org.gwtproject.user.client.ui.UIObject#ensureDebugId(String)
  */
 public class DebugInfo {
-  /**
-   * Implementation class for {@link DebugInfo}.
-   */
-  private static class DebugInfoImpl {
-    private String debugIdPrefix = DEFAULT_DEBUG_ID_PREFIX;
-    private String debugIdAttribute = "id";
-    private boolean debugIdAsProperty = true;
-
-    public String getDebugIdAttribute() {
-      return debugIdAttribute;
-    }
-
-    public String getDebugIdPrefix() {
-      return debugIdPrefix;
-    }
-
-    public boolean isDebugIdAsProperty() {
-      return debugIdAsProperty;
-    }
-
-    public boolean isDebugIdEnabled() {
-      return false;
-    }
-
-    public void setDebugIdAttribute(String attribute, boolean asProperty) {
-      this.debugIdAttribute = attribute;
-      this.debugIdAsProperty = asProperty;
-    }
-
-    public void setDebugIdPrefix(String prefix) {
-      this.debugIdPrefix = prefix;
-    }
-  }
-
-  /**
-   * Implementation class for {@link DebugInfo} used when debug IDs are enabled.
-   */
-  @SuppressWarnings("unused")
-  private static class DebugInfoImplEnabled extends DebugInfoImpl {
-    @Override
-    public boolean isDebugIdEnabled() {
-      return true;
-    }
-  }
 
   public static final String DEFAULT_DEBUG_ID_PREFIX = "gwt-debug-";
-  private static DebugInfoImpl impl = GWT.create(DebugInfoImpl.class);
+  private static final boolean ENABLED =
+      "true".equals(System.getProperty("widgets.gwt.enableDebugId"));
+
+  private static String debugIdPrefix = DEFAULT_DEBUG_ID_PREFIX;
+  private static String debugIdAttribute = "id";
+  private static boolean debugIdAsProperty = true;
 
   /**
    * Returns the element attribute or property where the debug ID is set.
@@ -78,14 +37,14 @@ public class DebugInfo {
    * determine if the value is a property or attribute.
    */
   public static String getDebugIdAttribute() {
-    return impl.getDebugIdAttribute();
+    return debugIdAttribute;
   }
 
   /**
    * Returns the prefix string used for debug ids. Defaults to "gwt-debug-".
    */
   public static String getDebugIdPrefix() {
-    return impl.getDebugIdPrefix();
+    return debugIdPrefix;
   }
 
   /**
@@ -93,7 +52,7 @@ public class DebugInfo {
    * attribute.
    */
   public static boolean isDebugIdAsProperty() {
-    return impl.isDebugIdAsProperty();
+    return debugIdAsProperty;
   }
 
   /**
@@ -106,7 +65,7 @@ public class DebugInfo {
    * @see org.gwtproject.user.client.ui.UIObject#ensureDebugId(String)
    */
   public static boolean isDebugIdEnabled() {
-    return impl.isDebugIdEnabled();
+    return ENABLED;
   }
 
   /**
@@ -117,13 +76,14 @@ public class DebugInfo {
    *          attribute
    */
   public static void setDebugIdAttribute(String attribute, boolean asProperty) {
-    impl.setDebugIdAttribute(attribute, asProperty);
+    debugIdAttribute = attribute;
+    debugIdAsProperty = asProperty;
   }
 
   /**
    * Sets the prefix string used for debug IDs.
    */
   public static void setDebugIdPrefix(String prefix) {
-    impl.setDebugIdPrefix(prefix);
+    debugIdPrefix = prefix;
   }
 }

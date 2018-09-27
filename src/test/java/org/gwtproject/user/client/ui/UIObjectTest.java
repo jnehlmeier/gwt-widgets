@@ -16,7 +16,7 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.aria.client.State;
-import com.google.gwt.debug.client.DebugInfo;
+import org.gwtproject.debug.client.DebugInfo;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.SpanElement;
