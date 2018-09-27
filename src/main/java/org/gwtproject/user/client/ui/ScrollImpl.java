@@ -32,7 +32,7 @@ class ScrollImpl {
    */
   static ScrollImpl get() {
     if (impl == null) {
-      impl = GWT.create(ScrollImpl.class);
+      impl = new ScrollImpl();
     }
     return impl;
   }
