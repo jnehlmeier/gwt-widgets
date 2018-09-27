@@ -192,11 +192,11 @@ public class CustomScrollPanel extends ScrollPanel {
 
     // Initialize the default scrollbars using the transparent styles.
     NativeHorizontalScrollbar.Resources hResources =
-        GWT.create(NativeHorizontalScrollbar.ResourcesTransparant.class);
+        com.google.gwt.core.client.GWT.create(NativeHorizontalScrollbar.ResourcesTransparant.class);
     setHorizontalScrollbar(new NativeHorizontalScrollbar(hResources), AbstractNativeScrollbar
         .getNativeScrollbarHeight());
     NativeVerticalScrollbar.Resources vResources =
-        GWT.create(NativeVerticalScrollbar.ResourcesTransparant.class);
+        com.google.gwt.core.client.GWT.create(NativeVerticalScrollbar.ResourcesTransparant.class);
     setVerticalScrollbar(new NativeVerticalScrollbar(vResources), AbstractNativeScrollbar
         .getNativeScrollbarWidth());
 
