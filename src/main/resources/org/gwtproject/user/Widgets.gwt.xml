@@ -1,5 +1,7 @@
 <module>
 
+    <inherits name="org.gwtproject.uibinder.UiBinder" />
+
     <inherits name="org.gwtproject.user.DOM" />
     <inherits name="org.gwtproject.canvas.Canvas" />
     <inherits name="org.gwtproject.media.Media" />

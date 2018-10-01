@@ -86,7 +86,7 @@ import org.gwtproject.user.window.client.Window;
  * 
  * <h3>Use in UiBinder Templates</h3>
  * <p>
- * DialogBox elements in {@link com.google.gwt.uibinder.client.UiBinder
+ * DialogBox elements in {@link org.gwtproject.uibinder.client.UiBinder
  * UiBinder} templates can have one widget child and one &lt;g:caption> child.
  * (Note the lower case "c", meant to signal that the caption is not a runtime
  * object, and so cannot have a <code>ui:field</code> attribute.) The body of

@@ -24,12 +24,12 @@ import java.util.Date;
 /**
  * Extends {@link ValueLabel} for convenience when dealing with dates and
  * {@link DateTimeFormat}, especially in
- * {@link com.google.gwt.uibinder.client.UiBinder UiBinder} templates. (Note
+ * {@link org.gwtproject.uibinder.client.UiBinder UiBinder} templates. (Note
  * that this class does not accept renderers. To do so use {@link ValueLabel}
  * directly.)
  * 
  * <h3>Use in UiBinder Templates</h3>
- * In {@link com.google.gwt.uibinder.client.UiBinder UiBinder} templates, both the format and time zone can be configured.
+ * In {@link org.gwtproject.uibinder.client.UiBinder UiBinder} templates, both the format and time zone can be configured.
  * <p>
  * The format can be given with one of these attributes:
  * <dl>

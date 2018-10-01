@@ -15,21 +15,21 @@
  */
 package org.gwtproject.editor.ui.client;
 
-import com.google.gwt.core.client.GWT;
 import org.gwtproject.dom.client.DivElement;
 import org.gwtproject.dom.style.shared.Display;
 import org.gwtproject.editor.client.EditorError;
 import org.gwtproject.editor.client.HasEditorErrors;
 import org.gwtproject.editor.client.IsEditor;
-import com.google.gwt.uibinder.client.UiBinder;
-import com.google.gwt.uibinder.client.UiChild;
-import com.google.gwt.uibinder.client.UiConstructor;
-import com.google.gwt.uibinder.client.UiField;
+import org.gwtproject.editor.ui.client.adapters.ValueBoxEditor;
+import org.gwtproject.uibinder.client.UiBinder;
+import org.gwtproject.uibinder.client.UiChild;
+import org.gwtproject.uibinder.client.UiConstructor;
+import org.gwtproject.uibinder.client.UiField;
+import org.gwtproject.uibinder.client.UiTemplate;
 import org.gwtproject.user.client.ui.Composite;
 import org.gwtproject.user.client.ui.SimplePanel;
 import org.gwtproject.user.client.ui.ValueBoxBase;
 import org.gwtproject.user.client.ui.Widget;
-import org.gwtproject.editor.ui.client.adapters.ValueBoxEditor;
 
 import java.util.List;
 
@@ -58,8 +58,10 @@ import java.util.List;
  */
 public class ValueBoxEditorDecorator<T> extends Composite implements
     HasEditorErrors<T>, IsEditor<ValueBoxEditor<T>> {
+
+  @UiTemplate
   interface Binder extends UiBinder<Widget, ValueBoxEditorDecorator<?>> {
-    Binder BINDER = GWT.create(Binder.class);
+    Binder BINDER = new ValueBoxEditorDecorator_BinderImpl();
   }
 
   @UiField

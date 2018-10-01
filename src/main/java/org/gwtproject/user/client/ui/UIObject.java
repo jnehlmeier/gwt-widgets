@@ -89,7 +89,7 @@ import java.util.Locale;
  * <h3>Use in UiBinder Templates</h3>
  * <p>
  * Setter methods that follow JavaBean property conventions are exposed as
- * attributes in {@link com.google.gwt.uibinder.client.UiBinder UiBinder}
+ * attributes in {@link org.gwtproject.uibinder.client.UiBinder UiBinder}
  * templates. For example, because UiObject implements {@link #setWidth(String)}
  * you can set the width of any widget like so:
  * 

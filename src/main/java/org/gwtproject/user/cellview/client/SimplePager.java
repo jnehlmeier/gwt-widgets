@@ -26,7 +26,7 @@ import org.gwtproject.resources.client.ClientBundle;
 import org.gwtproject.resources.client.CssResource;
 import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.resources.client.ImageResource.ImageOptions;
-import com.google.gwt.uibinder.client.UiConstructor;
+import org.gwtproject.uibinder.client.UiConstructor;
 import org.gwtproject.user.client.Event;
 import org.gwtproject.user.client.ui.HTML;
 import org.gwtproject.user.client.ui.HasVerticalAlignment;

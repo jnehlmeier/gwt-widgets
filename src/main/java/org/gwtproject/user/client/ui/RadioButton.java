@@ -22,7 +22,7 @@ import org.gwtproject.i18n.client.HasDirection.Direction;
 import org.gwtproject.i18n.shared.DirectionEstimator;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
-import com.google.gwt.uibinder.client.UiConstructor;
+import org.gwtproject.uibinder.client.UiConstructor;
 import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.Event;
 

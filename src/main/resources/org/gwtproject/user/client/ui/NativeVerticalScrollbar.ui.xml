@@ -1,6 +1,6 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder
-  xmlns:ui="urn:ui:com.google.gwt.uibinder"
+  xmlns:ui="urn:ui:org.gwtproject.uibinder"
   xmlns:g="urn:import:org.gwtproject.user.client.ui">
 
   <ui:with field="res" type="org.gwtproject.user.client.ui.NativeVerticalScrollbar.UiBinderBundle"/>

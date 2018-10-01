@@ -40,7 +40,7 @@ import org.gwtproject.layout.client.Layout.Layer;
  * <h3>Use in UiBinder Templates</h3>
  * <p>
  * DockLayoutPanel elements in  
- * {@link com.google.gwt.uibinder.client.UiBinder UiBinder} templates
+ * {@link org.gwtproject.uibinder.client.UiBinder UiBinder} templates
  * lay out their children in elements tagged with the cardinal directions,
  * and center:
  * 

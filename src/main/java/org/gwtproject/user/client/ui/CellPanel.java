@@ -35,7 +35,7 @@ import org.gwtproject.user.client.ui.HasVerticalAlignment.VerticalAlignmentConst
  * <h3>Use in UiBinder Templates</h3>
  * <P>
  * When working with CellPanel subclasses in 
- * {@link com.google.gwt.uibinder.client.UiBinder UiBinder} templates, wrap
+ * {@link org.gwtproject.uibinder.client.UiBinder UiBinder} templates, wrap
  * child widgets in <code>&lt;g:cell></code> elements. (Note the lower case
  * "c", meant to signal that the cell is not a runtime object, and so cannot
  * have a <code>ui:field</code> attribute.) Cell elements can have

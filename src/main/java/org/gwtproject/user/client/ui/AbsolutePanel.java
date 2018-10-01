@@ -39,7 +39,7 @@ import java.util.Locale;
  * 
  * <h3>Use in UiBinder Templates</h3>
  * <p>
- * AbsolutePanel elements in {@link com.google.gwt.uibinder.client.UiBinder
+ * AbsolutePanel elements in {@link org.gwtproject.uibinder.client.UiBinder
  * UiBinder} templates lay out their children with absolute position, using
  * &lt;g:at> elements. Each at element should have <code>left</code> and
  * <code>top</code> attributes in pixels. They also can contain widget children

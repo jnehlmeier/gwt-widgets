@@ -68,7 +68,7 @@ import java.util.NoSuchElementException;
  * <h3>Use in UiBinder Templates</h3>
  * <p>
  * A StackLayoutPanel element in a
- * {@link com.google.gwt.uibinder.client.UiBinder UiBinder} template may have a
+ * {@link org.gwtproject.uibinder.client.UiBinder UiBinder} template may have a
  * <code>unit</code> attribute with a
  * {@link Unit Style.Unit} value (it defaults to
  * PX).

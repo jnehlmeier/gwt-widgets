@@ -107,7 +107,7 @@ import org.gwtproject.user.client.Event;
  * <h3>Use in UiBinder Templates</h3>
  *
  * When working with CustomButton subclasses in
- * {@link com.google.gwt.uibinder.client.UiBinder UiBinder} templates, you
+ * {@link org.gwtproject.uibinder.client.UiBinder UiBinder} templates, you
  * can set text and assign ImageResources for their various faces via
  * child elements:
  * <p>

@@ -22,8 +22,9 @@ import org.gwtproject.resources.client.ClientBundle;
 import org.gwtproject.resources.client.CommonResources;
 import org.gwtproject.resources.client.CssResource;
 import org.gwtproject.resources.client.CssResource.ImportedWithPrefix;
-import com.google.gwt.uibinder.client.UiBinder;
-import com.google.gwt.uibinder.client.UiField;
+import org.gwtproject.uibinder.client.UiBinder;
+import org.gwtproject.uibinder.client.UiField;
+import org.gwtproject.uibinder.client.UiTemplate;
 
 /**
  * A horizontal scrollbar implemented using the browsers native scrollbar.
@@ -31,6 +32,7 @@ import com.google.gwt.uibinder.client.UiField;
 public class NativeHorizontalScrollbar extends AbstractNativeScrollbar implements
     HorizontalScrollbar {
 
+  @UiTemplate
   interface NativeHorizontalScrollbarUiBinder extends UiBinder<Element, NativeHorizontalScrollbar> {
   }
   /**
@@ -84,8 +86,8 @@ public class NativeHorizontalScrollbar extends AbstractNativeScrollbar implement
   }
 
   private static Resources DEFAULT_RESOURCES;
-  private static NativeHorizontalScrollbarUiBinder uiBinder = GWT
-      .create(NativeHorizontalScrollbarUiBinder.class);
+  private static NativeHorizontalScrollbarUiBinder uiBinder =
+          new NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl();
 
   /**
    * Get the default resources for this widget.

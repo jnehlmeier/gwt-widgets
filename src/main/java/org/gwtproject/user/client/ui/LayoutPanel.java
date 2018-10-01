@@ -41,7 +41,7 @@ import org.gwtproject.layout.client.Layout.Layer;
  * 
  * <h3>Use in UiBinder Templates</h3>
  * <p>
- * LayoutPanel elements in {@link com.google.gwt.uibinder.client.UiBinder
+ * LayoutPanel elements in {@link org.gwtproject.uibinder.client.UiBinder
  * UiBinder} templates lay out their children with arbitrary constraints, using
  * &lt;g:layer> elements. Each layer may have any of the following constraint
  * attributes specified as CSS length attributes: <code>left</code>,

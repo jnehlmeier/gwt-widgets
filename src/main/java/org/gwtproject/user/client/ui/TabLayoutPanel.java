@@ -68,7 +68,7 @@ import java.util.Iterator;
  *
  * <h3>Use in UiBinder Templates</h3>
  * <p>
- * A TabLayoutPanel element in a {@link com.google.gwt.uibinder.client.UiBinder
+ * A TabLayoutPanel element in a {@link org.gwtproject.uibinder.client.UiBinder
  * UiBinder} template must have a <code>barHeight</code> attribute with a double
  * value, and may have a <code>barUnit</code> attribute with a
  * {@link Unit Style.Unit} value.

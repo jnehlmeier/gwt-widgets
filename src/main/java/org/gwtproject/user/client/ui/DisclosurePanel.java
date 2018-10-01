@@ -59,7 +59,7 @@ import java.util.Iterator;
  * <h3>Use in UiBinder Templates</h3>
  * <p>
  * DisclosurePanel elements in  
- * {@link com.google.gwt.uibinder.client.UiBinder UiBinder} templates can 
+ * {@link org.gwtproject.uibinder.client.UiBinder UiBinder} templates can
  * have one widget child and one of two types of header elements. A 
  * &lt;g:header> element can hold text (not html), or a &lt;g:customHeader> element
  * can hold a widget. (Note that the tags of the header elements are not

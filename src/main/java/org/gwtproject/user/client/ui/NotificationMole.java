@@ -16,15 +16,15 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.animation.client.Animation;
-import com.google.gwt.core.client.GWT;
 import org.gwtproject.dom.client.DivElement;
 import org.gwtproject.dom.client.SpanElement;
 import org.gwtproject.dom.style.shared.Display;
 import org.gwtproject.dom.style.shared.Unit;
 import org.gwtproject.resources.client.CssResource;
-import com.google.gwt.uibinder.client.UiBinder;
-import com.google.gwt.uibinder.client.UiField;
 import org.gwtproject.timer.client.Timer;
+import org.gwtproject.uibinder.client.UiBinder;
+import org.gwtproject.uibinder.client.UiField;
+import org.gwtproject.uibinder.client.UiTemplate;
 
 /**
  * Simple widget for providing notification feedback.
@@ -39,6 +39,7 @@ public class NotificationMole extends Composite {
     String notificationText();
   }
 
+  @UiTemplate
   interface Binder extends UiBinder<HTMLPanel, NotificationMole> {
   }
 
@@ -73,7 +74,7 @@ public class NotificationMole extends Composite {
     }
   }
 
-  private static final Binder BINDER = GWT.create(Binder.class);
+  private static final Binder BINDER = new NotificationMole_BinderImpl();
 
   @UiField()
   DivElement borderElement;

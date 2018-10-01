@@ -21,12 +21,12 @@ import org.gwtproject.text.client.NumberFormatRenderer;
 /**
  * Extends {@link ValueLabel} for convenience when dealing with numbers and
  * {@link NumberFormat}, especially in
- * {@link com.google.gwt.uibinder.client.UiBinder UiBinder} templates. (Note
+ * {@link org.gwtproject.uibinder.client.UiBinder UiBinder} templates. (Note
  * that this class does not accept renderers. To do so use {@link ValueLabel}
  * directly.)
  * 
  * <h3>Use in UiBinder Templates</h3> In
- * {@link com.google.gwt.uibinder.client.UiBinder UiBinder} templates, the
+ * {@link org.gwtproject.uibinder.client.UiBinder UiBinder} templates, the
  * {@link NumberFormat} can be specified with one of these attributes:
  * <dl>
  * <dt>format</dt>
