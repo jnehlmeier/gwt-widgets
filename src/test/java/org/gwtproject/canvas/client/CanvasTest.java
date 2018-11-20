@@ -15,10 +15,10 @@
  */
 package org.gwtproject.canvas.client;
 
-import org.gwtproject.canvas.dom.client.Context2d;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 import com.google.gwt.junit.client.GWTTestCase;
+import org.gwtproject.canvas.dom.client.Context2d;
 import org.gwtproject.user.client.ui.RootPanel;
 
 /**
@@ -31,18 +31,9 @@ import org.gwtproject.user.client.ui.RootPanel;
  */
 @DoNotRunWith(Platform.HtmlUnitUnknown)
 public class CanvasTest extends GWTTestCase {
-  private static native boolean isFirefox35OrLater() /*-{
-      var geckoVersion = @org.gwtproject.dom.client.DOMImplMozilla::getGeckoVersion()();
-      return (geckoVersion != -1) && (geckoVersion >= 1009001);
-  }-*/;
 
-  private static native boolean isWebkit525OrBefore() /*-{
-      return @org.gwtproject.dom.client.DOMImplWebkit::isWebkit525OrBefore()();
-  }-*/;
-
-  protected Canvas canvas1;
-
-  protected Canvas canvas2;
+  private Canvas canvas1;
+  private Canvas canvas2;
 
   @Override
   public String getModuleName() {
@@ -58,16 +49,6 @@ public class CanvasTest extends GWTTestCase {
    * Due to browser inconsistencies, we just check for data:something.
    */
   public void testBlankDataUrl() {
-    if (canvas1 == null) {
-      return; // don't continue if not supported
-    }
-
-    // Safari 3.0 does not support toDataURL(), so the following tests are
-    // disabled for Safari 3.0 and before.
-    if (isWebkit525OrBefore()) {
-      return;
-    }
-
     canvas1.setHeight("0px");
     canvas1.setWidth("0px");
     assertEquals(0, canvas1.getOffsetHeight());
@@ -81,16 +62,6 @@ public class CanvasTest extends GWTTestCase {
   }
 
   public void testDataUrlWithType() {
-    if (canvas1 == null) {
-      return; // don't continue if not supported
-    }
-
-    // Safari 3.0 does not support toDataURL(), so the following tests are
-    // disabled for Safari 3.0 and before.
-    if (isWebkit525OrBefore()) {
-      return;
-    }
-
     canvas1.setHeight("10px");
     canvas1.setWidth("10px");
     canvas1.setCoordinateSpaceHeight(10);
@@ -102,10 +73,6 @@ public class CanvasTest extends GWTTestCase {
   }
 
   public void testHeightAndWidth() {
-    if (canvas1 == null) {
-      return; // don't continue if not supported
-    }
-
     canvas1.setHeight("40px");
     canvas1.setWidth("60px");
     assertEquals(40, canvas1.getOffsetHeight());
@@ -128,10 +95,6 @@ public class CanvasTest extends GWTTestCase {
   }
 
   public void testInternalHeightAndWidth() {
-    if (canvas1 == null) {
-      return; // don't continue if not supported
-    }
-
     canvas1.setHeight("40px");
     canvas1.setWidth("60px");
     assertEquals(40, canvas1.getOffsetHeight());
@@ -158,42 +121,17 @@ public class CanvasTest extends GWTTestCase {
     assertEquals(161, canvas1.getCoordinateSpaceWidth());
   }
 
-  public void testIsSupported() {
-    if (canvas1 == null) {
-      assertFalse(
-          "isSupported() should be false when createIfSupported() returns null",
-          Canvas.isSupported());
-    } else {
-      assertTrue(
-          "isSupported() should be true when createIfSupported() returns non-null", Canvas.isSupported());
-    }
-    // test the isxxxSupported() call if running known-sup or known-not-sup
-    // browsers
-    if (isFirefox35OrLater()) {
-      assertTrue(Canvas.isSupported());
-      assertTrue(Canvas.isSupported());
-    }
-  }
-
   @Override
-  protected void gwtSetUp() throws Exception {
+  protected void gwtSetUp() {
     canvas1 = Canvas.createIfSupported();
     canvas2 = Canvas.createIfSupported();
-
-    if (canvas1 == null) {
-      return; // don't continue if not supported
-    }
 
     RootPanel.get().add(canvas1);
     RootPanel.get().add(canvas2);
   }
 
   @Override
-  protected void gwtTearDown() throws Exception {
-    if (canvas1 == null) {
-      return; // don't continue if not supported
-    }
-
+  protected void gwtTearDown() {
     RootPanel.get().remove(canvas1);
     RootPanel.get().remove(canvas2);
   }
