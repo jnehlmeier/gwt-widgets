@@ -19,7 +19,7 @@ import org.gwtproject.core.client.GWT;
 import org.gwtproject.core.client.JavaScriptObject;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
-import org.gwtproject.dom.client.Style.Unit;
+import org.gwtproject.dom.style.shared.Unit;
 import org.gwtproject.safecss.shared.SafeStyles;
 import org.gwtproject.safecss.shared.SafeStylesBuilder;
 import org.gwtproject.safecss.shared.SafeStylesUtils;

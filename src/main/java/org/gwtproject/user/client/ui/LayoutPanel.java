@@ -17,7 +17,7 @@ package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
-import org.gwtproject.dom.client.Style.Unit;
+import org.gwtproject.dom.style.shared.Unit;
 import org.gwtproject.layout.client.Layout;
 import org.gwtproject.layout.client.Layout.Alignment;
 import org.gwtproject.layout.client.Layout.AnimationCallback;

@@ -20,7 +20,7 @@ import org.gwtproject.dom.client.BrowserEvents;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.EventTarget;
 import org.gwtproject.dom.client.NativeEvent;
-import org.gwtproject.dom.client.Style.Display;
+import org.gwtproject.dom.style.shared.Display;
 import org.gwtproject.resources.client.ClientBundle;
 import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.safehtml.client.SafeHtmlTemplates;

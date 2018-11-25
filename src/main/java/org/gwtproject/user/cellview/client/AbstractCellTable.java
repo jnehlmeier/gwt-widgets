@@ -29,7 +29,7 @@ import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.EventTarget;
 import org.gwtproject.dom.client.NativeEvent;
 import org.gwtproject.dom.client.NodeList;
-import org.gwtproject.dom.client.Style.Unit;
+import org.gwtproject.dom.style.shared.Unit;
 import org.gwtproject.dom.client.TableCellElement;
 import org.gwtproject.dom.client.TableElement;
 import org.gwtproject.dom.client.TableRowElement;

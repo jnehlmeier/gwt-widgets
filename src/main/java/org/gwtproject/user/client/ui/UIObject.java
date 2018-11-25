@@ -111,7 +111,7 @@ import java.util.Locale;
  * 
  * There is also special case handling for two common method signatures,
  * <code>(int, int)</code> and <code>(double, {@link 
- * org.gwtproject.dom.client.Style.Unit Unit})</code>
+ * org.gwtproject.dom.style.shared.Unit Unit})</code>
  * 
  * <pre>
  * &lt;g:Label pixelSize='100, 100'>Hello there&lt;/g:Label></pre>

@@ -17,9 +17,9 @@ package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
-import org.gwtproject.dom.client.Style.Overflow;
-import org.gwtproject.dom.client.Style.Position;
-import org.gwtproject.dom.client.Style.Unit;
+import org.gwtproject.dom.style.shared.Overflow;
+import org.gwtproject.dom.style.shared.Position;
+import org.gwtproject.dom.style.shared.Unit;
 import org.gwtproject.event.dom.client.HasScrollHandlers;
 import org.gwtproject.event.dom.client.ScrollEvent;
 import org.gwtproject.event.dom.client.ScrollHandler;

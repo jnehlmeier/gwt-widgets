@@ -20,10 +20,10 @@ import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
-import org.gwtproject.dom.client.Style.Display;
-import org.gwtproject.dom.client.Style.Overflow;
-import org.gwtproject.dom.client.Style.Position;
-import org.gwtproject.dom.client.Style.Unit;
+import org.gwtproject.dom.style.shared.Display;
+import org.gwtproject.dom.style.shared.Overflow;
+import org.gwtproject.dom.style.shared.Position;
+import org.gwtproject.dom.style.shared.Unit;
 import org.gwtproject.user.client.ui.FiniteWidgetIterator.WidgetProvider;
 
 import java.util.Iterator;

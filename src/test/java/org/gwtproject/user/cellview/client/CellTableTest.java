@@ -15,14 +15,14 @@
  */
 package org.gwtproject.user.cellview.client;
 
-import org.gwtproject.cell.client.TextCell;
 import com.google.gwt.core.client.GWT;
+import org.gwtproject.cell.client.TextCell;
 import org.gwtproject.dom.client.Element;
-import org.gwtproject.dom.client.Style.Unit;
 import org.gwtproject.dom.client.TableCellElement;
 import org.gwtproject.dom.client.TableElement;
 import org.gwtproject.dom.client.TableRowElement;
 import org.gwtproject.dom.client.TableSectionElement;
+import org.gwtproject.dom.style.shared.Unit;
 import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.user.cellview.client.AbstractHasData.RedrawEvent.Handler;
 import org.gwtproject.user.cellview.client.CellTable.Resources;

@@ -19,7 +19,7 @@ import org.gwtproject.cell.client.Cell.Context;
 import org.gwtproject.dom.builder.shared.DivBuilder;
 import org.gwtproject.dom.builder.shared.TableCellBuilder;
 import org.gwtproject.dom.builder.shared.TableRowBuilder;
-import org.gwtproject.dom.client.Style.OutlineStyle;
+import org.gwtproject.dom.style.shared.OutlineStyle;
 import org.gwtproject.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant;
 import org.gwtproject.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant;
 import org.gwtproject.view.client.SelectionModel;

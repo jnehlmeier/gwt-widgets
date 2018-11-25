@@ -18,7 +18,7 @@ package org.gwtproject.user.client.ui;
 import org.gwtproject.dom.client.AnchorElement;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
-import org.gwtproject.dom.client.Style.WhiteSpace;
+import org.gwtproject.dom.style.shared.WhiteSpace;
 import org.gwtproject.event.dom.client.ClickEvent;
 import org.gwtproject.event.dom.client.ClickHandler;
 import org.gwtproject.i18n.client.BidiUtils;

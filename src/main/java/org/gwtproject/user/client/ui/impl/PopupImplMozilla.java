@@ -18,8 +18,8 @@ package org.gwtproject.user.client.ui.impl;
 import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import org.gwtproject.dom.client.Element;
-import org.gwtproject.dom.client.Style.Display;
-import org.gwtproject.dom.client.Style.Overflow;
+import org.gwtproject.dom.style.shared.Display;
+import org.gwtproject.dom.style.shared.Overflow;
 import org.gwtproject.user.client.DOM;
 
 /**

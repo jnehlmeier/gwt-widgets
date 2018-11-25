@@ -15,10 +15,10 @@
  */
 package org.gwtproject.user.client.ui;
 
-import org.gwtproject.dom.client.Element;
-import org.gwtproject.dom.client.Style.Overflow;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.dom.style.shared.Overflow;
 import org.gwtproject.timer.client.Timer;
 
 /**

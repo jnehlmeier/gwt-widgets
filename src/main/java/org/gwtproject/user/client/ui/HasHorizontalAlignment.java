@@ -16,7 +16,7 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.core.client.GWT;
-import org.gwtproject.dom.client.Style.TextAlign;
+import org.gwtproject.dom.style.shared.TextAlign;
 import com.google.gwt.i18n.client.HasDirection.Direction;
 import com.google.gwt.i18n.client.LocaleInfo;
 

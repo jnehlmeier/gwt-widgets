@@ -15,16 +15,15 @@
  */
 package org.gwtproject.user.client.ui;
 
+import com.google.gwt.junit.DoNotRunWith;
+import com.google.gwt.junit.Platform;
+import com.google.gwt.junit.client.GWTTestCase;
 import org.gwtproject.core.client.Scheduler;
-import org.gwtproject.dom.client.Style.Unit;
+import org.gwtproject.dom.style.shared.Unit;
 import org.gwtproject.event.logical.shared.BeforeSelectionEvent;
 import org.gwtproject.event.logical.shared.BeforeSelectionHandler;
 import org.gwtproject.event.logical.shared.SelectionEvent;
 import org.gwtproject.event.logical.shared.SelectionHandler;
-import com.google.gwt.junit.DoNotRunWith;
-import com.google.gwt.junit.Platform;
-import com.google.gwt.junit.client.GWTTestCase;
-import org.gwtproject.user.client.Command;
 import org.gwtproject.timer.client.Timer;
 
 import java.util.ArrayList;

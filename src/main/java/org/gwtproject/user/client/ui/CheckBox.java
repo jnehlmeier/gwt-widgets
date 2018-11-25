@@ -24,7 +24,7 @@ import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.InputElement;
 import org.gwtproject.dom.client.LabelElement;
-import org.gwtproject.dom.client.Style.WhiteSpace;
+import org.gwtproject.dom.style.shared.WhiteSpace;
 import org.gwtproject.editor.client.adapters.TakesValueEditor;
 import org.gwtproject.event.dom.client.ClickEvent;
 import org.gwtproject.event.dom.client.ClickHandler;

@@ -22,7 +22,7 @@ import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.EventTarget;
 import org.gwtproject.dom.client.NativeEvent;
-import org.gwtproject.dom.client.Style.Display;
+import org.gwtproject.dom.style.shared.Display;
 import org.gwtproject.event.dom.client.KeyCodes;
 import org.gwtproject.event.logical.shared.ValueChangeEvent;
 import org.gwtproject.event.logical.shared.ValueChangeHandler;
