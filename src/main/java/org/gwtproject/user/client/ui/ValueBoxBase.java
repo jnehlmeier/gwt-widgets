@@ -15,10 +15,13 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.event.dom.client.KeyUpHandler;
-import com.google.gwt.event.shared.GwtEvent;
-import org.gwtproject.dom.client.Element;
 import com.google.gwt.editor.client.IsEditor;
+import com.google.gwt.i18n.client.BidiPolicy;
+import com.google.gwt.i18n.shared.DirectionEstimator;
+import com.google.gwt.i18n.shared.HasDirectionEstimator;
+import com.google.gwt.text.shared.Parser;
+import com.google.gwt.text.shared.Renderer;
+import org.gwtproject.dom.client.Element;
 import org.gwtproject.editor.ui.client.adapters.ValueBoxEditor;
 import org.gwtproject.event.dom.client.ChangeEvent;
 import org.gwtproject.event.dom.client.ChangeHandler;
@@ -27,12 +30,7 @@ import org.gwtproject.event.logical.shared.ValueChangeEvent;
 import org.gwtproject.event.logical.shared.ValueChangeHandler;
 import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.i18n.client.AutoDirectionHandler;
-import com.google.gwt.i18n.client.BidiPolicy;
 import org.gwtproject.i18n.client.BidiUtils;
-import com.google.gwt.i18n.shared.DirectionEstimator;
-import com.google.gwt.i18n.shared.HasDirectionEstimator;
-import com.google.gwt.text.shared.Parser;
-import com.google.gwt.text.shared.Renderer;
 import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.Event;
 import org.gwtproject.user.client.ui.impl.TextBoxImpl;

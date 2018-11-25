@@ -17,7 +17,7 @@ package org.gwtproject.editor.ui.client.adapters;
 
 import com.google.gwt.editor.client.EditorDelegate;
 import com.google.gwt.editor.client.HasEditorDelegate;
-import com.google.gwt.editor.client.adapters.TakesValueEditor;
+import org.gwtproject.editor.client.adapters.TakesValueEditor;
 import org.gwtproject.user.client.ui.ValueBoxBase;
 
 import java.text.ParseException;

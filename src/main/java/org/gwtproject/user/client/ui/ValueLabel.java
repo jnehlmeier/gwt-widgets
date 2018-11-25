@@ -15,16 +15,16 @@
  */
 package org.gwtproject.user.client.ui;
 
-import org.gwtproject.dom.client.Document;
-import org.gwtproject.dom.client.Element;
 import com.google.gwt.editor.client.IsEditor;
 import com.google.gwt.editor.client.LeafValueEditor;
-import com.google.gwt.editor.client.adapters.TakesValueEditor;
 import com.google.gwt.text.shared.Parser;
 import com.google.gwt.text.shared.Renderer;
 import com.google.gwt.text.shared.ToStringRenderer;
 import com.google.gwt.uibinder.client.UiConstructor;
-import com.google.gwt.user.client.TakesValue;
+import org.gwtproject.dom.client.Document;
+import org.gwtproject.dom.client.Element;
+import org.gwtproject.editor.client.adapters.TakesValueEditor;
+import org.gwtproject.user.client.TakesValue;
 
 import java.text.ParseException;
 

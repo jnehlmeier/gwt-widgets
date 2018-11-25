@@ -15,16 +15,16 @@
  */
 package org.gwtproject.user.client.ui;
 
-import org.gwtproject.cell.client.AbstractCell;
 import com.google.gwt.editor.client.IsEditor;
 import com.google.gwt.editor.client.LeafValueEditor;
-import com.google.gwt.editor.client.adapters.TakesValueEditor;
+import com.google.gwt.text.shared.Renderer;
+import com.google.gwt.text.shared.ToStringRenderer;
+import org.gwtproject.cell.client.AbstractCell;
+import org.gwtproject.editor.client.adapters.TakesValueEditor;
 import org.gwtproject.event.logical.shared.ValueChangeEvent;
 import org.gwtproject.event.logical.shared.ValueChangeHandler;
 import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
-import com.google.gwt.text.shared.Renderer;
-import com.google.gwt.text.shared.ToStringRenderer;
 import org.gwtproject.user.cellview.client.CellList;
 import org.gwtproject.view.client.SelectionChangeEvent;
 import org.gwtproject.view.client.SingleSelectionModel;

@@ -16,32 +16,20 @@
 
 package org.gwtproject.user.datepicker.client;
 
-import org.gwtproject.core.client.Scheduler;
-import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.editor.client.IsEditor;
 import com.google.gwt.editor.client.LeafValueEditor;
-import com.google.gwt.editor.client.adapters.TakesValueEditor;
-import org.gwtproject.event.dom.client.BlurEvent;
-import org.gwtproject.event.dom.client.BlurHandler;
-import org.gwtproject.event.dom.client.ClickEvent;
-import org.gwtproject.event.dom.client.ClickHandler;
-import org.gwtproject.event.dom.client.FocusEvent;
-import org.gwtproject.event.dom.client.FocusHandler;
-import org.gwtproject.event.dom.client.KeyCodes;
-import org.gwtproject.event.dom.client.KeyDownEvent;
-import org.gwtproject.event.dom.client.KeyDownHandler;
+import com.google.gwt.i18n.client.DateTimeFormat;
+import com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat;
+import org.gwtproject.core.client.Scheduler;
+import org.gwtproject.core.client.Scheduler.ScheduledCommand;
+import org.gwtproject.editor.client.adapters.TakesValueEditor;
+import org.gwtproject.event.dom.client.*;
 import org.gwtproject.event.logical.shared.CloseEvent;
 import org.gwtproject.event.logical.shared.CloseHandler;
 import org.gwtproject.event.logical.shared.ValueChangeEvent;
 import org.gwtproject.event.logical.shared.ValueChangeHandler;
 import org.gwtproject.event.shared.HandlerRegistration;
-import com.google.gwt.i18n.client.DateTimeFormat;
-import com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat;
-import org.gwtproject.user.client.ui.Composite;
-import org.gwtproject.user.client.ui.HasEnabled;
-import org.gwtproject.user.client.ui.HasValue;
-import org.gwtproject.user.client.ui.PopupPanel;
-import org.gwtproject.user.client.ui.TextBox;
+import org.gwtproject.user.client.ui.*;
 
 import java.util.Date;
 

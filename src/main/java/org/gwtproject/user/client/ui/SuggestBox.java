@@ -15,25 +15,14 @@
  */
 package org.gwtproject.user.client.ui;
 
+import com.google.gwt.editor.client.IsEditor;
+import com.google.gwt.editor.client.LeafValueEditor;
 import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
-import com.google.gwt.editor.client.IsEditor;
-import com.google.gwt.editor.client.LeafValueEditor;
-import com.google.gwt.editor.client.adapters.TakesValueEditor;
-import org.gwtproject.event.dom.client.HasAllKeyHandlers;
-import org.gwtproject.event.dom.client.KeyCodes;
-import org.gwtproject.event.dom.client.KeyDownEvent;
-import org.gwtproject.event.dom.client.KeyDownHandler;
-import org.gwtproject.event.dom.client.KeyPressEvent;
-import org.gwtproject.event.dom.client.KeyPressHandler;
-import org.gwtproject.event.dom.client.KeyUpEvent;
-import org.gwtproject.event.dom.client.KeyUpHandler;
-import org.gwtproject.event.logical.shared.HasSelectionHandlers;
-import org.gwtproject.event.logical.shared.SelectionEvent;
-import org.gwtproject.event.logical.shared.SelectionHandler;
-import org.gwtproject.event.logical.shared.ValueChangeEvent;
-import org.gwtproject.event.logical.shared.ValueChangeHandler;
+import org.gwtproject.editor.client.adapters.TakesValueEditor;
+import org.gwtproject.event.dom.client.*;
+import org.gwtproject.event.logical.shared.*;
 import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.user.client.ui.PopupPanel.AnimationType;
 import org.gwtproject.user.client.ui.SuggestOracle.Callback;

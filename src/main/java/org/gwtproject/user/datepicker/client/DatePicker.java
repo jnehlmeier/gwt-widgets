@@ -18,15 +18,8 @@ package org.gwtproject.user.datepicker.client;
 
 import com.google.gwt.editor.client.IsEditor;
 import com.google.gwt.editor.client.LeafValueEditor;
-import com.google.gwt.editor.client.adapters.TakesValueEditor;
-import org.gwtproject.event.logical.shared.HasHighlightHandlers;
-import org.gwtproject.event.logical.shared.HasShowRangeHandlers;
-import org.gwtproject.event.logical.shared.HighlightEvent;
-import org.gwtproject.event.logical.shared.HighlightHandler;
-import org.gwtproject.event.logical.shared.ShowRangeEvent;
-import org.gwtproject.event.logical.shared.ShowRangeHandler;
-import org.gwtproject.event.logical.shared.ValueChangeEvent;
-import org.gwtproject.event.logical.shared.ValueChangeHandler;
+import org.gwtproject.editor.client.adapters.TakesValueEditor;
+import org.gwtproject.event.logical.shared.*;
 import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.user.client.ui.Composite;
 import org.gwtproject.user.client.ui.HasValue;

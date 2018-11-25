@@ -15,13 +15,13 @@
  */
 package org.gwtproject.user.client.ui;
 
+import com.google.gwt.editor.client.IsEditor;
+import com.google.gwt.editor.client.LeafValueEditor;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.InputElement;
-import com.google.gwt.editor.client.IsEditor;
-import com.google.gwt.editor.client.LeafValueEditor;
-import com.google.gwt.editor.client.adapters.TakesValueEditor;
-import com.google.gwt.user.client.TakesValue;
+import org.gwtproject.editor.client.adapters.TakesValueEditor;
+import org.gwtproject.user.client.TakesValue;
 
 /**
  * Represents a hidden field in an HTML form.

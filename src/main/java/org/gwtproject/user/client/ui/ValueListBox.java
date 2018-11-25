@@ -16,22 +16,18 @@
 package org.gwtproject.user.client.ui;
 
 import com.google.gwt.editor.client.IsEditor;
-import com.google.gwt.editor.client.adapters.TakesValueEditor;
+import com.google.gwt.text.shared.Renderer;
+import com.google.gwt.text.shared.ToStringRenderer;
+import org.gwtproject.editor.client.adapters.TakesValueEditor;
 import org.gwtproject.event.dom.client.ChangeEvent;
 import org.gwtproject.event.dom.client.ChangeHandler;
 import org.gwtproject.event.logical.shared.ValueChangeEvent;
 import org.gwtproject.event.logical.shared.ValueChangeHandler;
 import org.gwtproject.event.shared.HandlerRegistration;
-import com.google.gwt.text.shared.Renderer;
-import com.google.gwt.text.shared.ToStringRenderer;
 import org.gwtproject.view.client.ProvidesKey;
 import org.gwtproject.view.client.SimpleKeyProvider;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Implementation of {@link HasConstrainedValue} based on a

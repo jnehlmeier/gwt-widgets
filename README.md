@@ -8,7 +8,7 @@ Commits can be rewritten at any time.
 
 - duplicated `test/com.google.gwt.layout.client.LayerFriend` because there is no `gwt-layout-tests.jar` but 
 `LayoutPanelTest` currently wants to look at package private information.
-- `com.google.gwt.user.client.TakesValue` needs to exist somewhere.
+
 
 
 ### Embedded stuff because of cyclic dependencies
@@ -20,3 +20,5 @@ Commits can be rewritten at any time.
 - `com.google.gwt.[cell,view,user.cellview]`: Cell Widgets included
 - `com.google.gwt.editor.ui.client`: Editor Adapters for HasText / ValueBoxBase, as well as ValueBoxEditorDecorator
 - `com.google.gwt.user.DOM.gwt.xml`: DOM and Event related classes included
+- `com.google.gwt.user.client.TakesValue`: needs to exist in some project and is mostly used by widgets
+- `com.google.gwt.editor.client.adapters.TakesValueEditor`: needs to exist in some project and is mostly used by widgets
