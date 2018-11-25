@@ -9,6 +9,9 @@ repositories {
     mavenLocal()
     mavenCentral()
     maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
+    maven {
         url 'https://repo.vertispan.com/gwt-snapshot'
     }
 }
