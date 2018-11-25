@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.editor.client.IsEditor;
+import org.gwtproject.editor.client.IsEditor;
 import com.google.gwt.text.shared.Renderer;
 import com.google.gwt.text.shared.ToStringRenderer;
 import org.gwtproject.editor.client.adapters.TakesValueEditor;

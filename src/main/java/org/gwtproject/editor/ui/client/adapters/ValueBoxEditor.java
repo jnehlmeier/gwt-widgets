@@ -15,8 +15,8 @@
  */
 package org.gwtproject.editor.ui.client.adapters;
 
-import com.google.gwt.editor.client.EditorDelegate;
-import com.google.gwt.editor.client.HasEditorDelegate;
+import org.gwtproject.editor.client.EditorDelegate;
+import org.gwtproject.editor.client.HasEditorDelegate;
 import org.gwtproject.editor.client.adapters.TakesValueEditor;
 import org.gwtproject.user.client.ui.ValueBoxBase;
 
@@ -72,7 +72,7 @@ public class ValueBoxEditor<T> extends TakesValueEditor<T> implements
   /**
    * Calls {@link ValueBoxBase#getValueOrThrow()}. If a {@link ParseException}
    * is thrown, it will be available through
-   * {@link com.google.gwt.editor.client.EditorError#getUserData()
+   * {@link org.gwtproject.editor.client.EditorError#getUserData()
    * EditorError.getUserData()}.
    *
    * @return a value of type T

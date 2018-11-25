@@ -26,6 +26,7 @@ dependencies {
     api 'org.gwtproject.event:gwt-event-compat:HEAD-SNAPSHOT'
     api 'org.gwtproject.event:gwt-event-legacy:HEAD-SNAPSHOT'
     api 'org.gwtproject.event:gwt-event-dom:1.0-SNAPSHOT'
+    api 'org.gwtproject:editors:1.0-SNAPSHOT'
     api 'org.gwtproject.animation:gwt-animation:1.0-SNAPSHOT'
     api 'org.gwtproject.user.window:gwt-window:HEAD-SNAPSHOT'
     api 'org.gwtproject.aria:gwt-aria:1.0-SNAPSHOT'

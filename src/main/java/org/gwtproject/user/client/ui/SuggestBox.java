@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.editor.client.IsEditor;
-import com.google.gwt.editor.client.LeafValueEditor;
+import org.gwtproject.editor.client.IsEditor;
+import org.gwtproject.editor.client.LeafValueEditor;
 import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;

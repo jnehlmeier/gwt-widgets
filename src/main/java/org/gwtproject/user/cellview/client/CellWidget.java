@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.cellview.client;
 
-import com.google.gwt.editor.client.IsEditor;
-import com.google.gwt.editor.client.LeafValueEditor;
+import org.gwtproject.editor.client.IsEditor;
+import org.gwtproject.editor.client.LeafValueEditor;
 import org.gwtproject.cell.client.Cell;
 import org.gwtproject.cell.client.Cell.Context;
 import org.gwtproject.cell.client.ValueUpdater;

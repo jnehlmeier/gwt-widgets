@@ -15,7 +15,7 @@
  */
 package org.gwtproject.editor.ui.client.adapters;
 
-import com.google.gwt.editor.client.LeafValueEditor;
+import org.gwtproject.editor.client.LeafValueEditor;
 import org.gwtproject.user.client.ui.HasText;
 
 /**

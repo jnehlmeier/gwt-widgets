@@ -23,9 +23,8 @@
     <!-- ValueListBox uses ProvidesKey, SimpleKeyProvider -->
     <inherits name="org.gwtproject.view.View" />
     <inherits name="org.gwtproject.debug.DebugBase" />
+    <inherits name="org.gwtproject.editor.Editor" />
     <inherits name="org.gwtproject.WidgetsEditorSupport" />
 
-    <source path="client/ui">
-        <!--<skip name="ValuePicker" />-->
-    </source>
+    <source path="client/ui"/>
 </module>

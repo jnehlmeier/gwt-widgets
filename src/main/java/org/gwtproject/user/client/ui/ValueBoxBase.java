@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.editor.client.IsEditor;
+import org.gwtproject.editor.client.IsEditor;
 import com.google.gwt.i18n.client.BidiPolicy;
 import com.google.gwt.i18n.shared.DirectionEstimator;
 import com.google.gwt.i18n.shared.HasDirectionEstimator;
