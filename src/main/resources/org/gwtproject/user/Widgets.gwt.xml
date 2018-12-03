@@ -26,5 +26,23 @@
     <inherits name="org.gwtproject.editor.Editor" />
     <inherits name="org.gwtproject.WidgetsEditorSupport" />
 
+    <inherits name="org.gwtproject.safehtml.SafeHtml" />
+    <inherits name="org.gwtproject.safecss.SafeCss" />
+    <inherits name="org.gwtproject.event.dom.EventDOM" />
+    <inherits name="org.gwtproject.event.logical.LogicalEvent" />
+    <inherits name="org.gwtproject.event.legacy.EventLegacy" />
+    <inherits name="org.gwtproject.layout.Layout" />
+    <inherits name="org.gwtproject.user.window.Window" />
+    <inherits name="org.gwtproject.user.history.History" />
+    <inherits name="org.gwtproject.timer.Timer" />
+    <inherits name="org.gwtproject.animation.Animation" />
+    <inherits name="org.gwtproject.aria.Aria" />
+    <inherits name="org.gwtproject.dom.builder.DomBuilder"/>
+    <inherits name="org.gwtproject.user.cellview.CellView" />
+
+    <inherits name="org.gwtproject.i18n.I18N" />
+    <inherits name="org.gwtproject.text.Text" />
+    <inherits name="org.gwtproject.resources.Resources" />
+
     <source path="client/ui"/>
 </module>
