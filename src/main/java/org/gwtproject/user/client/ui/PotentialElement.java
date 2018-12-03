@@ -67,7 +67,7 @@ public class PotentialElement extends Element {
     var el = new $wnd.GwtPotentialElementShim();
     el.tagName = tagName;
     el.__gwt_resolve = @org.gwtproject.user.client.ui.PotentialElement::buildResolveCallback(Lorg/gwtproject/user/client/ui/UIObject;)(o);
-    return @org.gwtproject.dom.client.Element::as(Lcom/google/gwt/core/client/JavaScriptObject;)(el);
+    return @org.gwtproject.dom.client.Element::as(Lorg/gwtproject/core/client/JavaScriptObject;)(el);
   }-*/;
 
   /**

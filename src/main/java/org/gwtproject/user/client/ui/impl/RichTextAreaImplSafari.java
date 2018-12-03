@@ -38,7 +38,7 @@ public class RichTextAreaImplSafari extends RichTextAreaImplStandard {
     var wnd = elem.contentWindow;
 
     elem.__gwt_handler = function(evt) {
-      @org.gwtproject.user.client.DOM::dispatchEvent(Lorg/gwtproject/user/client/Event;Lcom/google/gwt/dom/client/Element;)(evt, elem);
+      @org.gwtproject.user.client.DOM::dispatchEvent(Lorg/gwtproject/user/client/Event;Lorg/gwtproject/dom/client/Element;)(evt, elem);
     };
 
     wnd.addEventListener('keydown', elem.__gwt_handler, true);
@@ -56,11 +56,11 @@ public class RichTextAreaImplSafari extends RichTextAreaImplStandard {
     // dispatch through the normal handler method, as some of the querying we do
     // there interferes with focus.
     wnd.onfocus = function(evt) {
-      @org.gwtproject.user.client.DOM::dispatchEvent(Lorg/gwtproject/user/client/Event;Lcom/google/gwt/dom/client/Element;)(evt, elem);
+      @org.gwtproject.user.client.DOM::dispatchEvent(Lorg/gwtproject/user/client/Event;Lorg/gwtproject/dom/client/Element;)(evt, elem);
     };
 
     wnd.onblur = function(evt) {
-      @org.gwtproject.user.client.DOM::dispatchEvent(Lorg/gwtproject/user/client/Event;Lcom/google/gwt/dom/client/Element;)(evt, elem);
+      @org.gwtproject.user.client.DOM::dispatchEvent(Lorg/gwtproject/user/client/Event;Lorg/gwtproject/dom/client/Element;)(evt, elem);
     };
   }-*/;
 
