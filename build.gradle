@@ -17,6 +17,7 @@ repositories {
 }
 
 sourceSets.main.java.srcDir 'src/tmp/java'
+sourceSets.main.resources.srcDir 'src/tmp/resources'
 sourceSets.main.java.srcDir 'src-generated/main/java'
 sourceSets.test.java.srcDir 'src-generated/test/java'
 
