@@ -1,6 +1,5 @@
 package org.gwtproject.event.shared;
 
-import org.gwtproject.event.shared.Event;
 import org.gwtproject.event.legacy.shared.EventHandler;
 
 import java.util.*;
@@ -8,12 +7,12 @@ import java.util.*;
 /**
  * Manager responsible for adding handlers to event sources and firing those
  * handlers on passed in events. Primitive ancestor of {@link EventBus}, and
- * used at the core of {com.google.gwt.user.client.ui.Widget}.
+ * used at the core of {org.gwtproject.user.client.ui.Widget}.
  * <p>
  * While widget authors should continue to use
- * {@link com.google.gwt.user.client.ui.Widget#addDomHandler(EventHandler, com.google.gwt.event.dom.client.DomEvent.Type)}
+ * {@link org.gwtproject.user.client.ui.Widget#addDomHandler(EventHandler, org.gwtproject.event.dom.client.DomEvent.Type)}
  * and
- * {@link com.google.gwt.user.client.ui.Widget#addHandler(EventHandler, com.google.gwt.event.shared.GwtEvent.Type)}
+ * {@link org.gwtproject.user.client.ui.Widget#addHandler(Object, org.gwtproject.event.shared.Event.Type)}
  * , application developers are strongly discouraged from using a HandlerManager
  * instance as a global event dispatch mechanism.
  */

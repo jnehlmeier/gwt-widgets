@@ -30,7 +30,7 @@
  * <li>{@link org.gwtproject.cell.client.DateCell DateCell} - a cell displays a date (NOTE: does not currently perform
  * any localization)</li>
  * <li>{@link org.gwtproject.cell.client.DatePickerCell DatePickerCell} - a cell that displays a date and allows editing
- * using a {@link com.google.gwt.user.datepicker.client.DatePicker DatePicker}
+ * using a {@link org.gwtproject.user.datepicker.client.DatePicker DatePicker}
  * widget</li>
  * <li>{@link org.gwtproject.cell.client.EditTextCell EditTextCell} - a cell that displays editable text</li>
  * <li>{@link org.gwtproject.cell.client.IconCellDecorator IconCellDecorator} - a cell that adds an icon to another cell</li>

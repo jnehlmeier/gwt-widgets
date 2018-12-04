@@ -23,7 +23,7 @@ import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.Event;
 
 /**
- * Base implementation of {@link com.google.gwt.user.client.impl.DOMImpl} shared
+ * Base implementation of {@link org.gwtproject.user.client.impl.DOMImpl} shared
  * by those browsers that come a bit closer to supporting a common standard (ie,
  * not legacy IEs).
  */

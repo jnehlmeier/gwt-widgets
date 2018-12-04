@@ -33,7 +33,7 @@
  * 
  * <pre>
  * &lt;module>
- *   &lt;inherits name='com.google.gwt.user.User'/>
+ *   &lt;inherits name='org.gwtproject.user.Widgets'/>
  *   
  *   &lt;!-- Inheriting 'Debug' on the next line makes the features available. -->
  *   &lt;inherits name='org.gwtproject.debug.Debug'/>

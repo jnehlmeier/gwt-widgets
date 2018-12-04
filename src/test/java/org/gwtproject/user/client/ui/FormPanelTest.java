@@ -28,7 +28,7 @@ import org.gwtproject.user.client.ui.FormPanel.SubmitHandler;
 /**
  * Tests the FormPanel.
  *
- * @see com.google.gwt.user.server.ui.FormPanelTestServlet
+ * @see org.gwtproject.user.server.ui.FormPanelTestServlet
  */
 public class FormPanelTest extends SimplePanelTestBase<FormPanel> {
 

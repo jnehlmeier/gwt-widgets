@@ -214,7 +214,7 @@ public abstract class UIObject implements HasVisibility {
    * the DebugID module in your gwt.xml file by adding the following line:
    * 
    * <pre class="code">
-   * &lt;inherits name="com.google.gwt.user.Debug"/&gt;</pre>
+   * &lt;inherits name="org.gwtproject.user.Debug"/&gt;</pre>
    * </p>
    * 
    * @param elem the target {@link Element}
@@ -519,7 +519,7 @@ public abstract class UIObject implements HasVisibility {
    * the DebugID module in your gwt.xml file by adding the following line:
    * 
    * <pre class="code">
-   * &lt;inherits name="com.google.gwt.user.Debug"/&gt;</pre>
+   * &lt;inherits name="org.gwtproject.user.Debug"/&gt;</pre>
    * 
    * @param id the ID to set on the main element
    */
@@ -858,7 +858,7 @@ public abstract class UIObject implements HasVisibility {
    * your gwt.xml file by adding the following line:
    * 
    * <pre class="code">
-   * &lt;inherits name="com.google.gwt.user.Debug"/&gt;</pre>
+   * &lt;inherits name="org.gwtproject.user.Debug"/&gt;</pre>
    * 
    * @param baseID the base ID used by the main element
    */
