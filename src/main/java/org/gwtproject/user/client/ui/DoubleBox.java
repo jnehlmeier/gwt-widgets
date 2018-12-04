@@ -16,8 +16,8 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.Document;
-import com.google.gwt.text.client.DoubleParser;
-import com.google.gwt.text.client.DoubleRenderer;
+import org.gwtproject.text.client.DoubleParser;
+import org.gwtproject.text.client.DoubleRenderer;
 
 /**
  * A ValueBox that uses {@link DoubleParser} and {@link DoubleRenderer}.

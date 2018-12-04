@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.text.shared.Parser;
+import org.gwtproject.text.shared.Parser;
 
 import java.text.ParseException;
 

@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.text.client.NumberFormatRenderer;
 import org.gwtproject.i18n.client.NumberFormat;
+import org.gwtproject.text.client.NumberFormatRenderer;
 
 /**
  * Extends {@link ValueLabel} for convenience when dealing with numbers and

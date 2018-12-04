@@ -20,8 +20,8 @@ import org.gwtproject.dom.client.Element;
 import org.gwtproject.event.logical.shared.ValueChangeEvent;
 import org.gwtproject.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.junit.client.GWTTestCase;
-import com.google.gwt.text.shared.Renderer;
-import com.google.gwt.text.shared.testing.PassthroughRenderer;
+import org.gwtproject.text.shared.Renderer;
+import org.gwtproject.text.shared.testing.PassthroughRenderer;
 
 import java.text.ParseException;
 

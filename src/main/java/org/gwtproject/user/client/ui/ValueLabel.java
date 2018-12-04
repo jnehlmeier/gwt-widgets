@@ -17,9 +17,9 @@ package org.gwtproject.user.client.ui;
 
 import org.gwtproject.editor.client.IsEditor;
 import org.gwtproject.editor.client.LeafValueEditor;
-import com.google.gwt.text.shared.Parser;
-import com.google.gwt.text.shared.Renderer;
-import com.google.gwt.text.shared.ToStringRenderer;
+import org.gwtproject.text.shared.Parser;
+import org.gwtproject.text.shared.Renderer;
+import org.gwtproject.text.shared.ToStringRenderer;
 import com.google.gwt.uibinder.client.UiConstructor;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;

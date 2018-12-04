@@ -16,8 +16,8 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.Element;
-import com.google.gwt.text.shared.testing.PassthroughParser;
-import com.google.gwt.text.shared.testing.PassthroughRenderer;
+import org.gwtproject.text.shared.testing.PassthroughParser;
+import org.gwtproject.text.shared.testing.PassthroughRenderer;
 
 /**
  * Abstract base class for most text entry widgets.

@@ -1,4 +1,5 @@
 <module>
     <inherits name="org.gwtproject.i18n.I18N"/>
+    <source path="client" />
     <source path="shared" />
 </module>

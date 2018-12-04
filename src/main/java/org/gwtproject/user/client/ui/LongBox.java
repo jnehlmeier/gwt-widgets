@@ -16,8 +16,8 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.Document;
-import com.google.gwt.text.client.LongParser;
-import com.google.gwt.text.client.LongRenderer;
+import org.gwtproject.text.client.LongParser;
+import org.gwtproject.text.client.LongRenderer;
 
 /**
  * A ValueBox that uses {@link LongParser} and {@link LongRenderer}.

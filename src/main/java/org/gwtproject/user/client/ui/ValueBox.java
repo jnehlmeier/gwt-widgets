@@ -18,9 +18,9 @@ package org.gwtproject.user.client.ui;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.InputElement;
-import com.google.gwt.text.shared.Parser;
-import com.google.gwt.text.shared.Renderer;
 import org.gwtproject.i18n.client.LocaleInfo;
+import org.gwtproject.text.shared.Parser;
+import org.gwtproject.text.shared.Renderer;
 
 /**
  * A text box able to parse its displayed value.

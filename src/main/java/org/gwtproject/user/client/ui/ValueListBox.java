@@ -16,8 +16,8 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.editor.client.IsEditor;
-import com.google.gwt.text.shared.Renderer;
-import com.google.gwt.text.shared.ToStringRenderer;
+import org.gwtproject.text.shared.Renderer;
+import org.gwtproject.text.shared.ToStringRenderer;
 import org.gwtproject.editor.client.adapters.TakesValueEditor;
 import org.gwtproject.event.dom.client.ChangeEvent;
 import org.gwtproject.event.dom.client.ChangeHandler;
