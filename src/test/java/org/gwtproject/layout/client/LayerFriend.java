@@ -15,7 +15,7 @@
  */
 package org.gwtproject.layout.client;
 
-import org.gwtproject.dom.client.Style.Unit;
+import org.gwtproject.dom.style.shared.Unit;
 import org.gwtproject.layout.client.Layout.Layer;
 
 /**

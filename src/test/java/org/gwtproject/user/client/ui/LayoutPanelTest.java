@@ -18,12 +18,10 @@ package org.gwtproject.user.client.ui;
 import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import org.gwtproject.dom.client.Document;
-import org.gwtproject.dom.client.Style.Unit;
+import org.gwtproject.dom.style.shared.Unit;
 import org.gwtproject.layout.client.LayerFriend;
-import org.gwtproject.layout.client.Layout;
 import org.gwtproject.layout.client.Layout.AnimationCallback;
 import org.gwtproject.layout.client.Layout.Layer;
-import org.gwtproject.user.client.Command;
 
 import java.util.ArrayList;
 import java.util.List;
