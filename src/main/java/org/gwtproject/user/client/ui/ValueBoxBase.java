@@ -16,11 +16,11 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.editor.client.IsEditor;
-import com.google.gwt.i18n.client.BidiPolicy;
-import com.google.gwt.i18n.shared.DirectionEstimator;
-import com.google.gwt.i18n.shared.HasDirectionEstimator;
 import com.google.gwt.text.shared.Parser;
 import com.google.gwt.text.shared.Renderer;
+import org.gwtproject.i18n.client.BidiPolicy;
+import org.gwtproject.i18n.shared.DirectionEstimator;
+import org.gwtproject.i18n.shared.HasDirectionEstimator;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.editor.ui.client.adapters.ValueBoxEditor;
 import org.gwtproject.event.dom.client.ChangeEvent;

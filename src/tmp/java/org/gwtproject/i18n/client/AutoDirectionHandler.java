@@ -1,7 +1,7 @@
 package org.gwtproject.i18n.client;
 
-import com.google.gwt.i18n.client.HasDirection;
-import com.google.gwt.i18n.shared.DirectionEstimator;
+import org.gwtproject.i18n.client.HasDirection;
+import org.gwtproject.i18n.shared.DirectionEstimator;
 import org.gwtproject.event.dom.client.HasKeyUpHandlers;
 import org.gwtproject.user.client.ui.ValueBoxBase;
 

@@ -15,8 +15,8 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.i18n.client.NumberFormat;
 import com.google.gwt.text.client.NumberFormatRenderer;
+import org.gwtproject.i18n.client.NumberFormat;
 
 /**
  * Extends {@link ValueLabel} for convenience when dealing with numbers and
@@ -58,7 +58,7 @@ import com.google.gwt.text.client.NumberFormatRenderer;
  * can specify a currency code using either of the following attributes:
  * <dl>
  * <dt>currencyData</dt>
- * <dd>a reference to a {@link com.google.gwt.i18n.client.CurrencyData
+ * <dd>a reference to a {@link org.gwtproject.i18n.client.CurrencyData
  * CurrencyData} instance.</dd>
  * <dt>currencyCode</dt>
  * <dd>an ISO4217 currency code.</dd>

@@ -15,7 +15,7 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.i18n.client.HasDirection.Direction; 
+import org.gwtproject.i18n.client.HasDirection.Direction;
 
 /**
  * An object that implements this interface contains text that has a direction.

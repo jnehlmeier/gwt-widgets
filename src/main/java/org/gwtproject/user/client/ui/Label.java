@@ -72,8 +72,8 @@ import org.gwtproject.event.dom.client.TouchStartEvent;
 import org.gwtproject.event.dom.client.TouchStartHandler;
 import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.i18n.client.BidiUtils;
-import com.google.gwt.i18n.client.HasDirection;
-import com.google.gwt.i18n.shared.DirectionEstimator;
+import org.gwtproject.i18n.client.HasDirection;
+import org.gwtproject.i18n.shared.DirectionEstimator;
 
 /**
  * A widget that contains arbitrary text, <i>not</i> interpreted as HTML.

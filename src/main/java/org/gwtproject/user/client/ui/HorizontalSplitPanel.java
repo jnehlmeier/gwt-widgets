@@ -20,7 +20,7 @@ import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.style.shared.TextAlign;
-import com.google.gwt.i18n.client.LocaleInfo;
+import org.gwtproject.i18n.client.LocaleInfo;
 import org.gwtproject.resources.client.ClientBundle;
 import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;

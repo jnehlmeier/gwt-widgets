@@ -15,7 +15,7 @@
  */
 package org.gwtproject.cell.client;
 
-import com.google.gwt.i18n.client.NumberFormat;
+import org.gwtproject.i18n.client.NumberFormat;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.text.shared.SafeHtmlRenderer;
 import org.gwtproject.text.shared.SimpleSafeHtmlRenderer;

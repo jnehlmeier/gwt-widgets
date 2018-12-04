@@ -18,8 +18,8 @@ package org.gwtproject.user.client.ui;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.style.shared.WhiteSpace;
-import com.google.gwt.i18n.shared.DirectionEstimator;
-import com.google.gwt.i18n.shared.HasDirectionEstimator;
+import org.gwtproject.i18n.shared.DirectionEstimator;
+import org.gwtproject.i18n.shared.HasDirectionEstimator;
 
 /**
  * Abstract base class for all text display widgets.

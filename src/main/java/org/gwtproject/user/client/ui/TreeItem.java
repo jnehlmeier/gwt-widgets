@@ -19,7 +19,7 @@ import org.gwtproject.animation.client.Animation;
 import org.gwtproject.aria.client.Roles;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.style.shared.Unit;
-import com.google.gwt.i18n.client.LocaleInfo;
+import org.gwtproject.i18n.client.LocaleInfo;
 import org.gwtproject.safehtml.client.HasSafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;

@@ -17,11 +17,11 @@ package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.i18n.client.BidiUtils;
-import com.google.gwt.i18n.client.HasDirection.Direction;
-import com.google.gwt.i18n.shared.BidiFormatter;
-import com.google.gwt.i18n.shared.DirectionEstimator;
-import com.google.gwt.i18n.shared.HasDirectionEstimator;
-import com.google.gwt.i18n.shared.WordCountDirectionEstimator;
+import org.gwtproject.i18n.client.HasDirection.Direction;
+import org.gwtproject.i18n.shared.BidiFormatter;
+import org.gwtproject.i18n.shared.DirectionEstimator;
+import org.gwtproject.i18n.shared.HasDirectionEstimator;
+import org.gwtproject.i18n.shared.WordCountDirectionEstimator;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
 import org.gwtproject.safehtml.shared.annotations.SuppressIsSafeHtmlCastCheck;

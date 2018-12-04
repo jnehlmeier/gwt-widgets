@@ -28,7 +28,7 @@ import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.style.shared.Position;
 import org.gwtproject.dom.style.shared.Unit;
 import org.gwtproject.dom.client.TableRowElement;
-import com.google.gwt.i18n.client.LocaleInfo;
+import org.gwtproject.i18n.client.LocaleInfo;
 import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;

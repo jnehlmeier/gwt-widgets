@@ -23,11 +23,11 @@ import org.gwtproject.event.dom.client.ChangeEvent;
 import org.gwtproject.event.dom.client.ChangeHandler;
 import org.gwtproject.event.dom.client.HasChangeHandlers;
 import org.gwtproject.event.shared.HandlerRegistration;
-import com.google.gwt.i18n.client.HasDirection.Direction;
-import com.google.gwt.i18n.shared.BidiFormatter;
-import com.google.gwt.i18n.shared.DirectionEstimator;
-import com.google.gwt.i18n.shared.HasDirectionEstimator;
-import com.google.gwt.i18n.shared.WordCountDirectionEstimator;
+import org.gwtproject.i18n.client.HasDirection.Direction;
+import org.gwtproject.i18n.shared.BidiFormatter;
+import org.gwtproject.i18n.shared.DirectionEstimator;
+import org.gwtproject.i18n.shared.HasDirectionEstimator;
+import org.gwtproject.i18n.shared.WordCountDirectionEstimator;
 
 /**
  * A widget that presents a list of choices to the user, either as a list box or

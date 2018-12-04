@@ -57,7 +57,7 @@ import org.gwtproject.event.logical.shared.OpenHandler;
 import org.gwtproject.event.logical.shared.SelectionEvent;
 import org.gwtproject.event.logical.shared.SelectionHandler;
 import org.gwtproject.event.shared.HandlerRegistration;
-import com.google.gwt.i18n.client.LocaleInfo;
+import org.gwtproject.i18n.client.LocaleInfo;
 import org.gwtproject.resources.client.ClientBundle;
 import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.safehtml.shared.SafeHtml;

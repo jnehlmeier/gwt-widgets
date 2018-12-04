@@ -32,7 +32,7 @@ import org.gwtproject.event.logical.shared.OpenEvent;
 import org.gwtproject.event.logical.shared.ValueChangeEvent;
 import org.gwtproject.event.logical.shared.ValueChangeHandler;
 import org.gwtproject.event.shared.HandlerRegistration;
-import com.google.gwt.i18n.client.LocaleInfo;
+import org.gwtproject.i18n.client.LocaleInfo;
 import org.gwtproject.resources.client.ClientBundle;
 import org.gwtproject.resources.client.CssResource;
 import org.gwtproject.resources.client.CssResource.ImportedWithPrefix;

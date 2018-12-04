@@ -17,7 +17,7 @@ package org.gwtproject.user.client.ui;
 
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
-import com.google.gwt.i18n.shared.DirectionEstimator;
+import org.gwtproject.i18n.shared.DirectionEstimator;
 
 /**
  * A widget that contains arbitrary text, <i>not</i> interpreted as HTML.

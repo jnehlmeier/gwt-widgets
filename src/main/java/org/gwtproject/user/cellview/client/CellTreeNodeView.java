@@ -36,7 +36,7 @@ import org.gwtproject.event.logical.shared.CloseEvent;
 import org.gwtproject.event.logical.shared.OpenEvent;
 import org.gwtproject.event.shared.HandlerManager;
 import org.gwtproject.event.shared.HandlerRegistration;
-import com.google.gwt.i18n.client.LocaleInfo;
+import org.gwtproject.i18n.client.LocaleInfo;
 import org.gwtproject.safecss.shared.SafeStyles;
 import org.gwtproject.safecss.shared.SafeStylesUtils;
 import org.gwtproject.safehtml.client.SafeHtmlTemplates;

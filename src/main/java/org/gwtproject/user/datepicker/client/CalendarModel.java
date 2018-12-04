@@ -16,8 +16,8 @@
 
 package org.gwtproject.user.datepicker.client;
 
-import com.google.gwt.i18n.client.DateTimeFormat;
-import com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat;
+import org.gwtproject.i18n.client.DateTimeFormat;
+import org.gwtproject.i18n.client.DateTimeFormat.PredefinedFormat;
 
 import java.util.Date;
 

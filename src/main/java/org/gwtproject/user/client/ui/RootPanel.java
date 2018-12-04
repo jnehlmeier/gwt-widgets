@@ -21,8 +21,8 @@ import org.gwtproject.dom.client.Element;
 import org.gwtproject.event.logical.shared.CloseEvent;
 import org.gwtproject.event.logical.shared.CloseHandler;
 import org.gwtproject.i18n.client.BidiUtils;
-import com.google.gwt.i18n.client.HasDirection;
-import com.google.gwt.i18n.client.LocaleInfo;
+import org.gwtproject.i18n.client.HasDirection;
+import org.gwtproject.i18n.client.LocaleInfo;
 import org.gwtproject.user.client.Event;
 import org.gwtproject.user.window.client.Window;
 

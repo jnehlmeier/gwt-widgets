@@ -15,9 +15,9 @@
  */
 package org.gwtproject.user.client.ui;
 
-import com.google.gwt.i18n.shared.DateTimeFormat;
-import com.google.gwt.i18n.shared.TimeZone;
 import com.google.gwt.text.client.DateTimeFormatRenderer;
+import org.gwtproject.i18n.shared.DateTimeFormat;
+import org.gwtproject.i18n.shared.TimeZone;
 
 import java.util.Date;
 

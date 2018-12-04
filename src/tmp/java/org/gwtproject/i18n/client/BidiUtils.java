@@ -1,6 +1,6 @@
 package org.gwtproject.i18n.client;
 
-import com.google.gwt.i18n.client.HasDirection;
+import org.gwtproject.i18n.client.HasDirection;
 import org.gwtproject.dom.client.Element;
 
 public class BidiUtils {

@@ -18,8 +18,8 @@ package org.gwtproject.user.datepicker.client;
 
 import org.gwtproject.editor.client.IsEditor;
 import org.gwtproject.editor.client.LeafValueEditor;
-import com.google.gwt.i18n.client.DateTimeFormat;
-import com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat;
+import org.gwtproject.i18n.client.DateTimeFormat;
+import org.gwtproject.i18n.client.DateTimeFormat.PredefinedFormat;
 import org.gwtproject.core.client.Scheduler;
 import org.gwtproject.core.client.Scheduler.ScheduledCommand;
 import org.gwtproject.editor.client.adapters.TakesValueEditor;

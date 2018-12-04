@@ -18,7 +18,7 @@ package org.gwtproject.user.client.ui;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.style.shared.Unit;
-import com.google.gwt.i18n.client.LocaleInfo;
+import org.gwtproject.i18n.client.LocaleInfo;
 import org.gwtproject.layout.client.Layout;
 import org.gwtproject.layout.client.Layout.Layer;
 
