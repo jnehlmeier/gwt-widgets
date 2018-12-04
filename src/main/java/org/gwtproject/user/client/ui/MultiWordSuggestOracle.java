@@ -18,8 +18,8 @@ package org.gwtproject.user.client.ui;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.safehtml.shared.SafeHtmlUtils;
 import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
-import com.google.gwt.user.client.rpc.IsSerializable;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -71,7 +71,7 @@ public class MultiWordSuggestOracle extends SuggestOracle {
   /**
    * Suggestion class for {@link MultiWordSuggestOracle}.
    */
-  public static class MultiWordSuggestion implements Suggestion, IsSerializable {
+  public static class MultiWordSuggestion implements Suggestion, Serializable {
     @IsSafeHtml private String displayString;
     private String replacementString;
 

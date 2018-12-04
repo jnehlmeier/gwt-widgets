@@ -16,8 +16,8 @@
 package org.gwtproject.user.client.ui;
 
 import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
-import com.google.gwt.user.client.rpc.IsSerializable;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -50,7 +50,7 @@ public abstract class SuggestOracle {
   /**
    * A {@link SuggestOracle} request.
    */
-  public static class Request implements IsSerializable {
+  public static class Request implements Serializable {
     private int limit = 20;
     private String query;
 
@@ -130,7 +130,7 @@ public abstract class SuggestOracle {
    * 
    * <p><code>response.setMoreSuggestionsCount(102);</code>
    */
-  public static class Response implements IsSerializable {
+  public static class Response implements Serializable {
     private Collection<? extends Suggestion> suggestions;
 
     /**

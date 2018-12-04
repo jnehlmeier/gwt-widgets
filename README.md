@@ -9,6 +9,9 @@ Commits can be rewritten at any time.
 - duplicated `test/com.google.gwt.layout.client.LayerFriend` because there is no `gwt-layout-tests.jar` but 
 `LayoutPanelTest` currently wants to look at package private information.
 
+### Breaking changes
+  - To avoid dependency to GWT-RPC, `SuggestOracle.Request/Response` and `MultiWordSuggestion` do not 
+  implement `IsSerializable` anymore. Instead they implement `Serializable`.
 
 
 ### Embedded stuff because of cyclic dependencies
