@@ -1,3 +1,7 @@
 <module>
+    <inherits name="org.gwtproject.safehtml.SafeHtml" />
+    <inherits name="org.gwtproject.dom.DOM" />
+    <inherits name="org.gwtproject.http.HTTP" />
+    <!--<inherits name="com.google.gwt.jsonp.Jsonp" />-->
     <source path="client" />
 </module>

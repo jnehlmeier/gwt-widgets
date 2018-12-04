@@ -14,7 +14,7 @@
   the License.
 -->
 <module>
-  <inherits name="com.google.gwt.user.UI"/>
+  <inherits name="org.gwtproject.user.Widgets"/>
   <public path="public" />
 
   <!-- Define the support property for Video and Audio-->

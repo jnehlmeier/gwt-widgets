@@ -20,9 +20,9 @@
   <inherits name="org.gwtproject.core.Core"/>
   <inherits name="org.gwtproject.dom.DOM"/>
   <inherits name="org.gwtproject.event.Event"/>
-  <inherits name="com.google.gwt.user.History"/>
+  <inherits name="org.gwtproject.user.history.History"/>
   <!-- Following needed for WindowImplIE -->
-  <inherits name="com.google.gwt.resources.Resources"/>
+  <inherits name="org.gwtproject.resources.Resources"/>
   <inherits name="com.google.gwt.useragent.UserAgent"/>
 
   <source path="client">

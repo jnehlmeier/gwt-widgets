@@ -14,7 +14,7 @@
   the License.
 -->
 <module>
-  <inherits name="com.google.gwt.user.User" />
+  <inherits name="org.gwtproject.user.Widgets"/>
   <inherits name="org.gwtproject.cell.Cell" />
   <source path="client"/>
   <public path="public" />

@@ -17,7 +17,7 @@
 <module>
   <!-- Inherit ClippedImage, because ImageBundleGerator uses                -->
   <!-- ClippedImagePrototype, which depends on ClippedImage                 -->
-  <inherits name="com.google.gwt.user.ClippedImage" />
+  <inherits name="org.gwtproject.user.ClippedImage" />
 
   <generate-with class="com.google.gwt.user.rebind.ui.ImageBundleGenerator">
     <when-type-assignable class="org.gwtproject.user.client.ui.ImageBundle" />

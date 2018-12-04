@@ -16,7 +16,7 @@
 <module>
   <inherits name="org.gwtproject.aria.Aria"/>
   <inherits name="org.gwtproject.cell.Cell"/>
-  <inherits name="com.google.gwt.editor.Editor"/>
+  <inherits name="org.gwtproject.editor.Editor"/>
   <inherits name="org.gwtproject.view.View"/>
   <inherits name="com.google.gwt.user.UserAgent"/>
   <inherits name="org.gwtproject.user.Widgets" />
