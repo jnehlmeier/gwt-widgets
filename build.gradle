@@ -54,6 +54,7 @@ dependencies {
 compileJava.options.encoding = 'UTF-8'
 compileJava.options.sourcepath = files('src/main/resources')
 compileJava.options.annotationProcessorGeneratedSourcesDirectory = file('src-generated/main/java')
+compileTestJava.options.encoding = 'UTF-8'
 compileTestJava.options.annotationProcessorGeneratedSourcesDirectory = file('src-generated/test/java')
 
 jar {
