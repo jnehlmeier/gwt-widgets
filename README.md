@@ -13,15 +13,28 @@ Commits can be rewritten at any time.
   - To avoid dependency to GWT-RPC, `SuggestOracle.Request/Response` and `MultiWordSuggestion` do not 
   implement `IsSerializable` anymore. Instead they implement `Serializable`.
 
+### Deprecations
+\--
 
-### Embedded stuff because of cyclic dependencies
+### Embedded stuff because of cyclic dependencies or because it is only used by widgets
 
 - `com.google.gwt.canvas`: Canvas Widget
+- `com.google.gwt.cell`: Cells
+- `com.google.gwt.debug`: DebugInfo
+- `com.google.gwt.editor.client.adapters`: Editor adapters for HasData, TakesValue
+- `com.google.gwt.editor.ui.client.ValueBoxEditorDecorator`: A decorator widget which can show editor errors
+- `com.google.gwt.editor.ui.client.adapters`: Editor adapters for HasText, ValueBox
+- `com.google.gwt.event.shared.HandlerManager`: Deleted in gwt-event but required by widgets
 - `com.google.gwt.media`: Audio/Video Widget
-- `com.google.gwt.touch`: TouchScroller included
-- `com.google.gwt.user.datepicker`: DatePicker Widget
-- `com.google.gwt.[cell,view,user.cellview]`: Cell Widgets included
-- `com.google.gwt.editor.ui.client`: Editor Adapters for HasText / ValueBoxBase, as well as ValueBoxEditorDecorator
+- `com.google.gwt.touch`: Touch support for ScrollPanel
+- `com.google.gwt.user.cellview`: Cell based widgets (CellList, ...)
+- `com.google.gwt.user.client.TakesValue`: primarly used by widgets so included here instead of own artifact
+- `com.google.gwt.user.datepicker`: Date picker widget
+- `com.google.gwt.user.theme`: widget themes
+- `com.google.gwt.user.view`: support classes for cell based widgets
 - `com.google.gwt.user.DOM.gwt.xml`: DOM and Event related classes included
-- `com.google.gwt.user.client.TakesValue`: needs to exist in some project and is mostly used by widgets
-- `com.google.gwt.editor.client.adapters.TakesValueEditor`: needs to exist in some project and is mostly used by widgets
+
+### Required dependencies whose migration is still in progress
+- gwt-text (https://github.com/vegegoku/gwt-text)
+- gwt-i18n https://github.com/vegegoku/gwt-i18n)
+- gwt-resources (https://github.com/treblereel/gwt-resources)
