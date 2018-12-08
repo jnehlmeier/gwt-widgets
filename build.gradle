@@ -57,6 +57,11 @@ compileJava.options.annotationProcessorGeneratedSourcesDirectory = file('src-gen
 compileTestJava.options.encoding = 'UTF-8'
 compileTestJava.options.annotationProcessorGeneratedSourcesDirectory = file('src-generated/test/java')
 
+clean {
+    delete file('src-generated/main/java')
+    delete file('src-generated/test/java')
+}
+
 jar {
     from sourceSets.main.allJava
 }
