@@ -33,6 +33,7 @@ import org.gwtproject.i18n.client.LocaleInfo;
 import org.gwtproject.resources.client.ClientBundle;
 import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.resources.client.ImageResource.ImageOptions;
+import org.gwtproject.resources.client.Resource;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.annotations.IsSafeHtml;
 import org.gwtproject.user.client.DOM;
@@ -169,6 +170,7 @@ public class MenuBar extends Widget implements HasAnimation, CloseHandler<PopupP
   /**
    * A ClientBundle that contains the default resources for this widget.
    */
+  @Resource
   public interface Resources extends ClientBundle {
     /**
      * An image indicating a {@link MenuItem} has an associated submenu.
@@ -317,7 +319,7 @@ public class MenuBar extends Widget implements HasAnimation, CloseHandler<PopupP
    * @param vertical <code>true</code> to orient the menu bar vertically
    */
   public MenuBar(boolean vertical) {
-    this(vertical, GWT.<Resources> create(Resources.class));
+    this(vertical, new MenuBar_ResourcesImpl());
   }
 
   /**

@@ -29,6 +29,7 @@ import org.gwtproject.resources.client.CssResource.ImportedWithPrefix;
 import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.resources.client.ImageResource.ImageOptions;
 import org.gwtproject.resources.client.ImageResource.RepeatStyle;
+import org.gwtproject.resources.client.Resource;
 import org.gwtproject.safecss.shared.SafeStyles;
 import org.gwtproject.safecss.shared.SafeStylesBuilder;
 import org.gwtproject.safehtml.client.SafeHtmlTemplates;
@@ -117,6 +118,7 @@ public class ButtonCellBase<C> extends org.gwtproject.cell.client.AbstractCell<C
     /**
      * The resources used by this appearance.
      */
+    @Resource
     public interface Resources extends ClientBundle {
 
       /**
@@ -134,7 +136,7 @@ public class ButtonCellBase<C> extends org.gwtproject.cell.client.AbstractCell<C
      */
     @ImportedWithPrefix("gwt-ButtonCellBase")
     public interface Style extends CssResource {
-      String DEFAULT_CSS = "com/google/gwt/cell/client/ButtonCellBase.css";
+      String DEFAULT_CSS = "org/gwtproject/cell/client/ButtonCellBase.gss";
 
       /**
        * Applied to the button.
@@ -201,7 +203,7 @@ public class ButtonCellBase<C> extends org.gwtproject.cell.client.AbstractCell<C
 
     private static Resources getDefaultResources() {
       if (defaultResources == null) {
-        defaultResources = GWT.create(Resources.class);
+        defaultResources = new ButtonCellBase_DefaultAppearance_ResourcesImpl();
       }
       return defaultResources;
     }

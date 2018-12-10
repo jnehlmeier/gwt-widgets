@@ -15,6 +15,7 @@
  */
 package org.gwtproject.user.cellview.client;
 
+import org.gwtproject.resources.client.Resource;
 import org.gwtproject.user.cellview.client.AbstractHasData;
 import org.gwtproject.user.cellview.client.CellBasedWidgetImpl;
 import org.gwtproject.cell.client.Cell;
@@ -80,6 +81,7 @@ public class CellList<T> extends AbstractHasData<T> {
   /**
    * A ClientBundle that provides images for this widget.
    */
+  @Resource
   public interface Resources extends ClientBundle {
     /**
      * The background used for selected items.
@@ -102,7 +104,7 @@ public class CellList<T> extends AbstractHasData<T> {
     /**
      * The path to the default CSS styles used by this resource.
      */
-    String DEFAULT_CSS = "com/google/gwt/user/cellview/client/CellList.css";
+    String DEFAULT_CSS = "org/gwtproject/user/cellview/client/CellList.gss";
 
     /**
      * Applied to even items.
@@ -146,7 +148,7 @@ public class CellList<T> extends AbstractHasData<T> {
 
   private static Resources getDefaultResources() {
     if (DEFAULT_RESOURCES == null) {
-      DEFAULT_RESOURCES = GWT.create(Resources.class);
+      DEFAULT_RESOURCES = new CellList_ResourcesImpl();
     }
     return DEFAULT_RESOURCES;
   }

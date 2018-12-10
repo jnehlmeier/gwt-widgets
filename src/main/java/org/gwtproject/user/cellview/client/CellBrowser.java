@@ -39,6 +39,7 @@ import org.gwtproject.resources.client.CssResource.ImportedWithPrefix;
 import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.resources.client.ImageResource.ImageOptions;
 import org.gwtproject.resources.client.ImageResource.RepeatStyle;
+import org.gwtproject.resources.client.Resource;
 import org.gwtproject.safecss.shared.SafeStyles;
 import org.gwtproject.safecss.shared.SafeStylesBuilder;
 import org.gwtproject.safecss.shared.SafeStylesUtils;
@@ -91,6 +92,7 @@ public class CellBrowser extends AbstractCellTree implements ProvidesResize, Req
   /**
    * A ClientBundle that provides images for this widget.
    */
+  @Resource
   public interface Resources extends ClientBundle {
     /**
      * An image indicating a closed branch.
@@ -134,7 +136,7 @@ public class CellBrowser extends AbstractCellTree implements ProvidesResize, Req
     /**
      * The path to the default CSS styles used by this resource.
      */
-    String DEFAULT_CSS = "com/google/gwt/user/cellview/client/CellBrowser.css";
+    String DEFAULT_CSS = "org/gwtproject/user/cellview/client/CellBrowser.gss";
 
     /**
      * Applied to all columns.
@@ -894,7 +896,7 @@ public class CellBrowser extends AbstractCellTree implements ProvidesResize, Req
 
   private static Resources getDefaultResources() {
     if (DEFAULT_RESOURCES == null) {
-      DEFAULT_RESOURCES = GWT.create(Resources.class);
+      DEFAULT_RESOURCES = new CellBrowser_ResourcesImpl();
     }
     return DEFAULT_RESOURCES;
   }

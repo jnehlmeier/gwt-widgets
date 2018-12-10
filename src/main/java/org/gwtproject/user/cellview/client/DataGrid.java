@@ -32,6 +32,7 @@ import org.gwtproject.resources.client.CssResource;
 import org.gwtproject.resources.client.CssResource.ImportedWithPrefix;
 import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.resources.client.ImageResource.ImageOptions;
+import org.gwtproject.resources.client.Resource;
 import org.gwtproject.user.cellview.client.LoadingStateChangeEvent.LoadingState;
 import org.gwtproject.user.client.ui.CustomScrollPanel;
 import org.gwtproject.user.client.ui.FlexTable;
@@ -84,6 +85,7 @@ public class DataGrid<T> extends AbstractCellTable<T> implements RequiresResize 
   /**
    * A ClientBundle that provides images for this widget.
    */
+  @Resource
   public interface Resources extends ClientBundle {
     /**
      * The loading indicator used while the table is waiting for data.
@@ -121,7 +123,7 @@ public class DataGrid<T> extends AbstractCellTable<T> implements RequiresResize 
     /**
      * The path to the default CSS styles used by this resource.
      */
-    String DEFAULT_CSS = "com/google/gwt/user/cellview/client/DataGrid.css";
+    String DEFAULT_CSS = "org/gwtproject/user/cellview/client/DataGrid.gss";
 
     /**
      * Applied to every cell.

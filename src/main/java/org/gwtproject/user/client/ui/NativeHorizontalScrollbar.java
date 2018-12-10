@@ -22,6 +22,7 @@ import org.gwtproject.resources.client.ClientBundle;
 import org.gwtproject.resources.client.CommonResources;
 import org.gwtproject.resources.client.CssResource;
 import org.gwtproject.resources.client.CssResource.ImportedWithPrefix;
+import org.gwtproject.resources.client.Resource;
 import org.gwtproject.uibinder.client.UiBinder;
 import org.gwtproject.uibinder.client.UiField;
 import org.gwtproject.uibinder.client.UiTemplate;
@@ -38,6 +39,7 @@ public class NativeHorizontalScrollbar extends AbstractNativeScrollbar implement
   /**
    * A ClientBundle of resources used by this widget.
    */
+  @Resource
   public interface Resources extends ClientBundle {
     /**
      * The styles used in this widget.
@@ -50,6 +52,7 @@ public class NativeHorizontalScrollbar extends AbstractNativeScrollbar implement
    * A variation of {@link Resources} that renders the scrollbar
    * semi-transparent until it is hovered.
    */
+  @Resource
   public interface ResourcesTransparant extends Resources {
     /**
      * The styles used in this widget.
@@ -66,7 +69,7 @@ public class NativeHorizontalScrollbar extends AbstractNativeScrollbar implement
     /**
      * The path to the default CSS styles used by this resource.
      */
-    String DEFAULT_CSS = "com/google/gwt/user/client/ui/NativeHorizontalScrollbar.css";
+    String DEFAULT_CSS = "org/gwtproject/user/client/ui/NativeHorizontalScrollbar.gss";
 
     /**
      * Applied to the scrollbar.
@@ -82,7 +85,7 @@ public class NativeHorizontalScrollbar extends AbstractNativeScrollbar implement
     /**
      * The path to the default CSS styles used by this resource.
      */
-    String DEFAULT_CSS = "com/google/gwt/user/client/ui/NativeHorizontalScrollbarTransparent.css";
+    String DEFAULT_CSS = "org/gwtproject/user/client/ui/NativeHorizontalScrollbarTransparent.gss";
   }
 
   private static Resources DEFAULT_RESOURCES;
@@ -94,7 +97,7 @@ public class NativeHorizontalScrollbar extends AbstractNativeScrollbar implement
    */
   private static Resources getDefaultResources() {
     if (DEFAULT_RESOURCES == null) {
-      DEFAULT_RESOURCES = GWT.create(Resources.class);
+      DEFAULT_RESOURCES = new NativeHorizontalScrollbar_ResourcesImpl();
     }
     return DEFAULT_RESOURCES;
   }

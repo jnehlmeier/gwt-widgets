@@ -18,6 +18,7 @@ package org.gwtproject.cell.client;
 import com.google.gwt.core.client.GWT;
 import org.gwtproject.resources.client.ClientBundle;
 import org.gwtproject.resources.client.ImageResource;
+import org.gwtproject.resources.client.Resource;
 import org.gwtproject.user.client.ui.ImageResourceRenderer;
 
 /**
@@ -28,6 +29,7 @@ public class ImageResourceCellTest extends CellTestBase<ImageResource> {
   /**
    * The images used for this test.
    */
+  @Resource
   static interface Images extends ClientBundle {
     ImageResource prettyPiccy();
   }
@@ -66,7 +68,7 @@ public class ImageResourceCellTest extends CellTestBase<ImageResource> {
 
   private Images getImages() {
     if (images == null) {
-      images = GWT.create(Images.class);
+      images = new ImageResourceCellTest_ImagesImpl();
     }
     return images;
   }

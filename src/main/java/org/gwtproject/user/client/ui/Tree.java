@@ -60,6 +60,7 @@ import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.i18n.client.LocaleInfo;
 import org.gwtproject.resources.client.ClientBundle;
 import org.gwtproject.resources.client.ImageResource;
+import org.gwtproject.resources.client.Resource;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.Event;
@@ -106,6 +107,7 @@ public class Tree extends Widget implements HasTreeItems.ForIsWidget, HasWidgets
   /**
    * A ClientBundle that provides images for this widget.
    */
+  @Resource
   public interface Resources extends ClientBundle {
 
     /**
@@ -129,7 +131,7 @@ public class Tree extends Widget implements HasTreeItems.ForIsWidget, HasWidgets
    * deprecated APIs.
    */
   static class ImageAdapter {
-    private static final Resources DEFAULT_RESOURCES = GWT.create(Resources.class);
+    private static final Resources DEFAULT_RESOURCES = new Tree_ResourcesImpl();
     private final AbstractImagePrototype treeClosed;
     private final AbstractImagePrototype treeLeaf;
     private final AbstractImagePrototype treeOpen;

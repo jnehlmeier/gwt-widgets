@@ -143,7 +143,7 @@ public class CellTableTest extends AbstractCellTableTestBase<CellTable<String>> 
   public void testNullLoadingImage() {
     // Create a Resources instance that does not include a loading image.
     CellTable.Resources resources = new CellTable.Resources() {
-      private final CellTable.Resources defaultRes = GWT.create(CellTable.Resources.class);
+      private final CellTable.Resources defaultRes = new CellTable_ResourcesImpl();
 
       @Override
       public ImageResource cellTableFooterBackground() {
@@ -192,7 +192,7 @@ public class CellTableTest extends AbstractCellTableTestBase<CellTable<String>> 
   public void testNullSortIcons() {
     // Create a Resources instance that does not include sort images.
     CellTable.Resources resources = new CellTable.Resources() {
-      private final CellTable.Resources defaultRes = GWT.create(CellTable.Resources.class);
+      private final CellTable.Resources defaultRes = new CellTable_ResourcesImpl();
 
       @Override
       public ImageResource cellTableFooterBackground() {
@@ -245,7 +245,7 @@ public class CellTableTest extends AbstractCellTableTestBase<CellTable<String>> 
   public void testNullIcons() {
     // Create a Resources instance that does not include sort images.
     CellTable.Resources resources = new CellTable.Resources() {
-      private final CellTable.Resources defaultRes = GWT.create(CellTable.Resources.class);
+      private final CellTable.Resources defaultRes = new CellTable_ResourcesImpl();
 
       @Override
       public ImageResource cellTableFooterBackground() {

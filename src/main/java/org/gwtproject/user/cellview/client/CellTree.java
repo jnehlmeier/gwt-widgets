@@ -35,6 +35,7 @@ import org.gwtproject.resources.client.CssResource.ImportedWithPrefix;
 import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.resources.client.ImageResource.ImageOptions;
 import org.gwtproject.resources.client.ImageResource.RepeatStyle;
+import org.gwtproject.resources.client.Resource;
 import org.gwtproject.safecss.shared.SafeStyles;
 import org.gwtproject.safecss.shared.SafeStylesBuilder;
 import org.gwtproject.safehtml.client.SafeHtmlTemplates;
@@ -77,6 +78,7 @@ public class CellTree extends AbstractCellTree implements HasAnimation,
   /**
    * Resources that match the GWT standard style theme.
    */
+  @Resource
   public interface BasicResources extends Resources {
 
     @ImageOptions(flipRtl = true)
@@ -156,6 +158,7 @@ public class CellTree extends AbstractCellTree implements HasAnimation,
   /**
    * A ClientBundle that provides images for this widget.
    */
+  @Resource
   public interface Resources extends ClientBundle {
 
     /**
@@ -378,7 +381,7 @@ public class CellTree extends AbstractCellTree implements HasAnimation,
     /**
      * The path to the default CSS styles used by this resource.
      */
-    String DEFAULT_CSS = "com/google/gwt/user/cellview/client/CellTree.css";
+    String DEFAULT_CSS = "org/gwtproject/user/cellview/client/CellTree.gss";
 
     /**
      * Applied to the empty message.
@@ -454,7 +457,7 @@ public class CellTree extends AbstractCellTree implements HasAnimation,
     /**
      * The path to the default CSS styles used by this resource.
      */
-    String DEFAULT_CSS = "com/google/gwt/user/cellview/client/CellTreeBasic.css";
+    String DEFAULT_CSS = "org/gwtproject/user/cellview/client/CellTreeBasic.gss";
   }
 
   interface Template extends SafeHtmlTemplates {
@@ -473,7 +476,7 @@ public class CellTree extends AbstractCellTree implements HasAnimation,
 
   private static Resources getDefaultResources() {
     if (DEFAULT_RESOURCES == null) {
-      DEFAULT_RESOURCES = GWT.create(Resources.class);
+      DEFAULT_RESOURCES = new CellTree_ResourcesImpl();
     }
     return DEFAULT_RESOURCES;
   }

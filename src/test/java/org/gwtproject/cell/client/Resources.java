@@ -18,12 +18,14 @@ package org.gwtproject.cell.client;
 import com.google.gwt.core.client.GWT;
 import org.gwtproject.resources.client.ClientBundle;
 import org.gwtproject.resources.client.ImageResource;
+import org.gwtproject.resources.client.Resource;
 
 /**
  * Resources used by the tests in this package.
  */
 class Resources {
 
+  @Resource
   interface Bundle extends ClientBundle {
     ImageResource prettyPiccy();
   }
@@ -32,7 +34,7 @@ class Resources {
 
   private static Bundle getBundle() {
     if (bundle == null) {
-      bundle = GWT.create(Bundle.class);
+      bundle = new Resources_BundleImpl();
     }
     return bundle;
   }

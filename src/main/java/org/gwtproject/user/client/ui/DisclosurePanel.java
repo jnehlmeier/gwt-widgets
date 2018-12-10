@@ -28,6 +28,7 @@ import org.gwtproject.event.shared.HandlerRegistration;
 import org.gwtproject.resources.client.ClientBundle;
 import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.resources.client.ImageResource.ImageOptions;
+import org.gwtproject.resources.client.Resource;
 import org.gwtproject.safehtml.shared.annotations.SuppressIsSafeUriCastCheck;
 import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.Event;
@@ -83,6 +84,8 @@ import java.util.Iterator;
 public final class DisclosurePanel extends Composite implements
     HasWidgets.ForIsWidget, HasAnimation,
     HasOpenHandlers<DisclosurePanel>, HasCloseHandlers<DisclosurePanel> {
+
+  @Resource
   interface DefaultImages extends ClientBundle {
     @ImageOptions(flipRtl = true)
     ImageResource disclosurePanelClosed();
@@ -90,7 +93,7 @@ public final class DisclosurePanel extends Composite implements
     ImageResource disclosurePanelOpen();
   }
 
-  private static final DefaultImages DEFAULT_IMAGES = GWT.create(DefaultImages.class);
+  private static final DefaultImages DEFAULT_IMAGES = new DisclosurePanel_DefaultImagesImpl();
 
   /**
    * Used to wrap widgets in the header to provide click support. Effectively

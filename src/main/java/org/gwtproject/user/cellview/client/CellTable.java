@@ -32,6 +32,7 @@ import org.gwtproject.resources.client.CssResource.ImportedWithPrefix;
 import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.resources.client.ImageResource.ImageOptions;
 import org.gwtproject.resources.client.ImageResource.RepeatStyle;
+import org.gwtproject.resources.client.Resource;
 import org.gwtproject.user.cellview.client.CellBasedWidgetImpl;
 import org.gwtproject.user.cellview.client.Header;
 import org.gwtproject.user.cellview.client.LoadingStateChangeEvent.LoadingState;
@@ -94,6 +95,7 @@ public class CellTable<T> extends AbstractCellTable<T> implements
   /**
    * Resources that match the GWT standard style theme.
    */
+  @Resource
   public interface BasicResources extends Resources {
     /**
      * The styles used in this widget.
@@ -106,6 +108,7 @@ public class CellTable<T> extends AbstractCellTable<T> implements
   /**
    * A ClientBundle that provides images for this widget.
    */
+  @Resource
   public interface Resources extends ClientBundle {
     /**
      * The background used for footer cells.
@@ -162,7 +165,7 @@ public class CellTable<T> extends AbstractCellTable<T> implements
     /**
      * The path to the default CSS styles used by this resource.
      */
-    String DEFAULT_CSS = "com/google/gwt/user/cellview/client/CellTable.css";
+    String DEFAULT_CSS = "org/gwtproject/user/cellview/client/CellTable.gss";
 
     /**
      * Applied to every cell.
@@ -298,7 +301,7 @@ public class CellTable<T> extends AbstractCellTable<T> implements
     /**
      * The path to the default CSS styles used by this resource.
      */
-    String DEFAULT_CSS = "com/google/gwt/user/cellview/client/CellTableBasic.css";
+    String DEFAULT_CSS = "org/gwtproject/user/cellview/client/CellTableBasic.gss";
   }
 
   /**
@@ -471,7 +474,7 @@ public class CellTable<T> extends AbstractCellTable<T> implements
 
   private static Resources getDefaultResources() {
     if (DEFAULT_RESOURCES == null) {
-      DEFAULT_RESOURCES = GWT.create(Resources.class);
+      DEFAULT_RESOURCES = new CellTable_ResourcesImpl();
     }
     return DEFAULT_RESOURCES;
   }

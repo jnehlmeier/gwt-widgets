@@ -31,6 +31,7 @@ import com.google.gwt.junit.client.WithProperties.Property;
 import org.gwtproject.resources.client.ClientBundle;
 import org.gwtproject.resources.client.ImageResource;
 import org.gwtproject.resources.client.ImageResource.ImageOptions;
+import org.gwtproject.resources.client.Resource;
 import org.gwtproject.resources.client.impl.ImageResourcePrototype;
 import org.gwtproject.timer.client.Timer;
 
@@ -39,6 +40,7 @@ import org.gwtproject.timer.client.Timer;
  * are tested, along with the transitions between the two modes.
  */
 public class ImageTest extends GWTTestCase {
+  @Resource
   interface Bundle extends ClientBundle {
     ImageResource prettyPiccy();
 
@@ -574,7 +576,7 @@ public class ImageTest extends GWTTestCase {
     @Property(name = "ClientBundle.enableInlining", value = "false")
   })
   public void testResourceConstructor() {
-    Bundle b = GWT.create(Bundle.class);
+    Bundle b = new ImageTest_BundleImpl();
     Image image = new Image(b.prettyPiccy());
     assertResourceWorked(image, b.prettyPiccy());
     assertTrue(b.prettyPiccy() instanceof ImageResourcePrototype.Bundle);
@@ -585,7 +587,7 @@ public class ImageTest extends GWTTestCase {
     @Property(name = "ClientBundle.enableInlining", value = "false")
   })
   public void testSetResource() {
-    Bundle b = GWT.create(Bundle.class);
+    Bundle b = new ImageTest_BundleImpl();
     Image image = new Image();
     image.setResource(b.prettyPiccy());
     assertResourceWorked(image, b.prettyPiccy());
@@ -595,7 +597,7 @@ public class ImageTest extends GWTTestCase {
   }
 
   public void testStandaloneResourceConstructor() {
-    Bundle b = GWT.create(Bundle.class);
+    Bundle b = new ImageTest_BundleImpl();
     Image image = new Image(b.prettyPiccyStandalone());
     assertResourceWorked(image, b.prettyPiccyStandalone());
 
@@ -604,7 +606,7 @@ public class ImageTest extends GWTTestCase {
   }
 
   public void testStandaloneSetResource() {
-    Bundle b = GWT.create(Bundle.class);
+    Bundle b = new ImageTest_BundleImpl();
     Image image = new Image();
     image.setResource(b.prettyPiccyStandalone());
     assertResourceWorked(image, b.prettyPiccyStandalone());

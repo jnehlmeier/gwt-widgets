@@ -23,6 +23,7 @@ import org.gwtproject.dom.client.NativeEvent;
 import org.gwtproject.dom.style.shared.Display;
 import org.gwtproject.resources.client.ClientBundle;
 import org.gwtproject.resources.client.ImageResource;
+import org.gwtproject.resources.client.Resource;
 import org.gwtproject.safehtml.client.SafeHtmlTemplates;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
@@ -97,7 +98,7 @@ public class ImageLoadingCell extends org.gwtproject.cell.client.AbstractCell<St
         };
       }
       if (LOADING_RENDERER == null) {
-        Resources resources = com.google.gwt.core.client.GWT.create(Resources.class);
+        Resources resources = new ImageLoadingCell_ResourcesImpl();
         ImageResource res = resources.loading();
         final SafeHtml loadingHtml = AbstractImagePrototype.create(res).getSafeHtml();
         LOADING_RENDERER = new AbstractSafeHtmlRenderer<String>() {
@@ -140,6 +141,7 @@ public class ImageLoadingCell extends org.gwtproject.cell.client.AbstractCell<St
   /**
    * The images used by the {@link DefaultRenderers}.
    */
+  @Resource
   interface Resources extends ClientBundle {
     ImageResource loading();
   }

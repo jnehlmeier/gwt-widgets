@@ -22,6 +22,7 @@ import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.style.shared.TextAlign;
 import org.gwtproject.resources.client.ClientBundle;
 import org.gwtproject.resources.client.ImageResource;
+import org.gwtproject.resources.client.Resource;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
 import org.gwtproject.user.client.DOM;
 import org.gwtproject.timer.client.Timer;
@@ -60,6 +61,7 @@ public final class VerticalSplitPanel extends SplitPanel {
   /**
    * The default resources used by this widget.
    */
+  @Resource
   public interface Resources extends ClientBundle {
     /**
      * An image representing the drag thumb.
@@ -178,7 +180,7 @@ public final class VerticalSplitPanel extends SplitPanel {
   private String lastSplitPosition;
 
   public VerticalSplitPanel() {
-    this(com.google.gwt.core.client.GWT.<Resources> create(Resources.class));
+    this(new VerticalSplitPanel_ResourcesImpl());
   }
 
   /**

@@ -32,6 +32,7 @@ import org.gwtproject.resources.client.ClientBundle;
 import org.gwtproject.resources.client.CommonResources;
 import org.gwtproject.resources.client.CssResource;
 import org.gwtproject.resources.client.CssResource.ImportedWithPrefix;
+import org.gwtproject.resources.client.Resource;
 import org.gwtproject.user.client.DOM;
 import org.gwtproject.user.client.Event;
 
@@ -63,6 +64,7 @@ public class CustomScrollPanel extends ScrollPanel {
   /**
    * A ClientBundle of resources used by this widget.
    */
+  @Resource
   public interface Resources extends ClientBundle {
     /**
      * The styles used in this widget.
@@ -79,7 +81,7 @@ public class CustomScrollPanel extends ScrollPanel {
     /**
      * The path to the default CSS styles used by this resource.
      */
-    String DEFAULT_CSS = "com/google/gwt/user/client/ui/CustomScrollPanel.css";
+    String DEFAULT_CSS = "org/gwtproject/user/client/ui/CustomScrollPanel.gss";
 
     /**
      * Applied to the widget.
@@ -110,7 +112,7 @@ public class CustomScrollPanel extends ScrollPanel {
    */
   private static Resources getDefaultResources() {
     if (DEFAULT_RESOURCES == null) {
-      DEFAULT_RESOURCES = com.google.gwt.core.client.GWT.create(Resources.class);
+      DEFAULT_RESOURCES = new CustomScrollPanel_ResourcesImpl();
     }
     return DEFAULT_RESOURCES;
   }

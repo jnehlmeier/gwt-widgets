@@ -23,7 +23,8 @@ sourceSets.test.java.srcDir 'src-generated/test/java'
 
 dependencies {
     annotationProcessor 'org.gwtproject.uibinder:gwt-uibinder-processor:1.0.0-SNAPSHOT'
-    // Why is that explicitly needed for gwt-uibinder-processor ?! 
+    annotationProcessor 'org.gwtproject.resources:gwt-resources-processor:1.0-SNAPSHOT'
+    // Why is that explicitly needed for gwt-uibinder-processor ?!
     // Should be transitive dependency    
     annotationProcessor 'com.google.gwt:gwt-dev:2.8.2'
     annotationProcessor 'com.google.gwt:gwt-user:2.8.2'
@@ -45,8 +46,10 @@ dependencies {
     api 'org.gwtproject.timer:gwt-timer:1.0-SNAPSHOT'
     api 'org.gwtproject.user.history:gwt-history:HEAD-SNAPSHOT'
     api 'org.gwtproject.uibinder:gwt-uibinder-client:1.0.0-SNAPSHOT'
+    api 'org.gwtproject.resources:gwt-resources-api:1.0-SNAPSHOT'
 
     testAnnotationProcessor 'org.gwtproject.safehtml:gwt-safehtml-template-processor:1.0-SNAPSHOT'
+    testAnnotationProcessor 'org.gwtproject.resources:gwt-resources-processor:1.0-SNAPSHOT'
     testImplementation 'junit:junit:4.12'
     testRuntimeOnly 'com.google.gwt:gwt-dev:2.8.2'
 }
@@ -55,6 +58,7 @@ compileJava.options.encoding = 'UTF-8'
 compileJava.options.sourcepath = files('src/main/resources')
 compileJava.options.annotationProcessorGeneratedSourcesDirectory = file('src-generated/main/java')
 compileTestJava.options.encoding = 'UTF-8'
+compileTestJava.options.sourcepath = files('src/test/resources')
 compileTestJava.options.annotationProcessorGeneratedSourcesDirectory = file('src-generated/test/java')
 
 clean {

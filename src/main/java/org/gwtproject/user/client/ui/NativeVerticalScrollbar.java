@@ -22,6 +22,7 @@ import org.gwtproject.resources.client.ClientBundle;
 import org.gwtproject.resources.client.CommonResources;
 import org.gwtproject.resources.client.CssResource;
 import org.gwtproject.resources.client.CssResource.ImportedWithPrefix;
+import org.gwtproject.resources.client.Resource;
 import org.gwtproject.uibinder.client.UiBinder;
 import org.gwtproject.uibinder.client.UiField;
 import org.gwtproject.uibinder.client.UiTemplate;
@@ -38,6 +39,7 @@ public class NativeVerticalScrollbar extends AbstractNativeScrollbar implements 
   /**
    * A ClientBundle of resources used by this widget.
    */
+  @Resource
   public interface Resources extends ClientBundle {
     /**
      * The styles used in this widget.
@@ -50,6 +52,7 @@ public class NativeVerticalScrollbar extends AbstractNativeScrollbar implements 
    * A variation of {@link Resources} that renders the scrollbar
    * semi-transparent until it is hovered.
    */
+  @Resource
   public interface ResourcesTransparant extends Resources {
     /**
      * The styles used in this widget.
@@ -66,7 +69,7 @@ public class NativeVerticalScrollbar extends AbstractNativeScrollbar implements 
     /**
      * The path to the default CSS styles used by this resource.
      */
-    String DEFAULT_CSS = "com/google/gwt/user/client/ui/NativeVerticalScrollbar.css";
+    String DEFAULT_CSS = "org/gwtproject/user/client/ui/NativeVerticalScrollbar.gss";
 
     /**
      * Applied to the scrollbar.
@@ -82,14 +85,15 @@ public class NativeVerticalScrollbar extends AbstractNativeScrollbar implements 
     /**
      * The path to the default CSS styles used by this resource.
      */
-    String DEFAULT_CSS = "com/google/gwt/user/client/ui/NativeVerticalScrollbarTransparent.css";
+    String DEFAULT_CSS = "org/gwtproject/user/client/ui/NativeVerticalScrollbarTransparent.gss";
   }
 
   /**
    * Client bundle used in the uibinder template.
    */
+  @Resource
   interface UiBinderBundle extends ClientBundle {
-    UiBinderBundle INSTANCE = GWT.create(UiBinderBundle.class);
+    UiBinderBundle INSTANCE = new NativeVerticalScrollbar_UiBinderBundleImpl();
 
     UiStyle nativeVerticalScrollbarUi();
   }
@@ -112,7 +116,7 @@ public class NativeVerticalScrollbar extends AbstractNativeScrollbar implements 
    */
   private static Resources getDefaultResources() {
     if (DEFAULT_RESOURCES == null) {
-      DEFAULT_RESOURCES = GWT.create(Resources.class);
+      DEFAULT_RESOURCES = new NativeVerticalScrollbar_ResourcesImpl();
     }
     return DEFAULT_RESOURCES;
   }
